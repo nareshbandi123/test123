@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuitedoc
+rxversion="8.3">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<testcase
+			id="19803715-0124-454f-a8ea-4fe9f45f3c0f"
+			name="TestCase">
+			</testcase>
+			<testcase
+			id="212c184f-6f1c-4a06-b2e2-451613c7037a"
+			name="RxDatabase"
+			reportlevel="Info;20">
+			</testcase>
+			<testsuite
+			ReportTime="RelativeToTestSuiteStartTime"
+			TracingScreenshotMode="Foreground"
+			TracingScreenshotQuality="40"
+			enabletracingscreenshots="True"
+			id="db8e13f7-37a8-4a6e-9aaf-9d6cc534fb9f"
+			name="RxDatabase"
+			placescreenshotsinfolder="True"
+			reportcompress="False"
+			reportfilename="%S_%Y%M%D_%T.rxlog"
+			reporttemplatefolder=""
+			reportwriteinterval="30000ms"
+			showinvisiblechars="True">
+			</testsuite>
+		</flatlistofchildren>
+		<childhierarchy>
+			<testsuite
+			id="db8e13f7-37a8-4a6e-9aaf-9d6cc534fb9f"
+			name="RxDatabase">
+				<testcase
+				id="212c184f-6f1c-4a06-b2e2-451613c7037a"
+				name="RxDatabase">
+					<testcase
+					id="19803715-0124-454f-a8ea-4fe9f45f3c0f"
+					name="TestCase">
+					</testcase>
+				</testcase>
+			</testsuite>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+	<datasources>
+	</datasources>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcontainer
+			id="19803715-0124-454f-a8ea-4fe9f45f3c0f">
+			</testcontainer>
+			<testcontainer
+			id="212c184f-6f1c-4a06-b2e2-451613c7037a">
+			</testcontainer>
+		</testconfiguration>
+	</testconfigurations>
+	<references>
+		<reference>
+			C:\Program Files (x86)\Ranorex 8.0\Bin\Ranorex.Bootstrapper.dll
+		</reference>
+	</references>
+</testsuitedoc>
