@@ -1,0 +1,13 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{1377E366-B5A9-4220-B883-3DCECF74FF8C}</string>
+      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution SQLDMTestAutomation[SQLDMTestAutomation[]]]&#xD;&#xA;Solution SQLDMTestAutomation\SQLDMTestAutomation\Recording1.rxrec&#xD;&#xA;Solution SQLDMTestAutomation" />
+  <StartupProject value="{1377E366-B5A9-4220-B883-3DCECF74FF8C}" />
+</Properties>
