@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="18abeace5144c8d8"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="SLV-UPTIME-001"
+		osversion="Windows Server 2012 R2 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="2/7/2019 2:15:48 AM"
+		timestampiso="2019-02-07T10:15:48"
+		endtime="2/7/2019 2:16:44 AM"
+		timeoutfactor="1"
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.727"
+			timeRelativeToTestModuleStartTime="00:04.731"
+			timeWallClock="02:15:53"
+			time="00:04.727"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']/?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']"
+				itempath="statusbar[@automationid='statusBar']/?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Server"
+				id="82a5fa7d86df43869bd7f49949e40f8c"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.640"
+			timeRelativeToTestModuleStartTime="00:16.644"
+			timeWallClock="02:16:05"
+			time="00:16.640"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']/?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']"
+				itempath="statusbar[@automationid='statusBar']/?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Server"
+				id="82a5fa7d86df43869bd7f49949e40f8c"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.947"
+			timeRelativeToTestModuleStartTime="00:20.951"
+			timeWallClock="02:16:09"
+			time="00:20.947"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Queries"
+				id="d2bb192f687c484aa18549989a0e9c96"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="98"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:29.051"
+			timeRelativeToTestModuleStartTime="00:29.055"
+			timeWallClock="02:16:17"
+			time="00:29.051"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Queries"
+				id="d2bb192f687c484aa18549989a0e9c96"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="102"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:34.516"
+			timeRelativeToTestModuleStartTime="00:34.520"
+			timeWallClock="02:16:23"
+			time="00:34.516"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[1]"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[1]"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode"
+				id="08b3cbe542ce445eb40abcb102c74100"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="106"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:39.749"
+			timeRelativeToTestModuleStartTime="00:39.753"
+			timeWallClock="02:16:28"
+			time="00:39.749"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 10s.
+			</message>
+			<metainfo
+				itemindex="7"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="110"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:49.787"
+			timeRelativeToTestModuleStartTime="00:49.791"
+			timeWallClock="02:16:38"
+			time="00:49.787"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[1]"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[1]"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode"
+				id="08b3cbe542ce445eb40abcb102c74100"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="113"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:54.602"
+			timeRelativeToTestModuleStartTime="00:54.606"
+			timeWallClock="02:16:43"
+			time="00:54.602"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move at {X=0,Y=0}.
+			</message>
+			<metainfo
+				itemindex="9"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="117"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:55.146"
+			timeRelativeToTestModuleStartTime="00:55.150"
+			timeWallClock="02:16:44"
+			time="00:55.146"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click at {X=0,Y=0}.
+			</message>
+			<metainfo
+				itemindex="10"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="121"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

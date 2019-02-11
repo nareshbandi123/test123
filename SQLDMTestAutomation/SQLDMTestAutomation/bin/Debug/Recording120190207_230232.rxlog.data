@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="b5ce5635fd0b937"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="SLV-UPTIME-001"
+		osversion="Windows Server 2012 R2 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="2/7/2019 11:02:38 PM"
+		timestampiso="2019-02-08T07:02:38"
+		endtime="2/7/2019 11:03:00 PM"
+		timeoutfactor="1"
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<errormessage>
+			WaitForAttributeEqual failed. Element for item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday' does not exist  (Exception of type 'Ranorex.ApplicationNotRespondingException' was thrown.).
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.727"
+			timeRelativeToTestModuleStartTime="00:02.732"
+			timeWallClock="23:02:40"
+			time="00:02.727"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'C:\Program Files\Idera\Idera SQL diagnostic manager\SQLdmDesktopClient.exe' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.908"
+			timeRelativeToTestModuleStartTime="00:02.913"
+			timeWallClock="23:02:41"
+			time="00:02.908"
+			level="Info"
+			category="Wait"
+			errimg=".\Recordin_67a575f8_35036c7b_trace.jpg"
+			errthumb=".\Recordin_67a575f8_35036c7b_trace_thumb.jpg">
+			<message>
+				Waiting 5s for the attribute 'Text' to equal the specified value 'SQLDM Today'. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']"
+				itempath="statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday"
+				id="0a7c7718a97047cfbbdacba2e04e6f8a"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.026"
+			timeRelativeToTestModuleStartTime="00:10.031"
+			timeWallClock="23:02:48"
+			time="00:10.026"
+			level="Warn"
+			category="WinForms"
+			errimg=".\Recordin_67a575f8_dc4e5b0c_trace.jpg"
+			errthumb=".\Recordin_67a575f8_dc4e5b0c_trace_thumb.jpg">
+			<message>
+				This control (from process '(Unknown)') seems to be a Windows Forms control, but was not recognized as such, possibly due to a security limitation. UI element identification capabilities for this control may be limited.<br/>If this control is a WinForms control, please make sure that the automating process has the rights to access the automated application. Otherwise, please ignore this limitation.<br/>Process: (pid 0)<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v8.2/interfaces-connectivity/technology-instrumentation/general-troubleshooting/#DotNetWinForms<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="PotentiallyWinForms"
+				showInProgressDialog="False"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="87"
+				loglvl="Warn"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.466"
+			timeRelativeToTestModuleStartTime="00:21.471"
+			timeWallClock="23:02:59"
+			time="00:21.466"
+			level="Error"
+			category="Module"
+			errimg=".\Recordin_67a575f8_3651b526_trace.jpg"
+			errthumb=".\Recordin_67a575f8_3651b526_trace_thumb.jpg">
+			<message>
+				WaitForAttributeEqual failed. Element for item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday' does not exist  (Exception of type 'Ranorex.ApplicationNotRespondingException' was thrown.).
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.WaitForAttributeInternal(Duration waitTimeout, String name, Object value, WaitForAction action)
+   at Ranorex.Core.Repository.RepoItemInfo.WaitForAttributeEqual(Duration waitTimeout, String name, Object value)
+   at SQLDMTestAutomation.Recording1.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs:line 87
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\administrator.SIMPSONS\Documents\Ranorex\RanorexStudio Projects\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="87"
+				loglvl="Error"
+				id="0a7c7718a97047cfbbdacba2e04e6f8a"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,102 @@
+﻿<repository
+id="f786a100-360b-442d-a1a8-e04f271dd75e"
+name="SQLDMTestAutomationRepository"
+rxversion="8.2">
+	<codegen
+	classname="SQLDMTestAutomationRepository"
+	namespace="SQLDMTestAutomation">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="fef44676-cf73-4211-820e-be7621cd7bfd"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="form"
+		id="b4fb3fbf-37f1-4ea8-8a05-407ab9741ac6"
+		isrooted="True"
+		name="IderaSQLDiagnosticManagerSQLdmRepo"
+		refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (SLV-UPTIME-001\SQL2014)']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="tree,control,nativewindow"
+			capname="treeitem"
+			id="82a5fa7d-86df-4386-9bd7-f49949e40f8c"
+			name="Server"
+			refimgid="a9633a05-322d-4ee2-807a-e189e4d260b5"
+			searchtimeout="30000ms">
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']/?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="d2bb192f-687c-484a-a185-49989a0e9c96"
+			name="Queries"
+			refimgid="1fe3fc6d-e37f-4df6-849c-8129d093722d"
+			refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (SLV-UPTIME-001\SQL2014)']/statusbar[@automationid='statusBar']/container[2]/container[@automationid='viewContainer']/toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+			searchtimeout="30000ms">
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']
+			</item>
+			<item
+			addcaps="radiobutton,wpfelement,wpfgroupelement"
+			capname="radiobutton"
+			id="08b3cbe5-42ce-445e-b40a-bcb102c74100"
+			name="SignatureMode"
+			refimgid="930356c1-3916-4b94-b923-3900a7456382"
+			refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (SLV-UPTIME-001\SQL2014)']/statusbar[@automationid='statusBar']/container[2]/container[@automationid='viewContainer']/toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[1]"
+			searchtimeout="30000ms">
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[1]
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="7e4be6b1-77be-424f-a4b6-f25c97eedbd3"
+			name="ConfigureQueryMonitor"
+			refimgid="f14f70c8-7506-4d76-a73d-5f53647ac63f"
+			refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (SLV-UPTIME-001\SQL2014)']/statusbar[@automationid='statusBar']/container[2]/container[@automationid='viewContainer']/toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button"
+			searchtimeout="30000ms">
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="0a7c7718-a970-47cf-bbda-cba2e04e6f8a"
+			name="SQLDMToday"
+			refimgid="a65d2998-8be0-41d6-bead-7b24f81ecdce"
+			refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (SLV-UPTIME-001\SQL2014)']/statusbar[@automationid='statusBar']/container[2]/container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/container[@caption='']/container[@controlname='_child']/container[@controlname='NewSQLdmTodayView']/element[@controlname='contentPanel']/container[@controlname='contentPanel.ClientArea']/toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']"
+			searchtimeout="30000ms">
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']
+			</item>
+			<basepath>
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANTSURBVDhPZZN7SFNhGMZPlolJdgGxRLOboCnt
+pFmroEVSlmFJUWGEYitQSyotrW2Vl6aV1zA7NWdBaepi2WSWl8q2ppvkcmVejunI5syJaWpm54/x
+NKdd0B98/3y8z4+Pl+cjpqM66E4asyOpb/ICekgpYwYVMsYky6e7hFyqNsiFnBqbSSnb1f7r9TDR
+zxa1menVgzHq8aunC+MGy/nSiZ/dnRjS1Znbr0aIJmanYpNkWi4GRGcVTLsGv9o0sEgw1lyPH+9V
+GGl6g2GtEkONCoz26zFsoNF6KVxRyib+SUzJwSKm4SnG1WUYU0kxqnyM4dpSDNYUY6CyCKaKhzDW
+P0XvQCMM8kJ0l4qhDWOLrGHVPidyXHbdPF6Zh2+VuRiV5WBImoWBknSYCq/BeF+IzwUp0HYW4H31
+TbRn8dCSfgG6pBhz1Q7LTvpPeVLDeQfxTM2FXBuNwYI49FQVwZgvgCEjCvrUE3glOY4nTZFoungU
+784chjrqAD5oNKjjcynis4BFCyvmI+mFA1LqnXFfFoOS5h5INc3QJXPxNj4A6Y1rIeX7QrXXG9Vb
+3SC+nY971RrItiyjiUvFc5i0ckd8Td6EwoxA7JfU4c618xBm5yH0wWvE3/GDoMgWSo4TatiLcCYh
+BUfFVXiwYTnKVhEMcTfLiRlJ5aBVsBseaVJsvxWD5Mfz0MH1ATc+Fksy5eBFbLcK9oWfxpIrEuT6
+rYB01exJwQhvPd2fshNeAjG2JWTgY8I6xClt8FDojMtSOwQKQ2BzpRy+0amw50uQs9kL5V52VoFs
+NUEThmhPKoCXBU++GN0XOOiP88eTNDfEaQnEKmeh9pArzoUEwT7hEa5ySFSwHP4KKtcQFHGD4066
+xd41t/B34ztvs1Wgj2ThcrE9qMTFUAe7o5zjjHsbl0KyzhHyKUGZx2yznEVMVlvH9RGNJW61Cvpi
+/dEY7g3JEUvQElbtWYaGQBfrDl5sXIjnU4KatbMmizRBpqWWphhvxZ8XGKJJdB7zRkuoB3Qhy9Gw
+ywVv/ghIB1SzbBWZrv9VeYIJSXfEClHfaT9zz0kSXRZB2zTBS/YCs2LDXNGM8P9U7ZhHfgp1pTqO
+rKRbD7kzTcEuzNudTrR623xK7m877TsTxG+W+SGNGP784AAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
