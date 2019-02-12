@@ -124,13 +124,12 @@ namespace SQLDMTestAutomation
             repo.MonitoredSqlServerInstancePropertiesDial.OkButton.EnsureVisible();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MonitoredSqlServerInstancePropertiesDial.OkButton' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(8));
-            //repo.MonitoredSqlServerInstancePropertiesDial.OkButton.Click();
-            //Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking PerformClick() on item 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(9));
-            repo.MonitoredSqlServerInstancePropertiesDial.OkButton.Element.InvokeActionWithText("PerformClick");
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(8));
+            repo.MonitoredSqlServerInstancePropertiesDial.OkButton.Press();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(9));
+            Delay.Duration(10000, false);
             
         }
 

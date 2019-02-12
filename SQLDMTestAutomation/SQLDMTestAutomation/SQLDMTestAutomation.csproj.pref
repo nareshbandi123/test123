@@ -1,12 +1,10 @@
 ﻿<Properties>
+  <Array name="active">
+    <Element value="Recording1.rxrec" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="Recording1.rxrec" />
-    <Element value="SQLDMTestAutomation.rxtst" />
-    <Element value="Program.cs" />
-    <Element value="Recording1.cs" />
-    <Element value="Recording1.UserCode.cs" />
-    <Element value="Recording2.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Array name="recentusercodeselections">

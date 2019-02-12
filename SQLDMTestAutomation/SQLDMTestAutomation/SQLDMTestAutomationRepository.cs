@@ -108,11 +108,11 @@ namespace SQLDMTestAutomation
             public IderaSQLDiagnosticManagerSQLdmRepoAppFolder(RepoGenBaseFolder parentFolder) :
                     base("IderaSQLDiagnosticManagerSQLdmRepo", "/form[@title~'^Idera\\ SQL\\ diagnostic\\ mana']", parentFolder, 30000, null, true, "b4fb3fbf-37f1-4ea8-8a05-407ab9741ac6", "")
             {
-                _serverInfo = new RepoItemInfo(this, "Server", "statusbar[@automationid='statusBar']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "82a5fa7d-86df-4386-9bd7-f49949e40f8c");
+                _serverInfo = new RepoItemInfo(this, "Server", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "82a5fa7d-86df-4386-9bd7-f49949e40f8c");
                 _queriesInfo = new RepoItemInfo(this, "Queries", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']", 30000, null, "d2bb192f-687c-484a-a185-49989a0e9c96");
                 _signaturemodeInfo = new RepoItemInfo(this, "SignatureMode", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[1]", 30000, null, "08b3cbe5-42ce-445e-b40a-bcb102c74100");
                 _configurequerymonitorInfo = new RepoItemInfo(this, "ConfigureQueryMonitor", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button", 30000, null, "7e4be6b1-77be-424f-a4b6-f25c97eedbd3");
-                _sqldmtodayInfo = new RepoItemInfo(this, "SQLDMToday", "statusbar[@automationid='statusBar']//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']//container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']", 30000, null, "0a7c7718-a970-47cf-bbda-cba2e04e6f8a");
+                _sqldmtodayInfo = new RepoItemInfo(this, "SQLDMToday", ".//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']", 30000, null, "0a7c7718-a970-47cf-bbda-cba2e04e6f8a");
             }
 
             /// <summary>
@@ -271,6 +271,7 @@ namespace SQLDMTestAutomation
             RepoItemInfo _updowneditInfo;
             RepoItemInfo _comboboxInfo;
             RepoItemInfo _okbuttonInfo;
+            RepoItemInfo _closeInfo;
 
             /// <summary>
             /// Creates a new MonitoredSqlServerInstancePropertiesDial  folder.
@@ -283,6 +284,7 @@ namespace SQLDMTestAutomation
                 _updowneditInfo = new RepoItemInfo(this, "UpDownEdit", "container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']", 30000, null, "270a3822-0209-436d-ae49-588334cdc551");
                 _comboboxInfo = new RepoItemInfo(this, "ComboBox", "container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/element[@controlname='topPlanComboBox']/combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']", 30000, null, "dc5ee464-4a79-4cc9-8181-792c0936f114");
                 _okbuttonInfo = new RepoItemInfo(this, "OkButton", "button[@controlname='okButton']", 30000, null, "a9de51d9-a3bf-4e60-9edc-68fd0f899217");
+                _closeInfo = new RepoItemInfo(this, "Close", ".//button[@accessiblename='Close']", 30000, null, "4731fda8-dfb2-43d2-ba64-1134e4693af3");
             }
 
             /// <summary>
@@ -426,6 +428,30 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _okbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("4731fda8-dfb2-43d2-ba64-1134e4693af3")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("4731fda8-dfb2-43d2-ba64-1134e4693af3")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
                 }
             }
         }
