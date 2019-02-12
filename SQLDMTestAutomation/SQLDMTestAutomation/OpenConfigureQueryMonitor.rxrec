@@ -5,7 +5,7 @@ id="a3e16002-ad31-41c7-be31-fdb013b90bf3"
 mode="Global"
 rxversion="8.2">
 	<name>
-		Recording1
+		OpenConfigureQueryMonitor
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Recording1"
+	classname="OpenConfigureQueryMonitor"
 	namespace="SQLDMTestAutomation">
 	</codegen>
 	<variables>
@@ -5026,7 +5026,7 @@ sQH3/////v///xT0RtpweBxNmKSRxoX/TiML
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="Recording1"
+		classname="OpenConfigureQueryMonitor"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ClickeQueryMonitorTraceCheckBox"
@@ -5074,7 +5074,7 @@ sQH3/////v///xT0RtpweBxNmKSRxoX/TiML
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Recording1.UserCode.cs
+		OpenConfigureQueryMonitor.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

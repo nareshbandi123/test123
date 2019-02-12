@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SQLDMTestAutomation
 {
-    public partial class Recording2
+    public partial class Validation
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

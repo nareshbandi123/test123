@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SQLDMTestAutomation
 {
-    public partial class Recording1
+    public partial class OpenConfigureQueryMonitor
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -24,29 +24,29 @@ namespace SQLDMTestAutomation
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The OpenConfigureQueryMonitor recording.
     /// </summary>
     [TestModule("a3e16002-ad31-41c7-be31-fdb013b90bf3", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    public partial class OpenConfigureQueryMonitor : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomationRepository repository.
         /// </summary>
         public static SQLDMTestAutomationRepository repo = SQLDMTestAutomationRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static OpenConfigureQueryMonitor instance = new OpenConfigureQueryMonitor();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public OpenConfigureQueryMonitor()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static OpenConfigureQueryMonitor Instance
         {
             get { return instance; }
         }
