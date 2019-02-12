@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="60b5e0a965a5c0"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Administrator"
+		rxversion="8.2.1.0"
+		host="SLV-UPTIME-001"
+		osversion="Windows Server 2012 R2 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1366x768"
+		timestamp="2/11/2019 5:34:01 AM"
+		timestampiso="2019-02-11T13:34:01"
+		endtime="2/11/2019 5:34:08 AM"
+		timeoutfactor="1"
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.705"
+			timeRelativeToTestModuleStartTime="00:01.709"
+			timeWallClock="05:34:02"
+			time="00:01.705"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']//container[@controlname='tableLayoutPanel17']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']//container[@controlname='tableLayoutPanel17']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox"
+				id="c19e42bd757e41bc9bda4986a05f4d11"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.cs"
+				codeline="127"
+				itemindex="12"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.132"
+			timeRelativeToTestModuleStartTime="00:06.136"
+			timeWallClock="05:34:07"
+			time="00:06.132"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'checkboxInfo' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']//container[@controlname='tableLayoutPanel17']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']//container[@controlname='tableLayoutPanel17']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox"
+				id="c19e42bd757e41bc9bda4986a05f4d11"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording1.UserCode.cs"
+				codeline="38"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>
