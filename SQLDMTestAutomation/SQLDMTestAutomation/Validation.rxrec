@@ -5,7 +5,7 @@ id="e9af3f9e-4660-4843-b348-38b7b394de7f"
 mode="Global"
 rxversion="8.2">
 	<name>
-		Recording2
+		Validation
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Recording2"
+	classname="Validation"
 	namespace="SQLDMTestAutomation">
 	</codegen>
 	<variables>
@@ -3954,7 +3954,7 @@ ABRRRQAVWvf+WP8A10/9laiigCOiiiqICiiigAooooAKKKKACiiigAooooA//9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Recording2.UserCode.cs
+		Validation.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

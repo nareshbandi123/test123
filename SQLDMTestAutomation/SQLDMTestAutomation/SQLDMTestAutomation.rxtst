@@ -28,13 +28,13 @@ rxversion="8.2">
 			</testcase>
 			<testmodule
 			id="afd260d1-e3d9-4c9f-9025-5884a3e37571"
-			name="Recording1"
+			name="OpenConfigureQueryMonitor"
 			ref="a3e16002-ad31-41c7-be31-fdb013b90bf3"
 			type="Recording">
 			</testmodule>
 			<testmodule
 			id="c802933b-53b5-4846-9b17-c5e062aa3716"
-			name="Recording2"
+			name="Validation"
 			ref="e9af3f9e-4660-4843-b348-38b7b394de7f"
 			type="Recording">
 			</testmodule>
@@ -51,11 +51,11 @@ rxversion="8.2">
 					name="TestCase">
 						<testmodule
 						id="afd260d1-e3d9-4c9f-9025-5884a3e37571"
-						name="Recording1">
+						name="OpenConfigureQueryMonitor">
 						</testmodule>
 						<testmodule
 						id="c802933b-53b5-4846-9b17-c5e062aa3716"
-						name="Recording2">
+						name="Validation">
 						</testmodule>
 					</testcase>
 				</testcase>

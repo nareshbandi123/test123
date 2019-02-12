@@ -120,27 +120,27 @@
     <Compile Include="Program.cs">
       <id>941b7748-11d2-48c6-9a3d-bf2023f1bcca</id>
     </Compile>
-    <Compile Include="Recording1.cs">
+    <Compile Include="OpenConfigureQueryMonitor.cs">
       <BoundTo>06083215-b9f8-4bed-b549-71458738aea7</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <DependentUpon>OpenConfigureQueryMonitor.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>f8a018a0-21e0-47c3-b2b5-f91e3ba777c3</id>
     </Compile>
-    <Compile Include="Recording1.UserCode.cs">
+    <Compile Include="OpenConfigureQueryMonitor.UserCode.cs">
       <BoundTo>06083215-b9f8-4bed-b549-71458738aea7</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <DependentUpon>OpenConfigureQueryMonitor.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>99d07303-38d7-46af-932d-eedd702c77a9</id>
     </Compile>
-    <Compile Include="Recording2.cs">
+    <Compile Include="Validation.cs">
       <BoundTo>8059b73b-4d3e-4c56-9d11-d89c9e338b30</BoundTo>
-      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <DependentUpon>Validation.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>3289074a-ae9e-4281-9a57-c6e48906cf80</id>
     </Compile>
-    <Compile Include="Recording2.UserCode.cs">
+    <Compile Include="Validation.UserCode.cs">
       <BoundTo>8059b73b-4d3e-4c56-9d11-d89c9e338b30</BoundTo>
-      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <DependentUpon>Validation.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>203f59cd-abde-4b60-b2e8-a7f05955f260</id>
     </Compile>
@@ -155,12 +155,12 @@
     <None Include="app.config">
       <id>4f8fd02a-ddf4-4099-9048-73e6503c21a1</id>
     </None>
-    <None Include="Recording1.rxrec">
+    <None Include="OpenConfigureQueryMonitor.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>06083215-b9f8-4bed-b549-71458738aea7</id>
       <recordtableid>a3e16002-ad31-41c7-be31-fdb013b90bf3</recordtableid>
     </None>
-    <None Include="Recording2.rxrec">
+    <None Include="Validation.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>8059b73b-4d3e-4c56-9d11-d89c9e338b30</id>
       <recordtableid>e9af3f9e-4660-4843-b348-38b7b394de7f</recordtableid>

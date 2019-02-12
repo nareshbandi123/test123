@@ -24,22 +24,22 @@ namespace SQLDMTestAutomation
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording2 recording.
+    ///The Validation recording.
     /// </summary>
     [TestModule("e9af3f9e-4660-4843-b348-38b7b394de7f", ModuleType.Recording, 1)]
-    public partial class Recording2 : ITestModule
+    public partial class Validation : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomationRepository repository.
         /// </summary>
         public static SQLDMTestAutomationRepository repo = SQLDMTestAutomationRepository.Instance;
 
-        static Recording2 instance = new Recording2();
+        static Validation instance = new Validation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording2()
+        public Validation()
         {
             durationCombo = "";
         }
@@ -47,7 +47,7 @@ namespace SQLDMTestAutomation
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording2 Instance
+        public static Validation Instance
         {
             get { return instance; }
         }
