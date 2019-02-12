@@ -29,7 +29,7 @@ rxversion="8.2">
 			name="Server"
 			refimgid="a9633a05-322d-4ee2-807a-e189e4d260b5"
 			searchtimeout="30000ms">
-				/form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
 			</item>
 			<item
 			addcaps="text,wpfelement"
@@ -68,7 +68,7 @@ rxversion="8.2">
 			name="SQLDMToday"
 			refimgid="a65d2998-8be0-41d6-bead-7b24f81ecdce"
 			searchtimeout="30000ms">
-				/form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']//container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']
 			</item>
 			<basepath>
 				/form[@title~'^Idera\ SQL\ diagnostic\ mana']
@@ -150,6 +150,15 @@ rKRbD7kzTcEuzNudTrR623xK7m877TsTxG+W+SGNGP784AAAAABJRU5ErkJggg==
 			refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/button[@controlname='okButton']"
 			searchtimeout="30000ms">
 				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/button[@controlname='okButton']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="4731fda8-dfb2-43d2-ba64-1134e4693af3"
+			name="Close"
+			refimgid="d8cfad62-5774-4287-a4aa-948d0d847273"
+			searchtimeout="30000ms">
+				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//button[@accessiblename='Close']
 			</item>
 			<basepath>
 				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']
