@@ -113,16 +113,23 @@ namespace SQLDMTestAutomation
             repo.IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(9));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(9));
+            Delay.Duration(5000, false);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(10));
             repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor.MoveTo();
             Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(11));
-            //repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor.Click();
-            //Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(11));
+            repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(12));
+            repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox.MoveTo();
+            Delay.Milliseconds(200);
+            
+            ClickeQueryMonitorTraceCheckBox(repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo);
+            Delay.Milliseconds(0);
             
         }
 

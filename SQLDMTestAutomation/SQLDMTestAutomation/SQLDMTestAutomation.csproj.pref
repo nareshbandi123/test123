@@ -6,8 +6,11 @@
     <Element value="Program.cs" />
     <Element value="Recording1.cs" />
     <Element value="Recording1.UserCode.cs" />
+    <Element value="Recording2.rxrec" />
   </Array>
   <Properties name="projectSavedData">
-    <Array name="recentusercodeselections" />
+    <Array name="recentusercodeselections">
+      <Element value="SQLDMTestAutomation.Recording1.ClickeQueryMonitorTraceCheckBox(RepoItemInfo checkboxInfo)" />
+    </Array>
   </Properties>
 </Properties>
