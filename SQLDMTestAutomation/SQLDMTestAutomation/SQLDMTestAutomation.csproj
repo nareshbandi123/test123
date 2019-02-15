@@ -114,8 +114,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddServer.cs">
+      <BoundTo>b38bcf1d-64f0-4c57-9761-44e93ca54461</BoundTo>
+      <DependentUpon>AddServer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f9f37b9c-a01a-4005-8018-9e905bfb93c3</id>
+    </Compile>
+    <Compile Include="AddServer.UserCode.cs">
+      <BoundTo>b38bcf1d-64f0-4c57-9761-44e93ca54461</BoundTo>
+      <DependentUpon>AddServer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>890a4da9-62c0-4a23-95c1-b35a9eefff5f</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>622da644-3b35-4d35-a095-99efe7489aee</id>
+    </Compile>
+    <Compile Include="CloseApplication.cs">
+      <BoundTo>4dfa6b6d-8324-417e-a698-5c195240bfac</BoundTo>
+      <DependentUpon>CloseApplication.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a95fe145-bb19-498c-b666-8fc4fe286e61</id>
+    </Compile>
+    <Compile Include="CloseApplication.UserCode.cs">
+      <BoundTo>4dfa6b6d-8324-417e-a698-5c195240bfac</BoundTo>
+      <DependentUpon>CloseApplication.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b4ce17be-10ef-4a75-8a38-d8f5ed326a6b</id>
     </Compile>
     <Compile Include="DisableQueryMonitor.cs">
       <BoundTo>46b11113-8dba-41fa-b375-dc54466382aa</BoundTo>
@@ -204,6 +228,9 @@
       <UserCode>true</UserCode>
       <id>bd95d3c4-6e9c-49d2-a51a-a9d134b25bca</id>
     </Compile>
+    <Compile Include="UserCodeCollection1.cs">
+      <id>b822862e-1214-4c17-a772-618c84c203e1</id>
+    </Compile>
     <Compile Include="VerifyCollectQueryPlansToBeDisabled.cs">
       <BoundTo>b10fcf68-3e6e-429f-b105-1bf8ada48c26</BoundTo>
       <DependentUpon>VerifyCollectQueryPlansToBeDisabled.rxrec</DependentUpon>
@@ -234,6 +261,18 @@
       <RepositoryCode>true</RepositoryCode>
       <id>f8f34460-df0c-4e1a-a0b3-403570d827ce</id>
     </Compile>
+    <Compile Include="VerifySelectTopForMinMaxValues.cs">
+      <BoundTo>68dceda2-f52f-45c7-8461-0e1b116baff0</BoundTo>
+      <DependentUpon>VerifySelectTopForMinMaxValues.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>63900a67-3dbf-4570-a403-e6dfbc70d956</id>
+    </Compile>
+    <Compile Include="VerifySelectTopForMinMaxValues.UserCode.cs">
+      <BoundTo>68dceda2-f52f-45c7-8461-0e1b116baff0</BoundTo>
+      <DependentUpon>VerifySelectTopForMinMaxValues.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0e906294-0722-4a6a-b193-49fa14a0fa3a</id>
+    </Compile>
     <Compile Include="VerifySelectTopToBeDisabled.cs">
       <BoundTo>a61f890b-e599-4c49-acd0-ea7344f32cd4</BoundTo>
       <DependentUpon>VerifySelectTopToBeDisabled.rxrec</DependentUpon>
@@ -246,22 +285,32 @@
       <UserCode>true</UserCode>
       <id>9520c158-951d-46f4-8cd1-b4ff033dca4c</id>
     </Compile>
-    <Compile Include="VerifySelectByAndPlansByWithInvaildData.cs">
+    <Compile Include="VerifySelectByWithInvaildData.cs">
       <BoundTo>159b4c60-e8b0-4e90-b435-ea5c84d824c1</BoundTo>
-      <DependentUpon>VerifySelectByAndPlansByWithInvaildData.rxrec</DependentUpon>
+      <DependentUpon>VerifySelectByWithInvaildData.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ef9da095-e3fb-4cbe-9dcc-d31c3c4ec8c0</id>
     </Compile>
-    <Compile Include="VerifySelectByAndPlansByWithInvaildData.UserCode.cs">
+    <Compile Include="VerifySelectByWithInvaildData.UserCode.cs">
       <BoundTo>159b4c60-e8b0-4e90-b435-ea5c84d824c1</BoundTo>
-      <DependentUpon>VerifySelectByAndPlansByWithInvaildData.rxrec</DependentUpon>
+      <DependentUpon>VerifySelectByWithInvaildData.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>f4e2c176-9464-499f-8720-657e4b669b38</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AddServer.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>b38bcf1d-64f0-4c57-9761-44e93ca54461</id>
+      <recordtableid>0d45aeec-90f8-4043-a0cf-91a511febd51</recordtableid>
+    </None>
     <None Include="app.config">
       <id>4f8fd02a-ddf4-4099-9048-73e6503c21a1</id>
+    </None>
+    <None Include="CloseApplication.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>4dfa6b6d-8324-417e-a698-5c195240bfac</id>
+      <recordtableid>9552b69d-f0c8-481f-b230-dfdaa4ad8b0e</recordtableid>
     </None>
     <None Include="DisableQueryMonitor.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
@@ -319,12 +368,17 @@
       <repoid>f786a100-360b-442d-a1a8-e04f271dd75e</repoid>
       <reporootid>fef44676-cf73-4211-820e-be7621cd7bfd</reporootid>
     </None>
+    <None Include="VerifySelectTopForMinMaxValues.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>68dceda2-f52f-45c7-8461-0e1b116baff0</id>
+      <recordtableid>327db533-7c43-4209-bb45-9cb499093d5a</recordtableid>
+    </None>
     <None Include="VerifySelectTopToBeDisabled.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>a61f890b-e599-4c49-acd0-ea7344f32cd4</id>
       <recordtableid>e0cc1395-ebff-4ffa-bb51-b3d57c3b7246</recordtableid>
     </None>
-    <None Include="VerifySelectByAndPlansByWithInvaildData.rxrec">
+    <None Include="VerifySelectByWithInvaildData.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>159b4c60-e8b0-4e90-b435-ea5c84d824c1</id>
       <recordtableid>3317ce09-3f34-4b64-ad5c-42f441333426</recordtableid>

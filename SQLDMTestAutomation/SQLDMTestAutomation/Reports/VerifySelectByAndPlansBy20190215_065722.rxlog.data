@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="8.22s"
+		durationms="8221"
+		type="root"
+		rid="79148f9af3b1f99"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/15/2019 6:57:26 AM"
+		timestampiso="2019-02-15T12:57:26"
+		endtime="2/15/2019 6:57:35 AM"
+		timeoutfactor="1"
+		module="VerifySelectByAndPlansBy">
+		<detail>
+			VerifySelectByAndPlansBy
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.874"
+			timeRelativeToTestModuleStartTime="00:01.878"
+			timeWallClock="06:57:28"
+			time="00:01.874"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>durationCombo, EnabledValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.967"
+			timeRelativeToTestModuleStartTime="00:01.972"
+			timeWallClock="06:57:28"
+			time="00:01.967"
+			level="Info"
+			category="Invoke action">
+			<message>
+				Invoking EnsureVisible() on item 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.UpDownEdit"
+				id="270a38220209436dae49588334cdc551"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\VerifySelectByAndPlansBy.cs"
+				codeline="118"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.220"
+			timeRelativeToTestModuleStartTime="00:08.224"
+			timeWallClock="06:57:35"
+			time="00:08.220"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

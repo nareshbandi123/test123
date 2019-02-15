@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="3317ce09-3f34-4b64-ad5c-42f441333426"
+id="327db533-7c43-4209-bb45-9cb499093d5a"
 mode="Global"
 rxversion="8.2">
 	<name>
-		VerifySelectByAndPlansByWithInvaildData
+		VerifySelectTopForMinMaxValues
 	</name>
 	<repeatcount>
 		1
@@ -23,18 +23,10 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="VerifySelectByAndPlansByWithInvaildData"
+	classname="VerifySelectTopForMinMaxValues"
 	namespace="SQLDMTestAutomation">
 	</codegen>
 	<variables>
-		<var
-		id="afd11ac8-affc-463c-8306-416cdad6af45"
-		name="durationCombo">
-		</var>
-		<var
-		id="f20da09f-ff5e-4d16-a63e-11bd7aae25f0"
-		name="EnabledValue">
-		</var>
 	</variables>
 	<recorditems>
 		<invokeactionrecorditem
@@ -997,7 +989,7 @@ rxversion="8.2">
 			</info>
 		</keyitem>
 		<keysequenceitem
-		KeySequence="-1"
+		KeySequence="0"
 		duration="100ms"
 		enabled="True"
 		optional="False"
@@ -1786,7 +1778,7 @@ rxversion="8.2">
 			</info>
 		</keysequenceitem>
 		<explicitdelayitem
-		duration="2000ms"
+		duration="4000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -3709,7 +3701,7 @@ rxversion="8.2">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						abc
+						1002
 					</argvalue>
 				</argument>
 			</arguments>
@@ -6357,7 +6349,7 @@ rxversion="8.2">
 				Text
 			</matchname>
 			<matchvalue>
-				1
+				1000
 			</matchvalue>
 		</validationitem>
 	</recorditems>
@@ -6377,7 +6369,7 @@ rxversion="8.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		VerifySelectByAndPlansByWithInvaildData.UserCode.cs
+		VerifySelectTopForMinMaxValues.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

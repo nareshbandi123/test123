@@ -26,6 +26,12 @@ rxversion="8.2">
 			name="C164873_Verify_query_plan_count_options_are_not_enabled">
 			</testcase>
 			<testmodule
+			id="25856d62-5f2d-448a-b836-d3b46017b111"
+			name="OpenConfigureQueryMonitor"
+			ref="a3e16002-ad31-41c7-be31-fdb013b90bf3"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="28f9dd93-6ef1-4070-88f4-f55d8e2cbc93"
 			name="EnableQueryMonitor"
 			ref="e47225b1-940d-4538-842a-92bdbab6c105"
@@ -78,6 +84,10 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testcase
+			id="7697ca61-cff1-4df0-a8a4-a58c5b60e97e"
+			name="C164874">
+			</testcase>
+			<testcase
 			id="82b404ba-e93a-4aee-bc5a-594531d73f3d"
 			name="SQLDMTestAutomation"
 			reportlevel="Info;20">
@@ -96,6 +106,24 @@ rxversion="8.2">
 			id="9cad8b9b-1b1a-4823-860d-57e4780094f1"
 			name="EnableQueryMonitor"
 			ref="e47225b1-940d-4538-842a-92bdbab6c105"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a446f83b-1047-405b-80b7-38e58949a391"
+			name="SelectServer"
+			ref="24f6bd52-083e-4e49-bf06-cf2fe2ae5d7d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="aa0a083d-7bb8-4790-a9a8-06b7018bc6bc"
+			name="EnableQueryMonitor"
+			ref="e47225b1-940d-4538-842a-92bdbab6c105"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ae1eebbd-40ff-42a8-a14a-480f4fd20148"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -140,6 +168,10 @@ rxversion="8.2">
 			ref="e9af3f9e-4660-4843-b348-38b7b394de7f"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c"
+			name="C164330">
+			</testcase>
 			<testmodule
 			id="d635fa76-9a76-4f28-8b00-1d70bf9c0866"
 			name="SelectSever2017Properties"
@@ -147,8 +179,14 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="dc7ec189-dde7-4ead-acbf-94ed5db92f38"
+			name="VerifySelectTopForMinMaxValues"
+			ref="327db533-7c43-4209-bb45-9cb499093d5a"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e156f53c-ecbb-4011-901a-41ad08bfa54c"
-			name="VerifySelectByAndPlansByWithInvaildData"
+			name="VerifySelectByWithInvaildData"
 			ref="3317ce09-3f34-4b64-ad5c-42f441333426"
 			type="Recording">
 			</testmodule>
@@ -211,7 +249,7 @@ rxversion="8.2">
 						</testmodule>
 						<testmodule
 						id="e156f53c-ecbb-4011-901a-41ad08bfa54c"
-						name="VerifySelectByAndPlansByWithInvaildData">
+						name="VerifySelectByWithInvaildData">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -262,6 +300,34 @@ rxversion="8.2">
 						name="VerifyCollectQueryPlansToBeDisabled">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="7697ca61-cff1-4df0-a8a4-a58c5b60e97e"
+					name="C164874">
+					</testcase>
+					<testcase
+					id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c"
+					name="C164330">
+						<testmodule
+						id="ae1eebbd-40ff-42a8-a14a-480f4fd20148"
+						name="LaunchApplication">
+						</testmodule>
+						<testmodule
+						id="a446f83b-1047-405b-80b7-38e58949a391"
+						name="SelectServer">
+						</testmodule>
+						<testmodule
+						id="25856d62-5f2d-448a-b836-d3b46017b111"
+						name="OpenConfigureQueryMonitor">
+						</testmodule>
+						<testmodule
+						id="aa0a083d-7bb8-4790-a9a8-06b7018bc6bc"
+						name="EnableQueryMonitor">
+						</testmodule>
+						<testmodule
+						id="dc7ec189-dde7-4ead-acbf-94ed5db92f38"
+						name="VerifySelectTopForMinMaxValues">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -273,10 +339,10 @@ rxversion="8.2">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="3a03fb3a-4bd3-4e9d-82a0-81e859f30a20">
+			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
 			</testcontainer>
 			<testcontainer
-			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
+			id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
