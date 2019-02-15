@@ -29,6 +29,7 @@ namespace SQLDMTestAutomation
         static SQLDMTestAutomationRepository instance = new SQLDMTestAutomationRepository();
         SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder _iderasqldiagnosticmanagersqldmrepo;
         SQLDMTestAutomationRepositoryFolders.MonitoredSqlServerInstancePropertiesDialAppFolder _monitoredsqlserverinstancepropertiesdial;
+        SQLDMTestAutomationRepositoryFolders.SQLdmDesktopClientAppFolder _sqldmdesktopclient;
 
         /// <summary>
         /// Gets the singleton class instance representing the SQLDMTestAutomationRepository element repository.
@@ -47,9 +48,22 @@ namespace SQLDMTestAutomation
         {
             _iderasqldiagnosticmanagersqldmrepo = new SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder(this);
             _monitoredsqlserverinstancepropertiesdial = new SQLDMTestAutomationRepositoryFolders.MonitoredSqlServerInstancePropertiesDialAppFolder(this);
+            _sqldmdesktopclient = new SQLDMTestAutomationRepositoryFolders.SQLdmDesktopClientAppFolder(this);
         }
 
 #region Variables
+
+        string _ServerName = "JS-XW7S8\\SQL2008";
+
+        /// <summary>
+        /// Gets or sets the value of variable ServerName.
+        /// </summary>
+        [TestVariable("1414cc25-97b1-4e47-ab61-5d306e2f14c6")]
+        public string ServerName
+        {
+            get { return _ServerName; }
+            set { _ServerName = value; }
+        }
 
 #endregion
 
@@ -82,6 +96,15 @@ namespace SQLDMTestAutomation
         {
             get { return _monitoredsqlserverinstancepropertiesdial; }
         }
+
+        /// <summary>
+        /// The SQLdmDesktopClient folder.
+        /// </summary>
+        [RepositoryFolder("1ad6602d-ccb9-45a2-bf31-905c78fe286e")]
+        public virtual SQLDMTestAutomationRepositoryFolders.SQLdmDesktopClientAppFolder SQLdmDesktopClient
+        {
+            get { return _sqldmdesktopclient; }
+        }
     }
 
     /// <summary>
@@ -97,6 +120,7 @@ namespace SQLDMTestAutomation
         public partial class IderaSQLDiagnosticManagerSQLdmRepoAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _serverInfo;
+            RepoItemInfo _server2017Info;
             RepoItemInfo _queriesInfo;
             RepoItemInfo _signaturemodeInfo;
             RepoItemInfo _configurequerymonitorInfo;
@@ -109,6 +133,7 @@ namespace SQLDMTestAutomation
                     base("IderaSQLDiagnosticManagerSQLdmRepo", "/form[@title~'^Idera\\ SQL\\ diagnostic\\ mana']", parentFolder, 30000, null, true, "b4fb3fbf-37f1-4ea8-8a05-407ab9741ac6", "")
             {
                 _serverInfo = new RepoItemInfo(this, "Server", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "82a5fa7d-86df-4386-9bd7-f49949e40f8c");
+                _server2017Info = new RepoItemInfo(this, "Server2017", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='WIN10SQL17']", 30000, null, "91a07a90-ff45-494a-aafc-f9ea7cf33825");
                 _queriesInfo = new RepoItemInfo(this, "Queries", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']", 30000, null, "d2bb192f-687c-484a-a185-49989a0e9c96");
                 _signaturemodeInfo = new RepoItemInfo(this, "SignatureMode", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[1]", 30000, null, "08b3cbe5-42ce-445e-b40a-bcb102c74100");
                 _configurequerymonitorInfo = new RepoItemInfo(this, "ConfigureQueryMonitor", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button", 30000, null, "7e4be6b1-77be-424f-a4b6-f25c97eedbd3");
@@ -160,6 +185,30 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _serverInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Server2017 item.
+            /// </summary>
+            [RepositoryItem("91a07a90-ff45-494a-aafc-f9ea7cf33825")]
+            public virtual Ranorex.TreeItem Server2017
+            {
+                get
+                {
+                    return _server2017Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server2017 item info.
+            /// </summary>
+            [RepositoryItemInfo("91a07a90-ff45-494a-aafc-f9ea7cf33825")]
+            public virtual RepoItemInfo Server2017Info
+            {
+                get
+                {
+                    return _server2017Info;
                 }
             }
 
@@ -266,12 +315,14 @@ namespace SQLDMTestAutomation
         [RepositoryFolder("ca2ce607-39c3-44b6-924e-0fef773d1433")]
         public partial class MonitoredSqlServerInstancePropertiesDialAppFolder : RepoGenBaseFolder
         {
+            SQLDMTestAutomationRepositoryFolders.TableLayoutPanel19Folder _tablelayoutpanel19;
             RepoItemInfo _enablequerymonitortracecheckboxInfo;
             RepoItemInfo _someindicatorInfo;
             RepoItemInfo _updowneditInfo;
             RepoItemInfo _comboboxInfo;
             RepoItemInfo _okbuttonInfo;
             RepoItemInfo _closeInfo;
+            RepoItemInfo _listitemInfo;
 
             /// <summary>
             /// Creates a new MonitoredSqlServerInstancePropertiesDial  folder.
@@ -279,12 +330,14 @@ namespace SQLDMTestAutomation
             public MonitoredSqlServerInstancePropertiesDialAppFolder(RepoGenBaseFolder parentFolder) :
                     base("MonitoredSqlServerInstancePropertiesDial", "/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']", parentFolder, 30000, null, true, "ca2ce607-39c3-44b6-924e-0fef773d1433", "")
             {
+                _tablelayoutpanel19 = new SQLDMTestAutomationRepositoryFolders.TableLayoutPanel19Folder(this);
                 _enablequerymonitortracecheckboxInfo = new RepoItemInfo(this, "EnableQueryMonitorTraceCheckBox", "container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']//container[@controlname='tableLayoutPanel17']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']", 30000, null, "c19e42bd-757e-41bc-9bda-4986a05f4d11");
                 _someindicatorInfo = new RepoItemInfo(this, "SomeIndicator", "container[@controlname='propertiesControl']/?/?/container[@controlname='panel2']/container[@controlname='queryMonitorPropertyPage']//indicator", 30000, null, "30680a87-cdd0-4419-9dac-7e6c4395c1ad");
-                _updowneditInfo = new RepoItemInfo(this, "UpDownEdit", "container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']", 30000, null, "270a3822-0209-436d-ae49-588334cdc551");
+                _updowneditInfo = new RepoItemInfo(this, "UpDownEdit", "container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']", 30000, null, "270a3822-0209-436d-ae49-588334cdc551");
                 _comboboxInfo = new RepoItemInfo(this, "ComboBox", "container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/element[@controlname='topPlanComboBox']/combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']", 30000, null, "dc5ee464-4a79-4cc9-8181-792c0936f114");
                 _okbuttonInfo = new RepoItemInfo(this, "OkButton", "button[@controlname='okButton']", 30000, null, "a9de51d9-a3bf-4e60-9edc-68fd0f899217");
                 _closeInfo = new RepoItemInfo(this, "Close", ".//button[@accessiblename='Close']", 30000, null, "4731fda8-dfb2-43d2-ba64-1134e4693af3");
+                _listitemInfo = new RepoItemInfo(this, "ListItem", "container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']//listitem[@index='2']", 30000, null, "b6de4d46-b632-483a-a92e-906aaba2138a");
             }
 
             /// <summary>
@@ -452,6 +505,223 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListItem item.
+            /// </summary>
+            [RepositoryItem("b6de4d46-b632-483a-a92e-906aaba2138a")]
+            public virtual Ranorex.ListItem ListItem
+            {
+                get
+                {
+                    return _listitemInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItem item info.
+            /// </summary>
+            [RepositoryItemInfo("b6de4d46-b632-483a-a92e-906aaba2138a")]
+            public virtual RepoItemInfo ListItemInfo
+            {
+                get
+                {
+                    return _listitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TableLayoutPanel19 folder.
+            /// </summary>
+            [RepositoryFolder("579708fb-78d2-4af0-a9a6-29bb75132e22")]
+            public virtual SQLDMTestAutomationRepositoryFolders.TableLayoutPanel19Folder TableLayoutPanel19
+            {
+                get { return _tablelayoutpanel19; }
+            }
+        }
+
+        /// <summary>
+        /// The TableLayoutPanel19Folder folder.
+        /// </summary>
+        [RepositoryFolder("579708fb-78d2-4af0-a9a6-29bb75132e22")]
+        public partial class TableLayoutPanel19Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _chkcollectestimatedqueryplansInfo;
+            RepoItemInfo _chkcollectqueryplansInfo;
+            RepoItemInfo _rbuttonusetraceInfo;
+
+            /// <summary>
+            /// Creates a new TableLayoutPanel19  folder.
+            /// </summary>
+            public TableLayoutPanel19Folder(RepoGenBaseFolder parentFolder) :
+                    base("TableLayoutPanel19", "container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']", parentFolder, 30000, null, false, "579708fb-78d2-4af0-a9a6-29bb75132e22", "")
+            {
+                _chkcollectestimatedqueryplansInfo = new RepoItemInfo(this, "ChkCollectEstimatedQueryPlans", "checkbox[@controlname='chkCollectEstimatedQueryPlans']", 30000, null, "7c2076de-a198-46df-b1f7-46de12aef923");
+                _chkcollectqueryplansInfo = new RepoItemInfo(this, "ChkCollectQueryPlans", "checkbox[@controlname='chkCollectQueryPlans']", 30000, null, "a15cd278-674f-424e-889c-e49392021203");
+                _rbuttonusetraceInfo = new RepoItemInfo(this, "RButtonUseTrace", "radiobutton[@controlname='rButtonUseTrace']", 30000, null, "043f7ebd-efe5-49ac-a1da-41a31cc64ea8");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("579708fb-78d2-4af0-a9a6-29bb75132e22")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("579708fb-78d2-4af0-a9a6-29bb75132e22")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ChkCollectEstimatedQueryPlans item.
+            /// </summary>
+            [RepositoryItem("7c2076de-a198-46df-b1f7-46de12aef923")]
+            public virtual Ranorex.CheckBox ChkCollectEstimatedQueryPlans
+            {
+                get
+                {
+                    return _chkcollectestimatedqueryplansInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ChkCollectEstimatedQueryPlans item info.
+            /// </summary>
+            [RepositoryItemInfo("7c2076de-a198-46df-b1f7-46de12aef923")]
+            public virtual RepoItemInfo ChkCollectEstimatedQueryPlansInfo
+            {
+                get
+                {
+                    return _chkcollectestimatedqueryplansInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ChkCollectQueryPlans item.
+            /// </summary>
+            [RepositoryItem("a15cd278-674f-424e-889c-e49392021203")]
+            public virtual Ranorex.CheckBox ChkCollectQueryPlans
+            {
+                get
+                {
+                    return _chkcollectqueryplansInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ChkCollectQueryPlans item info.
+            /// </summary>
+            [RepositoryItemInfo("a15cd278-674f-424e-889c-e49392021203")]
+            public virtual RepoItemInfo ChkCollectQueryPlansInfo
+            {
+                get
+                {
+                    return _chkcollectqueryplansInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RButtonUseTrace item.
+            /// </summary>
+            [RepositoryItem("043f7ebd-efe5-49ac-a1da-41a31cc64ea8")]
+            public virtual Ranorex.RadioButton RButtonUseTrace
+            {
+                get
+                {
+                    return _rbuttonusetraceInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RButtonUseTrace item info.
+            /// </summary>
+            [RepositoryItemInfo("043f7ebd-efe5-49ac-a1da-41a31cc64ea8")]
+            public virtual RepoItemInfo RButtonUseTraceInfo
+            {
+                get
+                {
+                    return _rbuttonusetraceInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SQLdmDesktopClientAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1ad6602d-ccb9-45a2-bf31-905c78fe286e")]
+        public partial class SQLdmDesktopClientAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _propertiesInfo;
+
+            /// <summary>
+            /// Creates a new SQLdmDesktopClient  folder.
+            /// </summary>
+            public SQLdmDesktopClientAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SQLdmDesktopClient", "/contextmenu[@processname='SQLdmDesktopClient']", parentFolder, 30000, null, true, "1ad6602d-ccb9-45a2-bf31-905c78fe286e", "")
+            {
+                _propertiesInfo = new RepoItemInfo(this, "Properties", "menuitem[@accessiblename='Properties...']", 30000, null, "79d06457-8423-4731-b162-bb0035d235f5");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1ad6602d-ccb9-45a2-bf31-905c78fe286e")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1ad6602d-ccb9-45a2-bf31-905c78fe286e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Properties item.
+            /// </summary>
+            [RepositoryItem("79d06457-8423-4731-b162-bb0035d235f5")]
+            public virtual Ranorex.MenuItem Properties
+            {
+                get
+                {
+                    return _propertiesInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Properties item info.
+            /// </summary>
+            [RepositoryItemInfo("79d06457-8423-4731-b162-bb0035d235f5")]
+            public virtual RepoItemInfo PropertiesInfo
+            {
+                get
+                {
+                    return _propertiesInfo;
                 }
             }
         }
