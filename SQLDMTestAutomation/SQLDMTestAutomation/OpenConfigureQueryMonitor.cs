@@ -79,57 +79,42 @@ namespace SQLDMTestAutomation
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\Idera\\Idera SQL diagnostic manager\\SQLdmDesktopClient.exe' with arguments '' in normal mode.", new RecordItemIndex(0));
-            Host.Local.RunApplication("C:\\Program Files\\Idera\\Idera SQL diagnostic manager\\SQLdmDesktopClient.exe", "", "C:\\Program Files\\Idera\\Idera SQL diagnostic manager", false);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
+            Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'Text' to contain the specified value 'SQLDM Today'. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'", repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo, new RecordItemIndex(1));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo.WaitForAttributeContains(5000, "Text", "SQLDM Today");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to exist. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.Queries'", repo.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo, new ActionTimeout(50000), new RecordItemIndex(1));
+            repo.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo.WaitForExists(50000);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(2));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.Server.MoveTo();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(3));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.Server.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 40s to exist. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.Queries'", repo.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo, new ActionTimeout(40000), new RecordItemIndex(4));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo.WaitForExists(40000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo, new RecordItemIndex(2));
             repo.IderaSQLDiagnosticManagerSQLdmRepo.Queries.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo, new RecordItemIndex(3));
             repo.IderaSQLDiagnosticManagerSQLdmRepo.Queries.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.SignatureModeInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.SignatureModeInfo, new RecordItemIndex(4));
             repo.IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.SignatureModeInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.SignatureModeInfo, new RecordItemIndex(5));
             repo.IderaSQLDiagnosticManagerSQLdmRepo.SignatureMode.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(6));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(7));
             repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(8));
             repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(9));
             repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox.MoveTo();
             Delay.Milliseconds(200);
-            
-            ClickeQueryMonitorTraceCheckBox(repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo);
-            Delay.Milliseconds(0);
             
         }
 

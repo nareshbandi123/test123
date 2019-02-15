@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="b02bf310f4b28f8"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/13/2019 6:38:26 AM"
+		timestampiso="2019-02-13T12:38:26"
+		endtime="2/13/2019 6:39:33 AM"
+		timeoutfactor="1"
+		module="VerifyCollectQueryPlansWithInvaildData">
+		<detail>
+			VerifyCollectQueryPlansWithInvaildData
+		</detail>
+		<errormessage>
+			Failed to find item 'SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.896"
+			timeRelativeToTestModuleStartTime="00:02.901"
+			timeWallClock="06:38:29"
+			time="00:02.896"
+			level="Warn"
+			category="Data"
+			errimg=".\VerifyCo_34aecf7_80ffa21e_trace.jpg"
+			errthumb=".\VerifyCo_34aecf7_80ffa21e_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>durationCombo, EnabledValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.934"
+			timeRelativeToTestModuleStartTime="00:02.939"
+			timeWallClock="06:38:29"
+			time="00:02.934"
+			level="Info"
+			category="Invoke action"
+			errimg=".\VerifyCo_34aecf7_fd01a08b_trace.jpg"
+			errthumb=".\VerifyCo_34aecf7_fd01a08b_trace_thumb.jpg">
+			<message>
+				Invoking EnsureVisible() on item 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit' and @controltext='75']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit' and @controltext='75']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.UpDownEdit"
+				id="270a38220209436dae49588334cdc551"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\VerifyCollectQueryPlansWithInvaildData.cs"
+				codeline="108"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:06.715"
+			timeRelativeToTestModuleStartTime="01:06.720"
+			timeWallClock="06:39:32"
+			time="01:06.715"
+			level="Error"
+			category="Module"
+			errimg=".\VerifyCo_34aecf7_ddba6333_trace.jpg"
+			errthumb=".\VerifyCo_34aecf7_ddba6333_trace_thumb.jpg">
+			<message>
+				Failed to find item 'SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.<br/>No element found for path '/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit' and @controltext='75']' within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SQLDMTestAutomation.SQLDMTestAutomationRepositoryFolders.MonitoredSqlServerInstancePropertiesDialAppFolder.get_UpDownEdit() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SQLDMTestAutomationRepository.cs:line 370&#13;&#10;   at SQLDMTestAutomation.VerifyCollectQueryPlansWithInvaildData.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\VerifyCollectQueryPlansWithInvaildData.cs:line 109&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\VerifyCollectQueryPlansWithInvaildData.cs"
+				codeline="109"
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit' and @controltext='75']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit' and @controltext='75']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.UpDownEdit"
+				id="270a38220209436dae49588334cdc551"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>
