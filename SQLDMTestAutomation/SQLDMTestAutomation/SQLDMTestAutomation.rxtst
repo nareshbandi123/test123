@@ -170,7 +170,7 @@ rxversion="8.2">
 			</testmodule>
 			<testcase
 			id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c"
-			name="C164330">
+			name="C164330_Verify_minimum_and_maximum_limit_of_query_plan_count">
 			</testcase>
 			<testmodule
 			id="d635fa76-9a76-4f28-8b00-1d70bf9c0866"
@@ -306,7 +306,7 @@ rxversion="8.2">
 					</testcase>
 					<testcase
 					id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c"
-					name="C164330">
+					name="C164330_Verify_minimum_and_maximum_limit_of_query_plan_count">
 						<testmodule
 						id="ae1eebbd-40ff-42a8-a14a-480f4fd20148"
 						name="LaunchApplication">
