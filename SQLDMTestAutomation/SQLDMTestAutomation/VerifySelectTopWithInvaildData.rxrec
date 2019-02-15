@@ -5,7 +5,7 @@ id="3317ce09-3f34-4b64-ad5c-42f441333426"
 mode="Global"
 rxversion="8.2">
 	<name>
-		VerifySelectByWithInvaildData
+		VerifySelectTopWithInvaildData
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="VerifySelectByWithInvaildData"
+	classname="VerifySelectTopWithInvaildData"
 	namespace="SQLDMTestAutomation">
 	</codegen>
 	<variables>
@@ -6377,7 +6377,7 @@ rxversion="8.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		VerifySelectByWithInvaildData.UserCode.cs
+		VerifySelectTopWithInvaildData.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

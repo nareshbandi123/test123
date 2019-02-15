@@ -24,22 +24,22 @@ namespace SQLDMTestAutomation
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The VerifySelectByWithInvaildData recording.
+    ///The VerifySelectTopWithInvaildData recording.
     /// </summary>
     [TestModule("3317ce09-3f34-4b64-ad5c-42f441333426", ModuleType.Recording, 1)]
-    public partial class VerifySelectByWithInvaildData : ITestModule
+    public partial class VerifySelectTopWithInvaildData : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomationRepository repository.
         /// </summary>
         public static SQLDMTestAutomationRepository repo = SQLDMTestAutomationRepository.Instance;
 
-        static VerifySelectByWithInvaildData instance = new VerifySelectByWithInvaildData();
+        static VerifySelectTopWithInvaildData instance = new VerifySelectTopWithInvaildData();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public VerifySelectByWithInvaildData()
+        public VerifySelectTopWithInvaildData()
         {
             durationCombo = "";
             EnabledValue = "";
@@ -48,7 +48,7 @@ namespace SQLDMTestAutomation
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static VerifySelectByWithInvaildData Instance
+        public static VerifySelectTopWithInvaildData Instance
         {
             get { return instance; }
         }
