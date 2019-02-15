@@ -89,6 +89,15 @@ rxversion="8.2">
 			searchtimeout="30000ms">
 				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//list[@automationid='fileMenu']/picture[@automationid='HeaderPresenter']/text[@caption='File']
 			</item>
+			<item
+			addcaps="treeitem,accessible,accessibletreeitem"
+			capname="treeitem"
+			id="987dd453-196c-49ff-9dc0-4b54ad5225b8"
+			name="AllServers"
+			refimgid="9208daf5-5276-4366-b8a5-6b165e747faa"
+			searchtimeout="30000ms">
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']
+			</item>
 			<basepath>
 				/form[@title~'^Idera\ SQL\ diagnostic\ mana']
 			</basepath>

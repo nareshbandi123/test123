@@ -177,6 +177,18 @@
       <UserCode>true</UserCode>
       <id>26182250-7151-4868-aff7-e1d506a7fca8</id>
     </Compile>
+    <Compile Include="ListOfServers.cs">
+      <BoundTo>f454fd29-d88a-4255-9095-4b7de90cae0b</BoundTo>
+      <DependentUpon>ListOfServers.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>326fba18-8602-4d61-a28f-8d535511f822</id>
+    </Compile>
+    <Compile Include="ListOfServers.UserCode.cs">
+      <BoundTo>f454fd29-d88a-4255-9095-4b7de90cae0b</BoundTo>
+      <DependentUpon>ListOfServers.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a2b3d84a-9684-4d2b-8afa-627e9a763db6</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>941b7748-11d2-48c6-9a3d-bf2023f1bcca</id>
     </Compile>
@@ -326,6 +338,11 @@
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>48d2f75e-153f-47c6-ad5f-19d9774f4d12</id>
       <recordtableid>73fb0df9-782d-480a-b57f-0e0513e3249c</recordtableid>
+    </None>
+    <None Include="ListOfServers.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>f454fd29-d88a-4255-9095-4b7de90cae0b</id>
+      <recordtableid>cd7340b8-4836-440c-9e77-d6f24d4e7b66</recordtableid>
     </None>
     <None Include="OpenConfigureQueryMonitor.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>

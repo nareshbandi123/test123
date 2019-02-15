@@ -92,6 +92,12 @@ rxversion="8.2">
 			name="SQLDMTestAutomation"
 			reportlevel="Info;20">
 			</testcase>
+			<testmodule
+			id="88979ebe-cae4-4250-9d61-95e8c41387cc"
+			name="ListOfServers"
+			ref="cd7340b8-4836-440c-9e77-d6f24d4e7b66"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="90e94efc-cb71-43df-8101-852aab6dfa32"
 			name="C164221_Verify_invalid_data_in_collect_query_plans_count">
@@ -170,7 +176,7 @@ rxversion="8.2">
 			</testmodule>
 			<testcase
 			id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c"
-			name="C164330">
+			name="C164330_Verify_minimum_and_maximum_limit_of_query_plan_count">
 			</testcase>
 			<testmodule
 			id="d635fa76-9a76-4f28-8b00-1d70bf9c0866"
@@ -186,10 +192,14 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="e156f53c-ecbb-4011-901a-41ad08bfa54c"
-			name="VerifySelectByWithInvaildData"
+			name="VerifySelectTopWithInvaildData"
 			ref="3317ce09-3f34-4b64-ad5c-42f441333426"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="f21c16db-3a32-4468-8572-516c7c0e8f42"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="fb62f605-72f8-44c6-b037-756d5415f83c"
 			name="VerifyCollectQueryPlansToBeDisabled"
@@ -249,7 +259,7 @@ rxversion="8.2">
 						</testmodule>
 						<testmodule
 						id="e156f53c-ecbb-4011-901a-41ad08bfa54c"
-						name="VerifySelectByWithInvaildData">
+						name="VerifySelectTopWithInvaildData">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -303,10 +313,14 @@ rxversion="8.2">
 					<testcase
 					id="7697ca61-cff1-4df0-a8a4-a58c5b60e97e"
 					name="C164874">
+						<testmodule
+						id="88979ebe-cae4-4250-9d61-95e8c41387cc"
+						name="ListOfServers">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c"
-					name="C164330">
+					name="C164330_Verify_minimum_and_maximum_limit_of_query_plan_count">
 						<testmodule
 						id="ae1eebbd-40ff-42a8-a14a-480f4fd20148"
 						name="LaunchApplication">
@@ -327,6 +341,10 @@ rxversion="8.2">
 						id="dc7ec189-dde7-4ead-acbf-94ed5db92f38"
 						name="VerifySelectTopForMinMaxValues">
 						</testmodule>
+						<teardown
+						id="f21c16db-3a32-4468-8572-516c7c0e8f42"
+						name="teardown">
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -339,10 +357,10 @@ rxversion="8.2">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
+			id="7697ca61-cff1-4df0-a8a4-a58c5b60e97e">
 			</testcontainer>
 			<testcontainer
-			id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c">
+			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

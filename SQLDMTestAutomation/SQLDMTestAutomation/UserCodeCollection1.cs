@@ -29,6 +29,27 @@ namespace SQLDMTestAutomation
         // You can use the "Insert New User Code Method" functionality from the context menu,
         // to add a new method with the attribute [UserCodeMethod].
         
-        
+        /// <summary>
+    /// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
+    /// </summary>
+	    [UserCodeCollection]
+	    public class CleanUpActivity
+	    {
+	        // You can use the "Insert New User Code Method" functionality from the context menu,
+	        // to add a new method with the attribute [UserCodeMethod].
+	        
+	        [UserCodeMethod]
+	        public static void CleanUp()
+	        {
+	           IList<Ranorex.WebDocument> AllDoms = Host.Local.FindChildren<Ranorex.WebDocument>();
+			   if (AllDoms.Count >=1)
+			   {
+				  foreach (WebDocument myDom in AllDoms)
+				  {
+				     myDom.Close();
+				  }            
+			   }
+	        }
+	    }
     }
 }

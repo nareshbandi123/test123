@@ -33,5 +33,10 @@ namespace SQLDMTestAutomation
             // Your recording specific initialization code goes here.
         }
 
+        public void Report_Log()
+        {
+            Report.Log(ReportLevel.Info, "User", durationCombo);
+        }
+
     }
 }

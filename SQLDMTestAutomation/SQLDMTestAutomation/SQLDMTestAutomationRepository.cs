@@ -159,6 +159,7 @@ namespace SQLDMTestAutomation
             RepoItemInfo _configurequerymonitorInfo;
             RepoItemInfo _sqldmtodayInfo;
             RepoItemInfo _fileInfo;
+            RepoItemInfo _allserversInfo;
 
             /// <summary>
             /// Creates a new IderaSQLDiagnosticManagerSQLdmRepo  folder.
@@ -173,6 +174,7 @@ namespace SQLDMTestAutomation
                 _configurequerymonitorInfo = new RepoItemInfo(this, "ConfigureQueryMonitor", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button", 30000, null, "7e4be6b1-77be-424f-a4b6-f25c97eedbd3");
                 _sqldmtodayInfo = new RepoItemInfo(this, "SQLDMToday", ".//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']", 30000, null, "0a7c7718-a970-47cf-bbda-cba2e04e6f8a");
                 _fileInfo = new RepoItemInfo(this, "File", ".//list[@automationid='fileMenu']/picture[@automationid='HeaderPresenter']/text[@caption='File']", 30000, null, "05f70e7c-9d06-44b4-ab0c-996f4ef92559");
+                _allserversInfo = new RepoItemInfo(this, "AllServers", ".//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']", 30000, null, "987dd453-196c-49ff-9dc0-4b54ad5225b8");
             }
 
             /// <summary>
@@ -364,6 +366,30 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _fileInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AllServers item.
+            /// </summary>
+            [RepositoryItem("987dd453-196c-49ff-9dc0-4b54ad5225b8")]
+            public virtual Ranorex.TreeItem AllServers
+            {
+                get
+                {
+                    return _allserversInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AllServers item info.
+            /// </summary>
+            [RepositoryItemInfo("987dd453-196c-49ff-9dc0-4b54ad5225b8")]
+            public virtual RepoItemInfo AllServersInfo
+            {
+                get
+                {
+                    return _allserversInfo;
                 }
             }
         }
