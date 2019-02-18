@@ -481,6 +481,15 @@ MCAkAvg45OZFFP0BkKl1OzwGJwEAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@controlname='AddServersWizard']//container[@controlname='featuresGroupBox']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']
 			</item>
+			<item
+			addcaps="container,control,nativewindow"
+			capname="combobox"
+			id="7c306c03-79c2-4df9-9238-e4c2a5591a2f"
+			name="PlansBy"
+			refimgid="8eee398b-1de4-444f-8d51-a458b8c5a54b"
+			searchtimeout="30000ms">
+				/form[@controlname='AddServersWizard']//container[@controlname='featuresGroupBox']/container[@controlname='groupBox5']//combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']
+			</item>
 			<basepath>
 				/form[@controlname='AddServersWizard']
 			</basepath>
@@ -502,7 +511,7 @@ MCAkAvg45OZFFP0BkKl1OzwGJwEAAAAASUVORK5CYII=
 		<var
 		id="1414cc25-97b1-4e47-ab61-5d306e2f14c6"
 		name="ServerName">
-			JS-XW7S8\SQL2008
+			JS-XW7S9\SQL2008
 		</var>
 	</variables>
 </repository>

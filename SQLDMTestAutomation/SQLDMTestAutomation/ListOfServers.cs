@@ -79,7 +79,7 @@ namespace SQLDMTestAutomation
 
             Init();
 
-            GetAllServers(repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo);
+            GetAllServers(repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo, "");
             Delay.Milliseconds(0);
             
         }

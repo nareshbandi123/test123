@@ -4,9 +4,21 @@ rxversion="8.2">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="01f4ce98-14dc-4018-a239-ba25c3530780"
+			name="AddServerAndVerifyQueryPlanOptionEnabled"
+			ref="0d45aeec-90f8-4043-a0cf-91a511febd51"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="03deb406-eaa9-4241-9875-ccd99db255fa"
 			name="SelectServer"
 			ref="24f6bd52-083e-4e49-bf06-cf2fe2ae5d7d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="069d2660-93a6-4c4d-8565-8732b41fdf2a"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -85,7 +97,7 @@ rxversion="8.2">
 			</testmodule>
 			<testcase
 			id="7697ca61-cff1-4df0-a8a4-a58c5b60e97e"
-			name="C164874">
+			name="C164874_Select_two_2008_version_instances_for_monitoring_and_verify_query_plan_options_are_enabled">
 			</testcase>
 			<testcase
 			id="82b404ba-e93a-4aee-bc5a-594531d73f3d"
@@ -93,6 +105,7 @@ rxversion="8.2">
 			reportlevel="Info;20">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="88979ebe-cae4-4250-9d61-95e8c41387cc"
 			name="ListOfServers"
 			ref="cd7340b8-4836-440c-9e77-d6f24d4e7b66"
@@ -132,6 +145,10 @@ rxversion="8.2">
 			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
 			type="Recording">
 			</testmodule>
+			<setup
+			id="aeb81b82-e9f2-4259-9623-3b110e5a510f"
+			name="setup">
+			</setup>
 			<testmodule
 			id="aeecdac9-725c-4e56-a930-071f3fb1c659"
 			name="LaunchApplication"
@@ -174,10 +191,21 @@ rxversion="8.2">
 			ref="e9af3f9e-4660-4843-b348-38b7b394de7f"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="c88408a3-5c31-449a-8b2c-82eccf797bc0"
+			name="teardown">
+			</teardown>
 			<testcase
 			id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c"
 			name="C164330_Verify_minimum_and_maximum_limit_of_query_plan_count">
 			</testcase>
+			<testmodule
+			enabled="False"
+			id="d2e52cd5-6511-4c12-b2d2-ff46ea3f3c96"
+			name="SelectServer"
+			ref="24f6bd52-083e-4e49-bf06-cf2fe2ae5d7d"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="d635fa76-9a76-4f28-8b00-1d70bf9c0866"
 			name="SelectSever2017Properties"
@@ -214,6 +242,10 @@ rxversion="8.2">
 				<testcase
 				id="82b404ba-e93a-4aee-bc5a-594531d73f3d"
 				name="SQLDMTestAutomation">
+					<setup
+					id="aeb81b82-e9f2-4259-9623-3b110e5a510f"
+					name="setup">
+					</setup>
 					<testcase
 					id="4b707232-d784-46fb-8e86-b55bfcb92ff5"
 					name="C164220_Verify_default_value_for_Select_top_and_Plans_by">
@@ -312,10 +344,22 @@ rxversion="8.2">
 					</testcase>
 					<testcase
 					id="7697ca61-cff1-4df0-a8a4-a58c5b60e97e"
-					name="C164874">
+					name="C164874_Select_two_2008_version_instances_for_monitoring_and_verify_query_plan_options_are_enabled">
+						<testmodule
+						id="069d2660-93a6-4c4d-8565-8732b41fdf2a"
+						name="LaunchApplication">
+						</testmodule>
+						<testmodule
+						id="d2e52cd5-6511-4c12-b2d2-ff46ea3f3c96"
+						name="SelectServer">
+						</testmodule>
 						<testmodule
 						id="88979ebe-cae4-4250-9d61-95e8c41387cc"
 						name="ListOfServers">
+						</testmodule>
+						<testmodule
+						id="01f4ce98-14dc-4018-a239-ba25c3530780"
+						name="AddServerAndVerifyQueryPlanOptionEnabled">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -346,6 +390,10 @@ rxversion="8.2">
 						name="teardown">
 						</teardown>
 					</testcase>
+					<teardown
+					id="c88408a3-5c31-449a-8b2c-82eccf797bc0"
+					name="teardown">
+					</teardown>
 				</testcase>
 			</testsuite>
 		</childhierarchy>

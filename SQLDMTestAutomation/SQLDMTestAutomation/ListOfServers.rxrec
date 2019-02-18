@@ -33,7 +33,7 @@ rxversion="8.2">
 		classname="ListOfServers"
 		enabled="True"
 		isexternaltestmethod="False"
-		methodname="Mouse_Click_AllServers"
+		methodname="GetAllServers"
 		namespace="SQLDMTestAutomation"
 		optional="False"
 		varname="">
@@ -58,6 +58,15 @@ rxversion="8.2">
 							/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']
 						</path>
 					</info>
+				</argument>
+				<argument
+				argname="argument1"
+				id="b38037f2-631d-4ec0-9108-931bfc47d768">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>

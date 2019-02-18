@@ -59,7 +59,7 @@ namespace SQLDMTestAutomation
 
 #region Variables
 
-        string _ServerName = "JS-XW7S8\\SQL2008";
+        string _ServerName = "JS-XW7S9\\SQL2008";
 
         /// <summary>
         /// Gets or sets the value of variable ServerName.
@@ -952,6 +952,7 @@ namespace SQLDMTestAutomation
             RepoItemInfo _nextbuttonInfo;
             RepoItemInfo _textInfo;
             RepoItemInfo _enablequerymonitortracecheckboxInfo;
+            RepoItemInfo _plansbyInfo;
 
             /// <summary>
             /// Creates a new AddServersWizard  folder.
@@ -962,6 +963,7 @@ namespace SQLDMTestAutomation
                 _nextbuttonInfo = new RepoItemInfo(this, "NextButton", "?/?/button[@controlname='xb0664f16ddb81b92']", 30000, null, "2c7b0c01-2557-489d-82be-bcdd1a4deb4d");
                 _textInfo = new RepoItemInfo(this, "Text", ".//text[@controlname='adhocInstancesTextBox']/text[@accessiblerole='Text']", 30000, null, "f0327c10-63af-4042-a0b1-dc97a5ecffee");
                 _enablequerymonitortracecheckboxInfo = new RepoItemInfo(this, "EnableQueryMonitorTraceCheckBox", ".//container[@controlname='featuresGroupBox']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']", 30000, null, "343f62f3-1c7e-4797-a86f-7f69bc01046c");
+                _plansbyInfo = new RepoItemInfo(this, "PlansBy", ".//container[@controlname='featuresGroupBox']/container[@controlname='groupBox5']//combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']", 30000, null, "7c306c03-79c2-4df9-9238-e4c2a5591a2f");
             }
 
             /// <summary>
@@ -1057,6 +1059,30 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _enablequerymonitortracecheckboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PlansBy item.
+            /// </summary>
+            [RepositoryItem("7c306c03-79c2-4df9-9238-e4c2a5591a2f")]
+            public virtual Ranorex.ComboBox PlansBy
+            {
+                get
+                {
+                    return _plansbyInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PlansBy item info.
+            /// </summary>
+            [RepositoryItemInfo("7c306c03-79c2-4df9-9238-e4c2a5591a2f")]
+            public virtual RepoItemInfo PlansByInfo
+            {
+                get
+                {
+                    return _plansbyInfo;
                 }
             }
         }

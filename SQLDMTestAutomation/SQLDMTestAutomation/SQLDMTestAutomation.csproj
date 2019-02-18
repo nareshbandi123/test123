@@ -114,15 +114,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddServer.cs">
+    <Compile Include="AddServerAndVerifyQueryPlanOptionEnabled.cs">
       <BoundTo>b38bcf1d-64f0-4c57-9761-44e93ca54461</BoundTo>
-      <DependentUpon>AddServer.rxrec</DependentUpon>
+      <DependentUpon>AddServerAndVerifyQueryPlanOptionEnabled.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>f9f37b9c-a01a-4005-8018-9e905bfb93c3</id>
     </Compile>
-    <Compile Include="AddServer.UserCode.cs">
+    <Compile Include="AddServerAndVerifyQueryPlanOptionEnabled.UserCode.cs">
       <BoundTo>b38bcf1d-64f0-4c57-9761-44e93ca54461</BoundTo>
-      <DependentUpon>AddServer.rxrec</DependentUpon>
+      <DependentUpon>AddServerAndVerifyQueryPlanOptionEnabled.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>890a4da9-62c0-4a23-95c1-b35a9eefff5f</id>
     </Compile>
@@ -311,7 +311,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="AddServer.rxrec">
+    <None Include="AddServerAndVerifyQueryPlanOptionEnabled.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>b38bcf1d-64f0-4c57-9761-44e93ca54461</id>
       <recordtableid>0d45aeec-90f8-4043-a0cf-91a511febd51</recordtableid>

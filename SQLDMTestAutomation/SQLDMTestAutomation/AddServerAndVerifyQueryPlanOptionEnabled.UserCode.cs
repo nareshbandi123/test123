@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SQLDMTestAutomation
 {
-    public partial class AddServer
+    public partial class AddServerAndVerifyQueryPlanOptionEnabled
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

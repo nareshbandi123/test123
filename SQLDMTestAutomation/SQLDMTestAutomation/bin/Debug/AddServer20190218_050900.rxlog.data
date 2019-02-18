@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="30.51s"
+		durationms="30509"
+		type="root"
+		rid="1f2dc0fcb089558d"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/18/2019 5:09:05 AM"
+		timestampiso="2019-02-18T11:09:05"
+		endtime="2/18/2019 5:09:35 AM"
+		timeoutfactor="1"
+		module="AddServer">
+		<detail>
+			AddServer
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.101"
+			timeRelativeToTestModuleStartTime="00:02.106"
+			timeWallClock="05:09:07"
+			time="00:02.101"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>ServerName
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.150"
+			timeRelativeToTestModuleStartTime="00:02.155"
+			timeWallClock="05:09:07"
+			time="00:02.150"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.File' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//list[@automationid='fileMenu']/picture[@automationid='HeaderPresenter']/text[@caption='File']"
+				itempath=".//list[@automationid='fileMenu']/picture[@automationid='HeaderPresenter']/text[@caption='File']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.File"
+				id="05f70e7c9d0644b4ab0c996f4ef92559"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\AddServer.cs"
+				codeline="93"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.656"
+			timeRelativeToTestModuleStartTime="00:07.661"
+			timeWallClock="05:09:12"
+			time="00:07.656"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'SomeContextMenu.ManageServers' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/contextmenu/menuitem[@automationid='menuFileManageServers']//text[@caption='Manage Servers...']"
+				itempath="menuitem[@automationid='menuFileManageServers']//text[@caption='Manage Servers...']"
+				fullname="SQLDMTestAutomationRepository.SomeContextMenu.ManageServers"
+				id="ced467c126c74b81bf56fe2819fab370"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\AddServer.cs"
+				codeline="97"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.001"
+			timeRelativeToTestModuleStartTime="00:09.006"
+			timeWallClock="05:09:14"
+			time="00:09.001"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ManageServersDialog.AddButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='ManageServersDialog']/button[@controlname='addButton']"
+				itempath="button[@controlname='addButton']"
+				fullname="SQLDMTestAutomationRepository.ManageServersDialog.AddButton"
+				id="0f0bc92e84f34e7a96e1eb0d5c610ef5"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\AddServer.cs"
+				codeline="101"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:30.508"
+			timeRelativeToTestModuleStartTime="00:30.513"
+			timeWallClock="05:09:35"
+			time="00:30.508"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

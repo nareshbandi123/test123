@@ -33,7 +33,7 @@ namespace SQLDMTestAutomation
             // Your recording specific initialization code goes here.
         }
 
-        public void AllServers(RepoItemInfo treeitemInfo)
+        public void GetAllServers(RepoItemInfo treeitemInfo, string argument1)
         {
             bool isFound;
         	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'treeitemInfo' at Center.", treeitemInfo);

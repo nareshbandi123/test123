@@ -50,6 +50,17 @@ namespace SQLDMTestAutomation
 				  }            
 			   }
 	        }
+	        
+//	        [UserCodeMethod]
+//		    public void ClickQueryMonitorTraceCheckBox(RepoItemInfo checkboxInfo)
+//	        {
+//	            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'checkboxInfo' at Center.", checkboxInfo);
+//	            if (!(checkboxInfo.FindAdapter<CheckBox>().Checked))
+//	            {
+//	            	checkboxInfo.FindAdapter<CheckBox>().Click();
+//	            }
+//	        }
+	    
 	    }
     }
 }
