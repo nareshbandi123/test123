@@ -105,51 +105,55 @@ namespace SQLDMTestAutomation
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ManageServersDialog.AddButton' at Center.", repo.ManageServersDialog.AddButtonInfo, new RecordItemIndex(4));
-            repo.ManageServersDialog.AddButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'ManageServersDialog.AddButton' at Center.", repo.ManageServersDialog.AddButtonInfo, new RecordItemIndex(4));
+            repo.ManageServersDialog.AddButton.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(5));
-            repo.AddServersWizard.NextButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ManageServersDialog.AddButton' at Center.", repo.ManageServersDialog.AddButtonInfo, new RecordItemIndex(5));
+            repo.ManageServersDialog.AddButton.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(6));
             repo.AddServersWizard.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$ServerName' on item 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(7));
-            repo.AddServersWizard.Text.Element.SetAttributeValue("Text", ServerName);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(8));
-            repo.AddServersWizard.Text.PressKeys("{ENTER}");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$ServerName' on item 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(9));
-            repo.AddServersWizard.Text.Element.SetAttributeValue("Text", ServerName);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(10));
-            repo.AddServersWizard.Text.PressKeys("{ENTER}");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(7));
             repo.AddServersWizard.NextButton.Click();
             Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$ServerName' on item 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(8));
+            repo.AddServersWizard.Text.Element.SetAttributeValue("Text", ServerName);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(9));
+            repo.AddServersWizard.Text.PressKeys("{ENTER}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$ServerName' on item 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(10));
+            repo.AddServersWizard.Text.Element.SetAttributeValue("Text", ServerName);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(11));
+            repo.AddServersWizard.Text.PressKeys("{ENTER}");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(12));
             repo.AddServersWizard.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(13));
+            repo.AddServersWizard.NextButton.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(14));
             repo.AddServersWizard.EnableQueryMonitorTraceCheckBox.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(15));
             repo.AddServersWizard.EnableQueryMonitorTraceCheckBox.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Duration (milliseconds)') on item 'AddServersWizard.PlansBy'.", repo.AddServersWizard.PlansByInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Duration (milliseconds)') on item 'AddServersWizard.PlansBy'.", repo.AddServersWizard.PlansByInfo, new RecordItemIndex(16));
             Validate.AttributeEqual(repo.AddServersWizard.PlansByInfo, "Text", "Duration (milliseconds)");
             Delay.Milliseconds(0);
             

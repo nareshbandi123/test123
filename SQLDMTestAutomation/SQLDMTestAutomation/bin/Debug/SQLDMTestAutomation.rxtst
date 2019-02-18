@@ -66,7 +66,11 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testcase
+			datarangeactive="True"
+			datasource="ServerList"
 			id="4b707232-d784-46fb-8e86-b55bfcb92ff5"
+			maxrange="0"
+			minrange="0"
 			name="C164220_Verify_default_value_for_Select_top_and_Plans_by">
 			</testcase>
 			<testsuite
@@ -120,6 +124,14 @@ rxversion="8.2">
 			name="SelectServer"
 			ref="24f6bd52-083e-4e49-bf06-cf2fe2ae5d7d"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="ServerName"
+					datasourceid="b99c958d-d010-43d5-b9f2-01f67fc4cfea"
+					variableid="1414cc25-97b1-4e47-ab61-5d306e2f14c6"
+					variablename="ServerName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="9cad8b9b-1b1a-4823-860d-57e4780094f1"
@@ -399,13 +411,31 @@ rxversion="8.2">
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="b99c958d-d010-43d5-b9f2-01f67fc4cfea"
+		includefile="Checked"
+		lastknownrowcount="6"
+		name="ServerList"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					ServerName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				ServerList.csv
+			</file>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="7697ca61-cff1-4df0-a8a4-a58c5b60e97e">
+			id="4b707232-d784-46fb-8e86-b55bfcb92ff5">
 			</testcontainer>
 			<testcontainer
 			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">

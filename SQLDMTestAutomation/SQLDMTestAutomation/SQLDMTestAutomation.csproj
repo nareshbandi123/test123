@@ -311,6 +311,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\Desktop\New folder\ServerList.csv">
+      <Link>Testdata\ServerList.csv</Link>
+      <id>ea74f448-42ca-4477-a6e8-102fa81cb4d9</id>
+    </None>
     <None Include="AddServerAndVerifyQueryPlanOptionEnabled.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>b38bcf1d-64f0-4c57-9761-44e93ca54461</id>
@@ -364,6 +368,13 @@
       <id>89fdfa42-3254-4ac1-bf7f-5de7aeb29bab</id>
       <recordtableid>01b3441a-f0cc-40a2-a450-4183372c0d20</recordtableid>
     </None>
+    <Content Include="ServerList.csv">
+      <Link>ServerList.csv</Link>
+      <BoundTo>f9a5d275-c087-4e96-bea8-80a033b4d756</BoundTo>
+      <DependentUpon>SQLDMTestAutomation.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>f2c4700b-321e-4ace-9420-7cd839835804</id>
+    </Content>
     <None Include="VerifyCollectQueryPlansToBeDisabled.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>b10fcf68-3e6e-429f-b105-1bf8ada48c26</id>
@@ -410,6 +421,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>f9a5d275-c087-4e96-bea8-80a033b4d756</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Testdata">
+      <id>8b19cf57-4559-4c1b-8e00-45ec066389a3</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

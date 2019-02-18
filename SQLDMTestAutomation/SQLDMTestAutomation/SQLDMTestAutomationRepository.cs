@@ -167,7 +167,7 @@ namespace SQLDMTestAutomation
             public IderaSQLDiagnosticManagerSQLdmRepoAppFolder(RepoGenBaseFolder parentFolder) :
                     base("IderaSQLDiagnosticManagerSQLdmRepo", "/form[@title~'^Idera\\ SQL\\ diagnostic\\ mana']", parentFolder, 30000, null, true, "b4fb3fbf-37f1-4ea8-8a05-407ab9741ac6", "")
             {
-                _serverInfo = new RepoItemInfo(this, "Server", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "82a5fa7d-86df-4386-9bd7-f49949e40f8c");
+                _serverInfo = new RepoItemInfo(this, "Server", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "82a5fa7d-86df-4386-9bd7-f49949e40f8c");
                 _server2017Info = new RepoItemInfo(this, "Server2017", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='WIN10SQL17']", 30000, null, "91a07a90-ff45-494a-aafc-f9ea7cf33825");
                 _queriesInfo = new RepoItemInfo(this, "Queries", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']", 30000, null, "d2bb192f-687c-484a-a185-49989a0e9c96");
                 _signaturemodeInfo = new RepoItemInfo(this, "SignatureMode", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[1]", 30000, null, "08b3cbe5-42ce-445e-b40a-bcb102c74100");

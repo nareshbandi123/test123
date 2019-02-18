@@ -16,3 +16,4 @@ C:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutom
 C:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.csprojResolveAssemblyReference.cache
 C:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.exe
 C:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.pdb
+C:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\bin\Debug\ServerList.csv
