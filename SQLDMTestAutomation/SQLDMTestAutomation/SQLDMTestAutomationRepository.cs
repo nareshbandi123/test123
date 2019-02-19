@@ -406,7 +406,6 @@ namespace SQLDMTestAutomation
             RepoItemInfo _updowneditInfo;
             RepoItemInfo _comboboxInfo;
             RepoItemInfo _okbuttonInfo;
-            RepoItemInfo _closeInfo;
             RepoItemInfo _listitemInfo;
 
             /// <summary>
@@ -421,7 +420,6 @@ namespace SQLDMTestAutomation
                 _updowneditInfo = new RepoItemInfo(this, "UpDownEdit", "container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']", 30000, null, "270a3822-0209-436d-ae49-588334cdc551");
                 _comboboxInfo = new RepoItemInfo(this, "ComboBox", "container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/element[@controlname='topPlanComboBox']/combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']", 30000, null, "dc5ee464-4a79-4cc9-8181-792c0936f114");
                 _okbuttonInfo = new RepoItemInfo(this, "OkButton", "button[@controlname='okButton']", 30000, null, "a9de51d9-a3bf-4e60-9edc-68fd0f899217");
-                _closeInfo = new RepoItemInfo(this, "Close", ".//button[@accessiblename='Close']", 30000, null, "4731fda8-dfb2-43d2-ba64-1134e4693af3");
                 _listitemInfo = new RepoItemInfo(this, "ListItem", "container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']//listitem[@index='2']", 30000, null, "b6de4d46-b632-483a-a92e-906aaba2138a");
             }
 
@@ -566,30 +564,6 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _okbuttonInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Close item.
-            /// </summary>
-            [RepositoryItem("4731fda8-dfb2-43d2-ba64-1134e4693af3")]
-            public virtual Ranorex.Button Close
-            {
-                get
-                {
-                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Close item info.
-            /// </summary>
-            [RepositoryItemInfo("4731fda8-dfb2-43d2-ba64-1134e4693af3")]
-            public virtual RepoItemInfo CloseInfo
-            {
-                get
-                {
-                    return _closeInfo;
                 }
             }
 

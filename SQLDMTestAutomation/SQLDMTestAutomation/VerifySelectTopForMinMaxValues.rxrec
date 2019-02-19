@@ -1779,7 +1779,7 @@ rxversion="8.2">
 		</keysequenceitem>
 		<explicitdelayitem
 		duration="4000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -1787,10 +1787,30 @@ rxversion="8.2">
 			</bindings>
 		</explicitdelayitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="5f1bad5d-f53e-458d-a476-3518ecde54df"
 		waitaction="Exists"
+		waittimeout="40000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7e4be6b1-77be-424f-a4b6-f25c97eedbd3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Visible"
+		matchvalue="True"
+		optional="False"
+		searchpropertyid="5f1bad5d-f53e-458d-a476-3518ecde54df"
+		waitaction="AttributeEqual"
 		waittimeout="40000ms">
 			<comment>
 			</comment>
