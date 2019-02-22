@@ -39,20 +39,24 @@ namespace SQLDMTestAutomation
         	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'treeitemInfo' at Center.", treeitemInfo);
             //treeitemInfo.FindAdapter<TreeItem>().Click();
             
-            isFound = GetItem(repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServers, @"JS-XW7S8\SQL2008", false);
+            isFound = GetItem(repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServers, @"JS-XW7S8\SQL2008");
             //Report.Log(ReportLevel.Info, "", "Server Found ? = ", isFound);
             //if(isFound) string ss = "found"
             string report = Convert.ToString(isFound) ;
             Report.Log(ReportLevel.Info, "User",report);
         }
         
-        public static bool GetItem(Ranorex.TreeItem treeitem, string givenServer, bool isExpand = true)
+        public static bool GetItem(Ranorex.TreeItem treeitem, string givenServer)
         {
         	TreeItem item = null; bool isFound = false;
         	try 
         	{
 	        	foreach (var itemtree in treeitem.Items)
 	        	{
+	        		if(itemtree.Expanded)
+	        		{
+	        			itemtree.Collapse();
+	        		}
 	        		if(itemtree.Text.Trim() == givenServer)
 	    			{ 
 						/*if(isExpand)

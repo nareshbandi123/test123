@@ -19,6 +19,7 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
+using System.Diagnostics;
 
 namespace SQLDMTestAutomation
 {
@@ -33,5 +34,24 @@ namespace SQLDMTestAutomation
             // Your recording specific initialization code goes here.
         }
 
+        public void LaunchApplication_Run_application(RepoItemInfo textInfo)
+        {
+        	Process[] processByName = Process.GetProcessesByName("SQLdmDesktopClient");
+        	if (processByName.Length == 0)
+        	{
+	            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\Idera\\Idera SQL diagnostic manager\\SQLdmDesktopClient.exe' with arguments '' in normal mode.");
+	            Host.Local.RunApplication("C:\\Program Files\\Idera\\Idera SQL diagnostic manager\\SQLdmDesktopClient.exe", "", "C:\\Program Files\\Idera\\Idera SQL diagnostic manager", false);
+	            
+	            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'Text' to contain the specified value 'SQLDM Today'. Associated repository item: 'textInfo'", textInfo);
+            	textInfo.WaitForAttributeContains(5000, "Text", "SQLDM Today");
+            	
+            	Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.");
+            	Delay.Duration(5000, false);
+        	}
+        }
+
+      
+
+      
     }
 }

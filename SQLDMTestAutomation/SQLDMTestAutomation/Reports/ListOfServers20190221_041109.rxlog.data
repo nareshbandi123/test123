@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="18b612c5f2d01c1c"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/21/2019 4:11:15 AM"
+		timestampiso="2019-02-21T10:11:15"
+		endtime="2/21/2019 4:11:24 AM"
+		timeoutfactor="1"
+		module="ListOfServers">
+		<detail>
+			ListOfServers
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.264"
+			timeRelativeToTestModuleStartTime="00:03.273"
+			timeWallClock="04:11:18"
+			time="00:03.264"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'treeitemInfo' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='All Servers']"
+				itempath=".//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='All Servers']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.AllServers"
+				id="987dd453196c49ff9dc04b54ad5225b8"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\ListOfServers.UserCode.cs"
+				codeline="39"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.929"
+			timeRelativeToTestModuleStartTime="00:08.937"
+			timeWallClock="04:11:24"
+			time="00:08.929"
+			level="Info"
+			category="User">
+			<message>
+				True
+			</message>
+			<metainfo
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\ListOfServers.UserCode.cs"
+				codeline="46"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

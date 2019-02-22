@@ -1,22 +1,35 @@
 ﻿<Properties>
+  <Array name="active">
+    <Element value="CloseMonitoredSqlServerWindow.rxrec" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="CloseMonitoredSqlServerWindow.UserCode.cs" />
+    <Element value="SQLDMTestAutomationRepository.rxrep" />
+    <Element value="CloseMonitoredSqlServerWindow.rxrec" />
+    <Element value="ListOfServers.UserCode.cs" />
+    <Element value="ListOfServers.rxrec" />
+    <Element value="UserCodeCollection1.cs" />
+    <Element value="UserCodeModule1.cs" />
+    <Element value="VerifySelectTopForMinMaxValues.rxrec" />
+    <Element value="VerifySelectTopWithInvaildData.rxrec" />
+    <Element value="SQLDMTestAutomation.rxtst" />
+    <Element value="VerifySelectByAndPlansBy.rxrec" />
     <Element value="OpenConfigureQueryMonitor.rxrec" />
     <Element value="SelectServer.rxrec" />
-    <Element value="SQLDMTestAutomation.rxtst" />
     <Element value="EnableQueryMonitor.UserCode.cs" />
     <Element value="EnableQueryMonitor.rxrec" />
     <Element value="DisableQueryMonitor.UserCode.cs" />
     <Element value="DisableQueryMonitor.rxrec" />
     <Element value="VerifyCollectQueryPlansToBeDisabled.rxrec" />
     <Element value="EnableQueryMonitor.cs" />
-    <Element value="VerifyCollectQueryPlansWithInvaildData.rxrec" />
-    <Element value="VerifyCollectQueryPlans.rxrec" />
-    <Element value="SQLDMTestAutomationRepository.rxrep" />
     <Element value="OpenConfigureQueryMonitor.cs" />
     <Element value="LaunchApplication.rxrec" />
   </Array>
   <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
     <Array name="recentusercodeselections">
       <Element value="SQLDMTestAutomation.DisableQueryMonitor.DisableQueryMonitorTraceCheckBox(RepoItemInfo checkboxInfo)" />
       <Element value="SQLDMTestAutomation.OpenConfigureQueryMonitor.ClickQueryMonitorTraceCheckBox(RepoItemInfo checkboxInfo)" />

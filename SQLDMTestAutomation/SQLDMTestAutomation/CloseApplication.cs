@@ -79,6 +79,16 @@ namespace SQLDMTestAutomation
 
             Init();
 
+            //Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'IderaSQLDiagnosticManagerSQLdmRepo'.", repo.IderaSQLDiagnosticManagerSQLdmRepo.SelfInfo, new RecordItemIndex(0));
+            //Host.Current.CloseApplication(repo.IderaSQLDiagnosticManagerSQLdmRepo.Self, 2000);
+            //Delay.Milliseconds(0);
+            
+            UserCodeCollection1.KillApplicationProcess();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
+            Delay.Duration(5000, false);
+            
         }
 
 #region Image Feature Data

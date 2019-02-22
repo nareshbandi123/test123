@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="362bdf1f1b07a96a"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/19/2019 5:46:04 AM"
+		timestampiso="2019-02-19T11:46:04"
+		endtime="2/19/2019 5:47:38 AM"
+		timeoutfactor="1"
+		module="CloseMonitoredSqlServerWindow">
+		<detail>
+			CloseMonitoredSqlServerWindow
+		</detail>
+		<errormessage>
+			Failed to find item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.AllServers'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:33.113"
+			timeRelativeToTestModuleStartTime="01:33.121"
+			timeWallClock="05:47:37"
+			time="01:33.113"
+			level="Error"
+			category="Module"
+			errimg=".\CloseMon_f377e0ef_75f7f4d2_trace.jpg"
+			errthumb=".\CloseMon_f377e0ef_75f7f4d2_trace_thumb.jpg">
+			<message>
+				Failed to find item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.AllServers'.<br/>No element found for path '/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']' within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at SQLDMTestAutomation.CloseMonitoredSqlServerWindow.UserCodeMethod(RepoItemInfo treeitem) in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\CloseMonitoredSqlServerWindow.UserCode.cs:line 74
+   at SQLDMTestAutomation.CloseMonitoredSqlServerWindow.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\CloseMonitoredSqlServerWindow.cs:line 89
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\CloseMonitoredSqlServerWindow.UserCode.cs"
+				codeline="63"
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']"
+				itempath=".//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.AllServers"
+				id="987dd453196c49ff9dc04b54ad5225b8"
+				timeout="60000"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

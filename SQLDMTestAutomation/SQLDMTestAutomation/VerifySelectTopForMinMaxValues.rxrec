@@ -27,6 +27,11 @@ rxversion="8.2">
 	namespace="SQLDMTestAutomation">
 	</codegen>
 	<variables>
+		<var
+		id="0de7b6ba-c2fa-444b-9bc7-a7bd72345e6b"
+		name="NegativeDataMinValue">
+			0
+		</var>
 	</variables>
 	<recorditems>
 		<invokeactionrecorditem

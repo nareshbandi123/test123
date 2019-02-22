@@ -27,29 +27,41 @@ rxversion="8.2">
 	namespace="SQLDMTestAutomation">
 	</codegen>
 	<variables>
-		<var
-		id="1414cc25-97b1-4e47-ab61-5d306e2f14c6"
-		name="ServerName">
-			JS-XW7S8\SQL2008
-		</var>
 	</variables>
 	<recorditems>
 		<loggingrecorditem
 		category="User"
 		enabled="True"
-		message=""
+		message="$ServerName"
 		optional="False"
 		reportlevel="Info;20"
 		searchpropertyid="be69fb6a-d181-4bbf-afc0-7a38d621f37d">
 			<comment>
 			</comment>
 			<bindings>
-				<binding
-				target="Message"
-				variable="ServerName">
-				</binding>
 			</bindings>
 		</loggingrecorditem>
+		<invokeactionrecorditem
+		action="EnsureVisible"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5e566b7b-cde3-4488-8e47-5f3b3a34aed6"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="82a5fa7d-86df-4386-9bd7-f49949e40f8c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</path>
+			</info>
+			<arguments
+			id="2c3f0191-2e20-41fc-b2b7-6aa468b99748">
+			</arguments>
+		</invokeactionrecorditem>
 		<mouseitem
 		action="Move"
 		button="Left"

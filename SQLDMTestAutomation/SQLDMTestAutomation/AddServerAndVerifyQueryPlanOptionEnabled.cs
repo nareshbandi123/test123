@@ -41,7 +41,8 @@ namespace SQLDMTestAutomation
         /// </summary>
         public AddServerAndVerifyQueryPlanOptionEnabled()
         {
-            ServerName = "JS-XW7S9\\SQL2008";
+            Server1 = "JS-XW7S9\\SQL2008";
+            Server2 = "JS-XW7S7\\SQL2008";
         }
 
         /// <summary>
@@ -54,14 +55,28 @@ namespace SQLDMTestAutomation
 
 #region Variables
 
+        string _Server1;
+
         /// <summary>
-        /// Gets or sets the value of variable ServerName.
+        /// Gets or sets the value of variable Server1.
         /// </summary>
         [TestVariable("b7fbac2d-ddd1-480c-a5b8-8a7f98bffefb")]
-        public string ServerName
+        public string Server1
         {
-            get { return repo.ServerName; }
-            set { repo.ServerName = value; }
+            get { return _Server1; }
+            set { _Server1 = value; }
+        }
+
+        string _Server2;
+
+        /// <summary>
+        /// Gets or sets the value of variable Server2.
+        /// </summary>
+        [TestVariable("cdd259bc-3721-4617-adf6-6e9987ddebe1")]
+        public string Server2
+        {
+            get { return _Server2; }
+            set { _Server2 = value; }
         }
 
 #endregion
@@ -113,49 +128,68 @@ namespace SQLDMTestAutomation
             repo.ManageServersDialog.AddButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(6));
-            repo.AddServersWizard.NextButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(6));
+            repo.AddServersWizard.NextButton.MoveTo();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(7));
             repo.AddServersWizard.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$ServerName' on item 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(8));
-            repo.AddServersWizard.Text.Element.SetAttributeValue("Text", ServerName);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(8));
+            repo.AddServersWizard.NextButton.MoveTo();
+            Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(9));
-            repo.AddServersWizard.Text.PressKeys("{ENTER}");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(9));
+            repo.AddServersWizard.NextButton.Click();
+            Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$ServerName' on item 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(10));
-            repo.AddServersWizard.Text.Element.SetAttributeValue("Text", ServerName);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Server1' on item 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(10));
+            repo.AddServersWizard.Text.Element.SetAttributeValue("Text", Server1);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(11));
             repo.AddServersWizard.Text.PressKeys("{ENTER}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Server2' on item 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(12));
+            repo.AddServersWizard.Text.Element.SetAttributeValue("Text", Server2);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(13));
+            repo.AddServersWizard.Text.PressKeys("{ENTER}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(14));
             repo.AddServersWizard.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(15));
             repo.AddServersWizard.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(16));
             repo.AddServersWizard.EnableQueryMonitorTraceCheckBox.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(17));
             repo.AddServersWizard.EnableQueryMonitorTraceCheckBox.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Duration (milliseconds)') on item 'AddServersWizard.PlansBy'.", repo.AddServersWizard.PlansByInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Duration (milliseconds)') on item 'AddServersWizard.PlansBy'.", repo.AddServersWizard.PlansByInfo, new RecordItemIndex(18));
             Validate.AttributeEqual(repo.AddServersWizard.PlansByInfo, "Text", "Duration (milliseconds)");
             Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'AddServersWizard.Cancel'.", repo.AddServersWizard.CancelInfo, new RecordItemIndex(19));
+            //repo.AddServersWizard.Cancel.Press();
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(20));
+            //Delay.Duration(1000, false);
+            
+            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'ManageServersDialog.CancelButton'.", repo.ManageServersDialog.CancelButtonInfo, new RecordItemIndex(21));
+            //repo.ManageServersDialog.CancelButton.Press();
+            //Delay.Milliseconds(0);
             
         }
 

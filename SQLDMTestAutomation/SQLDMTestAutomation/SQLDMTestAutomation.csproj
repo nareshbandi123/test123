@@ -141,6 +141,30 @@
       <UserCode>true</UserCode>
       <id>b4ce17be-10ef-4a75-8a38-d8f5ed326a6b</id>
     </Compile>
+    <Compile Include="CloseMonitoredSqlServerWindow.cs">
+      <BoundTo>bf442d57-636c-4245-86ac-30367eb08326</BoundTo>
+      <DependentUpon>CloseMonitoredSqlServerWindow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0cb46549-df6b-41cf-9ae5-7c875470f922</id>
+    </Compile>
+    <Compile Include="CloseMonitoredSqlServerWindow.UserCode.cs">
+      <BoundTo>bf442d57-636c-4245-86ac-30367eb08326</BoundTo>
+      <DependentUpon>CloseMonitoredSqlServerWindow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2c80fce3-5b21-4414-a125-271bb63abf3d</id>
+    </Compile>
+    <Compile Include="CollapseAllServers.cs">
+      <BoundTo>d3d518c2-6841-43ba-88b1-faa5ccd9f491</BoundTo>
+      <DependentUpon>CollapseAllServers.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>907f2f5e-c3a1-42fe-aee9-738b4b24f050</id>
+    </Compile>
+    <Compile Include="CollapseAllServers.UserCode.cs">
+      <BoundTo>d3d518c2-6841-43ba-88b1-faa5ccd9f491</BoundTo>
+      <DependentUpon>CollapseAllServers.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7052328d-8013-43e7-8d7d-ae8ffe7ace48</id>
+    </Compile>
     <Compile Include="DisableQueryMonitor.cs">
       <BoundTo>46b11113-8dba-41fa-b375-dc54466382aa</BoundTo>
       <DependentUpon>DisableQueryMonitor.rxrec</DependentUpon>
@@ -204,6 +228,18 @@
       <UserCode>true</UserCode>
       <id>99d07303-38d7-46af-932d-eedd702c77a9</id>
     </Compile>
+    <Compile Include="RevertSelectTopToDefaultValue.cs">
+      <BoundTo>f7c74583-fbe2-475c-8200-5a3d52c51bb5</BoundTo>
+      <DependentUpon>RevertSelectTopToDefaultValue.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>48865b0c-64ea-4665-b548-36e0f04e44a9</id>
+    </Compile>
+    <Compile Include="RevertSelectTopToDefaultValue.UserCode.cs">
+      <BoundTo>f7c74583-fbe2-475c-8200-5a3d52c51bb5</BoundTo>
+      <DependentUpon>RevertSelectTopToDefaultValue.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ef522ab6-cd88-4269-9b00-1db860f0b090</id>
+    </Compile>
     <Compile Include="SelectQueryMonitorTab.cs">
       <BoundTo>772a362e-3b37-4996-8fe6-68b818720ecc</BoundTo>
       <DependentUpon>SelectQueryMonitorTab.rxrec</DependentUpon>
@@ -242,6 +278,9 @@
     </Compile>
     <Compile Include="UserCodeCollection1.cs">
       <id>b822862e-1214-4c17-a772-618c84c203e1</id>
+    </Compile>
+    <Compile Include="UserCodeModule1.cs">
+      <id>fb5c03d5-a53d-4c23-859e-ad8560631486</id>
     </Compile>
     <Compile Include="VerifyCollectQueryPlansToBeDisabled.cs">
       <BoundTo>b10fcf68-3e6e-429f-b105-1bf8ada48c26</BoundTo>
@@ -328,6 +367,16 @@
       <id>4dfa6b6d-8324-417e-a698-5c195240bfac</id>
       <recordtableid>9552b69d-f0c8-481f-b230-dfdaa4ad8b0e</recordtableid>
     </None>
+    <None Include="CloseMonitoredSqlServerWindow.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>bf442d57-636c-4245-86ac-30367eb08326</id>
+      <recordtableid>10938416-b5ae-4e32-9f33-2396104249f6</recordtableid>
+    </None>
+    <None Include="CollapseAllServers.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>d3d518c2-6841-43ba-88b1-faa5ccd9f491</id>
+      <recordtableid>a08149d5-6a5b-4441-8665-db7c2b1921ae</recordtableid>
+    </None>
     <None Include="DisableQueryMonitor.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>46b11113-8dba-41fa-b375-dc54466382aa</id>
@@ -352,6 +401,11 @@
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>06083215-b9f8-4bed-b549-71458738aea7</id>
       <recordtableid>a3e16002-ad31-41c7-be31-fdb013b90bf3</recordtableid>
+    </None>
+    <None Include="RevertSelectTopToDefaultValue.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>f7c74583-fbe2-475c-8200-5a3d52c51bb5</id>
+      <recordtableid>b77ac04e-4994-4896-a8e5-19399d6c8ae7</recordtableid>
     </None>
     <None Include="SelectQueryMonitorTab.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>

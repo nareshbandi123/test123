@@ -31,10 +31,6 @@ rxversion="8.2">
 		id="b2425426-179d-419c-94ca-81989ec6b6c5"
 		name="durationCombo">
 		</var>
-		<var
-		id="67d329d4-a71d-4401-ac4c-e6e59ca0b939"
-		name="EnabledValue">
-		</var>
 	</variables>
 	<recorditems>
 		<mouseitem

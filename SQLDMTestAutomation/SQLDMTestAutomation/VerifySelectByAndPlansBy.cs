@@ -42,7 +42,6 @@ namespace SQLDMTestAutomation
         public VerifySelectByAndPlansBy()
         {
             durationCombo = "";
-            EnabledValue = "";
         }
 
         /// <summary>
@@ -65,18 +64,6 @@ namespace SQLDMTestAutomation
         {
             get { return _durationCombo; }
             set { _durationCombo = value; }
-        }
-
-        string _EnabledValue;
-
-        /// <summary>
-        /// Gets or sets the value of variable EnabledValue.
-        /// </summary>
-        [TestVariable("67d329d4-a71d-4401-ac4c-e6e59ca0b939")]
-        public string EnabledValue
-        {
-            get { return _EnabledValue; }
-            set { _EnabledValue = value; }
         }
 
 #endregion
