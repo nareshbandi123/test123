@@ -96,7 +96,35 @@ rxversion="8.2">
 			name="AllServers"
 			refimgid="9208daf5-5276-4366-b8a5-6b165e747faa"
 			searchtimeout="30000ms">
-				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='All Servers']
+			</item>
+			<item
+			addcaps="treeitem,accessible,accessibletreeitem"
+			capname="treeitem"
+			id="5b05942e-23c6-425e-a1b4-6c1bfdd2f8aa"
+			name="AllServers1"
+			refimgid="8f5ee828-7cd0-44dd-b283-a3b707ab75c0"
+			searchtimeout="30000ms">
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='All Servers']
+			</item>
+			<item
+			addcaps="treeitem,accessible,accessibletreeitem"
+			capname="treeitem"
+			id="f90893f9-4e63-4341-8f43-3125514d2ba7"
+			name="WIN16X6402SQL2017"
+			refimgid="af07417f-b244-4182-9db0-c36f59112a9f"
+			searchtimeout="30000ms">
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='WIN16X64-02\SQL2017']
+			</item>
+			<item
+			addcaps="tree,control,nativewindow"
+			capname="tree"
+			id="36ded65f-a0b2-45e9-bde0-7bc3ae732691"
+			name="UserViewTreeView"
+			refimgid="ad2c0359-27b4-4108-a4f3-d30ed4f3acf0"
+			refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository ((local))']/container[1]/container[@automationid='navigationPaneHost']/container[@caption='']/container[@controlname='NavigationPaneControl']/element[@controlname='explorerBar']/container[@controlname='ultraExplorerBarContainerControl1']/container[@controlname='serversNavigationPane']/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']"
+			searchtimeout="30000ms">
+				/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']/?/?/container[@controlname='ultraExplorerBarContainerControl1']/?/?/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']
 			</item>
 			<basepath>
 				/form[@title~'^Idera\ SQL\ diagnostic\ mana']
@@ -179,15 +207,6 @@ rKRbD7kzTcEuzNudTrR623xK7m877TsTxG+W+SGNGP784AAAAABJRU5ErkJggg==
 				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/button[@controlname='okButton']
 			</item>
 			<item
-			addcaps="button,accessible"
-			capname="button"
-			id="4731fda8-dfb2-43d2-ba64-1134e4693af3"
-			name="Close"
-			refimgid="d8cfad62-5774-4287-a4aa-948d0d847273"
-			searchtimeout="30000ms">
-				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//button[@accessiblename='Close']
-			</item>
-			<item
 			addcaps="listitem,accessible"
 			capname="listitem"
 			id="b6de4d46-b632-483a-a92e-906aaba2138a"
@@ -239,6 +258,15 @@ rKRbD7kzTcEuzNudTrR623xK7m877TsTxG+W+SGNGP784AAAAABJRU5ErkJggg==
 					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']
 				</basepath>
 			</folder>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="5c72cc6d-67da-4d27-90cc-fd25a0c1765f"
+			name="Close"
+			refimgid="6f9a2602-569a-46b2-985b-41939b6c7278"
+			searchtimeout="30000ms">
+				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//button[@accessiblename='Close']
+			</item>
 			<basepath>
 				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']
 			</basepath>
@@ -428,6 +456,16 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/form[@controlname='ManageServersDialog']/button[@controlname='addButton']
 			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="5d521699-a69e-4f9f-907f-276787f854bf"
+			name="CancelButton"
+			refimgid="49e58e41-661e-47a8-9fe5-bc75778e7af7"
+			refpath="/form[@controlname='ManageServersDialog']/button[@controlname='cancelButton']"
+			searchtimeout="30000ms">
+				/form[@controlname='ManageServersDialog']/button[@controlname='cancelButton']
+			</item>
 			<basepath>
 				/form[@controlname='ManageServersDialog']
 			</basepath>
@@ -490,6 +528,15 @@ MCAkAvg45OZFFP0BkKl1OzwGJwEAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@controlname='AddServersWizard']//container[@controlname='featuresGroupBox']/container[@controlname='groupBox5']//combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']
 			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="38e6369c-3605-49a9-9495-2f41db881964"
+			name="Cancel"
+			refimgid="43c13d92-e183-41d8-9f38-f1b177f64d30"
+			searchtimeout="30000ms">
+				/form[@controlname='AddServersWizard']//button[@text='Cancel']
+			</item>
 			<basepath>
 				/form[@controlname='AddServersWizard']
 			</basepath>
@@ -511,7 +558,6 @@ MCAkAvg45OZFFP0BkKl1OzwGJwEAAAAASUVORK5CYII=
 		<var
 		id="1414cc25-97b1-4e47-ab61-5d306e2f14c6"
 		name="ServerName">
-			JS-XW7S9\SQL2008
 		</var>
 	</variables>
 </repository>

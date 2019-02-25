@@ -112,7 +112,15 @@ namespace SQLDMTestAutomation
             repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(9));
+            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking Focus() on item 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor'.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(9));
+            //repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor.Focus();
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor'.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(10));
+            repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor.PressKeys("{ENTER}");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(11));
             repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBox.MoveTo();
             Delay.Milliseconds(200);
             

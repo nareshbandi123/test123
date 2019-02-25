@@ -54,7 +54,7 @@ rxversion="8.2">
 		action="Move"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -78,7 +78,7 @@ rxversion="8.2">
 		action="Click"
 		button="Right"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -95,6 +95,54 @@ rxversion="8.2">
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='WIN10SQL17']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="fef582d2-9a0a-4f5f-8f13-f92255073346"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="82a5fa7d-86df-4386-9bd7-f49949e40f8c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Right"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="fef582d2-9a0a-4f5f-8f13-f92255073346"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="82a5fa7d-86df-4386-9bd7-f49949e40f8c"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
 				</path>
 			</info>
 		</mouseitem>

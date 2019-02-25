@@ -79,15 +79,21 @@ namespace SQLDMTestAutomation
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\Idera\\Idera SQL diagnostic manager\\SQLdmDesktopClient.exe' with arguments '' in normal mode.", new RecordItemIndex(0));
+            //LaunchApplication_Run_application(repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo);
+            //Delay.Milliseconds(0);
+            
+            UserCodeCollection1.KillApplicationProcess();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\Idera\\Idera SQL diagnostic manager\\SQLdmDesktopClient.exe' with arguments '' in normal mode.", new RecordItemIndex(2));
             Host.Local.RunApplication("C:\\Program Files\\Idera\\Idera SQL diagnostic manager\\SQLdmDesktopClient.exe", "", "C:\\Program Files\\Idera\\Idera SQL diagnostic manager", false);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'Text' to contain the specified value 'SQLDM Today'. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'", repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo, new RecordItemIndex(1));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo.WaitForAttributeContains(5000, "Text", "SQLDM Today");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(3));
+            Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
-            Delay.Duration(5000, false);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'", repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo, new ActionTimeout(60000), new RecordItemIndex(4));
+            repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo.WaitForExists(60000);
             
         }
 

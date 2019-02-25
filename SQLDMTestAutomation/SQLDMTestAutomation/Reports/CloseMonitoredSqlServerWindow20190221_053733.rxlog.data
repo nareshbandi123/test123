@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="228a28ca0105e97c"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/21/2019 5:37:38 AM"
+		timestampiso="2019-02-21T11:37:38"
+		endtime="2/21/2019 5:37:49 AM"
+		timeoutfactor="1"
+		module="CloseMonitoredSqlServerWindow">
+		<detail>
+			CloseMonitoredSqlServerWindow
+		</detail>
+		<varbindings>
+		</varbindings>
+	</activity>
+</report>

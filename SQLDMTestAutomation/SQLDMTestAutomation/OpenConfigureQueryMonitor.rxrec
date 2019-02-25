@@ -4153,6 +4153,46 @@ sQH3/////v///xT0RtpweBxNmKSRxoX/TiML
 				</path>
 			</info>
 		</mouseitem>
+		<invokeactionrecorditem
+		action="Focus"
+		enabled="False"
+		optional="False"
+		searchpropertyid="720e6f8e-7a66-4cd0-a92a-9b5efa39bd51"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7e4be6b1-77be-424f-a4b6-f25c97eedbd3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button
+				</path>
+			</info>
+			<arguments
+			id="2594113f-8996-441c-a2bc-7d2a61234417">
+			</arguments>
+		</invokeactionrecorditem>
+		<keysequenceitem
+		KeySequence="{ENTER}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="fb0cac4d-715d-45f3-aa11-e73884102e6b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7e4be6b1-77be-424f-a4b6-f25c97eedbd3"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button
+				</path>
+			</info>
+		</keysequenceitem>
 		<mouseitem
 		action="Move"
 		button="Left"

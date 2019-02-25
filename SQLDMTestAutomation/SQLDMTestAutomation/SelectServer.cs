@@ -41,7 +41,6 @@ namespace SQLDMTestAutomation
         /// </summary>
         public SelectServer()
         {
-            ServerName = "JS-XW7S8\\SQL2008";
         }
 
         /// <summary>
@@ -90,13 +89,17 @@ namespace SQLDMTestAutomation
 
             Init();
 
-            Report.Log(ReportLevel.Info, "User", ServerName, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "User", "$ServerName", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'IderaSQLDiagnosticManagerSQLdmRepo.Server'.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(1));
+            repo.IderaSQLDiagnosticManagerSQLdmRepo.Server.EnsureVisible();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(2));
             repo.IderaSQLDiagnosticManagerSQLdmRepo.Server.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(3));
             repo.IderaSQLDiagnosticManagerSQLdmRepo.Server.Click();
             Delay.Milliseconds(200);
             

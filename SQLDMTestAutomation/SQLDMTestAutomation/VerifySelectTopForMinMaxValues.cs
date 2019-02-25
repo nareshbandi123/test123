@@ -41,6 +41,7 @@ namespace SQLDMTestAutomation
         /// </summary>
         public VerifySelectTopForMinMaxValues()
         {
+            NegativeDataMinValue = "0";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace SQLDMTestAutomation
         }
 
 #region Variables
+
+        string _NegativeDataMinValue;
+
+        /// <summary>
+        /// Gets or sets the value of variable NegativeDataMinValue.
+        /// </summary>
+        [TestVariable("0de7b6ba-c2fa-444b-9bc7-a7bd72345e6b")]
+        public string NegativeDataMinValue
+        {
+            get { return _NegativeDataMinValue; }
+            set { _NegativeDataMinValue = value; }
+        }
 
 #endregion
 

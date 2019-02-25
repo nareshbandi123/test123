@@ -33,5 +33,11 @@ namespace SQLDMTestAutomation
             // Your recording specific initialization code goes here.
         }
 
+        public void Close_application_IderaSQLDiagnosticManagerSQLdmRepo(RepoItemInfo formInfo)
+        {
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'formInfo'.", formInfo);
+            Host.Current.CloseApplication(formInfo.FindAdapter<Form>(), 2000);
+        }
+
     }
 }

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="45cd4cc28cb4f3c"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/19/2019 5:50:03 AM"
+		timestampiso="2019-02-19T11:50:03"
+		endtime="2/19/2019 5:51:46 AM"
+		timeoutfactor="1"
+		module="CloseMonitoredSqlServerWindow">
+		<detail>
+			CloseMonitoredSqlServerWindow
+		</detail>
+		<errormessage>
+			Failed to find item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.AllServers'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.717"
+			timeRelativeToTestModuleStartTime="00:01.722"
+			timeWallClock="05:50:05"
+			time="00:01.717"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'MonitoredSqlServerInstancePropertiesDial.Close' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//button[@accessiblename='Close']"
+				itempath=".//button[@accessiblename='Close']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.Close"
+				id="5c72cc6d67da4d2790ccfd25a0c1765f"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\CloseMonitoredSqlServerWindow.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.933"
+			timeRelativeToTestModuleStartTime="00:06.938"
+			timeWallClock="05:50:10"
+			time="00:06.933"
+			level="Info"
+			category="Mouse"
+			errimg=".\CloseMon_ac74e0ef_9616bc3d_trace.jpg"
+			errthumb=".\CloseMon_ac74e0ef_9616bc3d_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'MonitoredSqlServerInstancePropertiesDial.Close' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//button[@accessiblename='Close']"
+				itempath=".//button[@accessiblename='Close']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.Close"
+				id="5c72cc6d67da4d2790ccfd25a0c1765f"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\CloseMonitoredSqlServerWindow.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.032"
+			timeRelativeToTestModuleStartTime="00:08.037"
+			timeWallClock="05:50:11"
+			time="00:08.032"
+			level="Info"
+			category="Delay"
+			errimg=".\CloseMon_ac74e0ef_04865d09_trace.jpg"
+			errthumb=".\CloseMon_ac74e0ef_04865d09_trace_thumb.jpg">
+			<message>
+				Waiting for 4s.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\CloseMonitoredSqlServerWindow.cs"
+				codeline="90"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:42.188"
+			timeRelativeToTestModuleStartTime="01:42.193"
+			timeWallClock="05:51:46"
+			time="01:42.188"
+			level="Error"
+			category="Module"
+			errimg=".\CloseMon_ac74e0ef_fefa16a6_trace.jpg"
+			errthumb=".\CloseMon_ac74e0ef_fefa16a6_trace_thumb.jpg">
+			<message>
+				Failed to find item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.AllServers'.<br/>No element found for path '/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']' within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at SQLDMTestAutomation.CloseMonitoredSqlServerWindow.UserCodeMethod(RepoItemInfo treeitem) in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\CloseMonitoredSqlServerWindow.UserCode.cs:line 74
+   at SQLDMTestAutomation.CloseMonitoredSqlServerWindow.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\CloseMonitoredSqlServerWindow.cs:line 93
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\CloseMonitoredSqlServerWindow.UserCode.cs"
+				codeline="63"
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']"
+				itempath=".//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.AllServers"
+				id="987dd453196c49ff9dc04b54ad5225b8"
+				timeout="60000"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

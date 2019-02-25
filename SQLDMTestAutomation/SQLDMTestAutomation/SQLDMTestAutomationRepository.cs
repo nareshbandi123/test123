@@ -59,7 +59,7 @@ namespace SQLDMTestAutomation
 
 #region Variables
 
-        string _ServerName = "JS-XW7S9\\SQL2008";
+        string _ServerName = "";
 
         /// <summary>
         /// Gets or sets the value of variable ServerName.
@@ -160,6 +160,9 @@ namespace SQLDMTestAutomation
             RepoItemInfo _sqldmtodayInfo;
             RepoItemInfo _fileInfo;
             RepoItemInfo _allserversInfo;
+            RepoItemInfo _allservers1Info;
+            RepoItemInfo _win16x6402sql2017Info;
+            RepoItemInfo _userviewtreeviewInfo;
 
             /// <summary>
             /// Creates a new IderaSQLDiagnosticManagerSQLdmRepo  folder.
@@ -174,7 +177,10 @@ namespace SQLDMTestAutomation
                 _configurequerymonitorInfo = new RepoItemInfo(this, "ConfigureQueryMonitor", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button", 30000, null, "7e4be6b1-77be-424f-a4b6-f25c97eedbd3");
                 _sqldmtodayInfo = new RepoItemInfo(this, "SQLDMToday", ".//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']", 30000, null, "0a7c7718-a970-47cf-bbda-cba2e04e6f8a");
                 _fileInfo = new RepoItemInfo(this, "File", ".//list[@automationid='fileMenu']/picture[@automationid='HeaderPresenter']/text[@caption='File']", 30000, null, "05f70e7c-9d06-44b4-ab0c-996f4ef92559");
-                _allserversInfo = new RepoItemInfo(this, "AllServers", ".//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/treeitem[@accessiblename='All Servers']", 30000, null, "987dd453-196c-49ff-9dc0-4b54ad5225b8");
+                _allserversInfo = new RepoItemInfo(this, "AllServers", ".//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='All Servers']", 30000, null, "987dd453-196c-49ff-9dc0-4b54ad5225b8");
+                _allservers1Info = new RepoItemInfo(this, "AllServers1", ".//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='All Servers']", 30000, null, "5b05942e-23c6-425e-a1b4-6c1bfdd2f8aa");
+                _win16x6402sql2017Info = new RepoItemInfo(this, "WIN16X6402SQL2017", ".//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='WIN16X64-02\\SQL2017']", 30000, null, "f90893f9-4e63-4341-8f43-3125514d2ba7");
+                _userviewtreeviewInfo = new RepoItemInfo(this, "UserViewTreeView", "?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']/?/?/container[@controlname='ultraExplorerBarContainerControl1']/?/?/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']", 30000, null, "36ded65f-a0b2-45e9-bde0-7bc3ae732691");
             }
 
             /// <summary>
@@ -392,6 +398,78 @@ namespace SQLDMTestAutomation
                     return _allserversInfo;
                 }
             }
+
+            /// <summary>
+            /// The AllServers1 item.
+            /// </summary>
+            [RepositoryItem("5b05942e-23c6-425e-a1b4-6c1bfdd2f8aa")]
+            public virtual Ranorex.TreeItem AllServers1
+            {
+                get
+                {
+                    return _allservers1Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AllServers1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5b05942e-23c6-425e-a1b4-6c1bfdd2f8aa")]
+            public virtual RepoItemInfo AllServers1Info
+            {
+                get
+                {
+                    return _allservers1Info;
+                }
+            }
+
+            /// <summary>
+            /// The WIN16X6402SQL2017 item.
+            /// </summary>
+            [RepositoryItem("f90893f9-4e63-4341-8f43-3125514d2ba7")]
+            public virtual Ranorex.TreeItem WIN16X6402SQL2017
+            {
+                get
+                {
+                    return _win16x6402sql2017Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WIN16X6402SQL2017 item info.
+            /// </summary>
+            [RepositoryItemInfo("f90893f9-4e63-4341-8f43-3125514d2ba7")]
+            public virtual RepoItemInfo WIN16X6402SQL2017Info
+            {
+                get
+                {
+                    return _win16x6402sql2017Info;
+                }
+            }
+
+            /// <summary>
+            /// The UserViewTreeView item.
+            /// </summary>
+            [RepositoryItem("36ded65f-a0b2-45e9-bde0-7bc3ae732691")]
+            public virtual Ranorex.Tree UserViewTreeView
+            {
+                get
+                {
+                    return _userviewtreeviewInfo.CreateAdapter<Ranorex.Tree>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserViewTreeView item info.
+            /// </summary>
+            [RepositoryItemInfo("36ded65f-a0b2-45e9-bde0-7bc3ae732691")]
+            public virtual RepoItemInfo UserViewTreeViewInfo
+            {
+                get
+                {
+                    return _userviewtreeviewInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -407,6 +485,7 @@ namespace SQLDMTestAutomation
             RepoItemInfo _comboboxInfo;
             RepoItemInfo _okbuttonInfo;
             RepoItemInfo _listitemInfo;
+            RepoItemInfo _closeInfo;
 
             /// <summary>
             /// Creates a new MonitoredSqlServerInstancePropertiesDial  folder.
@@ -421,6 +500,7 @@ namespace SQLDMTestAutomation
                 _comboboxInfo = new RepoItemInfo(this, "ComboBox", "container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/element[@controlname='topPlanComboBox']/combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']", 30000, null, "dc5ee464-4a79-4cc9-8181-792c0936f114");
                 _okbuttonInfo = new RepoItemInfo(this, "OkButton", "button[@controlname='okButton']", 30000, null, "a9de51d9-a3bf-4e60-9edc-68fd0f899217");
                 _listitemInfo = new RepoItemInfo(this, "ListItem", "container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']//listitem[@index='2']", 30000, null, "b6de4d46-b632-483a-a92e-906aaba2138a");
+                _closeInfo = new RepoItemInfo(this, "Close", ".//button[@accessiblename='Close']", 30000, null, "5c72cc6d-67da-4d27-90cc-fd25a0c1765f");
             }
 
             /// <summary>
@@ -588,6 +668,30 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _listitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("5c72cc6d-67da-4d27-90cc-fd25a0c1765f")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("5c72cc6d-67da-4d27-90cc-fd25a0c1765f")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
                 }
             }
 
@@ -858,6 +962,7 @@ namespace SQLDMTestAutomation
         public partial class ManageServersDialogAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _addbuttonInfo;
+            RepoItemInfo _cancelbuttonInfo;
 
             /// <summary>
             /// Creates a new ManageServersDialog  folder.
@@ -866,6 +971,7 @@ namespace SQLDMTestAutomation
                     base("ManageServersDialog", "/form[@controlname='ManageServersDialog']", parentFolder, 30000, null, true, "78a2c140-75a4-4223-a89b-21fe843b3cfa", "")
             {
                 _addbuttonInfo = new RepoItemInfo(this, "AddButton", "button[@controlname='addButton']", 30000, null, "0f0bc92e-84f3-4e7a-96e1-eb0d5c610ef5");
+                _cancelbuttonInfo = new RepoItemInfo(this, "CancelButton", "button[@controlname='cancelButton']", 30000, null, "5d521699-a69e-4f9f-907f-276787f854bf");
             }
 
             /// <summary>
@@ -915,6 +1021,30 @@ namespace SQLDMTestAutomation
                     return _addbuttonInfo;
                 }
             }
+
+            /// <summary>
+            /// The CancelButton item.
+            /// </summary>
+            [RepositoryItem("5d521699-a69e-4f9f-907f-276787f854bf")]
+            public virtual Ranorex.Button CancelButton
+            {
+                get
+                {
+                    return _cancelbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CancelButton item info.
+            /// </summary>
+            [RepositoryItemInfo("5d521699-a69e-4f9f-907f-276787f854bf")]
+            public virtual RepoItemInfo CancelButtonInfo
+            {
+                get
+                {
+                    return _cancelbuttonInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -927,6 +1057,7 @@ namespace SQLDMTestAutomation
             RepoItemInfo _textInfo;
             RepoItemInfo _enablequerymonitortracecheckboxInfo;
             RepoItemInfo _plansbyInfo;
+            RepoItemInfo _cancelInfo;
 
             /// <summary>
             /// Creates a new AddServersWizard  folder.
@@ -938,6 +1069,7 @@ namespace SQLDMTestAutomation
                 _textInfo = new RepoItemInfo(this, "Text", ".//text[@controlname='adhocInstancesTextBox']/text[@accessiblerole='Text']", 30000, null, "f0327c10-63af-4042-a0b1-dc97a5ecffee");
                 _enablequerymonitortracecheckboxInfo = new RepoItemInfo(this, "EnableQueryMonitorTraceCheckBox", ".//container[@controlname='featuresGroupBox']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']", 30000, null, "343f62f3-1c7e-4797-a86f-7f69bc01046c");
                 _plansbyInfo = new RepoItemInfo(this, "PlansBy", ".//container[@controlname='featuresGroupBox']/container[@controlname='groupBox5']//combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']", 30000, null, "7c306c03-79c2-4df9-9238-e4c2a5591a2f");
+                _cancelInfo = new RepoItemInfo(this, "Cancel", ".//button[@text='Cancel']", 30000, null, "38e6369c-3605-49a9-9495-2f41db881964");
             }
 
             /// <summary>
@@ -1057,6 +1189,30 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _plansbyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item.
+            /// </summary>
+            [RepositoryItem("38e6369c-3605-49a9-9495-2f41db881964")]
+            public virtual Ranorex.Button Cancel
+            {
+                get
+                {
+                    return _cancelInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item info.
+            /// </summary>
+            [RepositoryItemInfo("38e6369c-3605-49a9-9495-2f41db881964")]
+            public virtual RepoItemInfo CancelInfo
+            {
+                get
+                {
+                    return _cancelInfo;
                 }
             }
         }

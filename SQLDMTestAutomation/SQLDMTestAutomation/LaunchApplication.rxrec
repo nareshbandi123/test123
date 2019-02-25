@@ -29,6 +29,54 @@ rxversion="8.2">
 	<variables>
 	</variables>
 	<recorditems>
+		<userrecorditem
+		classname="LaunchApplication"
+		enabled="False"
+		isexternaltestmethod="False"
+		methodname="LaunchApplication_Run_application"
+		namespace="SQLDMTestAutomation"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="b40ccab3-7379-4fd9-8960-287ca4ed3283">
+				<argument
+				argname="textInfo"
+				id="e0c7d6c0-d706-4aa4-a5bd-a0af02ed3b5b">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="0a7c7718-a970-47cf-bbda-cba2e04e6f8a"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="UserCodeCollection1"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="KillApplicationProcess"
+		namespace="SQLDMTestAutomation"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ffc695d1-cd0c-4527-9f1f-dec7fa841ac8">
+			</arguments>
+		</userrecorditem>
 		<runapprecorditem
 		enabled="True"
 		maximized="False"
@@ -46,14 +94,21 @@ rxversion="8.2">
 			<args>
 			</args>
 		</runapprecorditem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<WaitForRecordItem
 		enabled="True"
-		matchname="Text"
-		matchvalue="SQLDM Today"
 		optional="False"
 		searchpropertyid="de421303-0d02-4df5-b395-c38e1f6698b4"
-		waitaction="AttributeContains"
-		waittimeout="5000ms">
+		waitaction="Exists"
+		waittimeout="60000ms">
 			<comment>
 			</comment>
 			<bindings>
@@ -109,15 +164,6 @@ rxversion="8.2">
 				</path>
 			</info>
 		</WaitForRecordItem>
-		<explicitdelayitem
-		duration="5000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 	</recorditems>
 	<repository
 	id="f786a100-360b-442d-a1a8-e04f271dd75e"
