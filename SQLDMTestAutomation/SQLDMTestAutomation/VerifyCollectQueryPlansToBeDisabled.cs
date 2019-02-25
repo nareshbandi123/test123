@@ -79,12 +79,12 @@ namespace SQLDMTestAutomation
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.RButtonUseTrace' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.RButtonUseTraceInfo, new RecordItemIndex(0));
-            repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.RButtonUseTrace.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.CollectQueryDataUsingSQLTrace' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.CollectQueryDataUsingSQLTraceInfo, new RecordItemIndex(0));
+            repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.CollectQueryDataUsingSQLTrace.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectQueryPlans'.", repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectQueryPlansInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectQueryPlansInfo, "Enabled", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.CollectActualQueryPlans'.", repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.CollectActualQueryPlansInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.CollectActualQueryPlansInfo, "Enabled", "False");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectEstimatedQueryPlans'.", repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectEstimatedQueryPlansInfo, new RecordItemIndex(2));

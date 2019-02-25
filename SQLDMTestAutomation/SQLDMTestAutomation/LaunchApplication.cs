@@ -86,8 +86,8 @@ namespace SQLDMTestAutomation
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'Text' to contain the specified value 'SQLDM Today'. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'", repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo, new RecordItemIndex(1));
             repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo.WaitForAttributeContains(5000, "Text", "SQLDM Today");
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
-            Delay.Duration(5000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(2));
+            Delay.Duration(20000, false);
             
         }
 

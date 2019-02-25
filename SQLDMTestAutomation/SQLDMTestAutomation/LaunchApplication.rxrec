@@ -110,7 +110,7 @@ rxversion="8.2">
 			</info>
 		</WaitForRecordItem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="20000ms"
 		enabled="True"
 		optional="False">
 			<comment>
