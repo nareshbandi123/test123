@@ -551,6 +551,20 @@ A8ZPygx5HxqAS2Ns4eo9BEC/HYbOTZk0NpFzEHD70AHsLeAsEc8HAfH91Gw4vsOWaWyaC+tCo6+r
 MCAkAvg45OZFFP0BkKl1OzwGJwEAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<folder
+		capname="unknown"
+		id="c18fc3ad-e59f-453e-b34b-bd7d00dbbffd"
+		isrooted="False"
+		name="SQLDM"
+		searchtimeout="0ms">
+		</folder>
+		<folder
+		capname="unknown"
+		id="e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695"
+		isrooted="False"
+		name="SSMS"
+		searchtimeout="0ms">
+		</folder>
 		<basepath>
 		</basepath>
 	</rootfolder>

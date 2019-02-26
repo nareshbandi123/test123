@@ -283,6 +283,10 @@ rxversion="8.2">
 			minrange="0"
 			name="C164221_Verify_invalid_data_in_collect_query_plans_count">
 			</testcase>
+			<testcase
+			id="922862c3-a166-4ce7-9d71-89cb9ccf93c6"
+			name="C165705_Verify_new_columns_are_added_in_'MonitoredSQLServers'_table_of_SQLdmRepository">
+			</testcase>
 			<testmodule
 			enabled="False"
 			id="97500bfb-8598-468e-bdf0-ceb26d920787"
@@ -782,6 +786,10 @@ rxversion="8.2">
 							</testmodule>
 						</testcase>
 					</smartfoldernode>
+					<testcase
+					id="922862c3-a166-4ce7-9d71-89cb9ccf93c6"
+					name="C165705_Verify_new_columns_are_added_in_'MonitoredSQLServers'_table_of_SQLdmRepository">
+					</testcase>
 					<teardown
 					id="c88408a3-5c31-449a-8b2c-82eccf797bc0"
 					name="teardown">
@@ -819,10 +827,10 @@ rxversion="8.2">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
+			id="5c57d37c-ed5b-430e-96ed-2f81b6b9cce0">
 			</testcontainer>
 			<testcontainer
-			id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c">
+			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

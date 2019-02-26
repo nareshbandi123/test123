@@ -33,6 +33,8 @@ namespace SQLDMTestAutomation
         SQLDMTestAutomationRepositoryFolders.SomeContextMenuAppFolder _somecontextmenu;
         SQLDMTestAutomationRepositoryFolders.ManageServersDialogAppFolder _manageserversdialog;
         SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder _addserverswizard;
+        SQLDMTestAutomationRepositoryFolders.SQLDMFolder _sqldm;
+        SQLDMTestAutomationRepositoryFolders.SSMSFolder _ssms;
 
         /// <summary>
         /// Gets the singleton class instance representing the SQLDMTestAutomationRepository element repository.
@@ -55,6 +57,8 @@ namespace SQLDMTestAutomation
             _somecontextmenu = new SQLDMTestAutomationRepositoryFolders.SomeContextMenuAppFolder(this);
             _manageserversdialog = new SQLDMTestAutomationRepositoryFolders.ManageServersDialogAppFolder(this);
             _addserverswizard = new SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder(this);
+            _sqldm = new SQLDMTestAutomationRepositoryFolders.SQLDMFolder(this);
+            _ssms = new SQLDMTestAutomationRepositoryFolders.SSMSFolder(this);
         }
 
 #region Variables
@@ -137,6 +141,24 @@ namespace SQLDMTestAutomation
         public virtual SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder AddServersWizard
         {
             get { return _addserverswizard; }
+        }
+
+        /// <summary>
+        /// The SQLDM folder.
+        /// </summary>
+        [RepositoryFolder("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
+        public virtual SQLDMTestAutomationRepositoryFolders.SQLDMFolder SQLDM
+        {
+            get { return _sqldm; }
+        }
+
+        /// <summary>
+        /// The SSMS folder.
+        /// </summary>
+        [RepositoryFolder("e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695")]
+        public virtual SQLDMTestAutomationRepositoryFolders.SSMSFolder SSMS
+        {
+            get { return _ssms; }
         }
     }
 
@@ -1213,6 +1235,62 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _cancelInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SQLDMFolder folder.
+        /// </summary>
+        [RepositoryFolder("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
+        public partial class SQLDMFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new SQLDM  folder.
+            /// </summary>
+            public SQLDMFolder(RepoGenBaseFolder parentFolder) :
+                    base("SQLDM", "", parentFolder, 0, null, false, "c18fc3ad-e59f-453e-b34b-bd7d00dbbffd", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SSMSFolder folder.
+        /// </summary>
+        [RepositoryFolder("e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695")]
+        public partial class SSMSFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new SSMS  folder.
+            /// </summary>
+            public SSMSFolder(RepoGenBaseFolder parentFolder) :
+                    base("SSMS", "", parentFolder, 0, null, false, "e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }
