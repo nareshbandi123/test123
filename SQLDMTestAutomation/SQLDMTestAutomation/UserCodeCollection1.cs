@@ -71,7 +71,7 @@ namespace SQLDMTestAutomation
 	 	public static void KillApplicationProcess()
         {
         	Process[] processByName = Process.GetProcessesByName("SQLdmDesktopClient");
-        	int noOfProcesses = processByName.Length, count;
+        	int noOfProcesses = processByName.Length;
         	if (processByName.Length != 0)
         	{
         		foreach (Process p in processByName)

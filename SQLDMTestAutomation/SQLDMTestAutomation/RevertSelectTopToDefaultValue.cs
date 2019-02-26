@@ -79,15 +79,20 @@ namespace SQLDMTestAutomation
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Paste('75') on item 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(0));
+            Keyboard.PrepareFocus(repo.MonitoredSqlServerInstancePropertiesDial.UpDownEdit);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Paste('75') on item 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(1));
             repo.MonitoredSqlServerInstancePropertiesDial.UpDownEdit.Element.InvokeActionWithText("Paste", "75");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Focus() on item 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Focus() on item 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(2));
             repo.MonitoredSqlServerInstancePropertiesDial.OkButton.Focus();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(3));
             repo.MonitoredSqlServerInstancePropertiesDial.OkButton.PressKeys("{ENTER}");
             Delay.Milliseconds(0);
             
