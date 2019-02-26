@@ -16,12 +16,6 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="0bade892-fc6f-490d-b66b-48ffe62aa993"
-			name="Verify"
-			ref="602c731d-f696-441b-9649-3b8ba2288a73"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="177eb6b3-7e8e-4268-826d-0a2f8701287d"
 			name="DisableQueryMonitor"
 			ref="27e814ad-b964-4291-bc15-a4e0a1045970"
@@ -353,10 +347,6 @@ rxversion="8.2">
 						id="b0fa5be6-a0e7-434a-b4dc-4c00064a9f47"
 						name="LaunchApplication">
 						</testmodule>
-						<testmodule
-						id="0bade892-fc6f-490d-b66b-48ffe62aa993"
-						name="Verify">
-						</testmodule>
 					</testcase>
 					<testcase
 					id="7bbbb969-c85d-4ef3-9cb0-ab1cae49bdcc"
@@ -385,7 +375,7 @@ rxversion="8.2">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="7bbbb969-c85d-4ef3-9cb0-ab1cae49bdcc">
+			id="556369ea-023e-429a-819e-a3a6e4ae3b49">
 			</testcontainer>
 			<testcontainer
 			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
