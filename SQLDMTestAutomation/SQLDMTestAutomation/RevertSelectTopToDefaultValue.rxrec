@@ -29,6 +29,28 @@ rxversion="8.2">
 	<variables>
 	</variables>
 	<recorditems>
+		<keyitem
+		action="Press"
+		data="A, Control"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="ddf828ff-56a6-44a3-a201-953bc37b2341"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="270a3822-0209-436d-ae49-588334cdc551"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']
+				</path>
+			</info>
+		</keyitem>
 		<invokeactionrecorditem
 		action="Paste"
 		enabled="True"

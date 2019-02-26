@@ -9,6 +9,10 @@ rxversion="8.2">
 			ref="0d45aeec-90f8-4043-a0cf-91a511febd51"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="026112c2-b912-4859-a092-f2dad7b8c124"
+			name="teardown11">
+			</teardown>
 			<testmodule
 			id="03deb406-eaa9-4241-9875-ccd99db255fa"
 			name="SelectServer"
@@ -42,6 +46,10 @@ rxversion="8.2">
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="0de9ad90-8248-4c40-978d-642e879c379c"
+			name="teardown13">
+			</teardown>
 			<testmodule
 			id="177eb6b3-7e8e-4268-826d-0a2f8701287d"
 			name="DisableQueryMonitor"
@@ -77,6 +85,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="2620cda0-281f-4e57-bcbb-3eb666d47095"
+			name="CloseApplication"
+			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="28f9dd93-6ef1-4070-88f4-f55d8e2cbc93"
 			name="EnableQueryMonitor"
 			ref="e47225b1-940d-4538-842a-92bdbab6c105"
@@ -86,6 +100,12 @@ rxversion="8.2">
 			id="2bb67438-76f2-4814-93a0-58369dffe953"
 			name="VerifySelectTopToBeDisabled"
 			ref="e0cc1395-ebff-4ffa-bb51-b3d57c3b7246"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="39cb6180-c78f-4c2f-919e-bc27c56f53d6"
+			name="CloseApplication"
+			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -126,6 +146,14 @@ rxversion="8.2">
 			minrange="4"
 			name="C164220_Verify_default_value_for_Select_top_and_Plans_by2">
 			</testcase>
+			<teardown
+			id="4ff0429d-5946-4e0b-86ae-012c9c4f7157"
+			name="teardown12">
+			</teardown>
+			<teardown
+			id="4ff043d6-ea74-47e0-887a-e864528bde8c"
+			name="teardown1">
+			</teardown>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -163,6 +191,7 @@ rxversion="8.2">
 			name="C164220_Verify_default_value_for_Select_top_and_Plans_by">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="5d346be5-339d-4053-ad19-c6777b349f72"
 			name="CloseApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
@@ -179,6 +208,13 @@ rxversion="8.2">
 			name="setup1">
 			</setup>
 			<testmodule
+			id="6334c569-3627-48aa-96e6-e48400524c95"
+			name="CloseApplication"
+			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			enabled="False"
 			id="6a905789-615d-4ed0-a093-c09816ed356d"
 			name="CloseApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
@@ -191,6 +227,7 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="734b80d3-56aa-4aa7-afd4-aedb27cdd273"
 			name="CloseApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
@@ -220,6 +257,12 @@ rxversion="8.2">
 			id="7697ca61-cff1-4df0-a8a4-a58c5b60e97e"
 			name="C164874_Select_two_2008_version_instances_for_monitoring_and_verify_query_plan_options_are_enabled">
 			</testcase>
+			<testmodule
+			id="7bf5a91d-e8ce-414e-82b7-117d876274fb"
+			name="CloseApplication"
+			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="82b404ba-e93a-4aee-bc5a-594531d73f3d"
 			name="SQLDMTestAutomation"
@@ -314,6 +357,7 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="affd02b4-f305-4cca-8f23-ba58101dcdbb"
 			name="CloseApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
@@ -325,6 +369,14 @@ rxversion="8.2">
 			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="b36b80f1-c1ed-43e2-8c46-4d322ca1b6b3"
+			name="teardown14">
+			</teardown>
+			<teardown
+			id="b892faf6-2cbd-4960-95ed-cb7311871c86"
+			name="teardown141">
+			</teardown>
 			<testmodule
 			id="ba7761c9-e49b-4574-9396-39c95bfa30f9"
 			name="LaunchApplication"
@@ -332,6 +384,7 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="bd00a9f2-d836-4f76-87ea-324e2582abe5"
 			name="CloseApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
@@ -371,8 +424,8 @@ rxversion="8.2">
 			datarangeactive="True"
 			datasource="ServerList"
 			id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c"
-			maxrange="6"
-			minrange="6"
+			maxrange="2"
+			minrange="2"
 			name="C164330_Verify_minimum_and_maximum_limit_of_query_plan_count">
 			</testcase>
 			<testmodule
@@ -407,10 +460,22 @@ rxversion="8.2">
 			ref="3317ce09-3f34-4b64-ad5c-42f441333426"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="e214fbbd-6720-4b82-bebb-a7a768a146f8"
+			name="CloseApplication"
+			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
 			<smartfoldernode
 			id="e84ae9b3-28f2-4e37-9d12-9c75f64e70a1"
 			name="Sample_Flow_for_app_not_opened_closed_every_time_by_TestCases">
 			</smartfoldernode>
+			<testmodule
+			id="e93ca0bf-699d-46c9-87c4-62ed2a3f4d26"
+			name="CloseApplication"
+			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="fb62f605-72f8-44c6-b037-756d5415f83c"
 			name="VerifyCollectQueryPlansToBeDisabled"
@@ -484,6 +549,14 @@ rxversion="8.2">
 						id="bd00a9f2-d836-4f76-87ea-324e2582abe5"
 						name="CloseApplication">
 						</testmodule>
+						<teardown
+						id="4ff043d6-ea74-47e0-887a-e864528bde8c"
+						name="teardown1">
+							<testmodule
+							id="e93ca0bf-699d-46c9-87c4-62ed2a3f4d26"
+							name="CloseApplication">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="90e94efc-cb71-43df-8101-852aab6dfa32"
@@ -516,6 +589,14 @@ rxversion="8.2">
 						id="5d346be5-339d-4053-ad19-c6777b349f72"
 						name="CloseApplication">
 						</testmodule>
+						<teardown
+						id="026112c2-b912-4859-a092-f2dad7b8c124"
+						name="teardown11">
+							<testmodule
+							id="6334c569-3627-48aa-96e6-e48400524c95"
+							name="CloseApplication">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="1d9254b6-bc76-462c-a730-dd69496e1aa7"
@@ -548,6 +629,14 @@ rxversion="8.2">
 						id="6a905789-615d-4ed0-a093-c09816ed356d"
 						name="CloseApplication">
 						</testmodule>
+						<teardown
+						id="4ff0429d-5946-4e0b-86ae-012c9c4f7157"
+						name="teardown12">
+							<testmodule
+							id="2620cda0-281f-4e57-bcbb-3eb666d47095"
+							name="CloseApplication">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="3a03fb3a-4bd3-4e9d-82a0-81e859f30a20"
@@ -576,6 +665,14 @@ rxversion="8.2">
 						id="affd02b4-f305-4cca-8f23-ba58101dcdbb"
 						name="CloseApplication">
 						</testmodule>
+						<teardown
+						id="0de9ad90-8248-4c40-978d-642e879c379c"
+						name="teardown13">
+							<testmodule
+							id="39cb6180-c78f-4c2f-919e-bc27c56f53d6"
+							name="CloseApplication">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="7697ca61-cff1-4df0-a8a4-a58c5b60e97e"
@@ -596,6 +693,14 @@ rxversion="8.2">
 						id="734b80d3-56aa-4aa7-afd4-aedb27cdd273"
 						name="CloseApplication">
 						</testmodule>
+						<teardown
+						id="b36b80f1-c1ed-43e2-8c46-4d322ca1b6b3"
+						name="teardown14">
+							<testmodule
+							id="e214fbbd-6720-4b82-bebb-a7a768a146f8"
+							name="CloseApplication">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="cda6d9fa-5559-4b63-8e81-bb82f2ca515c"
@@ -628,6 +733,14 @@ rxversion="8.2">
 						id="fd89e4ae-fd0a-4e6b-a470-4f7fd046360e"
 						name="CloseApplication">
 						</testmodule>
+						<teardown
+						id="b892faf6-2cbd-4960-95ed-cb7311871c86"
+						name="teardown141">
+							<testmodule
+							id="7bf5a91d-e8ce-414e-82b7-117d876274fb"
+							name="CloseApplication">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<smartfoldernode
 					id="e84ae9b3-28f2-4e37-9d12-9c75f64e70a1"

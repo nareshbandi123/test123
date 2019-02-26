@@ -41,8 +41,8 @@ namespace SQLDMTestAutomation
         /// </summary>
         public AddServerAndVerifyQueryPlanOptionEnabled()
         {
-            Server1 = "JS-XW7S9\\SQL2008";
-            Server2 = "JS-XW7S7\\SQL2008";
+            Server1 = "PUL-HT-W7x86\\SQL2008";
+            Server2 = "QA-LF-WIN2K8R2-01\\SQL2008";
         }
 
         /// <summary>

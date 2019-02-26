@@ -30,12 +30,12 @@ rxversion="8.2">
 		<var
 		id="b7fbac2d-ddd1-480c-a5b8-8a7f98bffefb"
 		name="Server1">
-			JS-XW7S9\SQL2008
+			PUL-HT-W7x86\SQL2008
 		</var>
 		<var
 		id="cdd259bc-3721-4617-adf6-6e9987ddebe1"
 		name="Server2">
-			JS-XW7S7\SQL2008
+			QA-LF-WIN2K8R2-01\SQL2008
 		</var>
 	</variables>
 	<recorditems>
