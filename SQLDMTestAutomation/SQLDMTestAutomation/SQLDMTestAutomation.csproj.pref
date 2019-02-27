@@ -1,39 +1,24 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="CloseMonitoredSqlServerWindow.rxrec" />
+    <Element value="SQLDMTestAutomation.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="CloseMonitoredSqlServerWindow.UserCode.cs" />
-    <Element value="SQLDMTestAutomationRepository.rxrep" />
-    <Element value="CloseMonitoredSqlServerWindow.rxrec" />
-    <Element value="ListOfServers.UserCode.cs" />
-    <Element value="ListOfServers.rxrec" />
-    <Element value="UserCodeCollection1.cs" />
-    <Element value="UserCodeModule1.cs" />
-    <Element value="VerifySelectTopForMinMaxValues.rxrec" />
-    <Element value="VerifySelectTopWithInvaildData.rxrec" />
     <Element value="SQLDMTestAutomation.rxtst" />
-    <Element value="VerifySelectByAndPlansBy.rxrec" />
-    <Element value="OpenConfigureQueryMonitor.rxrec" />
-    <Element value="SelectServer.rxrec" />
-    <Element value="EnableQueryMonitor.UserCode.cs" />
-    <Element value="EnableQueryMonitor.rxrec" />
-    <Element value="DisableQueryMonitor.UserCode.cs" />
-    <Element value="DisableQueryMonitor.rxrec" />
-    <Element value="VerifyCollectQueryPlansToBeDisabled.rxrec" />
-    <Element value="EnableQueryMonitor.cs" />
-    <Element value="OpenConfigureQueryMonitor.cs" />
-    <Element value="LaunchApplication.rxrec" />
+    <Element value="SQLDMTestAutomation.rxtmg" />
+    <Element value="UserCodeCollection1.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
       <runOnBuild value="False" />
     </Properties>
     <Array name="recentusercodeselections">
-      <Element value="SQLDMTestAutomation.DisableQueryMonitor.DisableQueryMonitorTraceCheckBox(RepoItemInfo checkboxInfo)" />
-      <Element value="SQLDMTestAutomation.OpenConfigureQueryMonitor.ClickQueryMonitorTraceCheckBox(RepoItemInfo checkboxInfo)" />
-      <Element value="SQLDMTestAutomation.Recording1.ClickeQueryMonitorTraceCheckBox(RepoItemInfo checkboxInfo)" />
+      <Element value="SQLDMTestAutomation.UserCodeCollection1.KillApplicationProcess(String application)" />
+      <Element value="SQLDMTestAutomation.UserCodeCollection1.KillApplicationProcess(String application)" />
+      <Element value="SQLDMTestAutomation.UserCodeCollection1.KillApplicationProcess()" />
+      <Element value="SQLDMTestAutomation.LaunchApplication.LaunchApplication_Run_application()" />
+      <Element value="SQLDMTestAutomation.CollapseAllServers.AllServersCollapse(RepoItemInfo argument1)" />
+      <Element value="SQLDMTestAutomation.CollapseAllServers.AllServers(RepoItemInfo argument1)" />
     </Array>
   </Properties>
 </Properties>
