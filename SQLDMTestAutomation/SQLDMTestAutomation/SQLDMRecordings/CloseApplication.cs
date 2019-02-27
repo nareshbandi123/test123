@@ -79,8 +79,8 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'IderaSQLDiagnosticManagerSQLdmRepo'.", repo.IderaSQLDiagnosticManagerSQLdmRepo.SelfInfo, new RecordItemIndex(0));
-            //Host.Current.CloseApplication(repo.IderaSQLDiagnosticManagerSQLdmRepo.Self, 2000);
+            //Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo'.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SelfInfo, new RecordItemIndex(0));
+            //Host.Current.CloseApplication(repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Self, 2000);
             //Delay.Milliseconds(0);
             
             //KillApplicationProcess();

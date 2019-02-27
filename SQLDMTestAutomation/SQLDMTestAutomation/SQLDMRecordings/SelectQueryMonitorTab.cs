@@ -79,8 +79,8 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MonitoredSqlServerInstancePropertiesDial.ListItem' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.ListItemInfo, new RecordItemIndex(0));
-            repo.MonitoredSqlServerInstancePropertiesDial.ListItem.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.ListItem' at Center.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.ListItemInfo, new RecordItemIndex(0));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.ListItem.Click();
             Delay.Milliseconds(200);
             
         }

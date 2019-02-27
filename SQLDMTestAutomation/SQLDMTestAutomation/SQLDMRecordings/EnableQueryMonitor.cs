@@ -79,7 +79,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            ClickQueryMonitorTraceCheckBox(repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo);
+            ClickQueryMonitorTraceCheckBox(repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo);
             Delay.Milliseconds(0);
             
         }

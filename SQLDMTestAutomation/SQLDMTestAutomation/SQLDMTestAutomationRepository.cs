@@ -27,17 +27,8 @@ namespace SQLDMTestAutomation
     public partial class SQLDMTestAutomationRepository : RepoGenBaseFolder
     {
         static SQLDMTestAutomationRepository instance = new SQLDMTestAutomationRepository();
-        SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder _iderasqldiagnosticmanagersqldmrepo;
-        SQLDMTestAutomationRepositoryFolders.MonitoredSqlServerInstancePropertiesDialAppFolder _monitoredsqlserverinstancepropertiesdial;
-        SQLDMTestAutomationRepositoryFolders.SQLdmDesktopClientAppFolder _sqldmdesktopclient;
-        SQLDMTestAutomationRepositoryFolders.SomeContextMenuAppFolder _somecontextmenu;
-        SQLDMTestAutomationRepositoryFolders.ManageServersDialogAppFolder _manageserversdialog;
-        SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder _addserverswizard;
         SQLDMTestAutomationRepositoryFolders.SQLDMFolder _sqldm;
         SQLDMTestAutomationRepositoryFolders.SSMSFolder _ssms;
-        SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder _microsoftsqlservermanagementstudio;
-        SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder _connectiondialog;
-        SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder _ssms_somecontextmenu;
 
         /// <summary>
         /// Gets the singleton class instance representing the SQLDMTestAutomationRepository element repository.
@@ -54,17 +45,8 @@ namespace SQLDMTestAutomation
         public SQLDMTestAutomationRepository() 
             : base("SQLDMTestAutomationRepository", "/", null, 0, false, "fef44676-cf73-4211-820e-be7621cd7bfd", ".\\RepositoryImages\\SQLDMTestAutomationRepositoryfef44676.rximgres")
         {
-            _iderasqldiagnosticmanagersqldmrepo = new SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder(this);
-            _monitoredsqlserverinstancepropertiesdial = new SQLDMTestAutomationRepositoryFolders.MonitoredSqlServerInstancePropertiesDialAppFolder(this);
-            _sqldmdesktopclient = new SQLDMTestAutomationRepositoryFolders.SQLdmDesktopClientAppFolder(this);
-            _somecontextmenu = new SQLDMTestAutomationRepositoryFolders.SomeContextMenuAppFolder(this);
-            _manageserversdialog = new SQLDMTestAutomationRepositoryFolders.ManageServersDialogAppFolder(this);
-            _addserverswizard = new SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder(this);
             _sqldm = new SQLDMTestAutomationRepositoryFolders.SQLDMFolder(this);
             _ssms = new SQLDMTestAutomationRepositoryFolders.SSMSFolder(this);
-            _microsoftsqlservermanagementstudio = new SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder(this);
-            _connectiondialog = new SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder(this);
-            _ssms_somecontextmenu = new SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder(this);
         }
 
 #region Variables
@@ -96,60 +78,6 @@ namespace SQLDMTestAutomation
         }
 
         /// <summary>
-        /// The IderaSQLDiagnosticManagerSQLdmRepo folder.
-        /// </summary>
-        [RepositoryFolder("b4fb3fbf-37f1-4ea8-8a05-407ab9741ac6")]
-        public virtual SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder IderaSQLDiagnosticManagerSQLdmRepo
-        {
-            get { return _iderasqldiagnosticmanagersqldmrepo; }
-        }
-
-        /// <summary>
-        /// The MonitoredSqlServerInstancePropertiesDial folder.
-        /// </summary>
-        [RepositoryFolder("ca2ce607-39c3-44b6-924e-0fef773d1433")]
-        public virtual SQLDMTestAutomationRepositoryFolders.MonitoredSqlServerInstancePropertiesDialAppFolder MonitoredSqlServerInstancePropertiesDial
-        {
-            get { return _monitoredsqlserverinstancepropertiesdial; }
-        }
-
-        /// <summary>
-        /// The SQLdmDesktopClient folder.
-        /// </summary>
-        [RepositoryFolder("1ad6602d-ccb9-45a2-bf31-905c78fe286e")]
-        public virtual SQLDMTestAutomationRepositoryFolders.SQLdmDesktopClientAppFolder SQLdmDesktopClient
-        {
-            get { return _sqldmdesktopclient; }
-        }
-
-        /// <summary>
-        /// The SomeContextMenu folder.
-        /// </summary>
-        [RepositoryFolder("a629e7ef-f0f5-4d80-bcde-22fa5bb05055")]
-        public virtual SQLDMTestAutomationRepositoryFolders.SomeContextMenuAppFolder SomeContextMenu
-        {
-            get { return _somecontextmenu; }
-        }
-
-        /// <summary>
-        /// The ManageServersDialog folder.
-        /// </summary>
-        [RepositoryFolder("78a2c140-75a4-4223-a89b-21fe843b3cfa")]
-        public virtual SQLDMTestAutomationRepositoryFolders.ManageServersDialogAppFolder ManageServersDialog
-        {
-            get { return _manageserversdialog; }
-        }
-
-        /// <summary>
-        /// The AddServersWizard folder.
-        /// </summary>
-        [RepositoryFolder("47244754-be09-4684-95c7-ea1fae2ca75b")]
-        public virtual SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder AddServersWizard
-        {
-            get { return _addserverswizard; }
-        }
-
-        /// <summary>
         /// The SQLDM folder.
         /// </summary>
         [RepositoryFolder("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
@@ -166,33 +94,6 @@ namespace SQLDMTestAutomation
         {
             get { return _ssms; }
         }
-
-        /// <summary>
-        /// The MicrosoftSQLServerManagementStudio folder.
-        /// </summary>
-        [RepositoryFolder("8a3f136c-f885-4fbf-8158-6d98b48b02b1")]
-        public virtual SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder MicrosoftSQLServerManagementStudio
-        {
-            get { return _microsoftsqlservermanagementstudio; }
-        }
-
-        /// <summary>
-        /// The ConnectionDialog folder.
-        /// </summary>
-        [RepositoryFolder("7ff60cdc-ea07-45cd-9e7d-95d395854b2f")]
-        public virtual SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder ConnectionDialog
-        {
-            get { return _connectiondialog; }
-        }
-
-        /// <summary>
-        /// The SSMS_SomeContextMenu folder.
-        /// </summary>
-        [RepositoryFolder("4c624302-bbd7-4410-99d9-315ecb6846f1")]
-        public virtual SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder SSMS_SomeContextMenu
-        {
-            get { return _ssms_somecontextmenu; }
-        }
     }
 
     /// <summary>
@@ -201,6 +102,100 @@ namespace SQLDMTestAutomation
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
     public partial class SQLDMTestAutomationRepositoryFolders
     {
+        /// <summary>
+        /// The SQLDMFolder folder.
+        /// </summary>
+        [RepositoryFolder("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
+        public partial class SQLDMFolder : RepoGenBaseFolder
+        {
+            SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder _iderasqldiagnosticmanagersqldmrepo;
+            SQLDMTestAutomationRepositoryFolders.MonitoredSqlServerInstancePropertiesDialAppFolder _monitoredsqlserverinstancepropertiesdial;
+            SQLDMTestAutomationRepositoryFolders.SQLdmDesktopClientAppFolder _sqldmdesktopclient;
+            SQLDMTestAutomationRepositoryFolders.SomeContextMenuAppFolder _somecontextmenu;
+            SQLDMTestAutomationRepositoryFolders.ManageServersDialogAppFolder _manageserversdialog;
+            SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder _addserverswizard;
+
+            /// <summary>
+            /// Creates a new SQLDM  folder.
+            /// </summary>
+            public SQLDMFolder(RepoGenBaseFolder parentFolder) :
+                    base("SQLDM", "", parentFolder, 0, null, false, "c18fc3ad-e59f-453e-b34b-bd7d00dbbffd", "")
+            {
+                _iderasqldiagnosticmanagersqldmrepo = new SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder(this);
+                _monitoredsqlserverinstancepropertiesdial = new SQLDMTestAutomationRepositoryFolders.MonitoredSqlServerInstancePropertiesDialAppFolder(this);
+                _sqldmdesktopclient = new SQLDMTestAutomationRepositoryFolders.SQLdmDesktopClientAppFolder(this);
+                _somecontextmenu = new SQLDMTestAutomationRepositoryFolders.SomeContextMenuAppFolder(this);
+                _manageserversdialog = new SQLDMTestAutomationRepositoryFolders.ManageServersDialogAppFolder(this);
+                _addserverswizard = new SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IderaSQLDiagnosticManagerSQLdmRepo folder.
+            /// </summary>
+            [RepositoryFolder("b4fb3fbf-37f1-4ea8-8a05-407ab9741ac6")]
+            public virtual SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder IderaSQLDiagnosticManagerSQLdmRepo
+            {
+                get { return _iderasqldiagnosticmanagersqldmrepo; }
+            }
+
+            /// <summary>
+            /// The MonitoredSqlServerInstancePropertiesDial folder.
+            /// </summary>
+            [RepositoryFolder("ca2ce607-39c3-44b6-924e-0fef773d1433")]
+            public virtual SQLDMTestAutomationRepositoryFolders.MonitoredSqlServerInstancePropertiesDialAppFolder MonitoredSqlServerInstancePropertiesDial
+            {
+                get { return _monitoredsqlserverinstancepropertiesdial; }
+            }
+
+            /// <summary>
+            /// The SQLdmDesktopClient folder.
+            /// </summary>
+            [RepositoryFolder("1ad6602d-ccb9-45a2-bf31-905c78fe286e")]
+            public virtual SQLDMTestAutomationRepositoryFolders.SQLdmDesktopClientAppFolder SQLdmDesktopClient
+            {
+                get { return _sqldmdesktopclient; }
+            }
+
+            /// <summary>
+            /// The SomeContextMenu folder.
+            /// </summary>
+            [RepositoryFolder("a629e7ef-f0f5-4d80-bcde-22fa5bb05055")]
+            public virtual SQLDMTestAutomationRepositoryFolders.SomeContextMenuAppFolder SomeContextMenu
+            {
+                get { return _somecontextmenu; }
+            }
+
+            /// <summary>
+            /// The ManageServersDialog folder.
+            /// </summary>
+            [RepositoryFolder("78a2c140-75a4-4223-a89b-21fe843b3cfa")]
+            public virtual SQLDMTestAutomationRepositoryFolders.ManageServersDialogAppFolder ManageServersDialog
+            {
+                get { return _manageserversdialog; }
+            }
+
+            /// <summary>
+            /// The AddServersWizard folder.
+            /// </summary>
+            [RepositoryFolder("47244754-be09-4684-95c7-ea1fae2ca75b")]
+            public virtual SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder AddServersWizard
+            {
+                get { return _addserverswizard; }
+            }
+        }
+
         /// <summary>
         /// The IderaSQLDiagnosticManagerSQLdmRepoAppFolder folder.
         /// </summary>
@@ -1299,39 +1294,14 @@ namespace SQLDMTestAutomation
         }
 
         /// <summary>
-        /// The SQLDMFolder folder.
-        /// </summary>
-        [RepositoryFolder("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
-        public partial class SQLDMFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new SQLDM  folder.
-            /// </summary>
-            public SQLDMFolder(RepoGenBaseFolder parentFolder) :
-                    base("SQLDM", "", parentFolder, 0, null, false, "c18fc3ad-e59f-453e-b34b-bd7d00dbbffd", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The SSMSFolder folder.
         /// </summary>
         [RepositoryFolder("e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695")]
         public partial class SSMSFolder : RepoGenBaseFolder
         {
+            SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder _microsoftsqlservermanagementstudio;
+            SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder _connectiondialog;
+            SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder _ssms_somecontextmenu;
 
             /// <summary>
             /// Creates a new SSMS  folder.
@@ -1339,6 +1309,9 @@ namespace SQLDMTestAutomation
             public SSMSFolder(RepoGenBaseFolder parentFolder) :
                     base("SSMS", "", parentFolder, 0, null, false, "e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695", "")
             {
+                _microsoftsqlservermanagementstudio = new SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder(this);
+                _connectiondialog = new SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder(this);
+                _ssms_somecontextmenu = new SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder(this);
             }
 
             /// <summary>
@@ -1351,6 +1324,33 @@ namespace SQLDMTestAutomation
                 {
                     return _selfInfo;
                 }
+            }
+
+            /// <summary>
+            /// The MicrosoftSQLServerManagementStudio folder.
+            /// </summary>
+            [RepositoryFolder("8a3f136c-f885-4fbf-8158-6d98b48b02b1")]
+            public virtual SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder MicrosoftSQLServerManagementStudio
+            {
+                get { return _microsoftsqlservermanagementstudio; }
+            }
+
+            /// <summary>
+            /// The ConnectionDialog folder.
+            /// </summary>
+            [RepositoryFolder("7ff60cdc-ea07-45cd-9e7d-95d395854b2f")]
+            public virtual SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder ConnectionDialog
+            {
+                get { return _connectiondialog; }
+            }
+
+            /// <summary>
+            /// The SSMS_SomeContextMenu folder.
+            /// </summary>
+            [RepositoryFolder("4c624302-bbd7-4410-99d9-315ecb6846f1")]
+            public virtual SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder SSMS_SomeContextMenu
+            {
+                get { return _ssms_somecontextmenu; }
             }
         }
 
@@ -1366,6 +1366,9 @@ namespace SQLDMTestAutomation
             RepoItemInfo _sqldmrepositoryInfo;
             RepoItemInfo _queryeditorInfo;
             RepoItemInfo _executeInfo;
+            RepoItemInfo _tablecol_querymonitortopplancountfilterInfo;
+            RepoItemInfo _tablecol_querymonitortopplancategoryfilterInfo;
+            RepoItemInfo _tablecol_querymonitorquerystoremonitoringenabledInfo;
 
             /// <summary>
             /// Creates a new MicrosoftSQLServerManagementStudio  folder.
@@ -1379,6 +1382,9 @@ namespace SQLDMTestAutomation
                 _sqldmrepositoryInfo = new RepoItemInfo(this, "SQLdmRepository", ".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']", 30000, null, "cd96dc4f-9177-4391-9543-678d196a959d");
                 _queryeditorInfo = new RepoItemInfo(this, "QueryEditor", ".//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']", 30000, null, "dcfdc283-6c39-4efa-87ec-ad57e0aafed1");
                 _executeInfo = new RepoItemInfo(this, "Execute", ".//toolbar[@accessiblename='SQL Editor']/button[@accessiblename='Execute']", 30000, null, "5e7cdb49-8b84-4fdf-9734-bb214f28ecc6");
+                _tablecol_querymonitortopplancountfilterInfo = new RepoItemInfo(this, "TableCol_QueryMonitorTopPlanCountFilter", ".//table[@accessiblename='GridControl']//cell[@accessiblevalue='QueryMonitorTopPlanCountFilter']", 30000, null, "7779030f-15e2-470f-8e98-cf5b7a206482");
+                _tablecol_querymonitortopplancategoryfilterInfo = new RepoItemInfo(this, "TableCol_QueryMonitorTopPlanCategoryFilter", ".//table[@accessiblename='GridControl']//cell[@accessiblevalue='QueryMonitorTopPlanCategoryFilter']", 30000, null, "14835a35-3776-4dbb-8f7b-efa70f385dce");
+                _tablecol_querymonitorquerystoremonitoringenabledInfo = new RepoItemInfo(this, "TableCol_QueryMonitorQueryStoreMonitoringEnabled", ".//table[@accessiblename='GridControl']//cell[@accessiblevalue='QueryMonitorQueryStoreMonitoringEnabled']", 30000, null, "6ac8f383-255b-485e-bd9a-f772a8e609f4");
             }
 
             /// <summary>
@@ -1546,6 +1552,78 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _executeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TableCol_QueryMonitorTopPlanCountFilter item.
+            /// </summary>
+            [RepositoryItem("7779030f-15e2-470f-8e98-cf5b7a206482")]
+            public virtual Ranorex.Cell TableCol_QueryMonitorTopPlanCountFilter
+            {
+                get
+                {
+                    return _tablecol_querymonitortopplancountfilterInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TableCol_QueryMonitorTopPlanCountFilter item info.
+            /// </summary>
+            [RepositoryItemInfo("7779030f-15e2-470f-8e98-cf5b7a206482")]
+            public virtual RepoItemInfo TableCol_QueryMonitorTopPlanCountFilterInfo
+            {
+                get
+                {
+                    return _tablecol_querymonitortopplancountfilterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TableCol_QueryMonitorTopPlanCategoryFilter item.
+            /// </summary>
+            [RepositoryItem("14835a35-3776-4dbb-8f7b-efa70f385dce")]
+            public virtual Ranorex.Cell TableCol_QueryMonitorTopPlanCategoryFilter
+            {
+                get
+                {
+                    return _tablecol_querymonitortopplancategoryfilterInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TableCol_QueryMonitorTopPlanCategoryFilter item info.
+            /// </summary>
+            [RepositoryItemInfo("14835a35-3776-4dbb-8f7b-efa70f385dce")]
+            public virtual RepoItemInfo TableCol_QueryMonitorTopPlanCategoryFilterInfo
+            {
+                get
+                {
+                    return _tablecol_querymonitortopplancategoryfilterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TableCol_QueryMonitorQueryStoreMonitoringEnabled item.
+            /// </summary>
+            [RepositoryItem("6ac8f383-255b-485e-bd9a-f772a8e609f4")]
+            public virtual Ranorex.Cell TableCol_QueryMonitorQueryStoreMonitoringEnabled
+            {
+                get
+                {
+                    return _tablecol_querymonitorquerystoremonitoringenabledInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TableCol_QueryMonitorQueryStoreMonitoringEnabled item info.
+            /// </summary>
+            [RepositoryItemInfo("6ac8f383-255b-485e-bd9a-f772a8e609f4")]
+            public virtual RepoItemInfo TableCol_QueryMonitorQueryStoreMonitoringEnabledInfo
+            {
+                get
+                {
+                    return _tablecol_querymonitorquerystoremonitoringenabledInfo;
                 }
             }
         }

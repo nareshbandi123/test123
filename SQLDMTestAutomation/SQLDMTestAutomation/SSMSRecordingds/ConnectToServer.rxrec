@@ -40,7 +40,7 @@ rxversion="8.2">
 	<recorditems>
 		<setvaluerecorditem
 		attrname="Text"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="f1774fc8-efc0-4d03-ae7f-a36f6fba6f35">
 			<comment>
@@ -200,7 +200,7 @@ rxversion="8.2">
 		action="Move"
 		button="Left"
 		duration="500ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -987,7 +987,7 @@ rxversion="8.2">
 		</mouseitem>
 		<invokeactionrecorditem
 		action="Press"
-		enabled="False"
+		enabled="True"
 		optional="False"
 		searchpropertyid="43bab4a5-406c-4b56-a08b-809e7a423d8c"
 		varname="">
@@ -1743,7 +1743,7 @@ rxversion="8.2">
 		</invokeactionrecorditem>
 		<explicitdelayitem
 		duration="2000ms"
-		enabled="False"
+		enabled="True"
 		optional="False">
 			<comment>
 			</comment>
@@ -1754,7 +1754,7 @@ rxversion="8.2">
 		action="Move"
 		button="Left"
 		duration="500ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1842,7 +1842,7 @@ rxversion="8.2">
 		action="DoubleClick"
 		button="Left"
 		duration="500ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1950,12 +1950,18 @@ rxversion="8.2">
 				</path>
 			</info>
 		</mouseitem>
-		<invokeactionrecorditem
-		action="Select"
+		<mouseitem
+		action="Click"
+		button="Right"
+		duration="500ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		searchpropertyid="d3814196-2fa1-4dfb-872f-85a32d5f54dc"
-		varname="">
+		searchpropertyid="b7d0b7fe-a136-44ef-85eb-d0d2e5a358ee"
+		sx="125"
+		sy="280"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2031,13 +2037,19 @@ rxversion="8.2">
 					/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']
 				</path>
 			</info>
-			<arguments
-			id="95d403ca-20d3-4172-b3df-66e7774ee78a">
-			</arguments>
-		</invokeactionrecorditem>
+		</mouseitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
-		button="Right"
+		button="Left"
 		duration="500ms"
 		enabled="True"
 		loc="Center"
@@ -2059,6 +2071,15 @@ rxversion="8.2">
 				</path>
 			</info>
 		</mouseitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -2125,71 +2146,29 @@ rxversion="8.2">
 				</path>
 			</info>
 		</mouseitem>
-		<setvaluerecorditem
-		attrname="Text"
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
 		enabled="True"
 		optional="False"
-		searchpropertyid="18c28ccc-4dc2-4b42-bd8d-a42bdb66da11">
+		presstime="100ms"
+		searchpropertyid="1caef211-982a-42f4-a68d-9fa6b905fb35">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="AttributeValue"
+				target="KeySequence"
 				variable="Query">
 				</binding>
 			</bindings>
 			<info
 			id="dcfdc283-6c39-4efa-87ec-ad57e0aafed1"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="336,114,771,548"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="accessibledescription"
-					type="System.String">
-						stream from line 0, char 0 to line 0, char 0
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						selected text
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Text
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						None
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-					</attribute>
-				</element>
 				<path>
 					/form[@title~'^Microsoft\ SQL\ Server\ Mana']//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']
 				</path>
 			</info>
-			<AttributeValue>
-			</AttributeValue>
-		</setvaluerecorditem>
+		</keysequenceitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -2268,6 +2247,75 @@ rxversion="8.2">
 				</path>
 			</info>
 		</mouseitem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="5ee65ca8-8f87-4442-b031-7239f15cc1ba">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7779030f-15e2-470f-8e98-cf5b7a206482"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Microsoft\ SQL\ Server\ Mana']//table[@accessiblename='GridControl']//cell[@accessiblevalue='QueryMonitorTopPlanCountFilter']
+				</path>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="226fbba8-7f86-46a2-baa2-732116eb89ac">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="14835a35-3776-4dbb-8f7b-efa70f385dce"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Microsoft\ SQL\ Server\ Mana']//table[@accessiblename='GridControl']//cell[@accessiblevalue='QueryMonitorTopPlanCategoryFilter']
+				</path>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="500fd3e0-d243-4a7d-980b-0d88ab5294ac">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6ac8f383-255b-485e-bd9a-f772a8e609f4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Microsoft\ SQL\ Server\ Mana']//table[@accessiblename='GridControl']//cell[@accessiblevalue='QueryMonitorQueryStoreMonitoringEnabled']
+				</path>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="f786a100-360b-442d-a1a8-e04f271dd75e"

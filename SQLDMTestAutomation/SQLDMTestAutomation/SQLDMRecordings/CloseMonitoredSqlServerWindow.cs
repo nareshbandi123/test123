@@ -79,16 +79,16 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'MonitoredSqlServerInstancePropertiesDial.Close' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.CloseInfo, new RecordItemIndex(0));
-            //repo.MonitoredSqlServerInstancePropertiesDial.Close.MoveTo();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.Close' at Center.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.CloseInfo, new RecordItemIndex(0));
+            //repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.Close.MoveTo();
             //Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MonitoredSqlServerInstancePropertiesDial.Close' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.CloseInfo, new RecordItemIndex(1));
-            //repo.MonitoredSqlServerInstancePropertiesDial.Close.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.Close' at Center.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.CloseInfo, new RecordItemIndex(1));
+            //repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.Close.Click();
             //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'MonitoredSqlServerInstancePropertiesDial.Close'.", repo.MonitoredSqlServerInstancePropertiesDial.CloseInfo, new RecordItemIndex(2));
-            repo.MonitoredSqlServerInstancePropertiesDial.Close.Press();
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.Close'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.CloseInfo, new RecordItemIndex(2));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.Close.Press();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));

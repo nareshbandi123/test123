@@ -79,7 +79,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            DisableQueryMonitorTraceCheckBox(repo.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo);
+            DisableQueryMonitorTraceCheckBox(repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.EnableQueryMonitorTraceCheckBoxInfo);
             Delay.Milliseconds(0);
             
         }

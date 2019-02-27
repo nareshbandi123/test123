@@ -30,12 +30,11 @@ rxversion="8.2">
 	</variables>
 	<recorditems>
 		<userrecorditem
-		autogenmethod="True"
-		classname="OpenConfigureQueryMonitor"
+		classname="EnableQueryMonitor"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="ClickQueryMonitorTraceCheckBox"
-		namespace="SQLDMTestAutomation"
+		namespace="SQLDMTestAutomation.SQLDMRecordings"
 		optional="False"
 		varname="">
 			<comment>
@@ -43,10 +42,10 @@ rxversion="8.2">
 			<bindings>
 			</bindings>
 			<arguments
-			id="727c3741-bef8-4598-a6f0-ab3e61d9fb23">
+			id="7d8785e8-61e8-4708-b4e3-450271bc3df3">
 				<argument
 				argname="checkboxInfo"
-				id="f3f49d52-c5f0-4ba3-83d0-c202d625b013">
+				id="49396e3d-bc30-4687-a83d-1dd02b28aeab">
 					<argvaluetype>
 						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
 					</argvaluetype>

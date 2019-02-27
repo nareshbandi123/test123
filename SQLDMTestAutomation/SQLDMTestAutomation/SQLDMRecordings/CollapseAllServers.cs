@@ -79,11 +79,11 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'IderaSQLDiagnosticManagerSQLdmRepo.AllServers'.", repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo, new RecordItemIndex(0));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServers.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServers'.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo, new RecordItemIndex(0));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServers.EnsureVisible();
             Delay.Milliseconds(0);
             
-            AllServersCollapse(repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo);
+            AllServersCollapse(repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo);
             Delay.Milliseconds(0);
             
         }

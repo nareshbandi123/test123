@@ -41,7 +41,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
         	try 
         	{
         		//Report.Log(ReportLevel.Info, "Before", "AllServer Code", treeitemInfo);
-        		Ranorex.TreeItem CollapseAllServers = repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServers;
+        		Ranorex.TreeItem CollapseAllServers = repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServers;
 				//Report.Log(ReportLevel.Info, "After", "AllServer Code", treeitemInfo);        		
 	        	foreach (var itemtree in CollapseAllServers.Items)
 	        	{

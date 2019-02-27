@@ -92,44 +92,44 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'MonitoredSqlServerInstancePropertiesDial.SomeIndicator' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.SomeIndicatorInfo, new RecordItemIndex(0));
-            //repo.MonitoredSqlServerInstancePropertiesDial.SomeIndicator.MoveTo();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.SomeIndicator' at Center.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.SomeIndicatorInfo, new RecordItemIndex(0));
+            //repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.SomeIndicator.MoveTo();
             //Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
             //Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'MonitoredSqlServerInstancePropertiesDial.SomeIndicator' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.SomeIndicatorInfo, new RecordItemIndex(1));
-            //repo.MonitoredSqlServerInstancePropertiesDial.SomeIndicator.MoveTo();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.SomeIndicator' at Center.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.SomeIndicatorInfo, new RecordItemIndex(1));
+            //repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.SomeIndicator.MoveTo();
             //Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(2));
-            repo.MonitoredSqlServerInstancePropertiesDial.UpDownEdit.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(2));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEdit.EnsureVisible();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='75') on item 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(3));
-            Validate.AttributeEqual(repo.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, "Text", "75");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='75') on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(3));
+            Validate.AttributeEqual(repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, "Text", "75");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'MonitoredSqlServerInstancePropertiesDial.ComboBox' and assigning its value to variable 'durationCombo'.", repo.MonitoredSqlServerInstancePropertiesDial.ComboBoxInfo, new RecordItemIndex(4));
-            durationCombo = repo.MonitoredSqlServerInstancePropertiesDial.ComboBox.Element.GetAttributeValueText("Text");
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.ComboBox' and assigning its value to variable 'durationCombo'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.ComboBoxInfo, new RecordItemIndex(4));
+            durationCombo = repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.ComboBox.Element.GetAttributeValueText("Text");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "User", durationCombo, new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Duration (milliseconds)') on item 'MonitoredSqlServerInstancePropertiesDial.ComboBox'.", repo.MonitoredSqlServerInstancePropertiesDial.ComboBoxInfo, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.MonitoredSqlServerInstancePropertiesDial.ComboBoxInfo, "Text", "Duration (milliseconds)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Duration (milliseconds)') on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.ComboBox'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.ComboBoxInfo, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.ComboBoxInfo, "Text", "Duration (milliseconds)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(7));
-            repo.MonitoredSqlServerInstancePropertiesDial.OkButton.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(7));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton.EnsureVisible();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(8));
-            //repo.MonitoredSqlServerInstancePropertiesDial.OkButton.Press();
+            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(8));
+            //repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton.Press();
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor'.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(9));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor.PressKeys("{ENTER}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor'.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitorInfo, new RecordItemIndex(9));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor.PressKeys("{ENTER}");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(10));

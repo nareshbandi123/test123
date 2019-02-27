@@ -91,16 +91,16 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Report.Log(ReportLevel.Info, "User", "$ServerName", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'IderaSQLDiagnosticManagerSQLdmRepo.Server'.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(1));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.Server.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server'.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(1));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server.EnsureVisible();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(2));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.Server.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(2));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(3));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.Server.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(3));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server.Click();
             Delay.Milliseconds(200);
             
         }

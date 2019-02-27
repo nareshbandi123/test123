@@ -92,31 +92,31 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Report.Log(ReportLevel.Info, "User", ServerName, new RecordItemIndex(0));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Server2017' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.Server2017Info, new RecordItemIndex(1));
-            //repo.IderaSQLDiagnosticManagerSQLdmRepo.Server2017.MoveTo();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server2017' at Center.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server2017Info, new RecordItemIndex(1));
+            //repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server2017.MoveTo();
             //Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Server2017' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.Server2017Info, new RecordItemIndex(2));
-            //repo.IderaSQLDiagnosticManagerSQLdmRepo.Server2017.Click(System.Windows.Forms.MouseButtons.Right);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server2017' at Center.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server2017Info, new RecordItemIndex(2));
+            //repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server2017.Click(System.Windows.Forms.MouseButtons.Right);
             //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(3));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.Server.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(3));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(4));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.Server.Click(System.Windows.Forms.MouseButtons.Right);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.ServerInfo, new RecordItemIndex(4));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Server.Click(System.Windows.Forms.MouseButtons.Right);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(5));
             Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLdmDesktopClient.Properties' at Center.", repo.SQLdmDesktopClient.PropertiesInfo, new RecordItemIndex(6));
-            repo.SQLdmDesktopClient.Properties.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.SQLdmDesktopClient.Properties' at Center.", repo.SQLDM.SQLdmDesktopClient.PropertiesInfo, new RecordItemIndex(6));
+            repo.SQLDM.SQLdmDesktopClient.Properties.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLdmDesktopClient.Properties' at Center.", repo.SQLdmDesktopClient.PropertiesInfo, new RecordItemIndex(7));
-            repo.SQLdmDesktopClient.Properties.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.SQLdmDesktopClient.Properties' at Center.", repo.SQLDM.SQLdmDesktopClient.PropertiesInfo, new RecordItemIndex(7));
+            repo.SQLDM.SQLdmDesktopClient.Properties.Click();
             Delay.Milliseconds(200);
             
         }
