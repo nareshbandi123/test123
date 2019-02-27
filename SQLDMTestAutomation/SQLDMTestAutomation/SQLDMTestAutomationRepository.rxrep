@@ -379,6 +379,16 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/contextmenu/menuitem[@automationid='menuFileManageServers']//text[@caption='Manage Servers...']
 			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="80867e47-bb6a-4e7f-a650-0df62393526f"
+			name="NewQuery"
+			refimgid="8381ade5-0b1a-41a0-9372-13db46fe0e25"
+			refpath="/contextmenu[@processname='Ssms']/menuitem[@accessiblename='New Query']"
+			searchtimeout="30000ms">
+				/contextmenu/menuitem[@accessiblename='New Query']
+			</item>
 			<basepath>
 				/contextmenu
 			</basepath>
@@ -549,6 +559,221 @@ YM+g3DDsKwUB6MlovjvMxXKZvFOvqYwflcSjqVzfTPqA2TzzgzTaGF1AccbzdLnrA9Rbhu5V62ND
 6EL1t0i2DgASROSlcwn3KyTDFZKXFlDiDyg1clNYXtdcqB1rNXmeSXGqEb82v8WxAVykIhh3ar7t
 A8ZPygx5HxqAS2Ns4eo9BEC/HYbOTZk0NpFzEHD70AHsLeAsEc8HAfH91Gw4vsOWaWyaC+tCo6+r
 MCAkAvg45OZFFP0BkKl1OzwGJwEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<folder
+		capname="unknown"
+		id="c18fc3ad-e59f-453e-b34b-bd7d00dbbffd"
+		isrooted="False"
+		name="SQLDM"
+		searchtimeout="0ms">
+		</folder>
+		<folder
+		capname="unknown"
+		id="e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695"
+		isrooted="False"
+		name="SSMS"
+		searchtimeout="0ms">
+		</folder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="8a3f136c-f885-4fbf-8158-6d98b48b02b1"
+		isrooted="True"
+		name="MicrosoftSQLServerManagementStudio"
+		refpath="/form[@title='Microsoft SQL Server Management Studio']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="a509d2cc-2e14-4437-a0ab-5fec2a083977"
+			name="ConnectObjectExplorer"
+			refimgid="1eb40ada-796e-4eb6-a652-b2db0a72ea32"
+			searchtimeout="30000ms">
+				/form[@title~'^Microsoft\ SQL\ Server\ Mana']/container[@caption='Object Explorer']//toolbar[@accessiblename~'^SQL Server Object Explore']/button[@accessiblename~'^Connect Object Explorer']
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="7b2de711-8301-4d15-a1f5-7069dbf81450"
+			name="ServerVisibleInLeftPane"
+			refimgid="c57046e5-5b5e-42ed-8eb0-8f85c783864a"
+			searchtimeout="30000ms">
+				/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename~'^'+$ServerName]
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="746f725a-4fa6-4763-8f3d-4ce10db5d557"
+			name="Databases"
+			refimgid="65d7564d-b9e3-4911-85aa-cb641adb01c2"
+			searchtimeout="30000ms">
+				/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='Databases']
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="cd96dc4f-9177-4391-9543-678d196a959d"
+			name="SQLdmRepository"
+			refimgid="3a7d5006-2ef5-4937-9fb1-a7f454dc926a"
+			searchtimeout="30000ms">
+				/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="dcfdc283-6c39-4efa-87ec-ad57e0aafed1"
+			name="QueryEditor"
+			refimgid="2d4ed757-5413-4603-bdaf-8b35f3b804a2"
+			searchtimeout="30000ms">
+				/form[@title~'^Microsoft\ SQL\ Server\ Mana']//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="5e7cdb49-8b84-4fdf-9734-bb214f28ecc6"
+			name="Execute"
+			refimgid="81ce3899-2ca5-4b08-bdce-af12fec17afa"
+			refpath="/form[@title='Microsoft SQL Server Management Studio']/container[@caption='MsoDockTop']/container[@caption='SQL Editor']/toolbar[@accessiblename='SQL Editor']/button[@accessiblename='Execute']"
+			searchtimeout="30000ms">
+				/form[@title~'^Microsoft\ SQL\ Server\ Mana']//toolbar[@accessiblename='SQL Editor']/button[@accessiblename='Execute']
+			</item>
+			<basepath>
+				/form[@title~'^Microsoft\ SQL\ Server\ Mana']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFjSURBVDhPnZKvT8NAFMf7JyBnkZP7F0gwk7jV
+LqgFQS4TZMFVkQbVIMgy0aQIkpsgKaJJJ4cg6QTJECRDVFQgTiBOIL7ce/0BpRslfJOX17t730/f
+u9YiJQsXP4MP/iIqhg4BJCbWeTbr0BcMGa56v2YrntlAOgHeJXTmQa+OoKMupuNuXtAmArDpLYB+
+HkHd7SGbWa2AWgcMUAbwIqDuO8j8dkCl/wKaHdAIBSC+FfD8EDJKuMi5khAXAYZjl4ONpeJrY/7W
+ARnVjQU5l5hcBrViWhO0BmHAYx8q9aBWIzaFUYxgvsTozKsBPD82nxmIH9ZNiDvuczjnAvaJY8JF
+linuiGsMdOpLs6ebgF06GAhsUp2PFfXgHO/DPnU59Ac4c2F1o1tEkOQVbC62WJW5TfRmgqxTVOM0
+tKuDsm16zsf5upNWkVkMOrVigiyfNk1I2UGZpT+Ffbj9TyRIuFgWZ5b1Cew3b3y0jsIiAAAAAElF
+TkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="7ff60cdc-ea07-45cd-9e7d-95d395854b2f"
+		isrooted="True"
+		name="ConnectionDialog"
+		refpath="/form[@controlname='ConnectionDialog']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="bdb8cf99-253b-4bed-9e1e-8c49e16c6b98"
+			name="ServerNameToConnect"
+			refimgid="253ae0ee-0d64-4289-8994-a1fb7b8c147a"
+			refpath="/form[@controlname='ConnectionDialog']/container[@controlname='simpleView']/container[@controlname='loginHolder']/container[@controlname='LoginControl']/combobox[@controlname='serverInstance']/text[@controlid='1001']"
+			searchtimeout="30000ms">
+				/form[@controlname='ConnectionDialog']/container[@controlname='simpleView']//combobox[@controlname='serverInstance']/text[@controlid='1001']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="84f883f4-0a94-43e5-9621-549bfa6c2a53"
+			name="Connect"
+			refimgid="33c1d40b-cfe6-4976-ab62-b047904c684c"
+			refpath="/form[@controlname='ConnectionDialog']/button[@controlname='connect']"
+			searchtimeout="30000ms">
+				/form[@controlname='ConnectionDialog']/button[@controlname='connect']
+			</item>
+			<basepath>
+				/form[@controlname='ConnectionDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAGrSURBVDhPlZMxa8JQFIXzl/oXHB0zCh3EUZyk
+Q5EuEhxEHCQ4SHAQXgfhOQhxKMRF0KFgh0I6FOLQIUOHDA5vPL3nJa22KcVeOAgh53vnnhedSyZ8
+iKDmGv44sAqmCsFM2WfFK3+PXoYwxiA7ijKD9N0gOWTwZ+FlAHWvBQAkqUEsxv2rgV4n8EbqMgAj
+719SRJsY4XoPtdwimEf/A/wcruP1g8sA/pgJEujV6fTBRKN55+eAaHcebQt/GolOBfkThew9s+V9
+il1YAM2de6A5BRpjoDY0cLspqrcx2r18RyZg5PhN2pcikxSIHlPUWh4cnkyzvwK8BdAWWGMCuH0j
+gHzHwSiw18f24wMlgF0Gt96Bw9g0MAXNhNVGApAUzbsCMAzsLeh1inCT/9ZQQfW6DYc700AIZc29
+TFZIvkryhgpU42ZgY1NunZIELMztSxyJbGX3T1BpSbLbouWzaTxdlZ45apFfDZv3xhqdvkKzWzZz
+SgAa2Wx2hP1cWaq9b4EycvHa15QA/EPog7YQ8zIovneD7bOxABrOVdi+D2Pzu2Z0Xh3L++308jjO
+B5nd4fy+XqI3AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="contextmenu"
+		id="4c624302-bbd7-4410-99d9-315ecb6846f1"
+		isrooted="True"
+		name="SSMS_SomeContextMenu"
+		refpath="/contextmenu"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="ff47523b-e7de-49c9-b9c3-263184afb650"
+			name="NewQuery"
+			refimgid="bf60311d-daf8-4d2d-93eb-7c985c2f1406"
+			refpath="/contextmenu[@processname='Ssms']/menuitem[@accessiblename='New Query']"
+			searchtimeout="30000ms">
+				/contextmenu/menuitem[@accessiblename='New Query']
+			</item>
+			<basepath>
+				/contextmenu
+			</basepath>
+			<icon>
+				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
 			</icon>
 		</appfolder>
 		<basepath>

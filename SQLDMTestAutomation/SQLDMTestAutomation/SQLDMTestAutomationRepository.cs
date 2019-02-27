@@ -33,6 +33,11 @@ namespace SQLDMTestAutomation
         SQLDMTestAutomationRepositoryFolders.SomeContextMenuAppFolder _somecontextmenu;
         SQLDMTestAutomationRepositoryFolders.ManageServersDialogAppFolder _manageserversdialog;
         SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder _addserverswizard;
+        SQLDMTestAutomationRepositoryFolders.SQLDMFolder _sqldm;
+        SQLDMTestAutomationRepositoryFolders.SSMSFolder _ssms;
+        SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder _microsoftsqlservermanagementstudio;
+        SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder _connectiondialog;
+        SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder _ssms_somecontextmenu;
 
         /// <summary>
         /// Gets the singleton class instance representing the SQLDMTestAutomationRepository element repository.
@@ -55,6 +60,11 @@ namespace SQLDMTestAutomation
             _somecontextmenu = new SQLDMTestAutomationRepositoryFolders.SomeContextMenuAppFolder(this);
             _manageserversdialog = new SQLDMTestAutomationRepositoryFolders.ManageServersDialogAppFolder(this);
             _addserverswizard = new SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder(this);
+            _sqldm = new SQLDMTestAutomationRepositoryFolders.SQLDMFolder(this);
+            _ssms = new SQLDMTestAutomationRepositoryFolders.SSMSFolder(this);
+            _microsoftsqlservermanagementstudio = new SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder(this);
+            _connectiondialog = new SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder(this);
+            _ssms_somecontextmenu = new SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder(this);
         }
 
 #region Variables
@@ -137,6 +147,51 @@ namespace SQLDMTestAutomation
         public virtual SQLDMTestAutomationRepositoryFolders.AddServersWizardAppFolder AddServersWizard
         {
             get { return _addserverswizard; }
+        }
+
+        /// <summary>
+        /// The SQLDM folder.
+        /// </summary>
+        [RepositoryFolder("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
+        public virtual SQLDMTestAutomationRepositoryFolders.SQLDMFolder SQLDM
+        {
+            get { return _sqldm; }
+        }
+
+        /// <summary>
+        /// The SSMS folder.
+        /// </summary>
+        [RepositoryFolder("e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695")]
+        public virtual SQLDMTestAutomationRepositoryFolders.SSMSFolder SSMS
+        {
+            get { return _ssms; }
+        }
+
+        /// <summary>
+        /// The MicrosoftSQLServerManagementStudio folder.
+        /// </summary>
+        [RepositoryFolder("8a3f136c-f885-4fbf-8158-6d98b48b02b1")]
+        public virtual SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder MicrosoftSQLServerManagementStudio
+        {
+            get { return _microsoftsqlservermanagementstudio; }
+        }
+
+        /// <summary>
+        /// The ConnectionDialog folder.
+        /// </summary>
+        [RepositoryFolder("7ff60cdc-ea07-45cd-9e7d-95d395854b2f")]
+        public virtual SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder ConnectionDialog
+        {
+            get { return _connectiondialog; }
+        }
+
+        /// <summary>
+        /// The SSMS_SomeContextMenu folder.
+        /// </summary>
+        [RepositoryFolder("4c624302-bbd7-4410-99d9-315ecb6846f1")]
+        public virtual SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder SSMS_SomeContextMenu
+        {
+            get { return _ssms_somecontextmenu; }
         }
     }
 
@@ -896,6 +951,7 @@ namespace SQLDMTestAutomation
         public partial class SomeContextMenuAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _manageserversInfo;
+            RepoItemInfo _newqueryInfo;
 
             /// <summary>
             /// Creates a new SomeContextMenu  folder.
@@ -904,6 +960,7 @@ namespace SQLDMTestAutomation
                     base("SomeContextMenu", "/contextmenu", parentFolder, 30000, null, false, "a629e7ef-f0f5-4d80-bcde-22fa5bb05055", "")
             {
                 _manageserversInfo = new RepoItemInfo(this, "ManageServers", "menuitem[@automationid='menuFileManageServers']//text[@caption='Manage Servers...']", 30000, null, "ced467c1-26c7-4b81-bf56-fe2819fab370");
+                _newqueryInfo = new RepoItemInfo(this, "NewQuery", "menuitem[@accessiblename='New Query']", 30000, null, "80867e47-bb6a-4e7f-a650-0df62393526f");
             }
 
             /// <summary>
@@ -951,6 +1008,30 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _manageserversInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewQuery item.
+            /// </summary>
+            [RepositoryItem("80867e47-bb6a-4e7f-a650-0df62393526f")]
+            public virtual Ranorex.MenuItem NewQuery
+            {
+                get
+                {
+                    return _newqueryInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewQuery item info.
+            /// </summary>
+            [RepositoryItemInfo("80867e47-bb6a-4e7f-a650-0df62393526f")]
+            public virtual RepoItemInfo NewQueryInfo
+            {
+                get
+                {
+                    return _newqueryInfo;
                 }
             }
         }
@@ -1213,6 +1294,416 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _cancelInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SQLDMFolder folder.
+        /// </summary>
+        [RepositoryFolder("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
+        public partial class SQLDMFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new SQLDM  folder.
+            /// </summary>
+            public SQLDMFolder(RepoGenBaseFolder parentFolder) :
+                    base("SQLDM", "", parentFolder, 0, null, false, "c18fc3ad-e59f-453e-b34b-bd7d00dbbffd", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c18fc3ad-e59f-453e-b34b-bd7d00dbbffd")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SSMSFolder folder.
+        /// </summary>
+        [RepositoryFolder("e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695")]
+        public partial class SSMSFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new SSMS  folder.
+            /// </summary>
+            public SSMSFolder(RepoGenBaseFolder parentFolder) :
+                    base("SSMS", "", parentFolder, 0, null, false, "e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e9bdc3c6-ab91-44e7-b4d8-1efd59f7a695")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The MicrosoftSQLServerManagementStudioAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("8a3f136c-f885-4fbf-8158-6d98b48b02b1")]
+        public partial class MicrosoftSQLServerManagementStudioAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _connectobjectexplorerInfo;
+            RepoItemInfo _servervisibleinleftpaneInfo;
+            RepoItemInfo _databasesInfo;
+            RepoItemInfo _sqldmrepositoryInfo;
+            RepoItemInfo _queryeditorInfo;
+            RepoItemInfo _executeInfo;
+
+            /// <summary>
+            /// Creates a new MicrosoftSQLServerManagementStudio  folder.
+            /// </summary>
+            public MicrosoftSQLServerManagementStudioAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("MicrosoftSQLServerManagementStudio", "/form[@title~'^Microsoft\\ SQL\\ Server\\ Mana']", parentFolder, 30000, null, true, "8a3f136c-f885-4fbf-8158-6d98b48b02b1", "")
+            {
+                _connectobjectexplorerInfo = new RepoItemInfo(this, "ConnectObjectExplorer", "container[@caption='Object Explorer']//toolbar[@accessiblename~'^SQL Server Object Explore']/button[@accessiblename~'^Connect Object Explorer']", 30000, null, "a509d2cc-2e14-4437-a0ab-5fec2a083977");
+                _servervisibleinleftpaneInfo = new RepoItemInfo(this, "ServerVisibleInLeftPane", ".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename~'^'+$ServerName]", 30000, null, "7b2de711-8301-4d15-a1f5-7069dbf81450");
+                _databasesInfo = new RepoItemInfo(this, "Databases", ".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='Databases']", 30000, null, "746f725a-4fa6-4763-8f3d-4ce10db5d557");
+                _sqldmrepositoryInfo = new RepoItemInfo(this, "SQLdmRepository", ".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']", 30000, null, "cd96dc4f-9177-4391-9543-678d196a959d");
+                _queryeditorInfo = new RepoItemInfo(this, "QueryEditor", ".//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']", 30000, null, "dcfdc283-6c39-4efa-87ec-ad57e0aafed1");
+                _executeInfo = new RepoItemInfo(this, "Execute", ".//toolbar[@accessiblename='SQL Editor']/button[@accessiblename='Execute']", 30000, null, "5e7cdb49-8b84-4fdf-9734-bb214f28ecc6");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("8a3f136c-f885-4fbf-8158-6d98b48b02b1")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8a3f136c-f885-4fbf-8158-6d98b48b02b1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ConnectObjectExplorer item.
+            /// </summary>
+            [RepositoryItem("a509d2cc-2e14-4437-a0ab-5fec2a083977")]
+            public virtual Ranorex.Button ConnectObjectExplorer
+            {
+                get
+                {
+                    return _connectobjectexplorerInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ConnectObjectExplorer item info.
+            /// </summary>
+            [RepositoryItemInfo("a509d2cc-2e14-4437-a0ab-5fec2a083977")]
+            public virtual RepoItemInfo ConnectObjectExplorerInfo
+            {
+                get
+                {
+                    return _connectobjectexplorerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ServerVisibleInLeftPane item.
+            /// </summary>
+            [RepositoryItem("7b2de711-8301-4d15-a1f5-7069dbf81450")]
+            public virtual Ranorex.TreeItem ServerVisibleInLeftPane
+            {
+                get
+                {
+                    return _servervisibleinleftpaneInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ServerVisibleInLeftPane item info.
+            /// </summary>
+            [RepositoryItemInfo("7b2de711-8301-4d15-a1f5-7069dbf81450")]
+            public virtual RepoItemInfo ServerVisibleInLeftPaneInfo
+            {
+                get
+                {
+                    return _servervisibleinleftpaneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Databases item.
+            /// </summary>
+            [RepositoryItem("746f725a-4fa6-4763-8f3d-4ce10db5d557")]
+            public virtual Ranorex.TreeItem Databases
+            {
+                get
+                {
+                    return _databasesInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Databases item info.
+            /// </summary>
+            [RepositoryItemInfo("746f725a-4fa6-4763-8f3d-4ce10db5d557")]
+            public virtual RepoItemInfo DatabasesInfo
+            {
+                get
+                {
+                    return _databasesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SQLdmRepository item.
+            /// </summary>
+            [RepositoryItem("cd96dc4f-9177-4391-9543-678d196a959d")]
+            public virtual Ranorex.TreeItem SQLdmRepository
+            {
+                get
+                {
+                    return _sqldmrepositoryInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SQLdmRepository item info.
+            /// </summary>
+            [RepositoryItemInfo("cd96dc4f-9177-4391-9543-678d196a959d")]
+            public virtual RepoItemInfo SQLdmRepositoryInfo
+            {
+                get
+                {
+                    return _sqldmrepositoryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The QueryEditor item.
+            /// </summary>
+            [RepositoryItem("dcfdc283-6c39-4efa-87ec-ad57e0aafed1")]
+            public virtual Ranorex.Text QueryEditor
+            {
+                get
+                {
+                    return _queryeditorInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The QueryEditor item info.
+            /// </summary>
+            [RepositoryItemInfo("dcfdc283-6c39-4efa-87ec-ad57e0aafed1")]
+            public virtual RepoItemInfo QueryEditorInfo
+            {
+                get
+                {
+                    return _queryeditorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Execute item.
+            /// </summary>
+            [RepositoryItem("5e7cdb49-8b84-4fdf-9734-bb214f28ecc6")]
+            public virtual Ranorex.Button Execute
+            {
+                get
+                {
+                    return _executeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Execute item info.
+            /// </summary>
+            [RepositoryItemInfo("5e7cdb49-8b84-4fdf-9734-bb214f28ecc6")]
+            public virtual RepoItemInfo ExecuteInfo
+            {
+                get
+                {
+                    return _executeInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ConnectionDialogAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("7ff60cdc-ea07-45cd-9e7d-95d395854b2f")]
+        public partial class ConnectionDialogAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _servernametoconnectInfo;
+            RepoItemInfo _connectInfo;
+
+            /// <summary>
+            /// Creates a new ConnectionDialog  folder.
+            /// </summary>
+            public ConnectionDialogAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ConnectionDialog", "/form[@controlname='ConnectionDialog']", parentFolder, 30000, null, true, "7ff60cdc-ea07-45cd-9e7d-95d395854b2f", "")
+            {
+                _servernametoconnectInfo = new RepoItemInfo(this, "ServerNameToConnect", "container[@controlname='simpleView']//combobox[@controlname='serverInstance']/text[@controlid='1001']", 30000, null, "bdb8cf99-253b-4bed-9e1e-8c49e16c6b98");
+                _connectInfo = new RepoItemInfo(this, "Connect", "button[@controlname='connect']", 30000, null, "84f883f4-0a94-43e5-9621-549bfa6c2a53");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7ff60cdc-ea07-45cd-9e7d-95d395854b2f")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7ff60cdc-ea07-45cd-9e7d-95d395854b2f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ServerNameToConnect item.
+            /// </summary>
+            [RepositoryItem("bdb8cf99-253b-4bed-9e1e-8c49e16c6b98")]
+            public virtual Ranorex.Text ServerNameToConnect
+            {
+                get
+                {
+                    return _servernametoconnectInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ServerNameToConnect item info.
+            /// </summary>
+            [RepositoryItemInfo("bdb8cf99-253b-4bed-9e1e-8c49e16c6b98")]
+            public virtual RepoItemInfo ServerNameToConnectInfo
+            {
+                get
+                {
+                    return _servernametoconnectInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Connect item.
+            /// </summary>
+            [RepositoryItem("84f883f4-0a94-43e5-9621-549bfa6c2a53")]
+            public virtual Ranorex.Button Connect
+            {
+                get
+                {
+                    return _connectInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Connect item info.
+            /// </summary>
+            [RepositoryItemInfo("84f883f4-0a94-43e5-9621-549bfa6c2a53")]
+            public virtual RepoItemInfo ConnectInfo
+            {
+                get
+                {
+                    return _connectInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SSMS_SomeContextMenuAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("4c624302-bbd7-4410-99d9-315ecb6846f1")]
+        public partial class SSMS_SomeContextMenuAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _newqueryInfo;
+
+            /// <summary>
+            /// Creates a new SSMS_SomeContextMenu  folder.
+            /// </summary>
+            public SSMS_SomeContextMenuAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("SSMS_SomeContextMenu", "/contextmenu", parentFolder, 30000, null, false, "4c624302-bbd7-4410-99d9-315ecb6846f1", "")
+            {
+                _newqueryInfo = new RepoItemInfo(this, "NewQuery", "menuitem[@accessiblename='New Query']", 30000, null, "ff47523b-e7de-49c9-b9c3-263184afb650");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("4c624302-bbd7-4410-99d9-315ecb6846f1")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("4c624302-bbd7-4410-99d9-315ecb6846f1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewQuery item.
+            /// </summary>
+            [RepositoryItem("ff47523b-e7de-49c9-b9c3-263184afb650")]
+            public virtual Ranorex.MenuItem NewQuery
+            {
+                get
+                {
+                    return _newqueryInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewQuery item info.
+            /// </summary>
+            [RepositoryItemInfo("ff47523b-e7de-49c9-b9c3-263184afb650")]
+            public virtual RepoItemInfo NewQueryInfo
+            {
+                get
+                {
+                    return _newqueryInfo;
                 }
             }
         }

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="27e814ad-b964-4291-bc15-a4e0a1045970"
+mode="Global"
+rxversion="8.2">
+	<name>
+		DisableQueryMonitor
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="DisableQueryMonitor"
+	namespace="SQLDMTestAutomation.SQLDMRecordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="DisableQueryMonitor"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="DisableQueryMonitorTraceCheckBox"
+		namespace="SQLDMTestAutomation.SQLDMRecordings"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="470e3514-3531-4a4b-b008-d143f4f404d1">
+				<argument
+				argname="checkboxInfo"
+				id="8a3360cf-2299-4c2c-8820-6d8518ec8f7c">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="c19e42bd-757e-41bc-9bda-4986a05f4d11"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']//container[@controlname='tableLayoutPanel17']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="f786a100-360b-442d-a1a8-e04f271dd75e"
+	name="SQLDMTestAutomationRepository"
+	relativepath="..\SQLDMTestAutomationRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SQLDMTestAutomationRepository"
+		namespace="SQLDMTestAutomation">
+		</codegen>
+		<rootfolder
+		id="fef44676-cf73-4211-820e-be7621cd7bfd"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		DisableQueryMonitor.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

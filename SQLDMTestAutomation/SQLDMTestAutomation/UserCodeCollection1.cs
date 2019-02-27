@@ -68,9 +68,10 @@ namespace SQLDMTestAutomation
         } 
 	        
         [UserCodeMethod]
-	 	public static void KillApplicationProcess()
+	 	public static void KillApplicationProcess(string application)
         {
-        	Process[] processByName = Process.GetProcessesByName("SQLdmDesktopClient");
+        	//Process[] processByName = Process.GetProcessesByName("SQLdmDesktopClient");
+        	Process[] processByName = Process.GetProcessesByName(application);
         	int noOfProcesses = processByName.Length;
         	if (processByName.Length != 0)
         	{
@@ -91,3 +92,4 @@ namespace SQLDMTestAutomation
 
     }
 }
+
