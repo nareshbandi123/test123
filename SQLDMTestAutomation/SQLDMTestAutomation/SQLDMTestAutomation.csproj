@@ -114,8 +114,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddServerAndVerifyQueryPlanOptionEnabled.cs">
+      <BoundTo>b38bcf1d-64f0-4c57-9761-44e93ca54461</BoundTo>
+      <DependentUpon>AddServerAndVerifyQueryPlanOptionEnabled.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f9f37b9c-a01a-4005-8018-9e905bfb93c3</id>
+    </Compile>
+    <Compile Include="AddServerAndVerifyQueryPlanOptionEnabled.UserCode.cs">
+      <BoundTo>b38bcf1d-64f0-4c57-9761-44e93ca54461</BoundTo>
+      <DependentUpon>AddServerAndVerifyQueryPlanOptionEnabled.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>890a4da9-62c0-4a23-95c1-b35a9eefff5f</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>622da644-3b35-4d35-a095-99efe7489aee</id>
+    </Compile>
+    <Compile Include="CloseApplication.cs">
+      <BoundTo>4dfa6b6d-8324-417e-a698-5c195240bfac</BoundTo>
+      <DependentUpon>CloseApplication.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a95fe145-bb19-498c-b666-8fc4fe286e61</id>
+    </Compile>
+    <Compile Include="CloseApplication.UserCode.cs">
+      <BoundTo>4dfa6b6d-8324-417e-a698-5c195240bfac</BoundTo>
+      <DependentUpon>CloseApplication.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b4ce17be-10ef-4a75-8a38-d8f5ed326a6b</id>
+    </Compile>
+    <Compile Include="CloseMonitoredSqlServerWindow.cs">
+      <BoundTo>bf442d57-636c-4245-86ac-30367eb08326</BoundTo>
+      <DependentUpon>CloseMonitoredSqlServerWindow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0cb46549-df6b-41cf-9ae5-7c875470f922</id>
+    </Compile>
+    <Compile Include="CloseMonitoredSqlServerWindow.UserCode.cs">
+      <BoundTo>bf442d57-636c-4245-86ac-30367eb08326</BoundTo>
+      <DependentUpon>CloseMonitoredSqlServerWindow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2c80fce3-5b21-4414-a125-271bb63abf3d</id>
+    </Compile>
+    <Compile Include="CollapseAllServers.cs">
+      <BoundTo>d3d518c2-6841-43ba-88b1-faa5ccd9f491</BoundTo>
+      <DependentUpon>CollapseAllServers.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>907f2f5e-c3a1-42fe-aee9-738b4b24f050</id>
+    </Compile>
+    <Compile Include="CollapseAllServers.UserCode.cs">
+      <BoundTo>d3d518c2-6841-43ba-88b1-faa5ccd9f491</BoundTo>
+      <DependentUpon>CollapseAllServers.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7052328d-8013-43e7-8d7d-ae8ffe7ace48</id>
     </Compile>
     <Compile Include="DisableQueryMonitor.cs">
       <BoundTo>46b11113-8dba-41fa-b375-dc54466382aa</BoundTo>
@@ -141,29 +189,29 @@
       <UserCode>true</UserCode>
       <id>6061a156-42c1-4d92-a48a-81d01ae8eb2a</id>
     </Compile>
-    <Compile Include="GlobeiconofabatchtypeSQLstatement.cs">
-      <BoundTo>825a5c3e-decf-4215-b5b2-f0ec9a6ad2d3</BoundTo>
-      <DependentUpon>GlobeiconofabatchtypeSQLstatement.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>9a5438a3-f56d-4599-b00f-ba1099b921b8</id>
-    </Compile>
-    <Compile Include="GlobeiconofabatchtypeSQLstatement.UserCode.cs">
-      <BoundTo>825a5c3e-decf-4215-b5b2-f0ec9a6ad2d3</BoundTo>
-      <DependentUpon>GlobeiconofabatchtypeSQLstatement.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>94ac4de7-af71-40e8-b8d7-8504f994621e</id>
-    </Compile>
-    <Compile Include="LaunchApplication.cs">
+    <Compile Include="LaunchApplication_1.cs">
       <BoundTo>48d2f75e-153f-47c6-ad5f-19d9774f4d12</BoundTo>
-      <DependentUpon>LaunchApplication.rxrec</DependentUpon>
+      <DependentUpon>LaunchApplication_1.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>a9851406-ec50-4dc7-82c3-f935d5fbdfeb</id>
     </Compile>
-    <Compile Include="LaunchApplication.UserCode.cs">
+    <Compile Include="LaunchApplication_1.UserCode.cs">
       <BoundTo>48d2f75e-153f-47c6-ad5f-19d9774f4d12</BoundTo>
-      <DependentUpon>LaunchApplication.rxrec</DependentUpon>
+      <DependentUpon>LaunchApplication_1.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>26182250-7151-4868-aff7-e1d506a7fca8</id>
+    </Compile>
+    <Compile Include="ListOfServers.cs">
+      <BoundTo>f454fd29-d88a-4255-9095-4b7de90cae0b</BoundTo>
+      <DependentUpon>ListOfServers.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>326fba18-8602-4d61-a28f-8d535511f822</id>
+    </Compile>
+    <Compile Include="ListOfServers.UserCode.cs">
+      <BoundTo>f454fd29-d88a-4255-9095-4b7de90cae0b</BoundTo>
+      <DependentUpon>ListOfServers.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a2b3d84a-9684-4d2b-8afa-627e9a763db6</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>941b7748-11d2-48c6-9a3d-bf2023f1bcca</id>
@@ -179,6 +227,18 @@
       <DependentUpon>OpenConfigureQueryMonitor.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>99d07303-38d7-46af-932d-eedd702c77a9</id>
+    </Compile>
+    <Compile Include="RevertSelectTopToDefaultValue.cs">
+      <BoundTo>f7c74583-fbe2-475c-8200-5a3d52c51bb5</BoundTo>
+      <DependentUpon>RevertSelectTopToDefaultValue.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>48865b0c-64ea-4665-b548-36e0f04e44a9</id>
+    </Compile>
+    <Compile Include="RevertSelectTopToDefaultValue.UserCode.cs">
+      <BoundTo>f7c74583-fbe2-475c-8200-5a3d52c51bb5</BoundTo>
+      <DependentUpon>RevertSelectTopToDefaultValue.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ef522ab6-cd88-4269-9b00-1db860f0b090</id>
     </Compile>
     <Compile Include="SelectQueryMonitorTab.cs">
       <BoundTo>772a362e-3b37-4996-8fe6-68b818720ecc</BoundTo>
@@ -204,18 +264,6 @@
       <UserCode>true</UserCode>
       <id>7df32cf5-27c4-427d-b7fa-84be61180637</id>
     </Compile>
-    <Compile Include="Verifyquerydatadefaultcollectionoption.cs">
-      <BoundTo>0092c9b1-aa45-4847-9c6c-d21cbd269abb</BoundTo>
-      <DependentUpon>Verifyquerydatadefaultcollectionoption.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>118758d9-9b24-475f-ac22-70b708a4f597</id>
-    </Compile>
-    <Compile Include="Verifyquerydatadefaultcollectionoption.UserCode.cs">
-      <BoundTo>0092c9b1-aa45-4847-9c6c-d21cbd269abb</BoundTo>
-      <DependentUpon>Verifyquerydatadefaultcollectionoption.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>0dd7591c-ccb5-4f75-96c8-b597fd1ad194</id>
-    </Compile>
     <Compile Include="SelectSever2017Properties.cs">
       <BoundTo>89fdfa42-3254-4ac1-bf7f-5de7aeb29bab</BoundTo>
       <DependentUpon>SelectSever2017Properties.rxrec</DependentUpon>
@@ -227,6 +275,12 @@
       <DependentUpon>SelectSever2017Properties.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>bd95d3c4-6e9c-49d2-a51a-a9d134b25bca</id>
+    </Compile>
+    <Compile Include="UserCodeCollection1.cs">
+      <id>b822862e-1214-4c17-a772-618c84c203e1</id>
+    </Compile>
+    <Compile Include="UserCodeModule1.cs">
+      <id>fb5c03d5-a53d-4c23-859e-ad8560631486</id>
     </Compile>
     <Compile Include="VerifyCollectQueryPlansToBeDisabled.cs">
       <BoundTo>b10fcf68-3e6e-429f-b105-1bf8ada48c26</BoundTo>
@@ -240,18 +294,6 @@
       <UserCode>true</UserCode>
       <id>631ab16a-058c-4470-baf2-8fae8b4d3a80</id>
     </Compile>
-    <Compile Include="VerifyQueryStoreOption.cs">
-      <BoundTo>ff9b1084-b45d-4a4e-96b8-a185c2b0c848</BoundTo>
-      <DependentUpon>VerifyQueryStoreOption.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>235cc3c8-2460-4764-a08c-4ac5aa179b95</id>
-    </Compile>
-    <Compile Include="VerifyQueryStoreOption.UserCode.cs">
-      <BoundTo>ff9b1084-b45d-4a4e-96b8-a185c2b0c848</BoundTo>
-      <DependentUpon>VerifyQueryStoreOption.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>38c92698-a9eb-4576-b13b-9052952144a0</id>
-    </Compile>
     <Compile Include="VerifySelectByAndPlansBy.cs">
       <BoundTo>8059b73b-4d3e-4c56-9d11-d89c9e338b30</BoundTo>
       <DependentUpon>VerifySelectByAndPlansBy.rxrec</DependentUpon>
@@ -264,11 +306,23 @@
       <UserCode>true</UserCode>
       <id>203f59cd-abde-4b60-b2e8-a7f05955f260</id>
     </Compile>
-    <Compile Include="SQLDMTestAutomationRepository.cs">
+    <Compile Include="SQLDMTestAutomationRepository_1.cs">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
-      <DependentUpon>SQLDMTestAutomationRepository.rxrep</DependentUpon>
+      <DependentUpon>SQLDMTestAutomationRepository_1.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>f8f34460-df0c-4e1a-a0b3-403570d827ce</id>
+    </Compile>
+    <Compile Include="VerifySelectTopForMinMaxValues.cs">
+      <BoundTo>68dceda2-f52f-45c7-8461-0e1b116baff0</BoundTo>
+      <DependentUpon>VerifySelectTopForMinMaxValues.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>63900a67-3dbf-4570-a403-e6dfbc70d956</id>
+    </Compile>
+    <Compile Include="VerifySelectTopForMinMaxValues.UserCode.cs">
+      <BoundTo>68dceda2-f52f-45c7-8461-0e1b116baff0</BoundTo>
+      <DependentUpon>VerifySelectTopForMinMaxValues.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0e906294-0722-4a6a-b193-49fa14a0fa3a</id>
     </Compile>
     <Compile Include="VerifySelectTopToBeDisabled.cs">
       <BoundTo>a61f890b-e599-4c49-acd0-ea7344f32cd4</BoundTo>
@@ -282,22 +336,46 @@
       <UserCode>true</UserCode>
       <id>9520c158-951d-46f4-8cd1-b4ff033dca4c</id>
     </Compile>
-    <Compile Include="VerifySelectByAndPlansByWithInvaildData.cs">
+    <Compile Include="VerifySelectTopWithInvaildData.cs">
       <BoundTo>159b4c60-e8b0-4e90-b435-ea5c84d824c1</BoundTo>
-      <DependentUpon>VerifySelectByAndPlansByWithInvaildData.rxrec</DependentUpon>
+      <DependentUpon>VerifySelectTopWithInvaildData.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>ef9da095-e3fb-4cbe-9dcc-d31c3c4ec8c0</id>
     </Compile>
-    <Compile Include="VerifySelectByAndPlansByWithInvaildData.UserCode.cs">
+    <Compile Include="VerifySelectTopWithInvaildData.UserCode.cs">
       <BoundTo>159b4c60-e8b0-4e90-b435-ea5c84d824c1</BoundTo>
-      <DependentUpon>VerifySelectByAndPlansByWithInvaildData.rxrec</DependentUpon>
+      <DependentUpon>VerifySelectTopWithInvaildData.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>f4e2c176-9464-499f-8720-657e4b669b38</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\Desktop\New folder\ServerList.csv">
+      <Link>Testdata\ServerList.csv</Link>
+      <id>ea74f448-42ca-4477-a6e8-102fa81cb4d9</id>
+    </None>
+    <None Include="AddServerAndVerifyQueryPlanOptionEnabled.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>b38bcf1d-64f0-4c57-9761-44e93ca54461</id>
+      <recordtableid>0d45aeec-90f8-4043-a0cf-91a511febd51</recordtableid>
+    </None>
     <None Include="app.config">
       <id>4f8fd02a-ddf4-4099-9048-73e6503c21a1</id>
+    </None>
+    <None Include="CloseApplication.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>4dfa6b6d-8324-417e-a698-5c195240bfac</id>
+      <recordtableid>9552b69d-f0c8-481f-b230-dfdaa4ad8b0e</recordtableid>
+    </None>
+    <None Include="CloseMonitoredSqlServerWindow.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>bf442d57-636c-4245-86ac-30367eb08326</id>
+      <recordtableid>10938416-b5ae-4e32-9f33-2396104249f6</recordtableid>
+    </None>
+    <None Include="CollapseAllServers.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>d3d518c2-6841-43ba-88b1-faa5ccd9f491</id>
+      <recordtableid>a08149d5-6a5b-4441-8665-db7c2b1921ae</recordtableid>
     </None>
     <None Include="DisableQueryMonitor.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
@@ -309,20 +387,25 @@
       <id>f97c3d41-8f4a-4c58-ab83-49793dc8db38</id>
       <recordtableid>e47225b1-940d-4538-842a-92bdbab6c105</recordtableid>
     </None>
-    <None Include="GlobeiconofabatchtypeSQLstatement.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
-      <id>825a5c3e-decf-4215-b5b2-f0ec9a6ad2d3</id>
-      <recordtableid>df70801f-8cae-4e95-8c11-a9662ea30c2f</recordtableid>
-    </None>
-    <None Include="LaunchApplication.rxrec">
+    <None Include="LaunchApplication_1.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>48d2f75e-153f-47c6-ad5f-19d9774f4d12</id>
       <recordtableid>73fb0df9-782d-480a-b57f-0e0513e3249c</recordtableid>
+    </None>
+    <None Include="ListOfServers.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>f454fd29-d88a-4255-9095-4b7de90cae0b</id>
+      <recordtableid>cd7340b8-4836-440c-9e77-d6f24d4e7b66</recordtableid>
     </None>
     <None Include="OpenConfigureQueryMonitor.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>06083215-b9f8-4bed-b549-71458738aea7</id>
       <recordtableid>a3e16002-ad31-41c7-be31-fdb013b90bf3</recordtableid>
+    </None>
+    <None Include="RevertSelectTopToDefaultValue.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>f7c74583-fbe2-475c-8200-5a3d52c51bb5</id>
+      <recordtableid>b77ac04e-4994-4896-a8e5-19399d6c8ae7</recordtableid>
     </None>
     <None Include="SelectQueryMonitorTab.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
@@ -334,11 +417,6 @@
       <id>9e754cf0-edb2-45b3-aff8-dcdd336af6a1</id>
       <recordtableid>24f6bd52-083e-4e49-bf06-cf2fe2ae5d7d</recordtableid>
     </None>
-    <None Include="Verifyquerydatadefaultcollectionoption.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
-      <id>0092c9b1-aa45-4847-9c6c-d21cbd269abb</id>
-      <recordtableid>5b148c62-77b0-4bc1-b530-fbd0924852e4</recordtableid>
-    </None>
     <None Include="SelectSever2017Properties.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>89fdfa42-3254-4ac1-bf7f-5de7aeb29bab</id>
@@ -349,47 +427,52 @@
       <id>b10fcf68-3e6e-429f-b105-1bf8ada48c26</id>
       <recordtableid>79464ac0-d913-4fe2-8642-ef9c687ae205</recordtableid>
     </None>
-    <None Include="VerifyQueryStoreOption.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
-      <id>ff9b1084-b45d-4a4e-96b8-a185c2b0c848</id>
-      <recordtableid>09608eda-f4ed-43a7-b814-dbecd6ac6248</recordtableid>
-    </None>
     <None Include="VerifySelectByAndPlansBy.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>8059b73b-4d3e-4c56-9d11-d89c9e338b30</id>
       <recordtableid>e9af3f9e-4660-4843-b348-38b7b394de7f</recordtableid>
     </None>
-    <None Include="SQLDMTestAutomationRepository.rximg">
+    <None Include="SQLDMTestAutomationRepository_1.rximg">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
-      <DependentUpon>SQLDMTestAutomationRepository.rxrep</DependentUpon>
+      <DependentUpon>SQLDMTestAutomationRepository_1.rxrep</DependentUpon>
       <imageblob>true</imageblob>
       <id>455fead7-4e80-44dd-99ee-2c52443d5fa1</id>
     </None>
-    <None Include="SQLDMTestAutomationRepository.rxrep">
+    <None Include="SQLDMTestAutomationRepository_1.rxrep">
       <id>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</id>
       <repoid>f786a100-360b-442d-a1a8-e04f271dd75e</repoid>
       <reporootid>fef44676-cf73-4211-820e-be7621cd7bfd</reporootid>
+    </None>
+    <None Include="VerifySelectTopForMinMaxValues.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>68dceda2-f52f-45c7-8461-0e1b116baff0</id>
+      <recordtableid>327db533-7c43-4209-bb45-9cb499093d5a</recordtableid>
     </None>
     <None Include="VerifySelectTopToBeDisabled.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>a61f890b-e599-4c49-acd0-ea7344f32cd4</id>
       <recordtableid>e0cc1395-ebff-4ffa-bb51-b3d57c3b7246</recordtableid>
     </None>
-    <None Include="VerifySelectByAndPlansByWithInvaildData.rxrec">
+    <None Include="VerifySelectTopWithInvaildData.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>159b4c60-e8b0-4e90-b435-ea5c84d824c1</id>
       <recordtableid>3317ce09-3f34-4b64-ad5c-42f441333426</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SQLDMTestAutomation.rxtmg">
+    <Content Include="SQLDMTestAutomation_1.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>bdf7354c-3447-4d86-a85a-819a971be13e</id>
     </Content>
-    <Content Include="SQLDMTestAutomation.rxtst">
+    <Content Include="SQLDMTestAutomation_1.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>f9a5d275-c087-4e96-bea8-80a033b4d756</id>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Testdata">
+      <id>8b19cf57-4559-4c1b-8e00-45ec066389a3</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />

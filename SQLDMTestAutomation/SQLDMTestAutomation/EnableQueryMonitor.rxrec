@@ -65,11 +65,11 @@ rxversion="8.2">
 	</recorditems>
 	<repository
 	id="f786a100-360b-442d-a1a8-e04f271dd75e"
-	name="SQLDMTestAutomationRepository"
-	relativepath="SQLDMTestAutomationRepository.rxrep"
+	name="SQLDMTestAutomationRepository_1"
+	relativepath="SQLDMTestAutomationRepository_1.rxrep"
 	rxversion="8.2">
 		<codegen
-		classname="SQLDMTestAutomationRepository"
+		classname="SQLDMTestAutomationRepository_1"
 		namespace="SQLDMTestAutomation">
 		</codegen>
 		<rootfolder

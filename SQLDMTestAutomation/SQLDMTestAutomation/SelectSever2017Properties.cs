@@ -30,9 +30,9 @@ namespace SQLDMTestAutomation
     public partial class SelectSever2017Properties : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the SQLDMTestAutomationRepository repository.
+        /// Holds an instance of the SQLDMTestAutomationRepository_1 repository.
         /// </summary>
-        public static SQLDMTestAutomationRepository repo = SQLDMTestAutomationRepository.Instance;
+        public static SQLDMTestAutomationRepository_1 repo = SQLDMTestAutomationRepository_1.Instance;
 
         static SelectSever2017Properties instance = new SelectSever2017Properties();
 
