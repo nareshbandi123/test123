@@ -98,7 +98,7 @@ rxversion="8.2">
 			</bindings>
 		</explicitdelayitem>
 		<WaitForRecordItem
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="de421303-0d02-4df5-b395-c38e1f6698b4"
 		waitaction="Exists"

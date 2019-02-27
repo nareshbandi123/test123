@@ -336,6 +336,18 @@
       <id>f4e2c176-9464-499f-8720-657e4b669b38</id>
       <BoundTo>159b4c60-e8b0-4e90-b435-ea5c84d824c1</BoundTo>
     </Compile>
+    <Compile Include="SSMSRecordingds\ConnectToServer.cs">
+      <BoundTo>b642b0cd-5668-40aa-adeb-b0e67a782d23</BoundTo>
+      <DependentUpon>ConnectToServer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b5cfe917-669c-42d2-a91f-c7e9307cdcac</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\ConnectToServer.UserCode.cs">
+      <BoundTo>b642b0cd-5668-40aa-adeb-b0e67a782d23</BoundTo>
+      <DependentUpon>ConnectToServer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9be3cf35-045e-45ca-a81e-961d1c92f2b6</id>
+    </Compile>
     <Compile Include="SSMSRecordingds\LaunchSSMS.cs">
       <BoundTo>1e6da6b1-7a57-4a19-95bf-82a3c010688d</BoundTo>
       <DependentUpon>LaunchSSMS.rxrec</DependentUpon>
@@ -476,6 +488,11 @@
       <id>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</id>
       <repoid>f786a100-360b-442d-a1a8-e04f271dd75e</repoid>
       <reporootid>fef44676-cf73-4211-820e-be7621cd7bfd</reporootid>
+    </None>
+    <None Include="SSMSRecordingds\ConnectToServer.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>b642b0cd-5668-40aa-adeb-b0e67a782d23</id>
+      <recordtableid>b292c181-56e2-4512-851c-b8ba8fa5411c</recordtableid>
     </None>
     <None Include="SSMSRecordingds\LaunchSSMS.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>

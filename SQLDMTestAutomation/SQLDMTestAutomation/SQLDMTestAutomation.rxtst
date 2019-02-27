@@ -103,6 +103,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="3940dc8d-8cfb-4b19-8866-4df9552588ef"
+			name="LaunchSSMS"
+			ref="303a7741-4722-4c12-9533-9fd4939f22c3"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="39cb6180-c78f-4c2f-919e-bc27c56f53d6"
 			name="CloseApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
@@ -284,7 +290,11 @@ rxversion="8.2">
 			name="C164221_Verify_invalid_data_in_collect_query_plans_count">
 			</testcase>
 			<testcase
+			datarangeactive="True"
+			datasource="ServerList"
 			id="922862c3-a166-4ce7-9d71-89cb9ccf93c6"
+			maxrange="8"
+			minrange="8"
 			name="C165705_Verify_new_columns_are_added_in_'MonitoredSQLServers'_table_of_SQLdmRepository">
 			</testcase>
 			<testmodule
@@ -399,6 +409,20 @@ rxversion="8.2">
 			name="LaunchApplication"
 			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="c2c20006-e627-45f8-ba09-886eb0ad028c"
+			name="ConnectToServer"
+			ref="b292c181-56e2-4512-851c-b8ba8fa5411c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ServerName"
+					datasourceid="b99c958d-d010-43d5-b9f2-01f67fc4cfea"
+					variableid="3557f9c7-7eec-4561-9bb8-d219dbb276d6"
+					variablename="ServerName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="c3e82a0e-1248-4303-a76b-ed6b95415a99"
@@ -789,6 +813,14 @@ rxversion="8.2">
 					<testcase
 					id="922862c3-a166-4ce7-9d71-89cb9ccf93c6"
 					name="C165705_Verify_new_columns_are_added_in_'MonitoredSQLServers'_table_of_SQLdmRepository">
+						<testmodule
+						id="3940dc8d-8cfb-4b19-8866-4df9552588ef"
+						name="LaunchSSMS">
+						</testmodule>
+						<testmodule
+						id="c2c20006-e627-45f8-ba09-886eb0ad028c"
+						name="ConnectToServer">
+						</testmodule>
 					</testcase>
 					<teardown
 					id="c88408a3-5c31-449a-8b2c-82eccf797bc0"
@@ -806,7 +838,7 @@ rxversion="8.2">
 		<DataSource
 		id="b99c958d-d010-43d5-b9f2-01f67fc4cfea"
 		includefile="Checked"
-		lastknownrowcount="8"
+		lastknownrowcount="9"
 		name="ServerList"
 		type="Ranorex.Core.Data.CsvDataConnector"
 		withheaders="True">
@@ -827,10 +859,10 @@ rxversion="8.2">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="5c57d37c-ed5b-430e-96ed-2f81b6b9cce0">
+			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
 			</testcontainer>
 			<testcontainer
-			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
+			id="922862c3-a166-4ce7-9d71-89cb9ccf93c6">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
