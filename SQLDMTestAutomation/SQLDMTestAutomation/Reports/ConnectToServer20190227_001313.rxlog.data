@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="211ef41e47cc7662"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQL-DEV-001"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1600x900"
+		timestamp="2/27/2019 12:13:20 AM"
+		timestampiso="2019-02-27T06:13:20"
+		endtime="2/27/2019 12:14:43 AM"
+		timeoutfactor="1"
+		module="ConnectToServer">
+		<detail>
+			ConnectToServer
+		</detail>
+		<errormessage>
+			Failed to find item 'SQLDMTestAutomationRepository.SSMS_SomeContextMenu.NewQuery'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.573"
+			timeRelativeToTestModuleStartTime="00:04.583"
+			timeWallClock="00:13:24"
+			time="00:04.573"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>Query, ServerName
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.761"
+			timeRelativeToTestModuleStartTime="00:04.771"
+			timeWallClock="00:13:24"
+			time="00:04.761"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'MicrosoftSQLServerManagementStudio.SQLdmRepository' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']"
+				itempath=".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.SQLdmRepository"
+				id="cd96dc4f917743919543678d196a959d"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SSMSRecordingds\ConnectToServer.cs"
+				codeline="129"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.258"
+			timeRelativeToTestModuleStartTime="00:19.268"
+			timeWallClock="00:13:39"
+			time="00:19.258"
+			level="Info"
+			category="Invoke action"
+			errimg=".\ConnectT_9be02be0_5889e519_trace.jpg"
+			errthumb=".\ConnectT_9be02be0_5889e519_trace_thumb.jpg">
+			<message>
+				Invoking Select() on item 'MicrosoftSQLServerManagementStudio.SQLdmRepository'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']"
+				itempath=".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.SQLdmRepository"
+				id="cd96dc4f917743919543678d196a959d"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SSMSRecordingds\ConnectToServer.cs"
+				codeline="133"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:22.589"
+			timeRelativeToTestModuleStartTime="00:22.599"
+			timeWallClock="00:13:42"
+			time="00:22.589"
+			level="Info"
+			category="Mouse"
+			errimg=".\ConnectT_9be02be0_b392bc8b_trace.jpg"
+			errthumb=".\ConnectT_9be02be0_b392bc8b_trace_thumb.jpg">
+			<message>
+				Mouse Right Click item 'SSMS_SomeContextMenu.NewQuery' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/contextmenu/menuitem[@accessiblename='New Query']"
+				itempath="menuitem[@accessiblename='New Query']"
+				fullname="SQLDMTestAutomationRepository.SSMS_SomeContextMenu.NewQuery"
+				id="ff47523be7de49c9b9c3263184afb650"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SSMSRecordingds\ConnectToServer.cs"
+				codeline="137"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:22.654"
+			timeRelativeToTestModuleStartTime="01:22.664"
+			timeWallClock="00:14:42"
+			time="01:22.654"
+			level="Error"
+			category="Module"
+			errimg=".\ConnectT_9be02be0_efc5fea0_trace.jpg"
+			errthumb=".\ConnectT_9be02be0_efc5fea0_trace_thumb.jpg">
+			<message>
+				Failed to find item 'SQLDMTestAutomationRepository.SSMS_SomeContextMenu.NewQuery'.<br/>No element found for path '/contextmenu/menuitem[@accessiblename='New Query']' within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SQLDMTestAutomation.SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder.get_NewQuery() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SQLDMTestAutomationRepository.cs:line 1694&#13;&#10;   at SQLDMTestAutomation.SSMSRecordingds.ConnectToServer.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SSMSRecordingds\ConnectToServer.cs:line 138&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SSMSRecordingds\ConnectToServer.cs"
+				codeline="138"
+				type="repoitem"
+				path="/contextmenu/menuitem[@accessiblename='New Query']"
+				itempath="menuitem[@accessiblename='New Query']"
+				fullname="SQLDMTestAutomationRepository.SSMS_SomeContextMenu.NewQuery"
+				id="ff47523be7de49c9b9c3263184afb650"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="8">
+			</metainfo>
+		</item>
+	</activity>
+</report>
