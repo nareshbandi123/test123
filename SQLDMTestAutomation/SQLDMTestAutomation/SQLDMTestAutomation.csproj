@@ -288,6 +288,18 @@
       <id>631ab16a-058c-4470-baf2-8fae8b4d3a80</id>
       <BoundTo>b10fcf68-3e6e-429f-b105-1bf8ada48c26</BoundTo>
     </Compile>
+    <Compile Include="SQLDMRecordings\VerifyQueryStoreOption.cs">
+      <DependentUpon>VerifyQueryStoreOption.rxrec</DependentUpon>
+      <id>3aa16a44-553c-4d08-9ec4-9cd30c1bf14a</id>
+      <BoundTo>c83eb2de-ba67-4064-81b2-66926800b7b1</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\VerifyQueryStoreOption.UserCode.cs">
+      <DependentUpon>VerifyQueryStoreOption.rxrec</DependentUpon>
+      <id>ce37d1ec-6c31-4b03-baff-00d32190ade7</id>
+      <BoundTo>c83eb2de-ba67-4064-81b2-66926800b7b1</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
     <Compile Include="SQLDMRecordings\VerifySelectByAndPlansBy.cs">
       <DependentUpon>VerifySelectByAndPlansBy.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -384,9 +396,16 @@
     <Content Include="ServerList.csv">
       <Link>ServerList.csv</Link>
       <BoundTo>f9a5d275-c087-4e96-bea8-80a033b4d756</BoundTo>
+      <DependentUpon>SQLDMTestAutomation_1.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>4156f1f7-577a-4491-8400-dae57c1711f4</id>
+    </Content>
+    <Content Include="ServerList.csv">
+      <Link>ServerList.csv</Link>
+      <BoundTo>f9a5d275-c087-4e96-bea8-80a033b4d756</BoundTo>
       <DependentUpon>SQLDMTestAutomation.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>f2c4700b-321e-4ace-9420-7cd839835804</id>
+      <id>6b0dcaaf-3f25-4c24-8f04-63b0f0352baa</id>
     </Content>
     <None Include="SQLDMRecordings\AddServerAndVerifyQueryPlanOptionEnabled.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
@@ -457,6 +476,11 @@
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>b10fcf68-3e6e-429f-b105-1bf8ada48c26</id>
       <recordtableid>79464ac0-d913-4fe2-8642-ef9c687ae205</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\VerifyQueryStoreOption.rxrec">
+      <id>c83eb2de-ba67-4064-81b2-66926800b7b1</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>09608eda-f4ed-43a7-b814-dbecd6ac6248</recordtableid>
     </None>
     <None Include="SQLDMRecordings\VerifySelectByAndPlansBy.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>

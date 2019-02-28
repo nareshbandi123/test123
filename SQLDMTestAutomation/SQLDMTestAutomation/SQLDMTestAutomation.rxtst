@@ -46,6 +46,12 @@ rxversion="8.2">
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="0c96038a-706d-40b0-a49a-4fede70bf5b2"
+			name="SelectSever2017Properties"
+			ref="01b3441a-f0cc-40a2-a450-4183372c0d20"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="0de9ad90-8248-4c40-978d-642e879c379c"
 			name="teardown13">
@@ -126,6 +132,12 @@ rxversion="8.2">
 				</description>
 			</testcase>
 			<testmodule
+			id="4113ed94-5eb5-4bc5-a4fa-118f873436ce"
+			name="VerifyQueryStoreOption"
+			ref="09608eda-f4ed-43a7-b814-dbecd6ac6248"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4144ca2d-ea5a-427b-ba12-d0cc41700880"
 			name="EnableQueryMonitor"
 			ref="e47225b1-940d-4538-842a-92bdbab6c105"
@@ -138,6 +150,10 @@ rxversion="8.2">
 			ref="10938416-b5ae-4e32-9f33-2396104249f6"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="48e0b70c-c090-45a6-a27c-dcbb5895f1c7"
+			name="C166355_Verify_Query_Store_option_is_NOT_selected_by_default_for_2017_and_above_versions">
+			</testcase>
 			<testmodule
 			id="4a5bdd50-6a58-481e-ac9a-d4159fc3f9d4"
 			name="VerifySelectByAndPlansBy"
@@ -174,6 +190,10 @@ rxversion="8.2">
 			reportwriteinterval="30000ms"
 			showinvisiblechars="True">
 			</testsuite>
+			<testcase
+			id="556369ea-023e-429a-819e-a3a6e4ae3b49"
+			name="C166353_Verify_query_data_default_collection_option_for_different_servers">
+			</testcase>
 			<testmodule
 			id="556418d0-c23a-4eba-94b1-1b7518134b29"
 			name="SelectServer"
@@ -201,6 +221,12 @@ rxversion="8.2">
 			id="5d346be5-339d-4053-ad19-c6777b349f72"
 			name="CloseApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="5f6a1238-3796-42bd-8ab9-195b6bdbe68b"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -326,6 +352,10 @@ rxversion="8.2">
 			ref="e47225b1-940d-4538-842a-92bdbab6c105"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="a2544bd1-d1b8-45ba-bb9f-1a73c46a01ef"
+			name="C166352">
+			</testcase>
 			<testmodule
 			id="a446f83b-1047-405b-80b7-38e58949a391"
 			name="SelectServer"
@@ -387,6 +417,12 @@ rxversion="8.2">
 			id="b36b80f1-c1ed-43e2-8c46-4d322ca1b6b3"
 			name="teardown14">
 			</teardown>
+			<testmodule
+			id="b5c1036b-ef5b-45b5-ac34-9070252c9a72"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="b892faf6-2cbd-4960-95ed-cb7311871c86"
 			name="teardown141">
@@ -406,6 +442,12 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="be85a395-28ff-41f4-a9f7-1cce3d8eebb2"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="c0380076-d913-4019-9e86-3337452faa4b"
 			name="LaunchApplication"
 			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
 			type="Recording">
@@ -448,6 +490,12 @@ rxversion="8.2">
 			id="c88408a3-5c31-449a-8b2c-82eccf797bc0"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="cc73f3c9-111f-43f8-97c7-3cb7de83e69e"
+			name="Verifyquerydatadefaultcollectionoption"
+			ref="5b148c62-77b0-4bc1-b530-fbd0924852e4"
+			type="Recording">
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="ServerList"
@@ -822,6 +870,42 @@ rxversion="8.2">
 						name="ConnectToServer">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="48e0b70c-c090-45a6-a27c-dcbb5895f1c7"
+					name="C166355_Verify_Query_Store_option_is_NOT_selected_by_default_for_2017_and_above_versions">
+						<testmodule
+						id="5f6a1238-3796-42bd-8ab9-195b6bdbe68b"
+						name="LaunchApplication">
+						</testmodule>
+						<testmodule
+						id="0c96038a-706d-40b0-a49a-4fede70bf5b2"
+						name="SelectSever2017Properties">
+						</testmodule>
+						<testmodule
+						id="4113ed94-5eb5-4bc5-a4fa-118f873436ce"
+						name="VerifyQueryStoreOption">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="556369ea-023e-429a-819e-a3a6e4ae3b49"
+					name="C166353_Verify_query_data_default_collection_option_for_different_servers">
+						<testmodule
+						id="c0380076-d913-4019-9e86-3337452faa4b"
+						name="LaunchApplication">
+						</testmodule>
+						<testmodule
+						id="cc73f3c9-111f-43f8-97c7-3cb7de83e69e"
+						name="Verifyquerydatadefaultcollectionoption">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="a2544bd1-d1b8-45ba-bb9f-1a73c46a01ef"
+					name="C166352">
+						<testmodule
+						id="b5c1036b-ef5b-45b5-ac34-9070252c9a72"
+						name="LaunchApplication">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="c88408a3-5c31-449a-8b2c-82eccf797bc0"
 					name="teardown">
@@ -859,10 +943,10 @@ rxversion="8.2">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
+			id="48e0b70c-c090-45a6-a27c-dcbb5895f1c7">
 			</testcontainer>
 			<testcontainer
-			id="922862c3-a166-4ce7-9d71-89cb9ccf93c6">
+			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
