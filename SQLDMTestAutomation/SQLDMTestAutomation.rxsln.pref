@@ -2,8 +2,13 @@
   <ActiveConfiguration value="Debug" />
   <ActivePlatform value="x86" />
   <SerializedValue name="ModuleBrowserState">
-    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{1377E366-B5A9-4220-B883-3DCECF74FF8C}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>522bf6e1-f6da-4bd9-b8dc-7ef2d745539b</string>
+      <string>e1c8c2df-e00f-4e7e-a823-b8edacfe2fd6</string>
+    </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution SQLDMTestAutomation[SQLDMTestAutomation[SQLDMRecordings[]SSMSRecordingds[]Testdata[]SQLDMTestAutomation.rxtst[]SQLDMTestAutomationRepository.rxrep[]]]]&#xD;&#xA;Solution SQLDMTestAutomation\SQLDMTestAutomation\SQLDMRecordings&#xD;&#xA;Solution SQLDMTestAutomation" />
+  <ProjectBrowserState value="[Solution SQLDMTestAutomation[SQLDMTestAutomation[SQLDMRecordings[]SSMSRecordingds[]SQLDMTestAutomation.rxtst[]SQLDMTestAutomationRepository.rxrep[]]]]&#xD;&#xA;Solution SQLDMTestAutomation\SQLDMTestAutomation\SQLDMTestAutomation.rxtst&#xD;&#xA;Solution SQLDMTestAutomation\SQLDMTestAutomation\SQLDMRecordings\LaunchApplication.rxrec" />
   <StartupProject value="{1377E366-B5A9-4220-B883-3DCECF74FF8C}" />
 </Properties>
