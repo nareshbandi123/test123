@@ -24,58 +24,34 @@ namespace SQLDMTestAutomation.SSMSRecordingds
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ConnectToServer recording.
+    ///The VerifyMonitoredSQLServersTableColumns recording.
     /// </summary>
-    [TestModule("b292c181-56e2-4512-851c-b8ba8fa5411c", ModuleType.Recording, 1)]
-    public partial class ConnectToServer : ITestModule
+    [TestModule("c2bda287-5996-49c3-a318-68b71ee525dd", ModuleType.Recording, 1)]
+    public partial class VerifyMonitoredSQLServersTableColumns : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
         public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
 
-        static ConnectToServer instance = new ConnectToServer();
+        static VerifyMonitoredSQLServersTableColumns instance = new VerifyMonitoredSQLServersTableColumns();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ConnectToServer()
+        public VerifyMonitoredSQLServersTableColumns()
         {
-            ServerName = "";
-            Query = "select [QueryMonitorTopPlanCountFilter],[QueryMonitorTopPlanCategoryFilter],[QueryMonitorQueryStoreMonitoringEnabled] from MonitoredSQLServers  ";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ConnectToServer Instance
+        public static VerifyMonitoredSQLServersTableColumns Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        string _Query;
-
-        /// <summary>
-        /// Gets or sets the value of variable Query.
-        /// </summary>
-        [TestVariable("cd48ea83-1538-4c3f-9466-8bb54fd893bc")]
-        public string Query
-        {
-            get { return _Query; }
-            set { _Query = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable ServerName.
-        /// </summary>
-        [TestVariable("3557f9c7-7eec-4561-9bb8-d219dbb276d6")]
-        public string ServerName
-        {
-            get { return repo.ServerName; }
-            set { repo.ServerName = value; }
-        }
 
 #endregion
 
@@ -103,20 +79,17 @@ namespace SQLDMTestAutomation.SSMSRecordingds
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$ServerName' on item 'SSMS.ConnectionDialog.ServerNameToConnect'.", repo.SSMS.ConnectionDialog.ServerNameToConnectInfo, new RecordItemIndex(0));
-            repo.SSMS.ConnectionDialog.ServerNameToConnect.Element.SetAttributeValue("Text", ServerName);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCountFilter'.", repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCountFilterInfo, new RecordItemIndex(0));
+            Validate.Exists(repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCountFilterInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.ConnectionDialog.Connect' at Center.", repo.SSMS.ConnectionDialog.ConnectInfo, new RecordItemIndex(1));
-            repo.SSMS.ConnectionDialog.Connect.MoveTo();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'SSMS.ConnectionDialog.Connect'.", repo.SSMS.ConnectionDialog.ConnectInfo, new RecordItemIndex(2));
-            repo.SSMS.ConnectionDialog.Connect.Press();
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCategoryFilter'.", repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCategoryFilterInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCategoryFilterInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorQueryStoreMonitoringEnabled'.", repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorQueryStoreMonitoringEnabledInfo, new RecordItemIndex(2));
+            Validate.Exists(repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorQueryStoreMonitoringEnabledInfo);
+            Delay.Milliseconds(0);
             
         }
 
