@@ -20,19 +20,19 @@ namespace SQLDMTestAutomation
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    /// The class representing the SQLDMTestAutomationRepository_1 element repository.
+    /// The class representing the SQLDMTestAutomationRepository element repository.
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
     [RepositoryFolder("fef44676-cf73-4211-820e-be7621cd7bfd")]
-    public partial class SQLDMTestAutomationRepository_1 : RepoGenBaseFolder
+    public partial class SQLDMTestAutomationRepository : RepoGenBaseFolder
     {
-        static SQLDMTestAutomationRepository_1 instance = new SQLDMTestAutomationRepository_1();
+        static SQLDMTestAutomationRepository instance = new SQLDMTestAutomationRepository();
 
         /// <summary>
-        /// Gets the singleton class instance representing the SQLDMTestAutomationRepository_1 element repository.
+        /// Gets the singleton class instance representing the SQLDMTestAutomationRepository element repository.
         /// </summary>
         [RepositoryFolder("fef44676-cf73-4211-820e-be7621cd7bfd")]
-        public static SQLDMTestAutomationRepository_1 Instance
+        public static SQLDMTestAutomationRepository Instance
         {
             get { return instance; }
         }
@@ -40,8 +40,8 @@ namespace SQLDMTestAutomation
         /// <summary>
         /// Repository class constructor.
         /// </summary>
-        public SQLDMTestAutomationRepository_1() 
-            : base("SQLDMTestAutomationRepository_1", "/", null, 0, false, "fef44676-cf73-4211-820e-be7621cd7bfd", ".\\RepositoryImages\\SQLDMTestAutomationRepository_1fef44676.rximgres")
+        public SQLDMTestAutomationRepository() 
+            : base("SQLDMTestAutomationRepository", "/", null, 0, false, "fef44676-cf73-4211-820e-be7621cd7bfd", ".\\RepositoryImages\\SQLDMTestAutomationRepositoryfef44676.rximgres")
         {
         }
 
@@ -66,7 +66,7 @@ namespace SQLDMTestAutomation
     /// Inner folder classes.
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
-    public partial class SQLDMTestAutomationRepository_1Folders
+    public partial class SQLDMTestAutomationRepositoryFolders
     {
     }
 #pragma warning restore 0436

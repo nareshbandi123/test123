@@ -378,9 +378,9 @@
     <Compile Include="UserCodeModule1.cs">
       <id>fb5c03d5-a53d-4c23-859e-ad8560631486</id>
     </Compile>
-    <Compile Include="SQLDMTestAutomationRepository_1.cs">
+    <Compile Include="SQLDMTestAutomationRepository.cs">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
-      <DependentUpon>SQLDMTestAutomationRepository_1.rxrep</DependentUpon>
+      <DependentUpon>SQLDMTestAutomationRepository.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>f8f34460-df0c-4e1a-a0b3-403570d827ce</id>
     </Compile>
@@ -502,13 +502,13 @@
       <id>159b4c60-e8b0-4e90-b435-ea5c84d824c1</id>
       <recordtableid>3317ce09-3f34-4b64-ad5c-42f441333426</recordtableid>
     </None>
-    <None Include="SQLDMTestAutomationRepository_1.rximg">
+    <None Include="SQLDMTestAutomationRepository.rximg">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
-      <DependentUpon>SQLDMTestAutomationRepository_1.rxrep</DependentUpon>
+      <DependentUpon>SQLDMTestAutomationRepository.rxrep</DependentUpon>
       <imageblob>true</imageblob>
       <id>455fead7-4e80-44dd-99ee-2c52443d5fa1</id>
     </None>
-    <None Include="SQLDMTestAutomationRepository_1.rxrep">
+    <None Include="SQLDMTestAutomationRepository.rxrep">
       <id>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</id>
       <repoid>f786a100-360b-442d-a1a8-e04f271dd75e</repoid>
       <reporootid>fef44676-cf73-4211-820e-be7621cd7bfd</reporootid>

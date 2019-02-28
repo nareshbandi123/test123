@@ -1,28 +1,13 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="SQLDMRecordings\OpenConfigureQueryMonitor.rxrec" />
+    <Element value="SQLDMTestAutomation.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="SQLDMRecordings\OpenConfigureQueryMonitor.rxrec" />
-    <Element value="SQLDMRecordings\ListOfServers.rxrec" />
-    <Element value="SQLDMRecordings\LaunchApplication.rxrec" />
-    <Element value="SQLDMRecordings\EnableQueryMonitor.rxrec" />
-    <Element value="SQLDMRecordings\DisableQueryMonitor.rxrec" />
-    <Element value="SQLDMRecordings\CollapseAllServers.rxrec" />
-    <Element value="SQLDMRecordings\CloseMonitoredSqlServerWindow.rxrec" />
-    <Element value="SQLDMRecordings\CloseApplication.rxrec" />
-    <Element value="SQLDMRecordings\AddServerAndVerifyQueryPlanOptionEnabled.rxrec" />
-    <Element value="SQLDMRecordings\SelectSever2017Properties.rxrec" />
-    <Element value="UserCodeCollection1.cs" />
     <Element value="SQLDMTestAutomation.rxtst" />
-    <Element value="SQLDMRecordings\VerifyQueryStoreOption.rxrec" />
-    <Element value="SQLDMTestAutomationRepository.rxrep" />
+    <Element value="UserCodeCollection1.cs" />
     <Element value="SQLDMRecordings\VerifyQueryStoreOption.cs" />
     <Element value="SQLDMRecordings\VerifySelectByAndPlansBy.cs" />
-    <Element value="SQLDMRecordings\SelectServer.rxrec" />
-    <Element value="SQLDMRecordings\VerifySelectTopForMinMaxValues.rxrec" />
-    <Element value="SQLDMRecordings\VerifySelectByAndPlansBy.rxrec" />
     <Element value="ServerList.csv" />
   </Array>
   <Properties name="projectSavedData">

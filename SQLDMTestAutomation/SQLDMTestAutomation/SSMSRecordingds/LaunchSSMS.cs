@@ -32,7 +32,7 @@ namespace SQLDMTestAutomation.SSMSRecordingds
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
-        public static SQLDMTestAutomation.SQLDMTestAutomationRepository_1 repo = SQLDMTestAutomation.SQLDMTestAutomationRepository_1.Instance;
+        public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
 
         static LaunchSSMS instance = new LaunchSSMS();
 

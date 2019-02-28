@@ -1,9 +1,9 @@
 ﻿<repository
 id="f786a100-360b-442d-a1a8-e04f271dd75e"
-name="SQLDMTestAutomationRepository_1"
+name="SQLDMTestAutomationRepository"
 rxversion="8.2">
 	<codegen
-	classname="SQLDMTestAutomationRepository_1"
+	classname="SQLDMTestAutomationRepository"
 	namespace="SQLDMTestAutomation">
 	</codegen>
 	<rootfolder

@@ -3,11 +3,11 @@
   <ActivePlatform value="x86" />
   <SerializedValue name="ModuleBrowserState">
     <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-      <string>522bf6e1-f6da-4bd9-b8dc-7ef2d745539b</string>
-      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
       <string>{1377E366-B5A9-4220-B883-3DCECF74FF8C}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>522bf6e1-f6da-4bd9-b8dc-7ef2d745539b</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution SQLDMTestAutomation[SQLDMTestAutomation[SQLDMRecordings[]SSMSRecordingds[]Testdata[]SQLDMTestAutomationRepository.rxrep[]]]]&#xD;&#xA;Solution SQLDMTestAutomation\SQLDMTestAutomation\SQLDMRecordings\OpenConfigureQueryMonitor.rxrec&#xD;&#xA;Solution SQLDMTestAutomation" />
+  <ProjectBrowserState value="[Solution SQLDMTestAutomation[SQLDMTestAutomation[SQLDMRecordings[]SSMSRecordingds[]Testdata[]SQLDMTestAutomationRepository.rxrep[]]]]&#xD;&#xA;Solution SQLDMTestAutomation\SQLDMTestAutomation\SQLDMTestAutomation.rxtst&#xD;&#xA;Solution SQLDMTestAutomation\SQLDMTestAutomation\SQLDMRecordings\CloseApplication.rxrec" />
   <StartupProject value="{1377E366-B5A9-4220-B883-3DCECF74FF8C}" />
 </Properties>
