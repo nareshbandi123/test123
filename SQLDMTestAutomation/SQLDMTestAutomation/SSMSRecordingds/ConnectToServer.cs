@@ -32,7 +32,7 @@ namespace SQLDMTestAutomation.SSMSRecordingds
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
-        public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
+        public static SQLDMTestAutomation.SQLDMTestAutomationRepository_1 repo = SQLDMTestAutomation.SQLDMTestAutomationRepository_1.Instance;
 
         static ConnectToServer instance = new ConnectToServer();
 
@@ -103,52 +103,70 @@ namespace SQLDMTestAutomation.SSMSRecordingds
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$ServerName' on item 'ConnectionDialog.ServerNameToConnect'.", repo.ConnectionDialog.ServerNameToConnectInfo, new RecordItemIndex(0));
-            //repo.ConnectionDialog.ServerNameToConnect.Element.SetAttributeValue("Text", ServerName);
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'ConnectionDialog.Connect' at Center.", repo.ConnectionDialog.ConnectInfo, new RecordItemIndex(1));
-            //repo.ConnectionDialog.Connect.MoveTo();
-            //Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'ConnectionDialog.Connect'.", repo.ConnectionDialog.ConnectInfo, new RecordItemIndex(2));
-            //repo.ConnectionDialog.Connect.Press();
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
-            //Delay.Duration(2000, false);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'MicrosoftSQLServerManagementStudio.Databases' at Center.", repo.MicrosoftSQLServerManagementStudio.DatabasesInfo, new RecordItemIndex(4));
-            //repo.MicrosoftSQLServerManagementStudio.Databases.MoveTo();
-            //Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'MicrosoftSQLServerManagementStudio.Databases' at Center.", repo.MicrosoftSQLServerManagementStudio.DatabasesInfo, new RecordItemIndex(5));
-            //repo.MicrosoftSQLServerManagementStudio.Databases.DoubleClick();
-            //Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'MicrosoftSQLServerManagementStudio.SQLdmRepository' at Center.", repo.MicrosoftSQLServerManagementStudio.SQLdmRepositoryInfo, new RecordItemIndex(6));
-            repo.MicrosoftSQLServerManagementStudio.SQLdmRepository.MoveTo();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Select() on item 'MicrosoftSQLServerManagementStudio.SQLdmRepository'.", repo.MicrosoftSQLServerManagementStudio.SQLdmRepositoryInfo, new RecordItemIndex(7));
-            repo.MicrosoftSQLServerManagementStudio.SQLdmRepository.Select();
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$ServerName' on item 'SSMS.ConnectionDialog.ServerNameToConnect'.", repo.SSMS.ConnectionDialog.ServerNameToConnectInfo, new RecordItemIndex(0));
+            repo.SSMS.ConnectionDialog.ServerNameToConnect.Element.SetAttributeValue("Text", ServerName);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'SSMS_SomeContextMenu.NewQuery' at Center.", repo.SSMS_SomeContextMenu.NewQueryInfo, new RecordItemIndex(8));
-            repo.SSMS_SomeContextMenu.NewQuery.Click(System.Windows.Forms.MouseButtons.Right);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.ConnectionDialog.Connect' at Center.", repo.SSMS.ConnectionDialog.ConnectInfo, new RecordItemIndex(1));
+            repo.SSMS.ConnectionDialog.Connect.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MicrosoftSQLServerManagementStudio.QueryEditor' at Center.", repo.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(9));
-            repo.MicrosoftSQLServerManagementStudio.QueryEditor.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Query' on item 'MicrosoftSQLServerManagementStudio.QueryEditor'.", repo.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(10));
-            repo.MicrosoftSQLServerManagementStudio.QueryEditor.Element.SetAttributeValue("Text", Query);
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'SSMS.ConnectionDialog.Connect'.", repo.SSMS.ConnectionDialog.ConnectInfo, new RecordItemIndex(2));
+            repo.SSMS.ConnectionDialog.Connect.Press();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MicrosoftSQLServerManagementStudio.Execute' at Center.", repo.MicrosoftSQLServerManagementStudio.ExecuteInfo, new RecordItemIndex(11));
-            repo.MicrosoftSQLServerManagementStudio.Execute.Click();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.MicrosoftSQLServerManagementStudio.Databases' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.DatabasesInfo, new RecordItemIndex(4));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.Databases.MoveTo();
             Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'SSMS.MicrosoftSQLServerManagementStudio.Databases' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.DatabasesInfo, new RecordItemIndex(5));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.Databases.DoubleClick();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.MicrosoftSQLServerManagementStudio.SQLdmRepository' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.SQLdmRepositoryInfo, new RecordItemIndex(6));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.SQLdmRepository.MoveTo();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'SSMS.MicrosoftSQLServerManagementStudio.SQLdmRepository' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.SQLdmRepositoryInfo, new RecordItemIndex(7));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.SQLdmRepository.Click(System.Windows.Forms.MouseButtons.Right);
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(8));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SSMS.SSMS_SomeContextMenu.NewQuery' at Center.", repo.SSMS.SSMS_SomeContextMenu.NewQueryInfo, new RecordItemIndex(9));
+            repo.SSMS.SSMS_SomeContextMenu.NewQuery.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(10));
+            Delay.Duration(1000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(11));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Query' with focus on 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor'.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(12));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.PressKeys(Query);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SSMS.MicrosoftSQLServerManagementStudio.Execute' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.ExecuteInfo, new RecordItemIndex(13));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.Execute.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCountFilter'.", repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCountFilterInfo, new RecordItemIndex(14));
+            Validate.Exists(repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCountFilterInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCategoryFilter'.", repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCategoryFilterInfo, new RecordItemIndex(15));
+            Validate.Exists(repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorTopPlanCategoryFilterInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorQueryStoreMonitoringEnabled'.", repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorQueryStoreMonitoringEnabledInfo, new RecordItemIndex(16));
+            Validate.Exists(repo.SSMS.MicrosoftSQLServerManagementStudio.TableCol_QueryMonitorQueryStoreMonitoringEnabledInfo);
+            Delay.Milliseconds(0);
             
         }
 

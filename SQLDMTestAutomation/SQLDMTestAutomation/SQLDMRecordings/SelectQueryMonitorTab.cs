@@ -32,7 +32,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
-        public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
+        public static SQLDMTestAutomation.SQLDMTestAutomationRepository_1 repo = SQLDMTestAutomation.SQLDMTestAutomationRepository_1.Instance;
 
         static SelectQueryMonitorTab instance = new SelectQueryMonitorTab();
 
@@ -79,8 +79,8 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MonitoredSqlServerInstancePropertiesDial.ListItem' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.ListItemInfo, new RecordItemIndex(0));
-            repo.MonitoredSqlServerInstancePropertiesDial.ListItem.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.ListItem' at Center.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.ListItemInfo, new RecordItemIndex(0));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.ListItem.Click();
             Delay.Milliseconds(200);
             
         }

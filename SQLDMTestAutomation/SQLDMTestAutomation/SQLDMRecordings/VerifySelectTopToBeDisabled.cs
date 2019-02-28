@@ -32,7 +32,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
-        public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
+        public static SQLDMTestAutomation.SQLDMTestAutomationRepository_1 repo = SQLDMTestAutomation.SQLDMTestAutomationRepository_1.Instance;
 
         static VerifySelectTopToBeDisabled instance = new VerifySelectTopToBeDisabled();
 
@@ -79,24 +79,24 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(0));
-            repo.MonitoredSqlServerInstancePropertiesDial.UpDownEdit.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(0));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEdit.EnsureVisible();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, "Enabled", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.UpDownEditInfo, "Enabled", "False");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'MonitoredSqlServerInstancePropertiesDial.ComboBox'.", repo.MonitoredSqlServerInstancePropertiesDial.ComboBoxInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.MonitoredSqlServerInstancePropertiesDial.ComboBoxInfo, "Enabled", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.ComboBox'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.ComboBoxInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.ComboBoxInfo, "Enabled", "False");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Focus() on item 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(3));
-            repo.MonitoredSqlServerInstancePropertiesDial.OkButton.Focus();
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Focus() on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(3));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton.Focus();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(4));
-            repo.MonitoredSqlServerInstancePropertiesDial.OkButton.PressKeys("{ENTER}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(4));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton.PressKeys("{ENTER}");
             Delay.Milliseconds(0);
             
         }

@@ -32,7 +32,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
-        public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
+        public static SQLDMTestAutomation.SQLDMTestAutomationRepository_1 repo = SQLDMTestAutomation.SQLDMTestAutomationRepository_1.Instance;
 
         static VerifyCollectQueryPlansToBeDisabled instance = new VerifyCollectQueryPlansToBeDisabled();
 
@@ -79,24 +79,24 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.RButtonUseTrace' at Center.", repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.RButtonUseTraceInfo, new RecordItemIndex(0));
-            repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.RButtonUseTrace.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.RButtonUseTrace' at Center.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.RButtonUseTraceInfo, new RecordItemIndex(0));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.RButtonUseTrace.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectQueryPlans'.", repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectQueryPlansInfo, new RecordItemIndex(1));
-            Validate.AttributeEqual(repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectQueryPlansInfo, "Enabled", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectQueryPlans'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectQueryPlansInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectQueryPlansInfo, "Enabled", "False");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectEstimatedQueryPlans'.", repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectEstimatedQueryPlansInfo, new RecordItemIndex(2));
-            Validate.AttributeEqual(repo.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectEstimatedQueryPlansInfo, "Enabled", "False");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='False') on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectEstimatedQueryPlans'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectEstimatedQueryPlansInfo, new RecordItemIndex(2));
+            Validate.AttributeEqual(repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.TableLayoutPanel19.ChkCollectEstimatedQueryPlansInfo, "Enabled", "False");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Focus() on item 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(3));
-            repo.MonitoredSqlServerInstancePropertiesDial.OkButton.Focus();
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Focus() on item 'SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(3));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton.Focus();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(4));
-            repo.MonitoredSqlServerInstancePropertiesDial.OkButton.PressKeys("{ENTER}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton'.", repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButtonInfo, new RecordItemIndex(4));
+            repo.SQLDM.MonitoredSqlServerInstancePropertiesDial.OkButton.PressKeys("{ENTER}");
             Delay.Milliseconds(0);
             
         }

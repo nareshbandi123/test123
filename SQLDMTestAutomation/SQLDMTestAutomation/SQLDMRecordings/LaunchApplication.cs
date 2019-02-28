@@ -32,7 +32,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
-        public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
+        public static SQLDMTestAutomation.SQLDMTestAutomationRepository_1 repo = SQLDMTestAutomation.SQLDMTestAutomationRepository_1.Instance;
 
         static LaunchApplication instance = new LaunchApplication();
 
@@ -79,7 +79,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            //LaunchApplication_Run_application(repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo);
+            //LaunchApplication_Run_application(repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo);
             //Delay.Milliseconds(0);
             
             //KillApplicationProcess();
@@ -95,8 +95,8 @@ namespace SQLDMTestAutomation.SQLDMRecordings
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(4));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'", repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo, new ActionTimeout(60000), new RecordItemIndex(5));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo.WaitForExists(60000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo, new ActionTimeout(60000), new RecordItemIndex(5));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo.WaitForExists(60000);
             
         }
 

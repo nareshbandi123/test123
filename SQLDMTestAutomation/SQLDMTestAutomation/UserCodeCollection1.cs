@@ -52,7 +52,7 @@ namespace SQLDMTestAutomation
         	TreeItem item = null; bool isFound = false;
         	try 
         	{
-        	    var treeitem = repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServers;
+        	    var treeitem = repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServers;
 	        	foreach (var itemtree in treeitem.Items)
 	        	{
 	        		if(itemtree.Expanded)

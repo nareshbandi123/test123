@@ -32,7 +32,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
-        public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
+        public static SQLDMTestAutomation.SQLDMTestAutomationRepository_1 repo = SQLDMTestAutomation.SQLDMTestAutomationRepository_1.Instance;
 
         static AddServerAndVerifyQueryPlanOptionEnabled instance = new AddServerAndVerifyQueryPlanOptionEnabled();
 
@@ -105,90 +105,90 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.File' at Center.", repo.IderaSQLDiagnosticManagerSQLdmRepo.FileInfo, new RecordItemIndex(0));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.File.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.File' at Center.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.FileInfo, new RecordItemIndex(0));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.File.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SomeContextMenu.ManageServers' at Center.", repo.SomeContextMenu.ManageServersInfo, new RecordItemIndex(1));
-            repo.SomeContextMenu.ManageServers.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.SomeContextMenu.ManageServers' at Center.", repo.SQLDM.SomeContextMenu.ManageServersInfo, new RecordItemIndex(1));
+            repo.SQLDM.SomeContextMenu.ManageServers.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SomeContextMenu.ManageServers' at Center.", repo.SomeContextMenu.ManageServersInfo, new RecordItemIndex(2));
-            repo.SomeContextMenu.ManageServers.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.SomeContextMenu.ManageServers' at Center.", repo.SQLDM.SomeContextMenu.ManageServersInfo, new RecordItemIndex(2));
+            repo.SQLDM.SomeContextMenu.ManageServers.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(3));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'ManageServersDialog.AddButton' at Center.", repo.ManageServersDialog.AddButtonInfo, new RecordItemIndex(4));
-            repo.ManageServersDialog.AddButton.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.ManageServersDialog.AddButton' at Center.", repo.SQLDM.ManageServersDialog.AddButtonInfo, new RecordItemIndex(4));
+            repo.SQLDM.ManageServersDialog.AddButton.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ManageServersDialog.AddButton' at Center.", repo.ManageServersDialog.AddButtonInfo, new RecordItemIndex(5));
-            repo.ManageServersDialog.AddButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.ManageServersDialog.AddButton' at Center.", repo.SQLDM.ManageServersDialog.AddButtonInfo, new RecordItemIndex(5));
+            repo.SQLDM.ManageServersDialog.AddButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(6));
-            repo.AddServersWizard.NextButton.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.AddServersWizard.NextButton' at Center.", repo.SQLDM.AddServersWizard.NextButtonInfo, new RecordItemIndex(6));
+            repo.SQLDM.AddServersWizard.NextButton.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(7));
-            repo.AddServersWizard.NextButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.AddServersWizard.NextButton' at Center.", repo.SQLDM.AddServersWizard.NextButtonInfo, new RecordItemIndex(7));
+            repo.SQLDM.AddServersWizard.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(8));
-            repo.AddServersWizard.NextButton.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.AddServersWizard.NextButton' at Center.", repo.SQLDM.AddServersWizard.NextButtonInfo, new RecordItemIndex(8));
+            repo.SQLDM.AddServersWizard.NextButton.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(9));
-            repo.AddServersWizard.NextButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.AddServersWizard.NextButton' at Center.", repo.SQLDM.AddServersWizard.NextButtonInfo, new RecordItemIndex(9));
+            repo.SQLDM.AddServersWizard.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Server1' on item 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(10));
-            repo.AddServersWizard.Text.Element.SetAttributeValue("Text", Server1);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Server1' on item 'SQLDM.AddServersWizard.Text'.", repo.SQLDM.AddServersWizard.TextInfo, new RecordItemIndex(10));
+            repo.SQLDM.AddServersWizard.Text.Element.SetAttributeValue("Text", Server1);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(11));
-            repo.AddServersWizard.Text.PressKeys("{ENTER}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'SQLDM.AddServersWizard.Text'.", repo.SQLDM.AddServersWizard.TextInfo, new RecordItemIndex(11));
+            repo.SQLDM.AddServersWizard.Text.PressKeys("{ENTER}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Server2' on item 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(12));
-            repo.AddServersWizard.Text.Element.SetAttributeValue("Text", Server2);
+            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$Server2' on item 'SQLDM.AddServersWizard.Text'.", repo.SQLDM.AddServersWizard.TextInfo, new RecordItemIndex(12));
+            repo.SQLDM.AddServersWizard.Text.Element.SetAttributeValue("Text", Server2);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'AddServersWizard.Text'.", repo.AddServersWizard.TextInfo, new RecordItemIndex(13));
-            repo.AddServersWizard.Text.PressKeys("{ENTER}");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{ENTER}' with focus on 'SQLDM.AddServersWizard.Text'.", repo.SQLDM.AddServersWizard.TextInfo, new RecordItemIndex(13));
+            repo.SQLDM.AddServersWizard.Text.PressKeys("{ENTER}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(14));
-            repo.AddServersWizard.NextButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.AddServersWizard.NextButton' at Center.", repo.SQLDM.AddServersWizard.NextButtonInfo, new RecordItemIndex(14));
+            repo.SQLDM.AddServersWizard.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.NextButton' at Center.", repo.AddServersWizard.NextButtonInfo, new RecordItemIndex(15));
-            repo.AddServersWizard.NextButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.AddServersWizard.NextButton' at Center.", repo.SQLDM.AddServersWizard.NextButtonInfo, new RecordItemIndex(15));
+            repo.SQLDM.AddServersWizard.NextButton.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(16));
-            repo.AddServersWizard.EnableQueryMonitorTraceCheckBox.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.SQLDM.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(16));
+            repo.SQLDM.AddServersWizard.EnableQueryMonitorTraceCheckBox.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(17));
-            repo.AddServersWizard.EnableQueryMonitorTraceCheckBox.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.AddServersWizard.EnableQueryMonitorTraceCheckBox' at Center.", repo.SQLDM.AddServersWizard.EnableQueryMonitorTraceCheckBoxInfo, new RecordItemIndex(17));
+            repo.SQLDM.AddServersWizard.EnableQueryMonitorTraceCheckBox.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Duration (milliseconds)') on item 'AddServersWizard.PlansBy'.", repo.AddServersWizard.PlansByInfo, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.AddServersWizard.PlansByInfo, "Text", "Duration (milliseconds)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Duration (milliseconds)') on item 'SQLDM.AddServersWizard.PlansBy'.", repo.SQLDM.AddServersWizard.PlansByInfo, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.SQLDM.AddServersWizard.PlansByInfo, "Text", "Duration (milliseconds)");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'AddServersWizard.Cancel'.", repo.AddServersWizard.CancelInfo, new RecordItemIndex(19));
-            //repo.AddServersWizard.Cancel.Press();
+            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'SQLDM.AddServersWizard.Cancel'.", repo.SQLDM.AddServersWizard.CancelInfo, new RecordItemIndex(19));
+            //repo.SQLDM.AddServersWizard.Cancel.Press();
             //Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(20));
             //Delay.Duration(1000, false);
             
-            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'ManageServersDialog.CancelButton'.", repo.ManageServersDialog.CancelButtonInfo, new RecordItemIndex(21));
-            //repo.ManageServersDialog.CancelButton.Press();
+            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'SQLDM.ManageServersDialog.CancelButton'.", repo.SQLDM.ManageServersDialog.CancelButtonInfo, new RecordItemIndex(21));
+            //repo.SQLDM.ManageServersDialog.CancelButton.Press();
             //Delay.Milliseconds(0);
             
         }

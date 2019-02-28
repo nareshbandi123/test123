@@ -1,0 +1,21 @@
+﻿<repository
+id="f786a100-360b-442d-a1a8-e04f271dd75e"
+name="SQLDMTestAutomationRepository_1"
+rxversion="8.2">
+	<codegen
+	classname="SQLDMTestAutomationRepository_1"
+	namespace="SQLDMTestAutomation">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="fef44676-cf73-4211-820e-be7621cd7bfd"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

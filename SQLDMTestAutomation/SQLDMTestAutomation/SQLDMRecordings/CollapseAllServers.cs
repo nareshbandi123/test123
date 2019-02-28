@@ -32,7 +32,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
-        public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
+        public static SQLDMTestAutomation.SQLDMTestAutomationRepository_1 repo = SQLDMTestAutomation.SQLDMTestAutomationRepository_1.Instance;
 
         static CollapseAllServers instance = new CollapseAllServers();
 
@@ -79,11 +79,11 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'IderaSQLDiagnosticManagerSQLdmRepo.AllServers'.", repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo, new RecordItemIndex(0));
-            repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServers.EnsureVisible();
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking EnsureVisible() on item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServers'.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo, new RecordItemIndex(0));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServers.EnsureVisible();
             Delay.Milliseconds(0);
             
-            AllServersCollapse(repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo);
+            AllServersCollapse(repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo);
             Delay.Milliseconds(0);
             
         }

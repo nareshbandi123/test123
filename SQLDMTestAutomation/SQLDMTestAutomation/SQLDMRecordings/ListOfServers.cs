@@ -32,7 +32,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
-        public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
+        public static SQLDMTestAutomation.SQLDMTestAutomationRepository_1 repo = SQLDMTestAutomation.SQLDMTestAutomationRepository_1.Instance;
 
         static ListOfServers instance = new ListOfServers();
 
@@ -79,7 +79,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            GetAllServers(repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo, "");
+            GetAllServers(repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServersInfo, "");
             Delay.Milliseconds(0);
             
         }

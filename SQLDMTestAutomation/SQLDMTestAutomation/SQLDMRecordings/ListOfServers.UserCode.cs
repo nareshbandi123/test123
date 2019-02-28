@@ -39,7 +39,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
         	Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'treeitemInfo' at Center.", treeitemInfo);
             //treeitemInfo.FindAdapter<TreeItem>().Click();
             
-            isFound = GetItem(repo.IderaSQLDiagnosticManagerSQLdmRepo.AllServers, @"JS-XW7S8\SQL2008");
+            isFound = GetItem(repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.AllServers, @"JS-XW7S8\SQL2008");
             //Report.Log(ReportLevel.Info, "", "Server Found ? = ", isFound);
             //if(isFound) string ss = "found"
             string report = Convert.ToString(isFound) ;
