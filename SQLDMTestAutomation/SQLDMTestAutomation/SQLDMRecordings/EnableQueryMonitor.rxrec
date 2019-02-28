@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e47225b1-940d-4538-842a-92bdbab6c105"
+mode="Global"
+rxversion="8.2">
+	<name>
+		EnableQueryMonitor
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="EnableQueryMonitor"
+	namespace="SQLDMTestAutomation.SQLDMRecordings">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="EnableQueryMonitor"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="ClickQueryMonitorTraceCheckBox"
+		namespace="SQLDMTestAutomation.SQLDMRecordings"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="7d8785e8-61e8-4708-b4e3-450271bc3df3">
+				<argument
+				argname="checkboxInfo"
+				id="49396e3d-bc30-4687-a83d-1dd02b28aeab">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="c19e42bd-757e-41bc-9bda-4986a05f4d11"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']//container[@controlname='tableLayoutPanel17']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="f786a100-360b-442d-a1a8-e04f271dd75e"
+	name="SQLDMTestAutomationRepository"
+	relativepath="..\SQLDMTestAutomationRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SQLDMTestAutomationRepository"
+		namespace="SQLDMTestAutomation">
+		</codegen>
+		<rootfolder
+		id="fef44676-cf73-4211-820e-be7621cd7bfd"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		EnableQueryMonitor.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
