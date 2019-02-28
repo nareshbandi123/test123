@@ -854,7 +854,7 @@ rxversion="8.2">
 		</keysequenceitem>
 	</recorditems>
 	<repository
-	id="f786a100-360b-442d-a1a8-e04f271dd75e"
+	id="f757f954-50ee-489b-a8bf-73db38cbd8be"
 	name="SQLDMTestAutomationRepository"
 	relativepath="..\SQLDMTestAutomationRepository.rxrep"
 	rxversion="8.2">
