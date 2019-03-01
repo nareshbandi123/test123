@@ -56,7 +56,7 @@ namespace SQLDMTestAutomation
         /// <summary>
         /// Gets or sets the value of variable ServerName.
         /// </summary>
-        [TestVariable("1414cc25-97b1-4e47-ab61-5d306e2f14c6")]
+        [TestVariable("9f20c34a-18df-4e03-aa7a-a5fc87f514ad")]
         public string ServerName
         {
             get { return _ServerName; }

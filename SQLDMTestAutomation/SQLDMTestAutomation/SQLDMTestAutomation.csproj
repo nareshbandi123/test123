@@ -347,6 +347,11 @@
       <DependentUpon>ClickSQLdmRepositoryInLeftPanel.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d1cbe9ca-0cc7-4aae-bbc7-38ef87839689</id>
+    <Compile Include="SQLDMTestAutomationRepository.cs">
+      <DependentUpon>SQLDMTestAutomationRepository.rxrep</DependentUpon>
+      <id>f4f8a042-fb03-4a98-b365-97eee952e825</id>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
     </Compile>
     <Compile Include="SSMSRecordingds\ConnectToServer.cs">
       <BoundTo>b642b0cd-5668-40aa-adeb-b0e67a782d23</BoundTo>
@@ -414,12 +419,6 @@
     <Compile Include="UserCodeModule1.cs">
       <id>fb5c03d5-a53d-4c23-859e-ad8560631486</id>
     </Compile>
-    <Compile Include="SQLDMTestAutomationRepository.cs">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
-      <DependentUpon>SQLDMTestAutomationRepository.rxrep</DependentUpon>
-      <RepositoryCode>true</RepositoryCode>
-      <id>f8f34460-df0c-4e1a-a0b3-403570d827ce</id>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\Desktop\New folder\ServerList.csv">
@@ -432,109 +431,116 @@
     <Content Include="ServerList.csv">
       <Link>ServerList.csv</Link>
       <BoundTo>f9a5d275-c087-4e96-bea8-80a033b4d756</BoundTo>
+      <DependentUpon>SQLDMTestAutomation_1.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>4156f1f7-577a-4491-8400-dae57c1711f4</id>
+    </Content>
+    <Content Include="ServerList.csv">
+      <Link>ServerList.csv</Link>
+      <BoundTo>f9a5d275-c087-4e96-bea8-80a033b4d756</BoundTo>
       <DependentUpon>SQLDMTestAutomation.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>f2c4700b-321e-4ace-9420-7cd839835804</id>
+      <id>6b0dcaaf-3f25-4c24-8f04-63b0f0352baa</id>
     </Content>
     <None Include="SQLDMRecordings\AddServerAndVerifyQueryPlanOptionEnabled.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>b38bcf1d-64f0-4c57-9761-44e93ca54461</id>
       <recordtableid>0d45aeec-90f8-4043-a0cf-91a511febd51</recordtableid>
     </None>
     <None Include="SQLDMRecordings\CloseApplication.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>4dfa6b6d-8324-417e-a698-5c195240bfac</id>
       <recordtableid>9552b69d-f0c8-481f-b230-dfdaa4ad8b0e</recordtableid>
     </None>
     <None Include="SQLDMRecordings\CloseMonitoredSqlServerWindow.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>bf442d57-636c-4245-86ac-30367eb08326</id>
       <recordtableid>10938416-b5ae-4e32-9f33-2396104249f6</recordtableid>
     </None>
     <None Include="SQLDMRecordings\CollapseAllServers.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>d3d518c2-6841-43ba-88b1-faa5ccd9f491</id>
       <recordtableid>a08149d5-6a5b-4441-8665-db7c2b1921ae</recordtableid>
     </None>
     <None Include="SQLDMRecordings\DisableQueryMonitor.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>46b11113-8dba-41fa-b375-dc54466382aa</id>
       <recordtableid>27e814ad-b964-4291-bc15-a4e0a1045970</recordtableid>
     </None>
     <None Include="SQLDMRecordings\EnableQueryMonitor.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>f97c3d41-8f4a-4c58-ab83-49793dc8db38</id>
       <recordtableid>e47225b1-940d-4538-842a-92bdbab6c105</recordtableid>
     </None>
     <None Include="SQLDMRecordings\LaunchApplication.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>48d2f75e-153f-47c6-ad5f-19d9774f4d12</id>
       <recordtableid>73fb0df9-782d-480a-b57f-0e0513e3249c</recordtableid>
     </None>
     <None Include="SQLDMRecordings\ListOfServers.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>f454fd29-d88a-4255-9095-4b7de90cae0b</id>
       <recordtableid>cd7340b8-4836-440c-9e77-d6f24d4e7b66</recordtableid>
     </None>
     <None Include="SQLDMRecordings\OpenConfigureQueryMonitor.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>06083215-b9f8-4bed-b549-71458738aea7</id>
       <recordtableid>a3e16002-ad31-41c7-be31-fdb013b90bf3</recordtableid>
     </None>
     <None Include="SQLDMRecordings\RevertSelectTopToDefaultValue.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>f7c74583-fbe2-475c-8200-5a3d52c51bb5</id>
       <recordtableid>b77ac04e-4994-4896-a8e5-19399d6c8ae7</recordtableid>
     </None>
     <None Include="SQLDMRecordings\SelectQueryMonitorTab.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>772a362e-3b37-4996-8fe6-68b818720ecc</id>
       <recordtableid>c8403180-b352-4cb5-8d64-159df5e60858</recordtableid>
     </None>
     <None Include="SQLDMRecordings\SelectServer.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>9e754cf0-edb2-45b3-aff8-dcdd336af6a1</id>
       <recordtableid>24f6bd52-083e-4e49-bf06-cf2fe2ae5d7d</recordtableid>
     </None>
     <None Include="SQLDMRecordings\SelectSever2017Properties.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>89fdfa42-3254-4ac1-bf7f-5de7aeb29bab</id>
       <recordtableid>01b3441a-f0cc-40a2-a450-4183372c0d20</recordtableid>
     </None>
     <None Include="SQLDMRecordings\VerifyCollectQueryPlansToBeDisabled.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>b10fcf68-3e6e-429f-b105-1bf8ada48c26</id>
       <recordtableid>79464ac0-d913-4fe2-8642-ef9c687ae205</recordtableid>
     </None>
     <None Include="SQLDMRecordings\VerifySelectByAndPlansBy.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>8059b73b-4d3e-4c56-9d11-d89c9e338b30</id>
       <recordtableid>e9af3f9e-4660-4843-b348-38b7b394de7f</recordtableid>
     </None>
     <None Include="SQLDMRecordings\VerifySelectTopForMinMaxValues.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>68dceda2-f52f-45c7-8461-0e1b116baff0</id>
       <recordtableid>327db533-7c43-4209-bb45-9cb499093d5a</recordtableid>
     </None>
     <None Include="SQLDMRecordings\VerifySelectTopToBeDisabled.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>a61f890b-e599-4c49-acd0-ea7344f32cd4</id>
       <recordtableid>e0cc1395-ebff-4ffa-bb51-b3d57c3b7246</recordtableid>
     </None>
     <None Include="SQLDMRecordings\VerifySelectTopWithInvaildData.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>159b4c60-e8b0-4e90-b435-ea5c84d824c1</id>
       <recordtableid>3317ce09-3f34-4b64-ad5c-42f441333426</recordtableid>
     </None>
     <None Include="SQLDMTestAutomationRepository.rximg">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <DependentUpon>SQLDMTestAutomationRepository.rxrep</DependentUpon>
+      <id>7824742e-9d9e-4366-9f10-b9239ce4b272</id>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <imageblob>true</imageblob>
-      <id>455fead7-4e80-44dd-99ee-2c52443d5fa1</id>
     </None>
     <None Include="SQLDMTestAutomationRepository.rxrep">
-      <id>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</id>
-      <repoid>f786a100-360b-442d-a1a8-e04f271dd75e</repoid>
+      <id>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</id>
+      <repoid>f757f954-50ee-489b-a8bf-73db38cbd8be</repoid>
       <reporootid>fef44676-cf73-4211-820e-be7621cd7bfd</reporootid>
     </None>
     <None Include="SSMSRecordingds\ClickSQLdmRepositoryInLeftPanel.rxrec">
@@ -543,7 +549,7 @@
       <recordtableid>ef842bbe-065e-438e-87f1-342978211007</recordtableid>
     </None>
     <None Include="SSMSRecordingds\ConnectToServer.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>b642b0cd-5668-40aa-adeb-b0e67a782d23</id>
       <recordtableid>b292c181-56e2-4512-851c-b8ba8fa5411c</recordtableid>
     </None>
@@ -553,7 +559,7 @@
       <recordtableid>26744f38-66ad-4eeb-b822-eadf3208b00f</recordtableid>
     </None>
     <None Include="SSMSRecordingds\LaunchSSMS.rxrec">
-      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>1e6da6b1-7a57-4a19-95bf-82a3c010688d</id>
       <recordtableid>303a7741-4722-4c12-9533-9fd4939f22c3</recordtableid>
     </None>

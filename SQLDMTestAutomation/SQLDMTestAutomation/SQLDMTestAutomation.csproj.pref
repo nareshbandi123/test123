@@ -4,6 +4,7 @@
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="SQLDMTestAutomationRepository.rxrep" />
     <Element value="SQLDMTestAutomation.rxtst" />
     <Element value="SSMSRecordingds\VerifyMonitoredSQLServersTableColumns.rxrec" />
     <Element value="SSMSRecordingds\ExecuteQuery.rxrec" />
@@ -22,6 +23,9 @@
     <Element value="UserCodeCollection1.cs" />
     <Element value="SSMSRecordingds\ConnectToServer.cs" />
     <Element value="SQLDMRecordings\AddServerAndVerifyQueryPlanOptionEnabled.rxrec" />
+    <Element value="SQLDMRecordings\CloseMonitoredSqlServerWindow.rxrec" />
+    <Element value="SQLDMRecordings\EnableQueryMonitor.rxrec" />
+    <Element value="SQLDMRecordings\LaunchApplication.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
