@@ -24,31 +24,30 @@ namespace SQLDMTestAutomation.SSMSRecordingds
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ConnectToServer recording.
+    ///The ExecuteQuery recording.
     /// </summary>
-    [TestModule("b292c181-56e2-4512-851c-b8ba8fa5411c", ModuleType.Recording, 1)]
-    public partial class ConnectToServer : ITestModule
+    [TestModule("26744f38-66ad-4eeb-b822-eadf3208b00f", ModuleType.Recording, 1)]
+    public partial class ExecuteQuery : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
         public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
 
-        static ConnectToServer instance = new ConnectToServer();
+        static ExecuteQuery instance = new ExecuteQuery();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ConnectToServer()
+        public ExecuteQuery()
         {
-            ServerName = "";
             Query = "select [QueryMonitorTopPlanCountFilter],[QueryMonitorTopPlanCategoryFilter],[QueryMonitorQueryStoreMonitoringEnabled] from MonitoredSQLServers  ";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ConnectToServer Instance
+        public static ExecuteQuery Instance
         {
             get { return instance; }
         }
@@ -60,21 +59,11 @@ namespace SQLDMTestAutomation.SSMSRecordingds
         /// <summary>
         /// Gets or sets the value of variable Query.
         /// </summary>
-        [TestVariable("cd48ea83-1538-4c3f-9466-8bb54fd893bc")]
+        [TestVariable("1fd3749a-a1be-477b-9b77-0ddaa8bed5bd")]
         public string Query
         {
             get { return _Query; }
             set { _Query = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable ServerName.
-        /// </summary>
-        [TestVariable("3557f9c7-7eec-4561-9bb8-d219dbb276d6")]
-        public string ServerName
-        {
-            get { return repo.ServerName; }
-            set { repo.ServerName = value; }
         }
 
 #endregion
@@ -103,20 +92,25 @@ namespace SQLDMTestAutomation.SSMSRecordingds
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$ServerName' on item 'SSMS.ConnectionDialog.ServerNameToConnect'.", repo.SSMS.ConnectionDialog.ServerNameToConnectInfo, new RecordItemIndex(0));
-            repo.SSMS.ConnectionDialog.ServerNameToConnect.Element.SetAttributeValue("Text", ServerName);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(0));
+            //repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.MoveTo();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.ConnectionDialog.Connect' at Center.", repo.SSMS.ConnectionDialog.ConnectInfo, new RecordItemIndex(1));
-            repo.SSMS.ConnectionDialog.Connect.MoveTo();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(1));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Press() on item 'SSMS.ConnectionDialog.Connect'.", repo.SSMS.ConnectionDialog.ConnectInfo, new RecordItemIndex(2));
-            repo.SSMS.ConnectionDialog.Connect.Press();
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Query' with focus on 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor'.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(2));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.PressKeys(Query);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
-            Delay.Duration(2000, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.MicrosoftSQLServerManagementStudio.Execute' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.ExecuteInfo, new RecordItemIndex(3));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.Execute.MoveTo();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SSMS.MicrosoftSQLServerManagementStudio.Execute' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.ExecuteInfo, new RecordItemIndex(4));
+            repo.SSMS.MicrosoftSQLServerManagementStudio.Execute.Click();
+            Delay.Milliseconds(200);
             
         }
 

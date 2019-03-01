@@ -40,6 +40,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="0808f586-ec65-4429-93d6-c535df8ee07b"
+			name="NewQueryContextMenu"
+			ref="c943dc6f-4873-4ad7-8fd2-784463b10806"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="09f2d008-e4c8-4a1b-83d7-fe57064a1d42"
 			name="CloseApplication"
@@ -47,6 +53,11 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="0d3a4974-fded-4b8e-aa38-722c171a5369"
+			name="VerifyMonitoredSQLServersTableColumns"
+			ref="c2bda287-5996-49c3-a318-68b71ee525dd"
+      type="Recording">
+			</testmodule>            
 			id="0c96038a-706d-40b0-a49a-4fede70bf5b2"
 			name="SelectSever2017Properties"
 			ref="01b3441a-f0cc-40a2-a450-4183372c0d20"
@@ -168,6 +179,12 @@ rxversion="8.2">
 			minrange="4"
 			name="C164220_Verify_default_value_for_Select_top_and_Plans_by2">
 			</testcase>
+			<testmodule
+			id="4f9c4dba-088d-4f01-8f64-9dbb7d98e3b1"
+			name="ClickSQLdmRepositoryInLeftPanel"
+			ref="ef842bbe-065e-438e-87f1-342978211007"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="4ff0429d-5946-4e0b-86ae-012c9c4f7157"
 			name="teardown12">
@@ -293,6 +310,12 @@ rxversion="8.2">
 			id="7bf5a91d-e8ce-414e-82b7-117d876274fb"
 			name="CloseApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7dc0f8b1-997e-489c-9667-626f845bf751"
+			name="ExecuteQuery"
+			ref="26744f38-66ad-4eeb-b822-eadf3208b00f"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -868,6 +891,22 @@ rxversion="8.2">
 						<testmodule
 						id="c2c20006-e627-45f8-ba09-886eb0ad028c"
 						name="ConnectToServer">
+						</testmodule>
+						<testmodule
+						id="4f9c4dba-088d-4f01-8f64-9dbb7d98e3b1"
+						name="ClickSQLdmRepositoryInLeftPanel">
+						</testmodule>
+						<testmodule
+						id="0808f586-ec65-4429-93d6-c535df8ee07b"
+						name="NewQueryContextMenu">
+						</testmodule>
+						<testmodule
+						id="7dc0f8b1-997e-489c-9667-626f845bf751"
+						name="ExecuteQuery">
+						</testmodule>
+						<testmodule
+						id="0d3a4974-fded-4b8e-aa38-722c171a5369"
+						name="VerifyMonitoredSQLServersTableColumns">
 						</testmodule>
 					</testcase>
 					<testcase

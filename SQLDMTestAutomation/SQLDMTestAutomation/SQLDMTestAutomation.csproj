@@ -336,6 +336,17 @@
       <id>f4e2c176-9464-499f-8720-657e4b669b38</id>
       <BoundTo>159b4c60-e8b0-4e90-b435-ea5c84d824c1</BoundTo>
     </Compile>
+    <Compile Include="SSMSRecordingds\ClickSQLdmRepositoryInLeftPanel.cs">
+      <BoundTo>4e25c5e6-b1e1-4ea8-b787-57ee74e7622e</BoundTo>
+      <DependentUpon>ClickSQLdmRepositoryInLeftPanel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5d60037d-680b-4c86-8e07-d30557f88b14</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\ClickSQLdmRepositoryInLeftPanel.UserCode.cs">
+      <BoundTo>4e25c5e6-b1e1-4ea8-b787-57ee74e7622e</BoundTo>
+      <DependentUpon>ClickSQLdmRepositoryInLeftPanel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d1cbe9ca-0cc7-4aae-bbc7-38ef87839689</id>
     <Compile Include="SQLDMTestAutomationRepository.cs">
       <DependentUpon>SQLDMTestAutomationRepository.rxrep</DependentUpon>
       <id>f4f8a042-fb03-4a98-b365-97eee952e825</id>
@@ -354,6 +365,18 @@
       <UserCode>true</UserCode>
       <id>9be3cf35-045e-45ca-a81e-961d1c92f2b6</id>
     </Compile>
+    <Compile Include="SSMSRecordingds\ExecuteQuery.cs">
+      <BoundTo>cb333ffe-6119-45cd-b853-72cf099c860a</BoundTo>
+      <DependentUpon>ExecuteQuery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f0ff8b4-67f6-402f-a970-45c701f62c11</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\ExecuteQuery.UserCode.cs">
+      <BoundTo>cb333ffe-6119-45cd-b853-72cf099c860a</BoundTo>
+      <DependentUpon>ExecuteQuery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>843811fd-a483-4e08-bbda-ff7b822a79c2</id>
+    </Compile>
     <Compile Include="SSMSRecordingds\LaunchSSMS.cs">
       <BoundTo>1e6da6b1-7a57-4a19-95bf-82a3c010688d</BoundTo>
       <DependentUpon>LaunchSSMS.rxrec</DependentUpon>
@@ -365,6 +388,30 @@
       <DependentUpon>LaunchSSMS.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>24362367-a9e1-4d9e-8cf9-421f0f7b9a2c</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\NewQueryContextMenu.cs">
+      <BoundTo>ebc56b9e-b65c-42ee-8135-2e6ae169b15e</BoundTo>
+      <DependentUpon>NewQueryContextMenu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f8149d20-a42a-4b04-b3bc-df7f31d25d4e</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\NewQueryContextMenu.UserCode.cs">
+      <BoundTo>ebc56b9e-b65c-42ee-8135-2e6ae169b15e</BoundTo>
+      <DependentUpon>NewQueryContextMenu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>29d700ff-af21-4e3f-a94b-f072eeaa37da</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\VerifyMonitoredSQLServersTableColumns.cs">
+      <BoundTo>da714584-6e3e-4b69-8072-0e27fb3b6ff7</BoundTo>
+      <DependentUpon>VerifyMonitoredSQLServersTableColumns.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>067a3f78-d4e7-4bf8-9f1d-aeb810db9e7b</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\VerifyMonitoredSQLServersTableColumns.UserCode.cs">
+      <BoundTo>da714584-6e3e-4b69-8072-0e27fb3b6ff7</BoundTo>
+      <DependentUpon>VerifyMonitoredSQLServersTableColumns.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9797ce9-6263-4ec1-b0e4-f5c025181f95</id>
     </Compile>
     <Compile Include="UserCodeCollection1.cs">
       <id>b822862e-1214-4c17-a772-618c84c203e1</id>
@@ -496,15 +543,35 @@
       <repoid>f757f954-50ee-489b-a8bf-73db38cbd8be</repoid>
       <reporootid>fef44676-cf73-4211-820e-be7621cd7bfd</reporootid>
     </None>
+    <None Include="SSMSRecordingds\ClickSQLdmRepositoryInLeftPanel.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>4e25c5e6-b1e1-4ea8-b787-57ee74e7622e</id>
+      <recordtableid>ef842bbe-065e-438e-87f1-342978211007</recordtableid>
+    </None>
     <None Include="SSMSRecordingds\ConnectToServer.rxrec">
       <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>b642b0cd-5668-40aa-adeb-b0e67a782d23</id>
       <recordtableid>b292c181-56e2-4512-851c-b8ba8fa5411c</recordtableid>
     </None>
+    <None Include="SSMSRecordingds\ExecuteQuery.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>cb333ffe-6119-45cd-b853-72cf099c860a</id>
+      <recordtableid>26744f38-66ad-4eeb-b822-eadf3208b00f</recordtableid>
+    </None>
     <None Include="SSMSRecordingds\LaunchSSMS.rxrec">
       <BoundTo>2488e2b7-24a4-4ca3-b4ca-12ad3f5003ae</BoundTo>
       <id>1e6da6b1-7a57-4a19-95bf-82a3c010688d</id>
       <recordtableid>303a7741-4722-4c12-9533-9fd4939f22c3</recordtableid>
+    </None>
+    <None Include="SSMSRecordingds\NewQueryContextMenu.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>ebc56b9e-b65c-42ee-8135-2e6ae169b15e</id>
+      <recordtableid>c943dc6f-4873-4ad7-8fd2-784463b10806</recordtableid>
+    </None>
+    <None Include="SSMSRecordingds\VerifyMonitoredSQLServersTableColumns.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>da714584-6e3e-4b69-8072-0e27fb3b6ff7</id>
+      <recordtableid>c2bda287-5996-49c3-a318-68b71ee525dd</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
