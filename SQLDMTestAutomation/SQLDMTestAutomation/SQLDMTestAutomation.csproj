@@ -396,6 +396,18 @@
       <UserCode>true</UserCode>
       <id>29d700ff-af21-4e3f-a94b-f072eeaa37da</id>
     </Compile>
+    <Compile Include="SSMSRecordingds\ReadQueryFromFileAndSetToQueryEditor.cs">
+      <BoundTo>81ca157c-3a37-4165-89b4-1369e40f5878</BoundTo>
+      <DependentUpon>ReadQueryFromFileAndSetToQueryEditor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fed10458-c42a-4a45-9e4f-1efe29e44ca4</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\ReadQueryFromFileAndSetToQueryEditor.UserCode.cs">
+      <BoundTo>81ca157c-3a37-4165-89b4-1369e40f5878</BoundTo>
+      <DependentUpon>ReadQueryFromFileAndSetToQueryEditor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5f8f0aa6-2c9c-4c5f-8ee3-acec05ea1743</id>
+    </Compile>
     <Compile Include="SSMSRecordingds\VerifyMonitoredSQLServersTableColumns.cs">
       <BoundTo>da714584-6e3e-4b69-8072-0e27fb3b6ff7</BoundTo>
       <DependentUpon>VerifyMonitoredSQLServersTableColumns.rxrec</DependentUpon>
@@ -562,10 +574,18 @@
       <id>ebc56b9e-b65c-42ee-8135-2e6ae169b15e</id>
       <recordtableid>c943dc6f-4873-4ad7-8fd2-784463b10806</recordtableid>
     </None>
+    <None Include="SSMSRecordingds\ReadQueryFromFileAndSetToQueryEditor.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>81ca157c-3a37-4165-89b4-1369e40f5878</id>
+      <recordtableid>19abc944-3e0a-4494-bd1a-0fff3c2498b9</recordtableid>
+    </None>
     <None Include="SSMSRecordingds\VerifyMonitoredSQLServersTableColumns.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>da714584-6e3e-4b69-8072-0e27fb3b6ff7</id>
       <recordtableid>c2bda287-5996-49c3-a318-68b71ee525dd</recordtableid>
+    </None>
+    <None Include="Testdata\Sqlqueries\C165705\C165705_1.txt">
+      <id>9781902c-fe04-492e-babd-1e7802bc7b24</id>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -587,6 +607,12 @@
     </Folder>
     <Folder Include="Testdata">
       <id>8b19cf57-4559-4c1b-8e00-45ec066389a3</id>
+    </Folder>
+    <Folder Include="Testdata\Sqlqueries">
+      <id>6935f6bc-1240-4cd0-aead-3cb551125035</id>
+    </Folder>
+    <Folder Include="Testdata\Sqlqueries\C165705">
+      <id>a6826a1f-9091-4e09-aa7b-5c8dbaa0adab</id>
     </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

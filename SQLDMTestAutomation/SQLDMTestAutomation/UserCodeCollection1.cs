@@ -7,6 +7,7 @@
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -79,15 +80,42 @@ namespace SQLDMTestAutomation
         		{
         			p.Kill();
         		}
-//	            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\Idera\\Idera SQL diagnostic manager\\SQLdmDesktopClient.exe' with arguments '' in normal mode.");
-//	            Host.Local.RunApplication("C:\\Program Files\\Idera\\Idera SQL diagnostic manager\\SQLdmDesktopClient.exe", "", "C:\\Program Files\\Idera\\Idera SQL diagnostic manager", false);
-//	            
-//	            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'Text' to contain the specified value 'SQLDM Today'. Associated repository item: 'textInfo'", textInfo);
-//            	textInfo.WaitForAttributeContains(5000, "Text", "SQLDM Today");
-//            	
-//            	Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.");
-//            	Delay.Duration(5000, false);
         	}
+        }
+	 	
+	 	
+	 	[UserCodeMethod]
+        public static String GetSqlqueriesFilePath(String fileName)
+        {
+        	string tcName = GetCurrentTestCase();
+        	string[] arrTestCaseName = tcName.Split('_');
+        	string tcNumber = arrTestCaseName[0];
+        	string startupPath = Environment.CurrentDirectory; // This will get the current WORKING directory (i.e. \bin\Debug)
+        	Report.Log(ReportLevel.Info, "Environment.CurrentDirectory=", startupPath);
+        	string filePath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\/Testdata/Sqlqueries/" + tcNumber + "/" + fileName));
+        	Report.Log(ReportLevel.Info, "Sql file path=", filePath);
+        	return filePath;        	
+        }
+        
+        
+        [UserCodeMethod]
+        public static String GetCurrentTestCase()
+        {
+        	return "C165705";
+        	//return TestSuite.CurrentTestContainer.Name;
+        }
+        
+        [UserCodeMethod]
+        public static string ReadTextFile(string file)
+        {   
+        	string text = string.Empty;
+            if (File.Exists(file))
+            {
+                // Read entire text file content in one string  
+                text = File.ReadAllText(file);
+            }
+            Report.Log(ReportLevel.Info, "sql query from file=", text);
+            return text;
         }
 
     }

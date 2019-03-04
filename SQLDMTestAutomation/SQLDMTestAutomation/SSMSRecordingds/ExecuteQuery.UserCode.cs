@@ -33,5 +33,11 @@ namespace SQLDMTestAutomation.SSMSRecordingds
             // Your recording specific initialization code goes here.
         }
 
+        public void Key_sequence_QueryEditor(RepoItemInfo textInfo)
+        {
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Query' with focus on 'textInfo'.", textInfo);
+            textInfo.FindAdapter<Text>().PressKeys(Query);
+        }
+
     }
 }

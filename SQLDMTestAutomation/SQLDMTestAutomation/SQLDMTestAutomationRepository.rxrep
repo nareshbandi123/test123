@@ -665,6 +665,16 @@ MCAkAvg45OZFFP0BkKl1OzwGJwEAAAAASUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@title~'^Microsoft\ SQL\ Server\ Mana']//table[@accessiblename='GridControl']//cell[@accessiblevalue='QueryMonitorQueryStoreMonitoringEnabled']
 				</item>
+				<item
+				addcaps="button,nativewindow"
+				capname="button"
+				id="5b1e617a-a8ff-485f-bf70-14f7b02c0b09"
+				name="ButtonNo"
+				refimgid="03afda02-33e9-4064-be97-0d8e4c33d41a"
+				refpath="/form[@title='Microsoft SQL Server Management Studio' and @processname='Ssms' and @class='#32770']/button[@text='&amp;No']"
+				searchtimeout="30000ms">
+					/form[@title~'^Microsoft\ SQL\ Server\ Mana']/button[@text='&amp;No']
+				</item>
 				<basepath>
 					/form[@title~'^Microsoft\ SQL\ Server\ Mana']
 				</basepath>
@@ -800,6 +810,50 @@ DsQBlSsOGwAAAKtJREFUOE9j+P//P0UYzrAJyP6/ZsVMojFWAxjAXMIApwEgADJkx8Hz/8va5/7P
 qJr4PzK75b9XbNl/mDwI4DUABAi5hKABIAAyZNnGff8jc5r/e8aWk+YCGMDlEqJdAMNTF64nzgUw
 DSAAos+dOwfG6ACnATANyIY0dE4iLgy6OqpBgmCA7gp0gNUAqCAYbD8IcQVJLkA2AARg3iHJBaRg
 DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
+				</icon>
+			</appfolder>
+			<appfolder
+			addcaps="form,nativewindow"
+			capname="form"
+			id="ebbf3da2-570f-4022-a3d1-45d2a3748652"
+			isrooted="True"
+			name="OpenFile"
+			refpath="/form[@title='Open File']"
+			searchtimeout="30000ms"
+			usecache="True">
+				<item
+				addcaps="text,nativewindow"
+				capname="text"
+				id="1df7a31b-3a3b-41bc-8c6c-f2830c044256"
+				name="Text51"
+				refimgid="1350d049-e88b-463b-a4fd-b75bd21ff752"
+				refpath="/form[@title='Open File']/text[@controlid='51']"
+				searchtimeout="30000ms">
+					/form[@title='Open File']/text[@controlid='51']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="2cb41444-4cfa-44cd-9809-835bf0e01ca7"
+				name="Open"
+				refimgid="897b447f-1961-4d75-966b-2a7ddab01c41"
+				refpath="/form[@title='Open File']/button[@accessiblename='Open']"
+				searchtimeout="30000ms">
+					/form[@title='Open File']/button[@accessiblename='Open']
+				</item>
+				<basepath>
+					/form[@title='Open File']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFjSURBVDhPnZKvT8NAFMf7JyBnkZP7F0gwk7jV
+LqgFQS4TZMFVkQbVIMgy0aQIkpsgKaJJJ4cg6QTJECRDVFQgTiBOIL7ce/0BpRslfJOX17t730/f
+u9YiJQsXP4MP/iIqhg4BJCbWeTbr0BcMGa56v2YrntlAOgHeJXTmQa+OoKMupuNuXtAmArDpLYB+
+HkHd7SGbWa2AWgcMUAbwIqDuO8j8dkCl/wKaHdAIBSC+FfD8EDJKuMi5khAXAYZjl4ONpeJrY/7W
+ARnVjQU5l5hcBrViWhO0BmHAYx8q9aBWIzaFUYxgvsTozKsBPD82nxmIH9ZNiDvuczjnAvaJY8JF
+linuiGsMdOpLs6ebgF06GAhsUp2PFfXgHO/DPnU59Ac4c2F1o1tEkOQVbC62WJW5TfRmgqxTVOM0
+tKuDsm16zsf5upNWkVkMOrVigiyfNk1I2UGZpT+Ffbj9TyRIuFgWZ5b1Cew3b3y0jsIiAAAAAElF
+TkSuQmCC
 				</icon>
 			</appfolder>
 		</folder>

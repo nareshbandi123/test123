@@ -104,7 +104,7 @@ rxversion="8.2">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -169,7 +169,7 @@ rxversion="8.2">
 		<keysequenceitem
 		KeySequence="yourtext"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="100ms"
 		searchpropertyid="1caef211-982a-42f4-a68d-9fa6b905fb35">

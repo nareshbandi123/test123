@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="9e97148f2bde2b0"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="3/4/2019 6:50:25 AM"
+		timestampiso="2019-03-04T12:50:25"
+		endtime="3/4/2019 6:50:27 AM"
+		timeoutfactor="1"
+		module="test">
+		<detail>
+			test
+		</detail>
+		<errormessage>
+			Object reference not set to an instance of an object.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.203"
+			timeRelativeToTestModuleStartTime="00:02.208"
+			timeWallClock="06:50:27"
+			time="00:02.203"
+			level="Warn"
+			category="Data"
+			errimg=".\test2019_f26653dc_c53cd5aa_trace.jpg"
+			errthumb=".\test2019_f26653dc_c53cd5aa_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>TestCaseName, SqlqueryFilePath, sqlQueryFromFile
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.302"
+			timeRelativeToTestModuleStartTime="00:02.307"
+			timeWallClock="06:50:27"
+			time="00:02.302"
+			level="Error"
+			category="Module"
+			errimg=".\test2019_f26653dc_605441de_trace.jpg"
+			errthumb=".\test2019_f26653dc_605441de_trace_thumb.jpg">
+			<message>
+				Object reference not set to an instance of an object.
+			</message>
+			<metainfo
+				stacktrace="   at SQLDMTestAutomation.UserCodeCollection1.GetCurrentTestCase() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\UserCodeCollection1.cs:line 104
+   at SQLDMTestAutomation.UserCodeCollection1.GetSqlqueriesFilePath(String fileName) in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\UserCodeCollection1.cs:line 90
+   at SQLDMTestAutomation.SSMSRecordingds.test.SendQueryToSqlEditor(String query) in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SSMSRecordingds\test.UserCode.cs:line 45
+   at SQLDMTestAutomation.SSMSRecordingds.test.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SSMSRecordingds\test.cs:line 154
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\UserCodeCollection1.cs"
+				codeline="104"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -96,13 +96,13 @@ namespace SQLDMTestAutomation.SSMSRecordingds
             //repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.MoveTo();
             //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(1));
-            repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(1));
+            //repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Query' with focus on 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor'.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(2));
-            repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.PressKeys(Query);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Query' with focus on 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor'.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(2));
+            //repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.PressKeys(Query);
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.MicrosoftSQLServerManagementStudio.Execute' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.ExecuteInfo, new RecordItemIndex(3));
             repo.SSMS.MicrosoftSQLServerManagementStudio.Execute.MoveTo();

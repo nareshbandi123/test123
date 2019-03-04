@@ -1302,6 +1302,7 @@ namespace SQLDMTestAutomation
             SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder _microsoftsqlservermanagementstudio;
             SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder _connectiondialog;
             SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder _ssms_somecontextmenu;
+            SQLDMTestAutomationRepositoryFolders.OpenFileAppFolder _openfile;
 
             /// <summary>
             /// Creates a new SSMS  folder.
@@ -1312,6 +1313,7 @@ namespace SQLDMTestAutomation
                 _microsoftsqlservermanagementstudio = new SQLDMTestAutomationRepositoryFolders.MicrosoftSQLServerManagementStudioAppFolder(this);
                 _connectiondialog = new SQLDMTestAutomationRepositoryFolders.ConnectionDialogAppFolder(this);
                 _ssms_somecontextmenu = new SQLDMTestAutomationRepositoryFolders.SSMS_SomeContextMenuAppFolder(this);
+                _openfile = new SQLDMTestAutomationRepositoryFolders.OpenFileAppFolder(this);
             }
 
             /// <summary>
@@ -1352,6 +1354,15 @@ namespace SQLDMTestAutomation
             {
                 get { return _ssms_somecontextmenu; }
             }
+
+            /// <summary>
+            /// The OpenFile folder.
+            /// </summary>
+            [RepositoryFolder("ebbf3da2-570f-4022-a3d1-45d2a3748652")]
+            public virtual SQLDMTestAutomationRepositoryFolders.OpenFileAppFolder OpenFile
+            {
+                get { return _openfile; }
+            }
         }
 
         /// <summary>
@@ -1369,6 +1380,7 @@ namespace SQLDMTestAutomation
             RepoItemInfo _tablecol_querymonitortopplancountfilterInfo;
             RepoItemInfo _tablecol_querymonitortopplancategoryfilterInfo;
             RepoItemInfo _tablecol_querymonitorquerystoremonitoringenabledInfo;
+            RepoItemInfo _buttonnoInfo;
 
             /// <summary>
             /// Creates a new MicrosoftSQLServerManagementStudio  folder.
@@ -1385,6 +1397,7 @@ namespace SQLDMTestAutomation
                 _tablecol_querymonitortopplancountfilterInfo = new RepoItemInfo(this, "TableCol_QueryMonitorTopPlanCountFilter", ".//table[@accessiblename='GridControl']//cell[@accessiblevalue='QueryMonitorTopPlanCountFilter']", 30000, null, "7779030f-15e2-470f-8e98-cf5b7a206482");
                 _tablecol_querymonitortopplancategoryfilterInfo = new RepoItemInfo(this, "TableCol_QueryMonitorTopPlanCategoryFilter", ".//table[@accessiblename='GridControl']//cell[@accessiblevalue='QueryMonitorTopPlanCategoryFilter']", 30000, null, "14835a35-3776-4dbb-8f7b-efa70f385dce");
                 _tablecol_querymonitorquerystoremonitoringenabledInfo = new RepoItemInfo(this, "TableCol_QueryMonitorQueryStoreMonitoringEnabled", ".//table[@accessiblename='GridControl']//cell[@accessiblevalue='QueryMonitorQueryStoreMonitoringEnabled']", 30000, null, "6ac8f383-255b-485e-bd9a-f772a8e609f4");
+                _buttonnoInfo = new RepoItemInfo(this, "ButtonNo", "button[@text='&No']", 30000, null, "5b1e617a-a8ff-485f-bf70-14f7b02c0b09");
             }
 
             /// <summary>
@@ -1626,6 +1639,30 @@ namespace SQLDMTestAutomation
                     return _tablecol_querymonitorquerystoremonitoringenabledInfo;
                 }
             }
+
+            /// <summary>
+            /// The ButtonNo item.
+            /// </summary>
+            [RepositoryItem("5b1e617a-a8ff-485f-bf70-14f7b02c0b09")]
+            public virtual Ranorex.Button ButtonNo
+            {
+                get
+                {
+                    return _buttonnoInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNo item info.
+            /// </summary>
+            [RepositoryItemInfo("5b1e617a-a8ff-485f-bf70-14f7b02c0b09")]
+            public virtual RepoItemInfo ButtonNoInfo
+            {
+                get
+                {
+                    return _buttonnoInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -1782,6 +1819,98 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _newqueryInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The OpenFileAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ebbf3da2-570f-4022-a3d1-45d2a3748652")]
+        public partial class OpenFileAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _text51Info;
+            RepoItemInfo _openInfo;
+
+            /// <summary>
+            /// Creates a new OpenFile  folder.
+            /// </summary>
+            public OpenFileAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("OpenFile", "/form[@title='Open File']", parentFolder, 30000, null, true, "ebbf3da2-570f-4022-a3d1-45d2a3748652", "")
+            {
+                _text51Info = new RepoItemInfo(this, "Text51", "text[@controlid='51']", 30000, null, "1df7a31b-3a3b-41bc-8c6c-f2830c044256");
+                _openInfo = new RepoItemInfo(this, "Open", "button[@accessiblename='Open']", 30000, null, "2cb41444-4cfa-44cd-9809-835bf0e01ca7");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ebbf3da2-570f-4022-a3d1-45d2a3748652")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ebbf3da2-570f-4022-a3d1-45d2a3748652")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text51 item.
+            /// </summary>
+            [RepositoryItem("1df7a31b-3a3b-41bc-8c6c-f2830c044256")]
+            public virtual Ranorex.Text Text51
+            {
+                get
+                {
+                    return _text51Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text51 item info.
+            /// </summary>
+            [RepositoryItemInfo("1df7a31b-3a3b-41bc-8c6c-f2830c044256")]
+            public virtual RepoItemInfo Text51Info
+            {
+                get
+                {
+                    return _text51Info;
+                }
+            }
+
+            /// <summary>
+            /// The Open item.
+            /// </summary>
+            [RepositoryItem("2cb41444-4cfa-44cd-9809-835bf0e01ca7")]
+            public virtual Ranorex.Button Open
+            {
+                get
+                {
+                    return _openInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Open item info.
+            /// </summary>
+            [RepositoryItemInfo("2cb41444-4cfa-44cd-9809-835bf0e01ca7")]
+            public virtual RepoItemInfo OpenInfo
+            {
+                get
+                {
+                    return _openInfo;
                 }
             }
         }

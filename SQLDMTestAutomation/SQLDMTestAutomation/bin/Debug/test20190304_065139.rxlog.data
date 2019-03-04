@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="de6bde73a07b52a"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="3/4/2019 6:51:45 AM"
+		timestampiso="2019-03-04T12:51:45"
+		endtime="3/4/2019 6:52:14 AM"
+		timeoutfactor="1"
+		module="test">
+		<detail>
+			test
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.571"
+			timeRelativeToTestModuleStartTime="00:03.576"
+			timeWallClock="06:51:48"
+			time="00:03.571"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>TestCaseName, SqlqueryFilePath, sqlQueryFromFile
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.846"
+			timeRelativeToTestModuleStartTime="00:03.851"
+			timeWallClock="06:51:48"
+			time="00:03.846"
+			level="Info"
+			category="Environment.CurrentDirectory=">
+			<message>
+				C:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\bin\Debug
+			</message>
+			<metainfo
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\UserCodeCollection1.cs"
+				codeline="94"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.881"
+			timeRelativeToTestModuleStartTime="00:03.886"
+			timeWallClock="06:51:48"
+			time="00:03.881"
+			level="Info"
+			category="Sql file path=">
+			<message>
+				C:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Testdata\Sqlqueries\C165705\
+			</message>
+			<metainfo
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\UserCodeCollection1.cs"
+				codeline="96"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.881"
+			timeRelativeToTestModuleStartTime="00:03.886"
+			timeWallClock="06:51:48"
+			time="00:03.881"
+			level="Info"
+			category="Sql query in last user code=">
+			<message>
+				C:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Testdata\Sqlqueries\C165705\
+			</message>
+			<metainfo
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SSMSRecordingds\test.UserCode.cs"
+				codeline="46"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>
