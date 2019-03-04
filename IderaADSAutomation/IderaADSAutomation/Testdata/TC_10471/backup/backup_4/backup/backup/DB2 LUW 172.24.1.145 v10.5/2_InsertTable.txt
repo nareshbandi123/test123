@@ -1,0 +1,10 @@
+INSERT INTO ads_table (id, name, jobrole, JOINDATE, salary) values (10, 'JIM', 'Manager', CURRENT TIMESTAMP, 10.0)
+
+
+
+
+
+
+
+
+

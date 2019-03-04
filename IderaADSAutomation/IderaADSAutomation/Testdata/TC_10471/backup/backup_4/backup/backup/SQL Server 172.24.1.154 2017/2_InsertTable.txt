@@ -1,0 +1,2 @@
+INSERT INTO ads_table (CustomerID, CustomerName, City, PostalCode, Country)
+VALUES (101, 'Cardinal', 'Stavanger', '4006', 'Norway')

@@ -1,0 +1,1 @@
+Select id, name, project from ads_table where id = 4564

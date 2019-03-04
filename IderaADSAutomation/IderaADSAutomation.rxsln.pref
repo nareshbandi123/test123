@@ -1,0 +1,24 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{E69ECB71-A9E6-438D-9151-611DD3E911DF}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>3cd38105-835f-4d27-86bd-edd03b75aa50</string>
+      <string>7e3dfa59-d0e6-4a4c-b494-e69f861491b4</string>
+      <string>52503690-5781-4000-8e82-5f902bcc760f</string>
+      <string>2a93bca4-a8ac-4d13-a981-aab3c3a9a69d</string>
+      <string>a537c74c-9f7f-4cdc-9a85-14e624191a91</string>
+      <string>97f0c842-bdfd-4857-ae3f-489634447fc8</string>
+      <string>ccaedf54-25f2-475a-b036-f95d7791a0a8</string>
+      <string>96932a4a-a012-4929-bd71-6292c89776c7</string>
+      <string>84303785-9c7d-4bb1-be8d-7e14d1a95000</string>
+      <string>2f664bb9-4c5d-4e58-8e6e-3baeea28bad3</string>
+      <string>6c94682f-379f-4c31-aff0-e8c826aaee13</string>
+      <string>8d0dd134-f4af-47ef-a2b7-c39a7e7e7a4d</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution IderaADSAutomation[IderaADSAutomation[RegisterServer[]IderaADSAutomationRepository.rxrep[]]]]&#xD;&#xA;Solution IderaADSAutomation\IderaADSAutomation\RegisterServer&#xD;&#xA;Solution IderaADSAutomation\IderaADSAutomation\References" />
+  <StartupProject value="{E69ECB71-A9E6-438D-9151-611DD3E911DF}" />
+</Properties>

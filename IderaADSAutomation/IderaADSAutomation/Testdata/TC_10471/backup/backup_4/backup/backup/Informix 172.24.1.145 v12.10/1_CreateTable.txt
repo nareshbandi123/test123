@@ -1,0 +1,5 @@
+CREATE TABLE ads_table (
+            acc_num     integer  PRIMARY KEY,
+            acc_code    integer  UNIQUE,
+            open_date   date     DEFAULT TODAY
+          )

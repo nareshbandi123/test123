@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="94f28298-75e8-4f07-bf9e-bc175f6cc54d"
+mode="Global"
+rxversion="8.2">
+	<name>
+		MSExcelAutomation
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="MSExcelAutomation"
+	namespace="IderaADSAutomation.MSExcel">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="3f656ee5-2df7-45ec-90e6-71f297eca605"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="f90170ca-ff66-4d57-9fbf-bf77914bb5a8"
+	name="IderaADSAutomationRepository"
+	relativepath="..\IderaADSAutomationRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="IderaADSAutomationRepository"
+		namespace="IderaADSAutomation">
+		</codegen>
+		<rootfolder
+		id="415db8d4-f767-43d5-b4bb-4df379b91169"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		MSExcelAutomation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
