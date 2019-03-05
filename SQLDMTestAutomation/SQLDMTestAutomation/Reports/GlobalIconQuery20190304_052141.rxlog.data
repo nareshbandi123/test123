@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="6598cdd4327ab04"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQL-DEV-001"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1600x900"
+		timestamp="3/4/2019 5:21:48 AM"
+		timestampiso="2019-03-04T11:21:48"
+		endtime="3/4/2019 5:23:21 AM"
+		timeoutfactor="1"
+		module="GlobalIconQuery">
+		<detail>
+			GlobalIconQuery
+		</detail>
+		<errormessage>
+			Failed to find item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Details'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.261"
+			timeRelativeToTestModuleStartTime="00:02.262"
+			timeWallClock="05:21:50"
+			time="00:02.261"
+			level="Info"
+			category="Mouse"
+			errimg=".\GlobalIc_a87d7be2_02c3dc4f_trace.jpg"
+			errthumb=".\GlobalIc_a87d7be2_02c3dc4f_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Details' at 25;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename='Loading...']/row[@accessiblename='row 1']/cell[@accessiblename='Details']"
+				itempath="?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename='Loading...']/row[@accessiblename='row 1']/cell[@accessiblename='Details']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Details"
+				id="744b4da396c34f5a884a4fbe8867e7d2"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\GlobalIconQuery.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:32.536"
+			timeRelativeToTestModuleStartTime="01:32.537"
+			timeWallClock="05:23:20"
+			time="01:32.536"
+			level="Error"
+			category="Module"
+			errimg=".\GlobalIc_a87d7be2_db386cc0_trace.jpg"
+			errthumb=".\GlobalIc_a87d7be2_db386cc0_trace_thumb.jpg">
+			<message>
+				Failed to find item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Details'.<br/>No element found for path '/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename='Loading...']/row[@accessiblename='row 1']/cell[@accessiblename='Details']' within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SQLDMTestAutomation.SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder.get_Details() in c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLDMTestAutomationRepository.cs:line 988&#13;&#10;   at SQLDMTestAutomation.GlobalIconQuery.Ranorex.Core.Testing.ITestModule.Run() in c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\GlobalIconQuery.cs:line 83&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\GlobalIconQuery.cs"
+				codeline="83"
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename='Loading...']/row[@accessiblename='row 1']/cell[@accessiblename='Details']"
+				itempath="?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename='Loading...']/row[@accessiblename='row 1']/cell[@accessiblename='Details']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Details"
+				id="744b4da396c34f5a884a4fbe8867e7d2"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

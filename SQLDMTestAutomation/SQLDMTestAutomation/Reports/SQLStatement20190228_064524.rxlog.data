@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="21c26df88897509"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQL-DEV-001"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1600x900"
+		timestamp="2/28/2019 6:45:29 AM"
+		timestampiso="2019-02-28T12:45:29"
+		endtime="2/28/2019 6:46:15 AM"
+		timeoutfactor="1"
+		module="SQLStatement">
+		<detail>
+			SQLStatement
+		</detail>
+		<errormessage>
+			Exception of type 'Ranorex.ApplicationNotRespondingException' was thrown.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.852"
+			timeRelativeToTestModuleStartTime="00:02.860"
+			timeWallClock="06:45:32"
+			time="00:02.852"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLStatement.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.982"
+			timeRelativeToTestModuleStartTime="00:04.990"
+			timeWallClock="06:45:34"
+			time="00:04.982"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.ServerCMWIN2016' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='CMWIN2016-S8']"
+				itempath=".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='CMWIN2016-S8']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.ServerCMWIN2016"
+				id="b645140270144ff2b074baf6feac975f"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLStatement.cs"
+				codeline="85"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.133"
+			timeRelativeToTestModuleStartTime="00:14.141"
+			timeWallClock="06:45:43"
+			time="00:14.133"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.ServerCMWIN2016' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='CMWIN2016-S8']"
+				itempath=".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='CMWIN2016-S8']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.ServerCMWIN2016"
+				id="b645140270144ff2b074baf6feac975f"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLStatement.cs"
+				codeline="89"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.081"
+			timeRelativeToTestModuleStartTime="00:19.089"
+			timeWallClock="06:45:48"
+			time="00:19.081"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 50s to exist. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.Queries'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Queries"
+				id="d2bb192f687c484aa18549989a0e9c96"
+				timeout="50000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLStatement.cs"
+				codeline="93"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:24.615"
+			timeRelativeToTestModuleStartTime="00:24.623"
+			timeWallClock="06:45:54"
+			time="00:24.615"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Queries"
+				id="d2bb192f687c484aa18549989a0e9c96"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLStatement.cs"
+				codeline="96"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:29.134"
+			timeRelativeToTestModuleStartTime="00:29.142"
+			timeWallClock="06:45:58"
+			time="00:29.134"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Queries"
+				id="d2bb192f687c484aa18549989a0e9c96"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLStatement.cs"
+				codeline="100"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:34.692"
+			timeRelativeToTestModuleStartTime="00:34.700"
+			timeWallClock="06:46:04"
+			time="00:34.692"
+			level="Info"
+			category="Delay"
+			errimg=".\SQLState_539821f_cabab7e1_trace.jpg"
+			errthumb=".\SQLState_539821f_cabab7e1_trace_thumb.jpg">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="6"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLStatement.cs"
+				codeline="104"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:36.790"
+			timeRelativeToTestModuleStartTime="00:36.798"
+			timeWallClock="06:46:06"
+			time="00:36.790"
+			level="Info"
+			category="Mouse"
+			errimg=".\SQLState_539821f_e64d9c56_trace.jpg"
+			errthumb=".\SQLState_539821f_e64d9c56_trace_thumb.jpg">
+			<message>
+				Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.StatementMode' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[2]/container[@automationid='textLarge']/text[@automationid='PART_Line1']"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[2]/container[@automationid='textLarge']/text[@automationid='PART_Line1']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.StatementMode"
+				id="1f153450f506469d9ce604ffb3da112f"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLStatement.cs"
+				codeline="107"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:46.232"
+			timeRelativeToTestModuleStartTime="00:46.240"
+			timeWallClock="06:46:15"
+			time="00:46.232"
+			level="Error"
+			category="Module"
+			errimg=".\SQLState_539821f_f8612f76_trace.jpg"
+			errthumb=".\SQLState_539821f_f8612f76_trace_thumb.jpg">
+			<message>
+				Exception of type 'Ranorex.ApplicationNotRespondingException' was thrown.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.FunctionExecuteWithTimeout.TryExecute[T](Func`1 func, TimeSpan timeout)&#13;&#10;   at Ranorex.Core.FunctionExecuteWithTimeout.WithTimeout[T](Func`1 func, Nullable`1 timeout)&#13;&#10;   at Ranorex.Plugin.ZombieableExtensions.WithZombieCheck[T](IZombieable self, Func`1 function, ZombieCheckOptions options)&#13;&#10;   at Ranorex.Plugin.WpfRemoteObject.GetChildren(TreeBuildConfiguration configuration, WpfRemoteObject apparentParent)&#13;&#10;   at Ranorex.Plugin.WpfChildrenRule.Execute(GlueRuleExecutionState state)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, GlueRuleExecutionStateImpl state, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.Element.GetChildren(CacheSession session)&#13;&#10;   at Ranorex.Core.Element.get_Children()&#13;&#10;   at Ranorex.Core.RxPath.collectAllChildren(Element self, LocationStep step, IList`1 list, Boolean includeSelf, Boolean quitOnFirstGoodNode)&#13;&#10;   at Ranorex.Core.RxPath.collectAxis(LocationStep step, Axis optimizedAxis, Element self, IList`1 elements, Boolean quitOnFirstGoodNode)&#13;&#10;   at Ranorex.Core.RxPath.ApplyInternal(RxPath path, Element startElement, Duration timeout, Boolean findSingle, CacheSession&amp; usedCacheSession)&#13;&#10;   at Ranorex.Core.RxPath.Apply(Element startElement, Duration timeout, Boolean findSingle, CacheSession&amp; usedCacheSession)&#13;&#10;   at Ranorex.Core.Element.TryFindInternal(RxPath path, Duration timeout, Boolean findSingle, IList`1&amp; foundElements, CacheSession&amp; usedCacheSession)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SQLDMTestAutomation.SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder.get_StatementMode() in c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLDMTestAutomationRepository.cs:line 663&#13;&#10;   at SQLDMTestAutomation.SQLStatement.Ranorex.Core.Testing.ITestModule.Run() in c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLStatement.cs:line 108&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLStatement.cs"
+				codeline="108"
+				loglvl="Error"
+				itemindex="7">
+			</metainfo>
+		</item>
+	</activity>
+</report>

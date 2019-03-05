@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="121f1f6d1698cdc"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQL-DEV-001"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1600x900"
+		timestamp="3/1/2019 7:03:50 AM"
+		timestampiso="2019-03-01T13:03:50"
+		endtime="3/1/2019 7:04:41 AM"
+		timeoutfactor="1"
+		module="GlobalIconQuery">
+		<detail>
+			GlobalIconQuery
+		</detail>
+		<errormessage>
+			Exception of type 'Ranorex.ApplicationNotRespondingException' was thrown.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.171"
+			timeRelativeToTestModuleStartTime="00:02.178"
+			timeWallClock="07:03:52"
+			time="00:02.171"
+			level="Info"
+			category="Mouse"
+			errimg=".\GlobalIc_84a5b3bf_87d8c16b_trace.jpg"
+			errthumb=".\GlobalIc_84a5b3bf_87d8c16b_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.Details' at 25;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename='Loading...']/row[@accessiblename='row 1']/cell[@accessiblename='Details']"
+				itempath="?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename='Loading...']/row[@accessiblename='row 1']/cell[@accessiblename='Details']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Details"
+				id="744b4da396c34f5a884a4fbe8867e7d2"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\GlobalIconQuery.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.915"
+			timeRelativeToTestModuleStartTime="00:12.922"
+			timeWallClock="07:04:03"
+			time="00:12.915"
+			level="Warn"
+			category="Click">
+			<message>
+				The mouse action was performed outside the boundaries of the assigned UI element.<br/>(null)
+			</message>
+			<metainfo
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\GlobalIconQuery.cs"
+				codeline="83"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.333"
+			timeRelativeToTestModuleStartTime="00:14.340"
+			timeWallClock="07:04:04"
+			time="00:14.333"
+			level="Info"
+			category="Mouse"
+			errimg=".\GlobalIc_84a5b3bf_554100e3_trace.jpg"
+			errthumb=".\GlobalIc_84a5b3bf_554100e3_trace_thumb.jpg">
+			<message>
+				Mouse Left Down item 'Blank.LineCanvas' at 0;0.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[1]//canvas[#'lineCanvas']"
+				itempath=".//canvas[#'lineCanvas']"
+				fullname="SQLDMTestAutomationRepository.Blank.LineCanvas"
+				id="ee6825db2b694c9886f86743d89084b7"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\GlobalIconQuery.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:50.626"
+			timeRelativeToTestModuleStartTime="00:50.633"
+			timeWallClock="07:04:40"
+			time="00:50.626"
+			level="Error"
+			category="Module"
+			errimg=".\GlobalIc_84a5b3bf_9bb48e62_trace.jpg"
+			errthumb=".\GlobalIc_84a5b3bf_9bb48e62_trace_thumb.jpg">
+			<message>
+				Exception of type 'Ranorex.ApplicationNotRespondingException' was thrown.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.FunctionExecuteWithTimeout.TryExecute[T](Func`1 func, TimeSpan timeout)&#13;&#10;   at Ranorex.Core.FunctionExecuteWithTimeout.WithTimeout[T](Func`1 func, Nullable`1 timeout)&#13;&#10;   at Ranorex.Plugin.WpfRootRule.AddWpfNative(GlueRuleExecutionState state)&#13;&#10;   at Ranorex.Plugin.WpfRootRule.Execute(GlueRuleExecutionState state)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, GlueRuleExecutionStateImpl state, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyReplaceGlueRulesOnSingleRecentlyInsertedElement(Element parentElement, GlueRuleExecutionStateImpl state, GlueRuleExecutionStateImpl replaceState, Element recentlyInsertedElement)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyReplaceGlueRulesOnRecentlyInserted(Element element, GlueRuleExecutionStateImpl state)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, GlueRuleExecutionStateImpl state, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.Element.GetChildren(CacheSession session)&#13;&#10;   at Ranorex.Core.Element.get_Children()&#13;&#10;   at Ranorex.Core.Path.PathUtil.GetElementChildByNameAndIndex(Element parent, String name, Int32 index)&#13;&#10;   at Ranorex.Core.RxPath.ApplyInternal(RxPath path, Element startElement, Duration timeout, Boolean findSingle, CacheSession&amp; usedCacheSession)&#13;&#10;   at Ranorex.Core.RxPath.Apply(Element startElement, Duration timeout, Boolean findSingle, CacheSession&amp; usedCacheSession)&#13;&#10;   at Ranorex.Core.Element.TryFindInternal(RxPath path, Duration timeout, Boolean findSingle, IList`1&amp; foundElements, CacheSession&amp; usedCacheSession)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SQLDMTestAutomation.SQLDMTestAutomationRepositoryFolders.BlankAppFolder.get_LineCanvas() in c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\SQLDMTestAutomationRepository.cs:line 2938&#13;&#10;   at SQLDMTestAutomation.GlobalIconQuery.Ranorex.Core.Testing.ITestModule.Run() in c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\GlobalIconQuery.cs:line 87&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\GlobalIconQuery.cs"
+				codeline="87"
+				loglvl="Error"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

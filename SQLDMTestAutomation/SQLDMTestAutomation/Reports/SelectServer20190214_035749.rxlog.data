@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="c1de98e6c98ef1e"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/14/2019 3:57:54 AM"
+		timestampiso="2019-02-14T09:57:54"
+		endtime="2/14/2019 3:59:27 AM"
+		timeoutfactor="1"
+		module="SelectServer">
+		<detail>
+			SelectServer
+		</detail>
+		<errormessage>
+			Failed to find item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Server'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.161"
+			timeRelativeToTestModuleStartTime="00:02.171"
+			timeWallClock="03:57:56"
+			time="00:02.161"
+			level="Warn"
+			category="Data"
+			errimg=".\SelectSe_7da3e709_69159fe4_trace.jpg"
+			errthumb=".\SelectSe_7da3e709_69159fe4_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>ServerName
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.200"
+			timeRelativeToTestModuleStartTime="00:02.211"
+			timeWallClock="03:57:56"
+			time="00:02.200"
+			level="Info"
+			category="User">
+			<message>
+				
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SelectServer.cs"
+				codeline="93"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.234"
+			timeRelativeToTestModuleStartTime="00:02.245"
+			timeWallClock="03:57:56"
+			time="00:02.234"
+			level="Info"
+			category="Mouse"
+			errimg=".\SelectSe_7da3e709_1eba3449_trace.jpg"
+			errthumb=".\SelectSe_7da3e709_1eba3449_trace_thumb.jpg">
+			<message>
+				Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Server' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='']"
+				itempath=".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Server"
+				id="82a5fa7d86df43869bd7f49949e40f8c"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SelectServer.cs"
+				codeline="95"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:32.451"
+			timeRelativeToTestModuleStartTime="01:32.462"
+			timeWallClock="03:59:27"
+			time="01:32.451"
+			level="Error"
+			category="Module"
+			errimg=".\SelectSe_7da3e709_992e4f3b_trace.jpg"
+			errthumb=".\SelectSe_7da3e709_992e4f3b_trace_thumb.jpg">
+			<message>
+				Failed to find item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Server'.<br/>No element found for path '/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='']' within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SQLDMTestAutomation.SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder.get_Server() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SQLDMTestAutomationRepository.cs:line 162&#13;&#10;   at SQLDMTestAutomation.SelectServer.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SelectServer.cs:line 96&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SelectServer.cs"
+				codeline="96"
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='']"
+				itempath=".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Server"
+				id="82a5fa7d86df43869bd7f49949e40f8c"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2a875b9ca6ad51"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/12/2019 5:31:29 AM"
+		timestampiso="2019-02-12T11:31:29"
+		endtime="2/12/2019 5:31:51 AM"
+		timeoutfactor="1"
+		module="Recording2">
+		<detail>
+			Recording2
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.910"
+			timeRelativeToTestModuleStartTime="00:02.918"
+			timeWallClock="05:31:32"
+			time="00:02.910"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>durationCombo
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.973"
+			timeRelativeToTestModuleStartTime="00:02.982"
+			timeWallClock="05:31:32"
+			time="00:02.973"
+			level="Info"
+			category="Invoke action">
+			<message>
+				Invoking EnsureVisible() on item 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.UpDownEdit"
+				id="270a38220209436dae49588334cdc551"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording2.cs"
+				codeline="105"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.780"
+			timeRelativeToTestModuleStartTime="00:13.789"
+			timeWallClock="05:31:43"
+			time="00:13.780"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (Text='75') on item 'MonitoredSqlServerInstancePropertiesDial.UpDownEdit'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.UpDownEdit"
+				id="270a38220209436dae49588334cdc551"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording2.cs"
+				codeline="109"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.666"
+			timeRelativeToTestModuleStartTime="00:16.674"
+			timeWallClock="05:31:45"
+			time="00:16.666"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.UpDownEdit' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.UpDownEdit"
+				id="270a38220209436dae49588334cdc551"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording2.cs"
+				codeline="110"
+				loglvl="Success"
+				itemindex="3">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.671"
+			timeRelativeToTestModuleStartTime="00:16.680"
+			timeWallClock="05:31:45"
+			time="00:16.671"
+			level="Info"
+			category="Get Value">
+			<message>
+				Getting attribute 'Text' from item 'MonitoredSqlServerInstancePropertiesDial.ComboBox' and assigning its value to variable 'durationCombo'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/element[@controlname='topPlanComboBox']/combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/element[@controlname='topPlanComboBox']/combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.ComboBox"
+				id="dc5ee4644a794cc98181792c0936f114"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording2.cs"
+				codeline="113"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.713"
+			timeRelativeToTestModuleStartTime="00:18.722"
+			timeWallClock="05:31:47"
+			time="00:18.713"
+			level="Info"
+			category="User">
+			<message>
+				Duration (milliseconds)
+			</message>
+			<metainfo
+				itemindex="5"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording2.cs"
+				codeline="117"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.720"
+			timeRelativeToTestModuleStartTime="00:18.729"
+			timeWallClock="05:31:47"
+			time="00:18.720"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeContains (Text&gt;'Duration (milliseconds)') on item 'MonitoredSqlServerInstancePropertiesDial.ComboBox'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/element[@controlname='topPlanComboBox']/combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/element[@controlname='topPlanComboBox']/combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.ComboBox"
+				id="dc5ee4644a794cc98181792c0936f114"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording2.cs"
+				codeline="119"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.632"
+			timeRelativeToTestModuleStartTime="00:20.641"
+			timeWallClock="05:31:49"
+			time="00:20.632"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.ComboBox' does contain the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/element[@controlname='topPlanComboBox']/combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']"
+				itempath="container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/element[@controlname='topPlanComboBox']/combobox[@accessiblename='Plans by ']/combobox[@accessiblerole='ComboBox']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.ComboBox"
+				id="dc5ee4644a794cc98181792c0936f114"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording2.cs"
+				codeline="120"
+				loglvl="Success"
+				itemindex="6">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.638"
+			timeRelativeToTestModuleStartTime="00:20.647"
+			timeWallClock="05:31:49"
+			time="00:20.638"
+			level="Info"
+			category="Invoke action">
+			<message>
+				Invoking EnsureVisible() on item 'MonitoredSqlServerInstancePropertiesDial.OkButton'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/button[@controlname='okButton']"
+				itempath="button[@controlname='okButton']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.OkButton"
+				id="a9de51d9a3bf4e609edc68fd0f899217"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording2.cs"
+				codeline="123"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.782"
+			timeRelativeToTestModuleStartTime="00:20.791"
+			timeWallClock="05:31:50"
+			time="00:20.782"
+			level="Info"
+			category="Invoke action">
+			<message>
+				Invoking Press() on item 'MonitoredSqlServerInstancePropertiesDial.OkButton'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/button[@controlname='okButton']"
+				itempath="button[@controlname='okButton']"
+				fullname="SQLDMTestAutomationRepository.MonitoredSqlServerInstancePropertiesDial.OkButton"
+				id="a9de51d9a3bf4e609edc68fd0f899217"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Recording2.cs"
+				codeline="127"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

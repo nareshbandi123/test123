@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="32.22s"
+		durationms="32215"
+		type="root"
+		rid="1441cafcaf7aead0"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQL-DEV-001"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1600x900"
+		timestamp="2/21/2019 5:36:16 AM"
+		timestampiso="2019-02-21T11:36:16"
+		endtime="2/21/2019 5:36:48 AM"
+		timeoutfactor="1"
+		module="Verify">
+		<detail>
+			Verify
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.021"
+			timeRelativeToTestModuleStartTime="00:03.028"
+			timeWallClock="05:36:19"
+			time="00:03.021"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.DMServer2016' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='DM-LICTEST16']"
+				itempath=".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='DM-LICTEST16']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.DMServer2016"
+				id="ce86051ea7a54cc78c61f5b6df4f558a"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verify.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.642"
+			timeRelativeToTestModuleStartTime="00:13.648"
+			timeWallClock="05:36:30"
+			time="00:13.642"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Middle Click item 'IderaSQLDiagnosticManagerSQLdmRepo.DMServer2016' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='DM-LICTEST16']"
+				itempath=".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='DM-LICTEST16']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.DMServer2016"
+				id="ce86051ea7a54cc78c61f5b6df4f558a"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verify.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.638"
+			timeRelativeToTestModuleStartTime="00:18.645"
+			timeWallClock="05:36:35"
+			time="00:18.638"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verify.cs"
+				codeline="90"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.657"
+			timeRelativeToTestModuleStartTime="00:20.663"
+			timeWallClock="05:36:37"
+			time="00:20.657"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 50s to exist. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.Queries'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Queries"
+				id="d2bb192f687c484aa18549989a0e9c96"
+				timeout="50000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verify.cs"
+				codeline="93"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:26.409"
+			timeRelativeToTestModuleStartTime="00:26.416"
+			timeWallClock="05:36:42"
+			time="00:26.409"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.Queries"
+				id="d2bb192f687c484aa18549989a0e9c96"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verify.cs"
+				codeline="96"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:32.215"
+			timeRelativeToTestModuleStartTime="00:32.221"
+			timeWallClock="05:36:48"
+			time="00:32.215"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>
