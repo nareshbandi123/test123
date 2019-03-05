@@ -87,14 +87,12 @@ rxversion="8.2">
 			name="C164221_Verify_invalid_data_in_collect_query_plans_count">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="97500bfb-8598-468e-bdf0-ceb26d920787"
 			name="SelectServer"
 			ref="24f6bd52-083e-4e49-bf06-cf2fe2ae5d7d"
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="9cad8b9b-1b1a-4823-860d-57e4780094f1"
 			name="EnableQueryMonitor"
 			ref="e47225b1-940d-4538-842a-92bdbab6c105"
@@ -107,7 +105,6 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="afd260d1-e3d9-4c9f-9025-5884a3e37571"
 			name="OpenConfigureQueryMonitor"
 			ref="a3e16002-ad31-41c7-be31-fdb013b90bf3"
@@ -138,7 +135,6 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="c802933b-53b5-4846-9b17-c5e062aa3716"
 			name="VerifySelectByAndPlansBy"
 			ref="e9af3f9e-4660-4843-b348-38b7b394de7f"
@@ -281,6 +277,9 @@ rxversion="8.2">
 			</testcontainer>
 			<testcontainer
 			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
+			</testcontainer>
+			<testcontainer
+			id="90e94efc-cb71-43df-8101-852aab6dfa32">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

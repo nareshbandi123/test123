@@ -5,17 +5,6 @@
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SQLDMTestAutomation.rxtst" />
-    <Element value="OpenConfigureQueryMonitor.rxrec" />
-    <Element value="SelectServer.rxrec" />
-    <Element value="EnableQueryMonitor.UserCode.cs" />
-    <Element value="EnableQueryMonitor.rxrec" />
-    <Element value="DisableQueryMonitor.UserCode.cs" />
-    <Element value="DisableQueryMonitor.rxrec" />
-    <Element value="VerifyCollectQueryPlansToBeDisabled.rxrec" />
-    <Element value="EnableQueryMonitor.cs" />
-    <Element value="SQLDMTestAutomationRepository.rxrep" />
-    <Element value="OpenConfigureQueryMonitor.cs" />
-    <Element value="LaunchApplication.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Array name="recentusercodeselections">
