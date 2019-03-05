@@ -103,8 +103,8 @@ namespace SQLDMTestAutomation
         [UserCodeMethod]
         public static String GetCurrentTestCase()
         {
-        	return "C165705";
-        	//return TestSuite.CurrentTestContainer.Name;
+        	//return "C165705";
+        	return TestSuite.CurrentTestContainer.Name;
         }
         
         [UserCodeMethod]
