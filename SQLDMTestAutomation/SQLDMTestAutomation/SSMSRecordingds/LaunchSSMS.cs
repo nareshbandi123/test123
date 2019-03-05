@@ -82,7 +82,7 @@ namespace SQLDMTestAutomation.SSMSRecordingds
             //KillApplicationProcess();
             //Delay.Milliseconds(0);
             
-            UserCodeCollection1.KillApplicationProcess("ssms");
+            CommonMethods.KillApplicationProcess("ssms");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\Ssms.exe' with arguments '' in normal mode.", new RecordItemIndex(2));

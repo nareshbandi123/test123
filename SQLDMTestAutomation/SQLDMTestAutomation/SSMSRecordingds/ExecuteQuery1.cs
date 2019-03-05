@@ -24,85 +24,46 @@ namespace SQLDMTestAutomation.SSMSRecordingds
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The ExecuteQuery recording.
+    ///The ExecuteQuery1 recording.
     /// </summary>
-    [TestModule("19abc944-3e0a-4494-bd1a-0fff3c2498b9", ModuleType.Recording, 1)]
-    public partial class ExecuteQuery : ITestModule
+    [TestModule("26744f38-66ad-4eeb-b822-eadf3208b00f", ModuleType.Recording, 1)]
+    public partial class ExecuteQuery1 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
         public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
 
-        static ExecuteQuery instance = new ExecuteQuery();
+        static ExecuteQuery1 instance = new ExecuteQuery1();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public ExecuteQuery()
+        public ExecuteQuery1()
         {
-            TestCaseName = "";
-            SqlQueryFilePath = "";
-            SqlQueryFromFile = "";
-            _Unbound_ = "";
+            Query = "select [QueryMonitorTopPlanCountFilter],[QueryMonitorTopPlanCategoryFilter],[QueryMonitorQueryStoreMonitoringEnabled] from MonitoredSQLServers  ";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static ExecuteQuery Instance
+        public static ExecuteQuery1 Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _TestCaseName;
+        string _Query;
 
         /// <summary>
-        /// Gets or sets the value of variable TestCaseName.
+        /// Gets or sets the value of variable Query.
         /// </summary>
-        [TestVariable("86cccdf9-d9b1-40d5-8298-694c3256566b")]
-        public string TestCaseName
+        [TestVariable("1fd3749a-a1be-477b-9b77-0ddaa8bed5bd")]
+        public string Query
         {
-            get { return _TestCaseName; }
-            set { _TestCaseName = value; }
-        }
-
-        string _SqlQueryFilePath;
-
-        /// <summary>
-        /// Gets or sets the value of variable SqlQueryFilePath.
-        /// </summary>
-        [TestVariable("ca1532f2-ea11-4bd5-bed7-4203d6618ea5")]
-        public string SqlQueryFilePath
-        {
-            get { return _SqlQueryFilePath; }
-            set { _SqlQueryFilePath = value; }
-        }
-
-        string _SqlQueryFromFile;
-
-        /// <summary>
-        /// Gets or sets the value of variable SqlQueryFromFile.
-        /// </summary>
-        [TestVariable("66d37589-36b9-4253-94e4-9f24cba87e69")]
-        public string SqlQueryFromFile
-        {
-            get { return _SqlQueryFromFile; }
-            set { _SqlQueryFromFile = value; }
-        }
-
-        string __Unbound_;
-
-        /// <summary>
-        /// Gets or sets the value of variable _Unbound_.
-        /// </summary>
-        [TestVariable("60e686f6-57a4-467a-8984-99d5d8a38ff1")]
-        public string _Unbound_
-        {
-            get { return __Unbound_; }
-            set { __Unbound_ = value; }
+            get { return _Query; }
+            set { _Query = value; }
         }
 
 #endregion
@@ -131,22 +92,23 @@ namespace SQLDMTestAutomation.SSMSRecordingds
 
             Init();
 
-            SqlQueryFilePath = CommonMethods.GetSqlQueriesFilePath();
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(0));
+            //repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.MoveTo();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "User", SqlQueryFilePath, new RecordItemIndex(1));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(1));
+            //repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.Click();
+            //Delay.Milliseconds(200);
             
-            SqlQueryFromFile = CommonMethods.ReadTextFile(SqlQueryFilePath);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Query' with focus on 'SSMS.MicrosoftSQLServerManagementStudio.QueryEditor'.", repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditorInfo, new RecordItemIndex(2));
+            //repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.PressKeys(Query);
+            //Delay.Milliseconds(0);
             
-            SendQueryToSqlEditor(SqlQueryFromFile);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.MicrosoftSQLServerManagementStudio.Execute' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.ExecuteInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SSMS.MicrosoftSQLServerManagementStudio.Execute' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.ExecuteInfo, new RecordItemIndex(3));
             repo.SSMS.MicrosoftSQLServerManagementStudio.Execute.MoveTo();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SSMS.MicrosoftSQLServerManagementStudio.Execute' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.ExecuteInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SSMS.MicrosoftSQLServerManagementStudio.Execute' at Center.", repo.SSMS.MicrosoftSQLServerManagementStudio.ExecuteInfo, new RecordItemIndex(4));
             repo.SSMS.MicrosoftSQLServerManagementStudio.Execute.Click();
             Delay.Milliseconds(200);
             

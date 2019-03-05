@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="19abc944-3e0a-4494-bd1a-0fff3c2498b9"
+id="26744f38-66ad-4eeb-b822-eadf3208b00f"
 mode="Global"
 rxversion="8.2">
 	<name>
-		ExecuteQuery
+		ExecuteQuery1
 	</name>
 	<repeatcount>
 		1
@@ -23,112 +23,172 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="ExecuteQuery"
+	classname="ExecuteQuery1"
 	namespace="SQLDMTestAutomation.SSMSRecordingds">
 	</codegen>
 	<variables>
 		<var
-		id="86cccdf9-d9b1-40d5-8298-694c3256566b"
-		name="TestCaseName">
-		</var>
-		<var
-		id="ca1532f2-ea11-4bd5-bed7-4203d6618ea5"
-		name="SqlQueryFilePath">
-		</var>
-		<var
-		id="66d37589-36b9-4253-94e4-9f24cba87e69"
-		name="SqlQueryFromFile">
-		</var>
-		<var
-		id="60e686f6-57a4-467a-8984-99d5d8a38ff1"
-		name="(Unbound)">
+		id="1fd3749a-a1be-477b-9b77-0ddaa8bed5bd"
+		name="Query">
+			select [QueryMonitorTopPlanCountFilter],[QueryMonitorTopPlanCategoryFilter],[QueryMonitorQueryStoreMonitoringEnabled] from MonitoredSQLServers &#32;
 		</var>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="CommonMethods"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="GetSqlQueriesFilePath"
-		namespace="SQLDMTestAutomation"
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="500ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		varname="SqlQueryFilePath">
+		searchpropertyid="804a85eb-6a19-4511-a969-7354ac57a774"
+		sx="721"
+		sy="388"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<arguments
-			id="fc25da28-e233-48d5-9637-4dd9b9d027f4">
-			</arguments>
-		</userrecorditem>
-		<loggingrecorditem
-		category="User"
-		enabled="True"
-		message=""
+			<info
+			id="dcfdc283-6c39-4efa-87ec-ad57e0aafed1"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="336,114,771,548"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						stream from line 0, char 0 to line 0, char 0
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						selected text
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@title~'^Microsoft\ SQL\ Server\ Mana']//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="62890729-7e3a-4947-b847-5e8a27f78c55">
+		searchpropertyid="804a85eb-6a19-4511-a969-7354ac57a774"
+		sx="721"
+		sy="388"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="dcfdc283-6c39-4efa-87ec-ad57e0aafed1"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="336,114,771,548"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="accessibledescription"
+					type="System.String">
+						stream from line 0, char 0 to line 0, char 0
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						selected text
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						Text
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						None
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@title~'^Microsoft\ SQL\ Server\ Mana']//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']
+				</path>
+			</info>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="yourtext"
+		duration="100ms"
+		enabled="False"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="1caef211-982a-42f4-a68d-9fa6b905fb35">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
-				target="Message"
-				variable="SqlQueryFilePath">
+				target="KeySequence"
+				variable="Query">
 				</binding>
 			</bindings>
-		</loggingrecorditem>
-		<userrecorditem
-		classname="CommonMethods"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ReadTextFile"
-		namespace="SQLDMTestAutomation"
-		optional="False"
-		varname="SqlQueryFromFile">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="db7f04e1-a39d-4b18-8acf-7609d2af11e1">
-				<argument
-				argname="file"
-				id="6e900172-69c2-4902-b3c0-84d14dc4f181"
-				variable="SqlQueryFilePath">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="ExecuteQuery"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="SendQueryToSqlEditor"
-		namespace="SQLDMTestAutomation.SSMSRecordingds"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="81139d0c-10be-4eac-9882-a3b048f9fbc7">
-				<argument
-				argname="query"
-				id="1938e700-5fc3-4d26-ac8b-ef7e1343f9fb"
-				variable="SqlQueryFromFile">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
+			<info
+			id="dcfdc283-6c39-4efa-87ec-ad57e0aafed1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title~'^Microsoft\ SQL\ Server\ Mana']//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']
+				</path>
+			</info>
+		</keysequenceitem>
 		<mouseitem
 		action="Move"
 		button="Left"
@@ -302,7 +362,7 @@ rxversion="8.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		ExecuteQuery.UserCode.cs
+		ExecuteQuery1.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

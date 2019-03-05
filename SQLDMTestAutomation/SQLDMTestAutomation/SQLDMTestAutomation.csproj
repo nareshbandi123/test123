@@ -360,15 +360,15 @@
       <UserCode>true</UserCode>
       <id>9be3cf35-045e-45ca-a81e-961d1c92f2b6</id>
     </Compile>
-    <Compile Include="SSMSRecordingds\ExecuteQuery.cs">
+    <Compile Include="SSMSRecordingds\ExecuteQuery1.cs">
       <BoundTo>cb333ffe-6119-45cd-b853-72cf099c860a</BoundTo>
-      <DependentUpon>ExecuteQuery.rxrec</DependentUpon>
+      <DependentUpon>ExecuteQuery1.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>9f0ff8b4-67f6-402f-a970-45c701f62c11</id>
     </Compile>
-    <Compile Include="SSMSRecordingds\ExecuteQuery.UserCode.cs">
+    <Compile Include="SSMSRecordingds\ExecuteQuery1.UserCode.cs">
       <BoundTo>cb333ffe-6119-45cd-b853-72cf099c860a</BoundTo>
-      <DependentUpon>ExecuteQuery.rxrec</DependentUpon>
+      <DependentUpon>ExecuteQuery1.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>843811fd-a483-4e08-bbda-ff7b822a79c2</id>
     </Compile>
@@ -396,17 +396,29 @@
       <UserCode>true</UserCode>
       <id>29d700ff-af21-4e3f-a94b-f072eeaa37da</id>
     </Compile>
-    <Compile Include="SSMSRecordingds\ReadQueryFromFileAndSetToQueryEditor.cs">
+    <Compile Include="SSMSRecordingds\ExecuteQuery.cs">
       <BoundTo>81ca157c-3a37-4165-89b4-1369e40f5878</BoundTo>
-      <DependentUpon>ReadQueryFromFileAndSetToQueryEditor.rxrec</DependentUpon>
+      <DependentUpon>ExecuteQuery.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>fed10458-c42a-4a45-9e4f-1efe29e44ca4</id>
     </Compile>
-    <Compile Include="SSMSRecordingds\ReadQueryFromFileAndSetToQueryEditor.UserCode.cs">
+    <Compile Include="SSMSRecordingds\ExecuteQuery.UserCode.cs">
       <BoundTo>81ca157c-3a37-4165-89b4-1369e40f5878</BoundTo>
-      <DependentUpon>ReadQueryFromFileAndSetToQueryEditor.rxrec</DependentUpon>
+      <DependentUpon>ExecuteQuery.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>5f8f0aa6-2c9c-4c5f-8ee3-acec05ea1743</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\NextSqlFile.cs">
+      <BoundTo>d6004582-0b62-4fc3-9de6-68776bd25bef</BoundTo>
+      <DependentUpon>NextSqlFile.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d01f9ca7-29a9-4952-97b7-352df6581c8d</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\NextSqlFile.UserCode.cs">
+      <BoundTo>d6004582-0b62-4fc3-9de6-68776bd25bef</BoundTo>
+      <DependentUpon>NextSqlFile.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9387d0e2-d127-40d9-a1a9-0ca49f4e279d</id>
     </Compile>
     <Compile Include="SSMSRecordingds\VerifyMonitoredSQLServersTableColumns.cs">
       <BoundTo>da714584-6e3e-4b69-8072-0e27fb3b6ff7</BoundTo>
@@ -420,7 +432,7 @@
       <UserCode>true</UserCode>
       <id>a9797ce9-6263-4ec1-b0e4-f5c025181f95</id>
     </Compile>
-    <Compile Include="UserCodeCollection1.cs">
+    <Compile Include="CommonMethods.cs">
       <id>b822862e-1214-4c17-a772-618c84c203e1</id>
     </Compile>
     <Compile Include="UserCodeModule1.cs">
@@ -559,7 +571,7 @@
       <id>b642b0cd-5668-40aa-adeb-b0e67a782d23</id>
       <recordtableid>b292c181-56e2-4512-851c-b8ba8fa5411c</recordtableid>
     </None>
-    <None Include="SSMSRecordingds\ExecuteQuery.rxrec">
+    <None Include="SSMSRecordingds\ExecuteQuery1.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>cb333ffe-6119-45cd-b853-72cf099c860a</id>
       <recordtableid>26744f38-66ad-4eeb-b822-eadf3208b00f</recordtableid>
@@ -574,10 +586,15 @@
       <id>ebc56b9e-b65c-42ee-8135-2e6ae169b15e</id>
       <recordtableid>c943dc6f-4873-4ad7-8fd2-784463b10806</recordtableid>
     </None>
-    <None Include="SSMSRecordingds\ReadQueryFromFileAndSetToQueryEditor.rxrec">
+    <None Include="SSMSRecordingds\ExecuteQuery.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>81ca157c-3a37-4165-89b4-1369e40f5878</id>
       <recordtableid>19abc944-3e0a-4494-bd1a-0fff3c2498b9</recordtableid>
+    </None>
+    <None Include="SSMSRecordingds\NextSqlFile.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>d6004582-0b62-4fc3-9de6-68776bd25bef</id>
+      <recordtableid>973b4583-e214-40fd-9af2-2250af78b144</recordtableid>
     </None>
     <None Include="SSMSRecordingds\VerifyMonitoredSQLServersTableColumns.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>

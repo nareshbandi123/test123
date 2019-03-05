@@ -26,13 +26,15 @@ namespace SQLDMTestAutomation
     /// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
     /// </summary>
     [UserCodeCollection]
-    public static class UserCodeCollection1
+    public static class CommonMethods
     {
     	public static SQLDMTestAutomationRepository repo = SQLDMTestAutomationRepository.Instance;
     	
         // You can use the "Insert New User Code Method" functionality from the context menu,
         // to add a new method with the attribute [UserCodeMethod].
-	        
+	    
+        public static int nextFileCounter = 1;
+		        
         [UserCodeMethod]
         public static void CleanUp()
         {
@@ -85,14 +87,14 @@ namespace SQLDMTestAutomation
 	 	
 	 	
 	 	[UserCodeMethod]
-        public static String GetSqlqueriesFilePath(String fileName)
+        public static String GetSqlQueriesFilePath()
         {
         	string tcName = GetCurrentTestCase();
         	string[] arrTestCaseName = tcName.Split('_');
         	string tcNumber = arrTestCaseName[0];
         	string startupPath = Environment.CurrentDirectory; // This will get the current WORKING directory (i.e. \bin\Debug)
         	Report.Log(ReportLevel.Info, "Environment.CurrentDirectory=", startupPath);
-        	string filePath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\/Testdata/Sqlqueries/" + tcNumber + "/" + fileName));
+        	string filePath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, @"..\..\/Testdata/Sqlqueries/" + tcNumber + "/" + tcNumber + "_" + CommonMethods.nextFileCounter +".txt"));
         	Report.Log(ReportLevel.Info, "Sql file path=", filePath);
         	return filePath;        	
         }
@@ -117,6 +119,14 @@ namespace SQLDMTestAutomation
             Report.Log(ReportLevel.Info, "sql query from file=", text);
             return text;
         }
+        
+        
+        [UserCodeMethod]
+        public static int NextSqlFileCounter()
+        {
+          	return nextFileCounter = nextFileCounter + 1;
+        }
+	        
 
     }
 }

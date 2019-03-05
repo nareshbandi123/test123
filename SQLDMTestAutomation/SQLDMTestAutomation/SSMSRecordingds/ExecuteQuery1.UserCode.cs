@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SQLDMTestAutomation.SSMSRecordingds
 {
-    public partial class ReadQueryFromFileAndSetToQueryEditor
+    public partial class ExecuteQuery1
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,25 +33,11 @@ namespace SQLDMTestAutomation.SSMSRecordingds
             // Your recording specific initialization code goes here.
         }
 
-        public void Set_value_Text51(RepoItemInfo textInfo)
+        public void Key_sequence_QueryEditor(RepoItemInfo textInfo)
         {
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to '$SqlqueryFilePath' on item 'textInfo'.", textInfo);
-            textInfo.FindAdapter<Text>().Element.SetAttributeValue("Text", SqlqueryFilePath);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Query' with focus on 'textInfo'.", textInfo);
+            textInfo.FindAdapter<Text>().PressKeys(Query);
         }
-
-        public void SendQueryToSqlEditor(string query)
-        {
-        	
-//        	var sqlquery =  UserCodeCollection1.GetSqlqueriesFilePath("C165705_1.txt");
-//        	var sqlquery = UserCodeCollection1.ReadTextFile(SqlqueryFilePath);
-        	Report.Log(ReportLevel.Info, "Sql query to Editor e=", query);
-        	repo.SSMS.MicrosoftSQLServerManagementStudio.QueryEditor.PressKeys(query);
-        	
-        	//textInfo.FindAdapter<Text>().PressKeys(Query);
-        	
-        }
-
-       
 
     }
 }

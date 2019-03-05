@@ -46,7 +46,7 @@ rxversion="8.2">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="UserCodeCollection1"
+		classname="CommonMethods"
 		enabled="True"
 		isexternaltestmethod="True"
 		methodname="KillApplicationProcess"

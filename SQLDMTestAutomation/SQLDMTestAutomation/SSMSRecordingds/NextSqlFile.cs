@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SQLDMTestAutomation.SQLDMRecordings
+namespace SQLDMTestAutomation.SSMSRecordingds
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CloseApplication recording.
+    ///The NextSqlFile recording.
     /// </summary>
-    [TestModule("9552b69d-f0c8-481f-b230-dfdaa4ad8b0e", ModuleType.Recording, 1)]
-    public partial class CloseApplication : ITestModule
+    [TestModule("973b4583-e214-40fd-9af2-2250af78b144", ModuleType.Recording, 1)]
+    public partial class NextSqlFile : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
         public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
 
-        static CloseApplication instance = new CloseApplication();
+        static NextSqlFile instance = new NextSqlFile();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CloseApplication()
+        public NextSqlFile()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CloseApplication Instance
+        public static NextSqlFile Instance
         {
             get { return instance; }
         }
@@ -79,18 +79,8 @@ namespace SQLDMTestAutomation.SQLDMRecordings
 
             Init();
 
-            //Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo'.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SelfInfo, new RecordItemIndex(0));
-            //Host.Current.CloseApplication(repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Self, 2000);
-            //Delay.Milliseconds(0);
-            
-            //KillApplicationProcess();
-            //Delay.Milliseconds(0);
-            
-            CommonMethods.KillApplicationProcess("SQLdmDesktopClient");
+            CommonMethods.NextSqlFileCounter();
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
-            Delay.Duration(5000, false);
             
         }
 

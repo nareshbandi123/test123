@@ -313,8 +313,9 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="7dc0f8b1-997e-489c-9667-626f845bf751"
-			name="ExecuteQuery"
+			name="ExecuteQuery1"
 			ref="26744f38-66ad-4eeb-b822-eadf3208b00f"
 			type="Recording">
 			</testmodule>
@@ -357,7 +358,7 @@ rxversion="8.2">
 			</testcase>
 			<testmodule
 			id="934dadaa-95d4-4eed-b572-53161d086946"
-			name="test"
+			name="ExecuteQuery"
 			ref="19abc944-3e0a-4494-bd1a-0fff3c2498b9"
 			type="Recording">
 			</testmodule>
@@ -392,7 +393,7 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="9d1fe745-9fa4-48e3-9bf0-4a686aa91a00"
-			name="test"
+			name="ExecuteQuery"
 			ref="19abc944-3e0a-4494-bd1a-0fff3c2498b9"
 			type="Recording">
 			</testmodule>
@@ -476,6 +477,13 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			enabled="False"
+			id="bc5c1260-b155-4c5b-aff9-431a85da33e4"
+			name="ExecuteQuery"
+			ref="19abc944-3e0a-4494-bd1a-0fff3c2498b9"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			enabled="False"
 			id="bd00a9f2-d836-4f76-87ea-324e2582abe5"
 			name="CloseApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
@@ -512,6 +520,13 @@ rxversion="8.2">
 			id="c6ed3cf4-a0ff-47b2-b78e-76708e43314a"
 			name="CloseMonitoredSqlServerWindow"
 			ref="10938416-b5ae-4e32-9f33-2396104249f6"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="c801b58e-b61d-4fa8-b744-85a39babf723"
+			name="ExecuteQuery"
+			ref="19abc944-3e0a-4494-bd1a-0fff3c2498b9"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -586,6 +601,13 @@ rxversion="8.2">
 			id="e93ca0bf-699d-46c9-87c4-62ed2a3f4d26"
 			name="CloseApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="f73b7030-dad3-4621-9cc2-d0d42cf8b4dd"
+			name="NextSqlFile"
+			ref="973b4583-e214-40fd-9af2-2250af78b144"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -898,6 +920,18 @@ rxversion="8.2">
 					id="922862c3-a166-4ce7-9d71-89cb9ccf93c6"
 					name="C165705_Verify_new_columns_are_added_in_'MonitoredSQLServers'_table_of_SQLdmRepository">
 						<testmodule
+						id="bc5c1260-b155-4c5b-aff9-431a85da33e4"
+						name="ExecuteQuery">
+						</testmodule>
+						<testmodule
+						id="f73b7030-dad3-4621-9cc2-d0d42cf8b4dd"
+						name="NextSqlFile">
+						</testmodule>
+						<testmodule
+						id="c801b58e-b61d-4fa8-b744-85a39babf723"
+						name="ExecuteQuery">
+						</testmodule>
+						<testmodule
 						id="3940dc8d-8cfb-4b19-8866-4df9552588ef"
 						name="LaunchSSMS">
 						</testmodule>
@@ -915,11 +949,11 @@ rxversion="8.2">
 						</testmodule>
 						<testmodule
 						id="934dadaa-95d4-4eed-b572-53161d086946"
-						name="test">
+						name="ExecuteQuery">
 						</testmodule>
 						<testmodule
 						id="7dc0f8b1-997e-489c-9667-626f845bf751"
-						name="ExecuteQuery">
+						name="ExecuteQuery1">
 						</testmodule>
 						<testmodule
 						id="0d3a4974-fded-4b8e-aa38-722c171a5369"
@@ -931,7 +965,7 @@ rxversion="8.2">
 					name="C164356_Select_Query_Store_option_for_2017_instance_and_verify_query_wait_data_is_collected">
 						<testmodule
 						id="9d1fe745-9fa4-48e3-9bf0-4a686aa91a00"
-						name="test">
+						name="ExecuteQuery">
 						</testmodule>
 						<testmodule
 						id="b7f2f1a7-9632-47b3-9bb9-dccaa51e707e"

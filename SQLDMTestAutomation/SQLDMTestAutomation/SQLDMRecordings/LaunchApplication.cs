@@ -85,7 +85,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
             //KillApplicationProcess();
             //Delay.Milliseconds(0);
             
-            UserCodeCollection1.KillApplicationProcess("SQLdmDesktopClient");
+            CommonMethods.KillApplicationProcess("SQLdmDesktopClient");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files\\Idera\\Idera SQL diagnostic manager\\SQLdmDesktopClient.exe' with arguments '' in normal mode.", new RecordItemIndex(3));
