@@ -48,7 +48,13 @@ rxversion="8.2">
 			<testmodule
 			enabled="False"
 			id="09f2d008-e4c8-4a1b-83d7-fe57064a1d42"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
+			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="0a7cd7a7-71b9-419f-a3cb-e067c35303b8"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
@@ -62,6 +68,14 @@ rxversion="8.2">
 			id="0de9ad90-8248-4c40-978d-642e879c379c"
 			name="teardown13">
 			</teardown>
+			<testcase
+			datarangeactive="True"
+			datasource="ServerList"
+			id="10af914e-22bf-456b-a3c7-c4f7ef947783"
+			maxrange="8"
+			minrange="8"
+			name="C166356_Select_'Query_Store'_option_for_2017_instance_and_verify_query_wait_data_is_collected">
+			</testcase>
 			<testmodule
 			id="177eb6b3-7e8e-4268-826d-0a2f8701287d"
 			name="DisableQueryMonitor"
@@ -102,7 +116,7 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="2620cda0-281f-4e57-bcbb-3eb666d47095"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
@@ -126,7 +140,7 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="39cb6180-c78f-4c2f-919e-bc27c56f53d6"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
@@ -143,8 +157,14 @@ rxversion="8.2">
 			</testcase>
 			<testmodule
 			id="3fa9b934-e62d-4880-beaf-ac941fdffa7d"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="41031cf6-b4fc-43e8-8959-8a7e78e2d4d3"
+			name="OpenConfigureQueryMonitor"
+			ref="a3e16002-ad31-41c7-be31-fdb013b90bf3"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -174,6 +194,12 @@ rxversion="8.2">
 					variablename="ServerName">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="481d15ea-26ac-43b3-b025-d7f05fc256cb"
+			name="CloseSQLDMApplication"
+			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="4a5bdd50-6a58-481e-ac9a-d4159fc3f9d4"
@@ -242,7 +268,7 @@ rxversion="8.2">
 			<testmodule
 			enabled="False"
 			id="5d346be5-339d-4053-ad19-c6777b349f72"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
@@ -258,14 +284,14 @@ rxversion="8.2">
 			</setup>
 			<testmodule
 			id="6334c569-3627-48aa-96e6-e48400524c95"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
 			<testmodule
 			enabled="False"
 			id="6a905789-615d-4ed0-a093-c09816ed356d"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
@@ -278,7 +304,7 @@ rxversion="8.2">
 			<testmodule
 			enabled="False"
 			id="734b80d3-56aa-4aa7-afd4-aedb27cdd273"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
@@ -307,16 +333,23 @@ rxversion="8.2">
 			name="C164874_Select_two_2008_version_instances_for_monitoring_and_verify_query_plan_options_are_enabled">
 			</testcase>
 			<testmodule
-			id="7bf5a91d-e8ce-414e-82b7-117d876274fb"
-			name="CloseApplication"
-			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			id="7a04fc60-ac10-44df-a4c8-e0583d806f3c"
+			name="SelectServer"
+			ref="24f6bd52-083e-4e49-bf06-cf2fe2ae5d7d"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="ServerName"
+					datasourceid="b99c958d-d010-43d5-b9f2-01f67fc4cfea"
+					variableid="1414cc25-97b1-4e47-ab61-5d306e2f14c6"
+					variablename="ServerName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="7dc0f8b1-997e-489c-9667-626f845bf751"
-			name="ExecuteQuery1"
-			ref="26744f38-66ad-4eeb-b822-eadf3208b00f"
+			id="7bf5a91d-e8ce-414e-82b7-117d876274fb"
+			name="CloseSQLDMApplication"
+			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -384,6 +417,16 @@ rxversion="8.2">
 			ref="10938416-b5ae-4e32-9f33-2396104249f6"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="9958c9eb-6072-4b69-ae31-9785189f96ed"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="9c6fb91e-f8fa-4428-a33f-2838053a9834"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			enabled="False"
 			id="9cad8b9b-1b1a-4823-860d-57e4780094f1"
@@ -391,6 +434,10 @@ rxversion="8.2">
 			ref="e47225b1-940d-4538-842a-92bdbab6c105"
 			type="Recording">
 			</testmodule>
+			<teardown
+			id="9cc3515b-03de-4ab5-8124-1f824acb5328"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="9d1fe745-9fa4-48e3-9bf0-4a686aa91a00"
 			name="ExecuteQuery"
@@ -444,7 +491,7 @@ rxversion="8.2">
 			<testmodule
 			enabled="False"
 			id="affd02b4-f305-4cca-8f23-ba58101dcdbb"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
@@ -477,15 +524,8 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			enabled="False"
-			id="bc5c1260-b155-4c5b-aff9-431a85da33e4"
-			name="ExecuteQuery"
-			ref="19abc944-3e0a-4494-bd1a-0fff3c2498b9"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			enabled="False"
 			id="bd00a9f2-d836-4f76-87ea-324e2582abe5"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
@@ -520,13 +560,6 @@ rxversion="8.2">
 			id="c6ed3cf4-a0ff-47b2-b78e-76708e43314a"
 			name="CloseMonitoredSqlServerWindow"
 			ref="10938416-b5ae-4e32-9f33-2396104249f6"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="c801b58e-b61d-4fa8-b744-85a39babf723"
-			name="ExecuteQuery"
-			ref="19abc944-3e0a-4494-bd1a-0fff3c2498b9"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -589,7 +622,7 @@ rxversion="8.2">
 			</testmodule>
 			<testmodule
 			id="e214fbbd-6720-4b82-bebb-a7a768a146f8"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
@@ -599,15 +632,8 @@ rxversion="8.2">
 			</smartfoldernode>
 			<testmodule
 			id="e93ca0bf-699d-46c9-87c4-62ed2a3f4d26"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="f73b7030-dad3-4621-9cc2-d0d42cf8b4dd"
-			name="NextSqlFile"
-			ref="973b4583-e214-40fd-9af2-2250af78b144"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -619,7 +645,7 @@ rxversion="8.2">
 			<testmodule
 			enabled="False"
 			id="fd89e4ae-fd0a-4e6b-a470-4f7fd046360e"
-			name="CloseApplication"
+			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
@@ -681,14 +707,14 @@ rxversion="8.2">
 						</testmodule>
 						<testmodule
 						id="bd00a9f2-d836-4f76-87ea-324e2582abe5"
-						name="CloseApplication">
+						name="CloseSQLDMApplication">
 						</testmodule>
 						<teardown
 						id="4ff043d6-ea74-47e0-887a-e864528bde8c"
 						name="teardown1">
 							<testmodule
 							id="e93ca0bf-699d-46c9-87c4-62ed2a3f4d26"
-							name="CloseApplication">
+							name="CloseSQLDMApplication">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -721,14 +747,14 @@ rxversion="8.2">
 						</testmodule>
 						<testmodule
 						id="5d346be5-339d-4053-ad19-c6777b349f72"
-						name="CloseApplication">
+						name="CloseSQLDMApplication">
 						</testmodule>
 						<teardown
 						id="026112c2-b912-4859-a092-f2dad7b8c124"
 						name="teardown11">
 							<testmodule
 							id="6334c569-3627-48aa-96e6-e48400524c95"
-							name="CloseApplication">
+							name="CloseSQLDMApplication">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -761,14 +787,14 @@ rxversion="8.2">
 						</testmodule>
 						<testmodule
 						id="6a905789-615d-4ed0-a093-c09816ed356d"
-						name="CloseApplication">
+						name="CloseSQLDMApplication">
 						</testmodule>
 						<teardown
 						id="4ff0429d-5946-4e0b-86ae-012c9c4f7157"
 						name="teardown12">
 							<testmodule
 							id="2620cda0-281f-4e57-bcbb-3eb666d47095"
-							name="CloseApplication">
+							name="CloseSQLDMApplication">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -797,14 +823,14 @@ rxversion="8.2">
 						</testmodule>
 						<testmodule
 						id="affd02b4-f305-4cca-8f23-ba58101dcdbb"
-						name="CloseApplication">
+						name="CloseSQLDMApplication">
 						</testmodule>
 						<teardown
 						id="0de9ad90-8248-4c40-978d-642e879c379c"
 						name="teardown13">
 							<testmodule
 							id="39cb6180-c78f-4c2f-919e-bc27c56f53d6"
-							name="CloseApplication">
+							name="CloseSQLDMApplication">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -825,14 +851,14 @@ rxversion="8.2">
 						</testmodule>
 						<testmodule
 						id="734b80d3-56aa-4aa7-afd4-aedb27cdd273"
-						name="CloseApplication">
+						name="CloseSQLDMApplication">
 						</testmodule>
 						<teardown
 						id="b36b80f1-c1ed-43e2-8c46-4d322ca1b6b3"
 						name="teardown14">
 							<testmodule
 							id="e214fbbd-6720-4b82-bebb-a7a768a146f8"
-							name="CloseApplication">
+							name="CloseSQLDMApplication">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -865,14 +891,14 @@ rxversion="8.2">
 						</testmodule>
 						<testmodule
 						id="fd89e4ae-fd0a-4e6b-a470-4f7fd046360e"
-						name="CloseApplication">
+						name="CloseSQLDMApplication">
 						</testmodule>
 						<teardown
 						id="b892faf6-2cbd-4960-95ed-cb7311871c86"
 						name="teardown141">
 							<testmodule
 							id="7bf5a91d-e8ce-414e-82b7-117d876274fb"
-							name="CloseApplication">
+							name="CloseSQLDMApplication">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -920,18 +946,6 @@ rxversion="8.2">
 					id="922862c3-a166-4ce7-9d71-89cb9ccf93c6"
 					name="C165705_Verify_new_columns_are_added_in_'MonitoredSQLServers'_table_of_SQLdmRepository">
 						<testmodule
-						id="bc5c1260-b155-4c5b-aff9-431a85da33e4"
-						name="ExecuteQuery">
-						</testmodule>
-						<testmodule
-						id="f73b7030-dad3-4621-9cc2-d0d42cf8b4dd"
-						name="NextSqlFile">
-						</testmodule>
-						<testmodule
-						id="c801b58e-b61d-4fa8-b744-85a39babf723"
-						name="ExecuteQuery">
-						</testmodule>
-						<testmodule
 						id="3940dc8d-8cfb-4b19-8866-4df9552588ef"
 						name="LaunchSSMS">
 						</testmodule>
@@ -952,13 +966,17 @@ rxversion="8.2">
 						name="ExecuteQuery">
 						</testmodule>
 						<testmodule
-						id="7dc0f8b1-997e-489c-9667-626f845bf751"
-						name="ExecuteQuery1">
-						</testmodule>
-						<testmodule
 						id="0d3a4974-fded-4b8e-aa38-722c171a5369"
 						name="VerifyMonitoredSQLServersTableColumns">
 						</testmodule>
+						<teardown
+						id="9958c9eb-6072-4b69-ae31-9785189f96ed"
+						name="teardown">
+							<testmodule
+							id="0a7cd7a7-71b9-419f-a3cb-e067c35303b8"
+							name="CloseSQLDMApplication">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="917ad86a-61aa-4dbf-aba7-1ca9429d3bdc"
@@ -984,7 +1002,31 @@ rxversion="8.2">
 						name="teardown1">
 							<testmodule
 							id="3fa9b934-e62d-4880-beaf-ac941fdffa7d"
-							name="CloseApplication">
+							name="CloseSQLDMApplication">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="10af914e-22bf-456b-a3c7-c4f7ef947783"
+					name="C166356_Select_'Query_Store'_option_for_2017_instance_and_verify_query_wait_data_is_collected">
+						<testmodule
+						id="9c6fb91e-f8fa-4428-a33f-2838053a9834"
+						name="LaunchApplication">
+						</testmodule>
+						<testmodule
+						id="7a04fc60-ac10-44df-a4c8-e0583d806f3c"
+						name="SelectServer">
+						</testmodule>
+						<testmodule
+						id="41031cf6-b4fc-43e8-8959-8a7e78e2d4d3"
+						name="OpenConfigureQueryMonitor">
+						</testmodule>
+						<teardown
+						id="9cc3515b-03de-4ab5-8124-1f824acb5328"
+						name="teardown">
+							<testmodule
+							id="481d15ea-26ac-43b3-b025-d7f05fc256cb"
+							name="CloseSQLDMApplication">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -993,7 +1035,7 @@ rxversion="8.2">
 					name="teardown">
 						<testmodule
 						id="09f2d008-e4c8-4a1b-83d7-fe57064a1d42"
-						name="CloseApplication">
+						name="CloseSQLDMApplication">
 						</testmodule>
 					</teardown>
 				</testcase>
@@ -1026,9 +1068,6 @@ rxversion="8.2">
 		name="TestRun">
 			<testcontainer
 			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
-			</testcontainer>
-			<testcontainer
-			id="922862c3-a166-4ce7-9d71-89cb9ccf93c6">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

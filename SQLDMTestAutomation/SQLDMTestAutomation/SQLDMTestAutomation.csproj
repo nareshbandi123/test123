@@ -132,14 +132,14 @@
       <id>890a4da9-62c0-4a23-95c1-b35a9eefff5f</id>
       <BoundTo>b38bcf1d-64f0-4c57-9761-44e93ca54461</BoundTo>
     </Compile>
-    <Compile Include="SQLDMRecordings\CloseApplication.cs">
-      <DependentUpon>CloseApplication.rxrec</DependentUpon>
+    <Compile Include="SQLDMRecordings\CloseSQLDMApplication.cs">
+      <DependentUpon>CloseSQLDMApplication.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>a95fe145-bb19-498c-b666-8fc4fe286e61</id>
       <BoundTo>4dfa6b6d-8324-417e-a698-5c195240bfac</BoundTo>
     </Compile>
-    <Compile Include="SQLDMRecordings\CloseApplication.UserCode.cs">
-      <DependentUpon>CloseApplication.rxrec</DependentUpon>
+    <Compile Include="SQLDMRecordings\CloseSQLDMApplication.UserCode.cs">
+      <DependentUpon>CloseSQLDMApplication.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>b4ce17be-10ef-4a75-8a38-d8f5ed326a6b</id>
       <BoundTo>4dfa6b6d-8324-417e-a698-5c195240bfac</BoundTo>
@@ -227,6 +227,30 @@
       <UserCode>true</UserCode>
       <id>99d07303-38d7-46af-932d-eedd702c77a9</id>
       <BoundTo>06083215-b9f8-4bed-b549-71458738aea7</BoundTo>
+    </Compile>
+    <Compile Include="SQLDMRecordings\QueriesTAB\ClickQueriesTab.cs">
+      <BoundTo>b180049f-b0bc-4405-90ca-da663a8b79aa</BoundTo>
+      <DependentUpon>ClickQueriesTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3215571f-7189-48a7-ab88-8059f29e0774</id>
+    </Compile>
+    <Compile Include="SQLDMRecordings\QueriesTAB\ClickQueriesTab.UserCode.cs">
+      <BoundTo>b180049f-b0bc-4405-90ca-da663a8b79aa</BoundTo>
+      <DependentUpon>ClickQueriesTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e97f5c4-37a7-4d8c-9ae5-3b6c6e4f1dbf</id>
+    </Compile>
+    <Compile Include="SQLDMRecordings\QueriesTAB\NavigateToWaitMonitoring.cs">
+      <BoundTo>77d9d23a-6888-4248-8f6d-de860fd38358</BoundTo>
+      <DependentUpon>NavigateToWaitMonitoring.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12a6dd08-a01f-4584-930c-a8ef4d9fb7f7</id>
+    </Compile>
+    <Compile Include="SQLDMRecordings\QueriesTAB\NavigateToWaitMonitoring.UserCode.cs">
+      <BoundTo>77d9d23a-6888-4248-8f6d-de860fd38358</BoundTo>
+      <DependentUpon>NavigateToWaitMonitoring.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fea1e7c6-3274-4714-a59f-12ee99d4477b</id>
     </Compile>
     <Compile Include="SQLDMRecordings\RevertSelectTopToDefaultValue.cs">
       <DependentUpon>RevertSelectTopToDefaultValue.rxrec</DependentUpon>
@@ -348,6 +372,18 @@
       <UserCode>true</UserCode>
       <id>d1cbe9ca-0cc7-4aae-bbc7-38ef87839689</id>
     </Compile>
+    <Compile Include="SSMSRecordingds\CloseSSMSApplication.cs">
+      <BoundTo>be69bf93-9f8c-4cbc-9485-0a42188c91e4</BoundTo>
+      <DependentUpon>CloseSSMSApplication.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>83bbb145-b941-4998-b76d-f8b7c34a6bbd</id>
+    </Compile>
+    <Compile Include="SSMSRecordingds\CloseSSMSApplication.UserCode.cs">
+      <BoundTo>be69bf93-9f8c-4cbc-9485-0a42188c91e4</BoundTo>
+      <DependentUpon>CloseSSMSApplication.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>46550584-6b47-4ec3-a97c-b0dab881db81</id>
+    </Compile>
     <Compile Include="SSMSRecordingds\ConnectToServer.cs">
       <BoundTo>b642b0cd-5668-40aa-adeb-b0e67a782d23</BoundTo>
       <DependentUpon>ConnectToServer.rxrec</DependentUpon>
@@ -465,7 +501,7 @@
       <id>b38bcf1d-64f0-4c57-9761-44e93ca54461</id>
       <recordtableid>0d45aeec-90f8-4043-a0cf-91a511febd51</recordtableid>
     </None>
-    <None Include="SQLDMRecordings\CloseApplication.rxrec">
+    <None Include="SQLDMRecordings\CloseSQLDMApplication.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>4dfa6b6d-8324-417e-a698-5c195240bfac</id>
       <recordtableid>9552b69d-f0c8-481f-b230-dfdaa4ad8b0e</recordtableid>
@@ -504,6 +540,16 @@
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>06083215-b9f8-4bed-b549-71458738aea7</id>
       <recordtableid>a3e16002-ad31-41c7-be31-fdb013b90bf3</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\QueriesTAB\ClickQueriesTab.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>b180049f-b0bc-4405-90ca-da663a8b79aa</id>
+      <recordtableid>3affe88e-acb2-4086-9814-268e6084a36e</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\QueriesTAB\NavigateToWaitMonitoring.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>77d9d23a-6888-4248-8f6d-de860fd38358</id>
+      <recordtableid>6d47f959-0bbf-49f1-984d-3d744640d83c</recordtableid>
     </None>
     <None Include="SQLDMRecordings\RevertSelectTopToDefaultValue.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
@@ -566,6 +612,11 @@
       <id>4e25c5e6-b1e1-4ea8-b787-57ee74e7622e</id>
       <recordtableid>ef842bbe-065e-438e-87f1-342978211007</recordtableid>
     </None>
+    <None Include="SSMSRecordingds\CloseSSMSApplication.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>be69bf93-9f8c-4cbc-9485-0a42188c91e4</id>
+      <recordtableid>2ec06a5b-43c8-4cd7-b1aa-ccb4a7785eeb</recordtableid>
+    </None>
     <None Include="SSMSRecordingds\ConnectToServer.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>b642b0cd-5668-40aa-adeb-b0e67a782d23</id>
@@ -616,6 +667,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="SQLDMRecordings\QueriesTAB">
+      <id>f1a4274b-260b-44f3-89d5-ef7951d68920</id>
+    </Folder>
     <Folder Include="SSMSRecordingds">
       <id>e1c8c2df-e00f-4e7e-a823-b8edacfe2fd6</id>
     </Folder>

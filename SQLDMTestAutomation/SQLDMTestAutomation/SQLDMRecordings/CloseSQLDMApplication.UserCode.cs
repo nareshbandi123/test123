@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace SQLDMTestAutomation.SQLDMRecordings
 {
-    public partial class CloseApplication
+    public partial class CloseSQLDMApplication
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

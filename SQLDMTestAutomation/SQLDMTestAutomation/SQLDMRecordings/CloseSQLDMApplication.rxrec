@@ -5,7 +5,7 @@ id="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 mode="Global"
 rxversion="8.2">
 	<name>
-		CloseApplication
+		CloseSQLDMApplication
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CloseApplication"
+	classname="CloseSQLDMApplication"
 	namespace="SQLDMTestAutomation.SQLDMRecordings">
 	</codegen>
 	<variables>
@@ -962,7 +962,7 @@ rxversion="8.2">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						SQLdmDesktopClient
+						ssms
 					</argvalue>
 				</argument>
 			</arguments>
@@ -993,7 +993,7 @@ rxversion="8.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CloseApplication.UserCode.cs
+		CloseSQLDMApplication.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

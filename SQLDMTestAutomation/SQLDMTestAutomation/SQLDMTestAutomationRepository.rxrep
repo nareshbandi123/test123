@@ -35,7 +35,7 @@ rxversion="8.2">
 				name="Server"
 				refimgid="a9633a05-322d-4ee2-807a-e189e4d260b5"
 				searchtimeout="30000ms">
-					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename~'^'+$ServerName]
 				</item>
 				<item
 				addcaps="tree,control,nativewindow"
@@ -131,6 +131,26 @@ rxversion="8.2">
 				refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository ((local))']/container[1]/container[@automationid='navigationPaneHost']/container[@caption='']/container[@controlname='NavigationPaneControl']/element[@controlname='explorerBar']/container[@controlname='ultraExplorerBarContainerControl1']/container[@controlname='serversNavigationPane']/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']"
 				searchtimeout="30000ms">
 					/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']/?/?/container[@controlname='ultraExplorerBarContainerControl1']/?/?/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']
+				</item>
+				<item
+				addcaps="radiobutton,wpfelement,wpfgroupelement"
+				capname="radiobutton"
+				id="12a9f12a-1a22-4a3a-b2e1-3f56feb5082e"
+				name="QueryWaitsTAB"
+				refimgid="ee967469-b62e-449c-bd0e-562895c3dab1"
+				refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository ((local))']/container[1]/container[@automationid='viewContainer']/toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[4]"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[4]
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="0e44c7f3-5104-4bbb-9bd5-03a19da794bd"
+				name="ConfigureTAB"
+				refimgid="58392da8-05f5-46db-a48b-2deab4d38186"
+				refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository ((local))']/container[1]/container[@automationid='viewContainer']/toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='actionsRibbonGroup']/button[2]"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//tabpage[@automationid='Queries']/toolbar[@automationid='actionsRibbonGroup']/button[2]
 				</item>
 				<basepath>
 					/form[@title~'^Idera\ SQL\ diagnostic\ mana']

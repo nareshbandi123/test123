@@ -213,6 +213,8 @@ namespace SQLDMTestAutomation
             RepoItemInfo _allservers1Info;
             RepoItemInfo _win16x6402sql2017Info;
             RepoItemInfo _userviewtreeviewInfo;
+            RepoItemInfo _querywaitstabInfo;
+            RepoItemInfo _configuretabInfo;
 
             /// <summary>
             /// Creates a new IderaSQLDiagnosticManagerSQLdmRepo  folder.
@@ -220,7 +222,7 @@ namespace SQLDMTestAutomation
             public IderaSQLDiagnosticManagerSQLdmRepoAppFolder(RepoGenBaseFolder parentFolder) :
                     base("IderaSQLDiagnosticManagerSQLdmRepo", "/form[@title~'^Idera\\ SQL\\ diagnostic\\ mana']", parentFolder, 30000, null, true, "b4fb3fbf-37f1-4ea8-8a05-407ab9741ac6", "")
             {
-                _serverInfo = new RepoItemInfo(this, "Server", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "82a5fa7d-86df-4386-9bd7-f49949e40f8c");
+                _serverInfo = new RepoItemInfo(this, "Server", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename~'^'+$ServerName]", 30000, null, "82a5fa7d-86df-4386-9bd7-f49949e40f8c");
                 _server2017Info = new RepoItemInfo(this, "Server2017", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='WIN10SQL17']", 30000, null, "91a07a90-ff45-494a-aafc-f9ea7cf33825");
                 _queriesInfo = new RepoItemInfo(this, "Queries", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/container[@automationid='tabItemText']/text[@caption='Queries']", 30000, null, "d2bb192f-687c-484a-a185-49989a0e9c96");
                 _signaturemodeInfo = new RepoItemInfo(this, "SignatureMode", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[1]", 30000, null, "08b3cbe5-42ce-445e-b40a-bcb102c74100");
@@ -231,6 +233,8 @@ namespace SQLDMTestAutomation
                 _allservers1Info = new RepoItemInfo(this, "AllServers1", ".//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='All Servers']", 30000, null, "5b05942e-23c6-425e-a1b4-6c1bfdd2f8aa");
                 _win16x6402sql2017Info = new RepoItemInfo(this, "WIN16X6402SQL2017", ".//container[@automationid='navigationPaneHost']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='WIN16X64-02\\SQL2017']", 30000, null, "f90893f9-4e63-4341-8f43-3125514d2ba7");
                 _userviewtreeviewInfo = new RepoItemInfo(this, "UserViewTreeView", "?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']/?/?/container[@controlname='ultraExplorerBarContainerControl1']/?/?/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']", 30000, null, "36ded65f-a0b2-45e9-bde0-7bc3ae732691");
+                _querywaitstabInfo = new RepoItemInfo(this, "QueryWaitsTAB", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[4]", 30000, null, "12a9f12a-1a22-4a3a-b2e1-3f56feb5082e");
+                _configuretabInfo = new RepoItemInfo(this, "ConfigureTAB", ".//tabpage[@automationid='Queries']/toolbar[@automationid='actionsRibbonGroup']/button[2]", 30000, null, "0e44c7f3-5104-4bbb-9bd5-03a19da794bd");
             }
 
             /// <summary>
@@ -518,6 +522,54 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _userviewtreeviewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The QueryWaitsTAB item.
+            /// </summary>
+            [RepositoryItem("12a9f12a-1a22-4a3a-b2e1-3f56feb5082e")]
+            public virtual Ranorex.RadioButton QueryWaitsTAB
+            {
+                get
+                {
+                    return _querywaitstabInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The QueryWaitsTAB item info.
+            /// </summary>
+            [RepositoryItemInfo("12a9f12a-1a22-4a3a-b2e1-3f56feb5082e")]
+            public virtual RepoItemInfo QueryWaitsTABInfo
+            {
+                get
+                {
+                    return _querywaitstabInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ConfigureTAB item.
+            /// </summary>
+            [RepositoryItem("0e44c7f3-5104-4bbb-9bd5-03a19da794bd")]
+            public virtual Ranorex.Button ConfigureTAB
+            {
+                get
+                {
+                    return _configuretabInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ConfigureTAB item info.
+            /// </summary>
+            [RepositoryItemInfo("0e44c7f3-5104-4bbb-9bd5-03a19da794bd")]
+            public virtual RepoItemInfo ConfigureTABInfo
+            {
+                get
+                {
+                    return _configuretabInfo;
                 }
             }
         }

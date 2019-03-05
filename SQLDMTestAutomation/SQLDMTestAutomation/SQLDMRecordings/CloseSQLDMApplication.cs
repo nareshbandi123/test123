@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SQLDMTestAutomation.SSMSRecordingds
+namespace SQLDMTestAutomation.SQLDMRecordings
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The LaunchSSMS recording.
+    ///The CloseSQLDMApplication recording.
     /// </summary>
-    [TestModule("303a7741-4722-4c12-9533-9fd4939f22c3", ModuleType.Recording, 1)]
-    public partial class LaunchSSMS : ITestModule
+    [TestModule("9552b69d-f0c8-481f-b230-dfdaa4ad8b0e", ModuleType.Recording, 1)]
+    public partial class CloseSQLDMApplication : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
         public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
 
-        static LaunchSSMS instance = new LaunchSSMS();
+        static CloseSQLDMApplication instance = new CloseSQLDMApplication();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public LaunchSSMS()
+        public CloseSQLDMApplication()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static LaunchSSMS Instance
+        public static CloseSQLDMApplication Instance
         {
             get { return instance; }
         }
@@ -79,21 +79,18 @@ namespace SQLDMTestAutomation.SSMSRecordingds
 
             Init();
 
+            //Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo'.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SelfInfo, new RecordItemIndex(0));
+            //Host.Current.CloseApplication(repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Self, 2000);
+            //Delay.Milliseconds(0);
+            
+            //KillApplicationProcess();
+            //Delay.Milliseconds(0);
+            
             CommonMethods.KillApplicationProcess("ssms");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\Ssms.exe' with arguments '' in normal mode.", new RecordItemIndex(1));
-            Host.Local.RunApplication("C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\Ssms.exe", "", "C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE", false);
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
-            Delay.Duration(3000, false);
-            
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo, new ActionTimeout(60000), new RecordItemIndex(3));
-            //repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo.WaitForExists(60000);
-            
-            CommonMethods.ResetSqlFileCounter();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
+            Delay.Duration(5000, false);
             
         }
 

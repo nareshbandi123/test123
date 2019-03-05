@@ -126,6 +126,13 @@ namespace SQLDMTestAutomation
         {
           	return nextFileCounter = nextFileCounter + 1;
         }
+        
+        
+        [UserCodeMethod]
+        public static int ResetSqlFileCounter()
+        {
+          	return nextFileCounter = 1;
+        }
 	        
 
     }

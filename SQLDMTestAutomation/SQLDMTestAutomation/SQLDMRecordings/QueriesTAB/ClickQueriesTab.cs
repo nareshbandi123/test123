@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace SQLDMTestAutomation.SSMSRecordingds
+namespace SQLDMTestAutomation.SQLDMRecordings.QueriesTAB
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The LaunchSSMS recording.
+    ///The ClickQueriesTab recording.
     /// </summary>
-    [TestModule("303a7741-4722-4c12-9533-9fd4939f22c3", ModuleType.Recording, 1)]
-    public partial class LaunchSSMS : ITestModule
+    [TestModule("3affe88e-acb2-4086-9814-268e6084a36e", ModuleType.Recording, 1)]
+    public partial class ClickQueriesTab : ITestModule
     {
         /// <summary>
         /// Holds an instance of the SQLDMTestAutomation.SQLDMTestAutomationRepository repository.
         /// </summary>
         public static SQLDMTestAutomation.SQLDMTestAutomationRepository repo = SQLDMTestAutomation.SQLDMTestAutomationRepository.Instance;
 
-        static LaunchSSMS instance = new LaunchSSMS();
+        static ClickQueriesTab instance = new ClickQueriesTab();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public LaunchSSMS()
+        public ClickQueriesTab()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static LaunchSSMS Instance
+        public static ClickQueriesTab Instance
         {
             get { return instance; }
         }
@@ -79,21 +79,19 @@ namespace SQLDMTestAutomation.SSMSRecordingds
 
             Init();
 
-            CommonMethods.KillApplicationProcess("ssms");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(0));
+            Delay.Duration(2000, false);
             
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\Ssms.exe' with arguments '' in normal mode.", new RecordItemIndex(1));
-            Host.Local.RunApplication("C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\Ssms.exe", "", "C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE", false);
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 50s to exist. Associated repository item: 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Queries'", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo, new ActionTimeout(50000), new RecordItemIndex(1));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo.WaitForExists(50000);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(2));
-            Delay.Duration(3000, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo, new RecordItemIndex(2));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Queries.MoveTo();
+            Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Wait", "Waiting 1m to exist. Associated repository item: 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo, new ActionTimeout(60000), new RecordItemIndex(3));
-            //repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMTodayInfo.WaitForExists(60000);
-            
-            CommonMethods.ResetSqlFileCounter();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Queries' at Center.", repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.QueriesInfo, new RecordItemIndex(3));
+            repo.SQLDM.IderaSQLDiagnosticManagerSQLdmRepo.Queries.Click();
+            Delay.Milliseconds(200);
             
         }
 
