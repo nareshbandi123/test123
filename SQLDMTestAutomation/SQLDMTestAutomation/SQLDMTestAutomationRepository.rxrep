@@ -35,7 +35,7 @@ rxversion="8.2">
 				name="Server"
 				refimgid="a9633a05-322d-4ee2-807a-e189e4d260b5"
 				searchtimeout="30000ms">
-					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename~'^'+$ServerName]
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
 				</item>
 				<item
 				addcaps="tree,control,nativewindow"
@@ -292,6 +292,54 @@ rKRbD7kzTcEuzNudTrR623xK7m877TsTxG+W+SGNGP784AAAAABJRU5ErkJggg==
 				refimgid="6f9a2602-569a-46b2-985b-41939b6c7278"
 				searchtimeout="30000ms">
 					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//button[@accessiblename='Close']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="0ee1417e-9802-4049-a721-f1721a82ad63"
+				name="ChkCollectQueryWaitsStatistics"
+				refimgid="7ea50ba3-2d0c-4dfa-b718-9871b1cca768"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='waitPropertyPage']//container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkCollectActiveWaits']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="af7177e1-0310-4f54-b7af-065fd80552f9"
+				name="ChkUseQs"
+				refimgid="17ca7b9d-84d9-4bf9-b54d-7b039866942a"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='waitPropertyPage']//container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseQs']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="bdc1f4f1-621d-4572-8927-4907172f7cb2"
+				name="QueryMilliseconds"
+				refimgid="8f09a320-c563-4734-8bb5-73ea255ff157"
+				refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='queryMonitorPropertyPage']/container[@controlname='tableLayoutPanel18']/container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/container[@controlname='traceThresholdsTableLayoutPanel']/container[@controlname='durationThresholdSpinner']/text[@controlname='upDownEdit']"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='durationThresholdSpinner']/text[@controlname='upDownEdit']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="5a798ce7-6804-4395-8875-e422537e15aa"
+				name="AdvancedOptionsButton"
+				refimgid="0640a348-8fb0-44f9-9205-fff143e9687c"
+				refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='queryMonitorPropertyPage']/container[@controlname='tableLayoutPanel18']/button[@controlname='queryMonitorAdvancedOptionsButton']"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/button[@controlname='queryMonitorAdvancedOptionsButton']
+				</item>
+				<item
+				addcaps="listitem,accessible"
+				capname="listitem"
+				id="ad498492-c91d-4a29-a2de-c04208520b8b"
+				name="WaitMonitoringTAB"
+				refimgid="192596ac-6b4a-4c0e-92c1-603c458ebfec"
+				refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel1']/list[@controlname='propertyPageListBox']/list[@accessiblerole='List']/listitem[@accessiblerole='ListItem' and @index='11']"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']/?/?/listitem[@index='11']
 				</item>
 				<basepath>
 					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']
@@ -877,6 +925,86 @@ TkSuQmCC
 				</icon>
 			</appfolder>
 		</folder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="4c1d647f-8d7d-4547-8a99-8c82f5dfa9f9"
+		isrooted="True"
+		name="SQLdmDesktopClient"
+		refpath="/form[@processname='SQLdmDesktopClient' and @controltypename='MonitoredSqlServerInstancePropertiesDialog']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="listitem,accessible"
+			capname="listitem"
+			id="af2dee37-fc4c-482b-96b6-5fed2013f92a"
+			name="QueryMonitorLeftPane"
+			refimgid="b2d4ff4e-5e8d-460f-9d15-82eaf227e164"
+			refpath="/form[@processname='SQLdmDesktopClient' and @controltypename='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel1']/list[@controlname='propertyPageListBox']/list[@accessiblerole='List']/listitem[@accessiblerole='ListItem' and @index='2']"
+			searchtimeout="30000ms">
+				/form[@controltypename='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']/?/?/listitem[@index='2']
+			</item>
+			<basepath>
+				/form[@controltypename='MonitoredSqlServerInstancePropertiesDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJRSURBVDhPpZPrS5NhGIf3l/QhoqQiMgii6OBx
+5cwPElaEfSqIJJCgzAikQgsELSlI7SCUnayoIKkPghWZhxxpc861Oedh6jZ1mzu8x1092wS10KBu
++H177+t3Pc/LY/jvaWgxc+eVg5rmAaqafnC50cyZ6k5OVHZTXPGFonOtFJa+pKDkybIcPP0Y45Fy
+DHXPbTS1azS2adxqlal+HaHyWZCKR7OUN/k5e9dHye1JTtaOc7zazdEqF4euOMkvM7MmbQeG2mYz
+dW8C3Hwb5uKDKU7dcFN83cmxaw4OX7VTWGGj4NIgpnIrBy4MYCyzkHveQkZpN+vSjRhqGl7gD8QI
+RzXmRUIRlWBYISAyG0rFG1DwzMi4vTIOj4R1TKLL6mHj1u0CUN/CahOPg6JCRIozF9GZCmqM+lUs
+Li8bNm/DcP/p+4VP/xxNB0mJMx/TmZnXmJzTcPsUfk4q9Az9BaCLZlksJ5vDOtOieUw0O6cUrOMy
+ndbVAAltTSzLcYJRHV9IY2JWw+VVsE0o9I/IfLYIwKYVAIvqcWbEckpdxS7ULaMyvcMS7X0rAJLq
+akJdT6kHUuqOpLrCd5dMl0OizZwApC8HJG9cg6g4d2Cp+nRKvc8t0eOU6LDF+ND7G0Dsoi6oh4S6
+P3nrKiMJdc+i+ld7jE/WKO96vKxPAO4tMRDlSOKfh2IIAEzMgcsXZ8ij0T+q8W1YpcOu8HFQTgLW
+pm0Rb6H+Ibn788kxmsgWyRLJFMnINbEvx8Te7Dz2iOzOymNXZio7M1LJyS9i4U3+6xgMvwD+1+a2
+GORSxAAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="8b2d0136-c5dc-4603-8c1f-f9bcd885c13e"
+		isrooted="True"
+		name="AdvancedQueryFilterConfigurationDialog"
+		refpath="/form[@controlname='AdvancedQueryFilterConfigurationDialog']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="0fdbe99b-02e6-443e-a166-6a8b08015f3d"
+			name="ChkExcludeDM"
+			refimgid="89d5aa11-ec62-40b3-8021-56917a58b0fc"
+			refpath="/form[@controlname='AdvancedQueryFilterConfigurationDialog']/container[@controlname='propertiesControl1']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='propertyPage1']/container[@controlname='office2007PropertyPage1']/container[@controlname='backgroundPanel']/container[@controlname='ContentPanel']/container[@controlname='panel1']/checkbox[@controlname='chkExcludeDM']"
+			searchtimeout="30000ms">
+				/form[@controlname='AdvancedQueryFilterConfigurationDialog']/container[@controlname='propertiesControl1']//container[@controlname='propertyPage1']/container[@controlname='office2007PropertyPage1']//container[@controlname='panel1']/checkbox[@controlname='chkExcludeDM']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="80d20184-bca7-45f9-abfd-174fe18edd31"
+			name="OkButton"
+			refimgid="cd796076-d52a-4f87-a843-3909a59ef20f"
+			refpath="/form[@controlname='AdvancedQueryFilterConfigurationDialog']/button[@controlname='okButton']"
+			searchtimeout="30000ms">
+				/form[@controlname='AdvancedQueryFilterConfigurationDialog']/button[@controlname='okButton']
+			</item>
+			<basepath>
+				/form[@controlname='AdvancedQueryFilterConfigurationDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAADzSURBVDhPrZKxDYMwEEVvEBZgB6ZwzySIVehS
+egVKmvRuGSPlz337CAcxUpTE0hMG+32fbeQvLc0R32C6yLIu+4traRRgjQAUPskcMlHHbJpI9Gmu
+pUmQTExrEQtyDDiU4xon4SQSBg+9C+AWUqMDJyIrOIkEtQBoFZiMMSIyQCtIXnT99wqyGJBIHzDU
+AuxZDzAx07mAivwWcLs/XuJGEJ1o981b4iJnTC8VcMVAROWG6CozwHDCfmYqBD0n06+vMei5eCmL
+Rtt/8CfmAC+OO23nAq7+RJZ5FCNaftPVDwHcAqtgkD8w7n3rb2N+jum/NJEndMbOttr9CW0AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>

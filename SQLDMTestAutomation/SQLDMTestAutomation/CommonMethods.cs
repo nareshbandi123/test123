@@ -19,6 +19,7 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 using System.Diagnostics;
+using Ranorex.Core.Repository;
 
 namespace SQLDMTestAutomation
 {
@@ -132,6 +133,27 @@ namespace SQLDMTestAutomation
         public static int ResetSqlFileCounter()
         {
           	return nextFileCounter = 1;
+        }
+        
+        [UserCodeMethod]
+        public static void ClickCheckBox(RepoItemInfo checkboxInfo, bool requireChecked)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'checkboxInfo' at Center.", checkboxInfo);
+            if(requireChecked.ToString().ToLower() == "true")
+            {
+	            if (!(checkboxInfo.FindAdapter<CheckBox>().Checked))
+	            {
+	            	//checkboxInfo.FindAdapter<CheckBox>().Focus();
+	            	checkboxInfo.FindAdapter<CheckBox>().Click();
+	            }
+            }
+            else  // require to be UnChecked
+            {
+            	if ((checkboxInfo.FindAdapter<CheckBox>().Checked))
+	            {
+	            	checkboxInfo.FindAdapter<CheckBox>().Click();
+	            }
+            }
         }
 	        
 

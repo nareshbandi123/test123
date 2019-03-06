@@ -33,7 +33,7 @@ namespace SQLDMTestAutomation.SQLDMRecordings
             // Your recording specific initialization code goes here.
         }
 
-        public void ClickQueryMonitorTraceCheckBox(RepoItemInfo checkboxInfo)
+        public static void ClickCheckBox(RepoItemInfo checkboxInfo)
         {
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'checkboxInfo' at Center.", checkboxInfo);
             if (!(checkboxInfo.FindAdapter<CheckBox>().Checked))

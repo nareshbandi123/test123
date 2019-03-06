@@ -228,6 +228,18 @@
       <id>99d07303-38d7-46af-932d-eedd702c77a9</id>
       <BoundTo>06083215-b9f8-4bed-b549-71458738aea7</BoundTo>
     </Compile>
+    <Compile Include="SQLDMRecordings\PreconditionQueryMonitor.cs">
+      <BoundTo>274815f3-d28b-40ae-b040-313da54ec82e</BoundTo>
+      <DependentUpon>PreconditionQueryMonitor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e52757ee-2817-4951-ac66-9f01f554527d</id>
+    </Compile>
+    <Compile Include="SQLDMRecordings\PreconditionQueryMonitor.UserCode.cs">
+      <BoundTo>274815f3-d28b-40ae-b040-313da54ec82e</BoundTo>
+      <DependentUpon>PreconditionQueryMonitor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9dc54cc1-b0ba-4064-be21-8cb5e1d69c7e</id>
+    </Compile>
     <Compile Include="SQLDMRecordings\QueriesTAB\ClickQueriesTab.cs">
       <BoundTo>b180049f-b0bc-4405-90ca-da663a8b79aa</BoundTo>
       <DependentUpon>ClickQueriesTab.rxrec</DependentUpon>
@@ -240,6 +252,18 @@
       <UserCode>true</UserCode>
       <id>8e97f5c4-37a7-4d8c-9ae5-3b6c6e4f1dbf</id>
     </Compile>
+    <Compile Include="SQLDMRecordings\QueriesTAB\ClickWaitMonitoringTAB.cs">
+      <BoundTo>25b4bb3f-3c54-44fb-805f-3f05267919a7</BoundTo>
+      <DependentUpon>ClickWaitMonitoringTAB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4da3b281-6c52-43d0-a5f1-2966ec66ad2b</id>
+    </Compile>
+    <Compile Include="SQLDMRecordings\QueriesTAB\ClickWaitMonitoringTAB.UserCode.cs">
+      <BoundTo>25b4bb3f-3c54-44fb-805f-3f05267919a7</BoundTo>
+      <DependentUpon>ClickWaitMonitoringTAB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f0ec869c-672a-4df6-87bd-0f7fca93e8e7</id>
+    </Compile>
     <Compile Include="SQLDMRecordings\QueriesTAB\NavigateToWaitMonitoring.cs">
       <BoundTo>77d9d23a-6888-4248-8f6d-de860fd38358</BoundTo>
       <DependentUpon>NavigateToWaitMonitoring.rxrec</DependentUpon>
@@ -251,6 +275,18 @@
       <DependentUpon>NavigateToWaitMonitoring.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>fea1e7c6-3274-4714-a59f-12ee99d4477b</id>
+    </Compile>
+    <Compile Include="SQLDMRecordings\QueriesTAB\SelectQueryWaitForServers2017AndAbove.cs">
+      <BoundTo>fa5b4633-1b41-44a9-b99a-33d4e15292b5</BoundTo>
+      <DependentUpon>SelectQueryWaitForServers2017AndAbove.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9e515ea6-4d83-4ce5-a043-799e58a99419</id>
+    </Compile>
+    <Compile Include="SQLDMRecordings\QueriesTAB\SelectQueryWaitForServers2017AndAbove.UserCode.cs">
+      <BoundTo>fa5b4633-1b41-44a9-b99a-33d4e15292b5</BoundTo>
+      <DependentUpon>SelectQueryWaitForServers2017AndAbove.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c7bb657e-2cd5-4334-a87e-e589230f3ca5</id>
     </Compile>
     <Compile Include="SQLDMRecordings\RevertSelectTopToDefaultValue.cs">
       <DependentUpon>RevertSelectTopToDefaultValue.rxrec</DependentUpon>
@@ -541,15 +577,30 @@
       <id>06083215-b9f8-4bed-b549-71458738aea7</id>
       <recordtableid>a3e16002-ad31-41c7-be31-fdb013b90bf3</recordtableid>
     </None>
+    <None Include="SQLDMRecordings\PreconditionQueryMonitor.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>274815f3-d28b-40ae-b040-313da54ec82e</id>
+      <recordtableid>0291cea1-dc2d-4c65-bd36-64defc99dc49</recordtableid>
+    </None>
     <None Include="SQLDMRecordings\QueriesTAB\ClickQueriesTab.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>b180049f-b0bc-4405-90ca-da663a8b79aa</id>
       <recordtableid>3affe88e-acb2-4086-9814-268e6084a36e</recordtableid>
     </None>
+    <None Include="SQLDMRecordings\QueriesTAB\ClickWaitMonitoringTAB.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>25b4bb3f-3c54-44fb-805f-3f05267919a7</id>
+      <recordtableid>476f0896-21bd-4ebe-abb4-04d82fa09b97</recordtableid>
+    </None>
     <None Include="SQLDMRecordings\QueriesTAB\NavigateToWaitMonitoring.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>77d9d23a-6888-4248-8f6d-de860fd38358</id>
       <recordtableid>6d47f959-0bbf-49f1-984d-3d744640d83c</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\QueriesTAB\SelectQueryWaitForServers2017AndAbove.rxrec">
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <id>fa5b4633-1b41-44a9-b99a-33d4e15292b5</id>
+      <recordtableid>f4000207-a676-49df-a943-df3861b20803</recordtableid>
     </None>
     <None Include="SQLDMRecordings\RevertSelectTopToDefaultValue.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
