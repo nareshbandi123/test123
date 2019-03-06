@@ -1,14 +1,10 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="SQLDMTestAutomationRepository.rxrep" />
+    <Element value="SQLDMTestAutomation.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SQLDMTestAutomation.rxtst" />
-    <Element value="SQLDMTestAutomationRepository.rxrep" />
-    <Element value="SQLDMRecordings\CloseMonitoredSqlServerWindow.rxrec" />
-    <Element value="SQLDMRecordings\EnableQueryMonitor.rxrec" />
-    <Element value="SQLDMRecordings\LaunchApplication.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

@@ -82,6 +82,12 @@ rxversion="8.2">
 			ref="27e814ad-b964-4291-bc15-a4e0a1045970"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="1b63d963-766b-46cf-af00-8870e1ebc631"
+			name="PreOnDemandEstimatedPlan"
+			ref="df70801f-8cae-4e95-8c11-a9662ea30c2f"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="1d7a8fc3-24a0-41e6-b436-d8b87a6c2195"
 			name="teardown1">
@@ -109,6 +115,18 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="227b0057-e194-4e14-9e8a-33e4a7a0c77b"
+			name="SelectSever2017Properties"
+			ref="01b3441a-f0cc-40a2-a450-4183372c0d20"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="246c6c1d-d063-43e6-b2c5-39265e70fe83"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="25856d62-5f2d-448a-b836-d3b46017b111"
 			name="OpenConfigureQueryMonitor"
 			ref="a3e16002-ad31-41c7-be31-fdb013b90bf3"
@@ -127,11 +145,27 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="2b9c8639-209d-4f47-9a8b-bbb330fe5a2b"
+			name="PerformQueryOperations"
+			ref="5b779250-b3a7-4063-b353-0b036b507719"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="2bb67438-76f2-4814-93a0-58369dffe953"
 			name="VerifySelectTopToBeDisabled"
 			ref="e0cc1395-ebff-4ffa-bb51-b3d57c3b7246"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="2d9c0db3-f2fe-4f4b-ad7e-45fb4a604e3e"
+			name="SQLStatement"
+			ref="a2a68ed3-871c-43ba-af69-54aa88b81380"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="30935b64-5a49-4ff5-aa18-479b6df6d0f6"
+			name="C170476_verify_Estimated_Query_plan_is_collected_when_globe_icon_of_a_stored_procedure_type_SQL_stat">
+			</testcase>
 			<testmodule
 			id="3940dc8d-8cfb-4b19-8866-4df9552588ef"
 			name="LaunchSSMS"
@@ -142,6 +176,12 @@ rxversion="8.2">
 			id="39cb6180-c78f-4c2f-919e-bc27c56f53d6"
 			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="39f513fd-fb13-43e3-a859-0fa96d2fdb64"
+			name="GlobalIconQuery"
+			ref="62753300-e832-436a-885a-f2eaa4993345"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -156,6 +196,12 @@ rxversion="8.2">
 				</description>
 			</testcase>
 			<testmodule
+			id="3cee2855-413d-4244-a315-a3c990138649"
+			name="PerformQueryOperations"
+			ref="5b779250-b3a7-4063-b353-0b036b507719"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="3fa9b934-e62d-4880-beaf-ac941fdffa7d"
 			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
@@ -165,6 +211,12 @@ rxversion="8.2">
 			id="41031cf6-b4fc-43e8-8959-8a7e78e2d4d3"
 			name="OpenConfigureQueryMonitor"
 			ref="a3e16002-ad31-41c7-be31-fdb013b90bf3"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4113ed94-5eb5-4bc5-a4fa-118f873436ce"
+			name="VerifyQueryStoreOption"
+			ref="09608eda-f4ed-43a7-b814-dbecd6ac6248"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -201,6 +253,10 @@ rxversion="8.2">
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="48e0b70c-c090-45a6-a27c-dcbb5895f1c7"
+			name="C166355_Verify_Query_Store_option_is_NOT_selected_by_default_for_2017_and_above_versions">
+			</testcase>
 			<testmodule
 			id="4a5bdd50-6a58-481e-ac9a-d4159fc3f9d4"
 			name="VerifySelectByAndPlansBy"
@@ -215,6 +271,12 @@ rxversion="8.2">
 			minrange="4"
 			name="C164220_Verify_default_value_for_Select_top_and_Plans_by2">
 			</testcase>
+			<testmodule
+			id="4bb6cf67-aaed-4208-8dfe-4eb3ecdb6501"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="4f9c4dba-088d-4f01-8f64-9dbb7d98e3b1"
 			name="ClickSQLdmRepositoryInLeftPanel"
@@ -243,6 +305,10 @@ rxversion="8.2">
 			reportwriteinterval="30000ms"
 			showinvisiblechars="True">
 			</testsuite>
+			<testcase
+			id="556369ea-023e-429a-819e-a3a6e4ae3b49"
+			name="C166353_Verify_query_data_default_collection_option_for_different_servers">
+			</testcase>
 			<testmodule
 			id="556418d0-c23a-4eba-94b1-1b7518134b29"
 			name="SelectServer"
@@ -270,6 +336,12 @@ rxversion="8.2">
 			id="5d346be5-339d-4053-ad19-c6777b349f72"
 			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="5f6a1238-3796-42bd-8ab9-195b6bdbe68b"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -302,6 +374,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="71fb2158-f03b-42a4-be01-d4ded9d3d079"
+			name="StoredProcedures"
+			ref="64978fe6-bd41-4ef0-a5e0-2a4697bfb54c"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="734b80d3-56aa-4aa7-afd4-aedb27cdd273"
 			name="CloseSQLDMApplication"
@@ -328,6 +406,12 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="7544f66d-1949-4f8f-b849-6ec8038231a2"
+			name="PerformQueryOperations"
+			ref="5b779250-b3a7-4063-b353-0b036b507719"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="7697ca61-cff1-4df0-a8a4-a58c5b60e97e"
 			name="C164874_Select_two_2008_version_instances_for_monitoring_and_verify_query_plan_options_are_enabled">
@@ -346,12 +430,20 @@ rxversion="8.2">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="7bbbb969-c85d-4ef3-9cb0-ab1cae49bdcc"
+			name="C164843_verify_Estimated_Query_plan_is_collected_when_globe_icon_of_a_batch_type_SQL_statement_is_se">
+			</testcase>
 			<testmodule
 			id="7bf5a91d-e8ce-414e-82b7-117d876274fb"
 			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="7d086ccc-5aae-4afd-92d4-833b7f264948"
+			name="C170477_verify_Estimated_Query_plan_is_collected_when_globe_icon_of_a_SQL_statement_is_selected">
+			</testcase>
 			<testcase
 			id="82b404ba-e93a-4aee-bc5a-594531d73f3d"
 			name="SQLDMTestAutomation"
@@ -362,6 +454,12 @@ rxversion="8.2">
 			id="88979ebe-cae4-4250-9d61-95e8c41387cc"
 			name="ListOfServers"
 			ref="cd7340b8-4836-440c-9e77-d6f24d4e7b66"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8e42683e-f488-4a32-92b5-771bd2ce12fd"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -389,6 +487,12 @@ rxversion="8.2">
 			minrange="8"
 			name="C165705_Verify_new_columns_are_added_in_'MonitoredSQLServers'_table_of_SQLdmRepository">
 			</testcase>
+			<testmodule
+			id="926a2e3a-5d2c-4cb4-901f-29110ae14e04"
+			name="GlobalIconQuery"
+			ref="62753300-e832-436a-885a-f2eaa4993345"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="934dadaa-95d4-4eed-b572-53161d086946"
 			name="ExecuteQuery"
@@ -457,6 +561,12 @@ rxversion="8.2">
 					variablename="ServerName">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="a4606325-fdf1-4539-a600-38c29b9ca01b"
+			name="PreOnDemandEstimatedPlan"
+			ref="df70801f-8cae-4e95-8c11-a9662ea30c2f"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="aa0a083d-7bb8-4790-a9a8-06b7018bc6bc"
@@ -536,6 +646,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="c0380076-d913-4019-9e86-3337452faa4b"
+			name="LaunchApplication"
+			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="c2c20006-e627-45f8-ba09-886eb0ad028c"
 			name="ConnectToServer"
 			ref="b292c181-56e2-4512-851c-b8ba8fa5411c"
@@ -563,6 +679,12 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="c720588f-0621-41b5-b4a0-e3842d01f893"
+			name="PreOnDemandEstimatedPlan"
+			ref="df70801f-8cae-4e95-8c11-a9662ea30c2f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="c802933b-53b5-4846-9b17-c5e062aa3716"
 			name="VerifySelectByAndPlansBy"
@@ -573,6 +695,12 @@ rxversion="8.2">
 			id="c88408a3-5c31-449a-8b2c-82eccf797bc0"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="cc73f3c9-111f-43f8-97c7-3cb7de83e69e"
+			name="Verifyquerydatadefaultcollectionoption"
+			ref="5b148c62-77b0-4bc1-b530-fbd0924852e4"
+			type="Recording">
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="ServerList"
@@ -581,6 +709,12 @@ rxversion="8.2">
 			minrange="2"
 			name="C164330_Verify_minimum_and_maximum_limit_of_query_plan_count">
 			</testcase>
+			<testmodule
+			id="d084238f-8c4b-46b3-897d-3abadf7de848"
+			name="GlobalIconQuery"
+			ref="62753300-e832-436a-885a-f2eaa4993345"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="d635fa76-9a76-4f28-8b00-1d70bf9c0866"
 			name="SelectSever2017Properties"
@@ -624,6 +758,12 @@ rxversion="8.2">
 			id="e214fbbd-6720-4b82-bebb-a7a768a146f8"
 			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e29d0ea1-3a7c-4f62-957f-42eac7e3b75e"
+			name="SQLBatches"
+			ref="29cc5df4-1723-40c1-b7f8-d357dfa95b8c"
 			type="Recording">
 			</testmodule>
 			<smartfoldernode
@@ -1030,6 +1170,106 @@ rxversion="8.2">
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="48e0b70c-c090-45a6-a27c-dcbb5895f1c7"
+					name="C166355_Verify_Query_Store_option_is_NOT_selected_by_default_for_2017_and_above_versions">
+						<testmodule
+						id="5f6a1238-3796-42bd-8ab9-195b6bdbe68b"
+						name="LaunchApplication">
+						</testmodule>
+						<testmodule
+						id="227b0057-e194-4e14-9e8a-33e4a7a0c77b"
+						name="SelectSever2017Properties">
+						</testmodule>
+						<testmodule
+						id="4113ed94-5eb5-4bc5-a4fa-118f873436ce"
+						name="VerifyQueryStoreOption">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="556369ea-023e-429a-819e-a3a6e4ae3b49"
+					name="C166353_Verify_query_data_default_collection_option_for_different_servers">
+						<testmodule
+						id="c0380076-d913-4019-9e86-3337452faa4b"
+						name="LaunchApplication">
+						</testmodule>
+						<testmodule
+						id="cc73f3c9-111f-43f8-97c7-3cb7de83e69e"
+						name="Verifyquerydatadefaultcollectionoption">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="7bbbb969-c85d-4ef3-9cb0-ab1cae49bdcc"
+					name="C164843_verify_Estimated_Query_plan_is_collected_when_globe_icon_of_a_batch_type_SQL_statement_is_se">
+						<testmodule
+						id="8e42683e-f488-4a32-92b5-771bd2ce12fd"
+						name="LaunchApplication">
+						</testmodule>
+						<testmodule
+						id="a4606325-fdf1-4539-a600-38c29b9ca01b"
+						name="PreOnDemandEstimatedPlan">
+						</testmodule>
+						<testmodule
+						id="e29d0ea1-3a7c-4f62-957f-42eac7e3b75e"
+						name="SQLBatches">
+						</testmodule>
+						<testmodule
+						id="39f513fd-fb13-43e3-a859-0fa96d2fdb64"
+						name="GlobalIconQuery">
+						</testmodule>
+						<testmodule
+						id="3cee2855-413d-4244-a315-a3c990138649"
+						name="PerformQueryOperations">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="30935b64-5a49-4ff5-aa18-479b6df6d0f6"
+					name="C170476_verify_Estimated_Query_plan_is_collected_when_globe_icon_of_a_stored_procedure_type_SQL_stat">
+						<testmodule
+						id="4bb6cf67-aaed-4208-8dfe-4eb3ecdb6501"
+						name="LaunchApplication">
+						</testmodule>
+						<testmodule
+						id="c720588f-0621-41b5-b4a0-e3842d01f893"
+						name="PreOnDemandEstimatedPlan">
+						</testmodule>
+						<testmodule
+						id="71fb2158-f03b-42a4-be01-d4ded9d3d079"
+						name="StoredProcedures">
+						</testmodule>
+						<testmodule
+						id="d084238f-8c4b-46b3-897d-3abadf7de848"
+						name="GlobalIconQuery">
+						</testmodule>
+						<testmodule
+						id="2b9c8639-209d-4f47-9a8b-bbb330fe5a2b"
+						name="PerformQueryOperations">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="7d086ccc-5aae-4afd-92d4-833b7f264948"
+					name="C170477_verify_Estimated_Query_plan_is_collected_when_globe_icon_of_a_SQL_statement_is_selected">
+						<testmodule
+						id="246c6c1d-d063-43e6-b2c5-39265e70fe83"
+						name="LaunchApplication">
+						</testmodule>
+						<testmodule
+						id="1b63d963-766b-46cf-af00-8870e1ebc631"
+						name="PreOnDemandEstimatedPlan">
+						</testmodule>
+						<testmodule
+						id="2d9c0db3-f2fe-4f4b-ad7e-45fb4a604e3e"
+						name="SQLStatement">
+						</testmodule>
+						<testmodule
+						id="926a2e3a-5d2c-4cb4-901f-29110ae14e04"
+						name="GlobalIconQuery">
+						</testmodule>
+						<testmodule
+						id="7544f66d-1949-4f8f-b849-6ec8038231a2"
+						name="PerformQueryOperations">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="c88408a3-5c31-449a-8b2c-82eccf797bc0"
 					name="teardown">
@@ -1066,9 +1306,6 @@ rxversion="8.2">
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="10af914e-22bf-456b-a3c7-c4f7ef947783">
-			</testcontainer>
 			<testcontainer
 			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
 			</testcontainer>

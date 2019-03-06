@@ -152,6 +152,326 @@ rxversion="8.2">
 				searchtimeout="30000ms">
 					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//tabpage[@automationid='Queries']/toolbar[@automationid='actionsRibbonGroup']/button[2]
 				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="dcb2dcb4-7e4e-4b9d-a9a4-307f290777e4"
+				name="Server1"
+				refimgid="bc41e377-9850-4afc-bdf9-63633f4df605"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="d7dec6c8-2af8-4d87-b009-f9d6f8294119"
+				name="Button1"
+				refimgid="04320996-2868-43f7-af9c-34594e657a65"
+				refpath="/form[@controlname='ExceptionMessageBoxForm']/container/container[@controlname='pnlButtons']/button[@controlname='button1']"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']/container[@controlname='pnlForm']/?/?/button[@controlname='button1']
+				</item>
+				<item
+				capname="treeitem"
+				id="2ffb9c88-54c4-4d51-ad09-3383ca2c839e"
+				name="Server2005"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='AUT-HOOVER\SQL2005']
+				</item>
+				<item
+				capname="treeitem"
+				id="5fe92936-ad74-4eb2-a59a-1c1ecf55e99f"
+				name="Server2008"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='QA-HOOVER\SQL2008']
+				</item>
+				<item
+				capname="treeitem"
+				id="b8e13f09-d4dc-4a58-b212-98dcc4607462"
+				name="Server2016"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='SSBUDDYDROPTEST\SQL2016']
+				</item>
+				<item
+				capname="treeitem"
+				id="97ee2f1b-7233-4116-b277-a4ec89fb477b"
+				name="DMServer2016"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='DM-LICTEST16']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="78bb39d7-f327-4b48-bec5-6a58f3c0ab63"
+				name="CloseMainWindow"
+				refimgid="b9bcb4ab-c1d3-4c6d-9f19-65f3a9715e92"
+				refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (AUT-SQL-DEV-001)']/picture[@automationid='PART_WindowIcon']/button[@automationid='XamRibbonCaptionButton_Right']"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/button[@automationid='XamRibbonCaptionButton_Right']
+				</item>
+				<item
+				capname="treeitem"
+				id="73a7f00c-8df8-4db3-a588-82cb4cce0eb1"
+				name="ServerCMWIN2016"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='CMWIN2016-S8']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="080fe1f6-3c6c-497a-a6c2-8f9ce9252183"
+				name="StatementMode"
+				refimgid="f130b5f2-92f1-4a7f-b729-2397cf6dba86"
+				refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (AUT-SQL-DEV-001)']/container[1]/container[@automationid='viewContainer']/toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[2]/container[@automationid='textLarge']/text[@automationid='PART_Line1']"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[2]/container[@automationid='textLarge']/text[@automationid='PART_Line1']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="95a33e14-aa35-4546-8135-adc03edc4f50"
+				name="ShowSqlStatements"
+				refimgid="cc742955-6b33-47d9-8bbd-884f223424f1"
+				refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (AUT-SQL-DEV-001)']/container[1]/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/container[@caption='']/container[@controlname='_child']/container[@controlname='QueryMonitorView']/container[@controlname='QueryMonitorView_Fill_Panel']/container[@controlname='queryMonitorFiltersPanel']/checkbox[@controlname='includeSqlStatementsCheckBox']"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//checkbox[@controlname='includeSqlStatementsCheckBox']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="c2aab8d1-3fc3-4322-81c4-0f29564d344f"
+				name="ShowSqlBatches"
+				refimgid="1e326eff-97cd-4e48-964b-11d780f30076"
+				refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (AUT-SQL-DEV-001)']/container[1]/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/container[@caption='']/container[@controlname='_child']/container[@controlname='QueryMonitorView']/container[@controlname='QueryMonitorView_Fill_Panel']/container[@controlname='queryMonitorFiltersPanel']/checkbox[@controlname='includeSqlBatchesCheckBox']"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//checkbox[@controlname='includeSqlBatchesCheckBox']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="4ed89fc1-2165-4917-91d1-a36191782dd3"
+				name="ShowStoredProcedure"
+				refimgid="2d73b7f6-d8dd-43fd-905e-7cf1eadd6f46"
+				refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (AUT-SQL-DEV-001)']/container[1]/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/container[@caption='']/container[@controlname='_child']/container[@controlname='QueryMonitorView']/container[@controlname='QueryMonitorView_Fill_Panel']/container[@controlname='queryMonitorFiltersPanel']/checkbox[@controlname='includeStoredProcedureCheckBox']"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//checkbox[@controlname='includeStoredProcedureCheckBox']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="f023e6fe-7e30-4fd1-912f-82a1d359c4ee"
+				name="ExcludeCurrentlyRunningQueries"
+				refimgid="4a01f347-e680-4781-8bcd-c1e498693f75"
+				refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (AUT-SQL-DEV-001)']/container[1]/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/container[@caption='']/container[@controlname='_child']/container[@controlname='QueryMonitorView']/container[@controlname='QueryMonitorView_Fill_Panel']/container[@controlname='queryMonitorFiltersPanel']/checkbox[@controlname='includeOnlyResourceRowsCheckBox']"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//checkbox[@controlname='includeOnlyResourceRowsCheckBox']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="7c322676-9566-49e4-a04e-897612794157"
+				name="GlobalQueryIcon"
+				refpath="/form[@title='Idera SQL diagnostic manager - SQLdmRepository (AUT-SQL-DEV-001)']/container[1]/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/container[@caption='']/container[@controlname='_child']/container[@controlname='QueryMonitorView']/container[@controlname='QueryMonitorView_Fill_Panel']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='queryMonitorGridPanel']/element[@controlname='queryMonitorGrid']/table[@accessiblename='There are no items to show for the selected timeframe and filters.']/row[1]/cell"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename~'^There\ are\ no\ items\ to\ sho']/row[1]/cell
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="20cb345a-d8d9-40c5-ba16-126f43bf70ba"
+				name="Server11"
+				refimgid="1edea0f5-fe5e-41a1-9818-47de06eb5a40"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
+				<item
+				capname="treeitem"
+				id="f9a7978f-a089-4a34-b029-83f8fd31c849"
+				name="Copy_of_Server2016"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='SSBUDDYDROPTEST\SQL2016']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="a5ac85c7-f930-4031-ae17-4769ea2132dc"
+				name="Server2"
+				refimgid="d2643e92-fe03-4474-8382-12c0874430b5"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="b8dea0e2-1c8e-49b1-b555-f621fddcb9a2"
+				name="Details"
+				refimgid="398c75e8-b310-4812-9fd7-46c3fe92b778"
+				refpath="/form[@title~'^Idera\ SQL\ diagnostic\ mana']/container[1]/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/container/container[@controlname='_child']/container[@controlname='QueryMonitorView']/container/container[@controlname='splitContainer']/container[@controlname='panel2']/container/element/table/row[@accessiblename='row 1']/cell[@accessiblename='Details']"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename='Loading...']/row[@accessiblename='row 1']/cell[@accessiblename='Details']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="23ff01bf-c520-4d5e-b13f-f7a08297cc3a"
+				name="Server3"
+				refimgid="f6e610c7-69e5-47cb-8615-c2f076504199"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="c1a886f4-8a15-40b2-9789-4c5c5769e971"
+				name="Server12"
+				refimgid="5aa36b00-8dbe-43dd-92d2-750661f249f4"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="aabddb9d-db55-4ccd-ab51-24fcf2892871"
+				name="Server4"
+				refimgid="863274cc-701f-4ee6-bc0a-10f5333ab2ce"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="9a9eeb37-b0dd-48da-a070-2845fe09c800"
+				name="Server13"
+				refimgid="1f3f27ee-cd60-4796-85c0-1dae23b77fb1"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="b9825b27-391c-4dc0-b27d-60b617f48c9d"
+				name="Server5"
+				refimgid="a8ecb03c-ce0d-4d38-974e-bcdcc8c49ced"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="4c2c7300-6036-4070-a08f-aec6ff932e9a"
+				name="Server14"
+				refimgid="bb387ef7-b950-4c48-bc0d-9bc99c76348e"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="d2abe7f3-7cf0-4ab2-8e37-f40230b5cab7"
+				name="Server6"
+				refimgid="822f695e-abd8-4709-b213-c69a6f967776"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="ede706bb-321f-4715-b7bb-26a38eff2fa0"
+				name="Server15"
+				refimgid="ad63f865-0a24-4479-abcb-b0de9ee343c5"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="a4199afc-d567-45ce-a137-c893c7773243"
+				name="Server7"
+				refimgid="5a3ffb8a-a30b-4454-8826-7ee74babaf30"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="b7072446-2a63-4400-8c15-4dffd4ae50ac"
+				name="Server16"
+				refimgid="94b6b95e-7215-44a0-a3a6-bb0fdf283461"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="a6f28f4c-6baa-420a-b414-51ab3a6095bf"
+				name="Server8"
+				refimgid="050a3fd0-36f8-4e13-b309-bce6cdbdf52b"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="93e532d2-9607-4d1d-bc0f-14e3b99d81b1"
+				name="Server17"
+				refimgid="2305587e-504b-48e9-826c-559f3a4a65a6"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="b7121313-aad7-426c-bf25-22740ef9d40c"
+				name="Server9"
+				refimgid="bb5e9549-3752-4044-922f-d9863d8ce5b5"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="994351d9-5771-4c93-8016-52e67371c80d"
+				name="Server18"
+				refimgid="c79393f2-2f94-4b13-a2a4-5f8a55219937"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="9cba274e-ed31-4ac6-bfed-500dd84966f8"
+				name="Server10"
+				refimgid="db1d846e-b1d6-4e38-8dd8-d65e505ecf49"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="54d68de1-9701-433d-beca-83a322e6c6b4"
+				name="Server19"
+				refimgid="ce695345-25e9-453f-9c38-e3dbf9c93eb6"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="cb8c362a-70b5-44b6-a658-56414ed10d2e"
+				name="Server20"
+				refimgid="7cc66cd5-21f3-4095-a816-a91960998526"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\SQL2008']
+				</item>
+				<item
+				addcaps="tree,control,nativewindow"
+				capname="treeitem"
+				id="9c3fcb0d-b667-45e4-ba83-512ca18b0262"
+				name="Server110"
+				refimgid="5818f584-d609-4556-8354-d9bf783857cb"
+				searchtimeout="30000ms">
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]
+				</item>
 				<basepath>
 					/form[@title~'^Idera\ SQL\ diagnostic\ mana']
 				</basepath>
@@ -280,6 +600,83 @@ rKRbD7kzTcEuzNudTrR623xK7m877TsTxG+W+SGNGP784AAAAABJRU5ErkJggg==
 					searchtimeout="30000ms">
 						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']/radiobutton[@controlname='rButtonUseTrace']
 					</item>
+					<item
+					addcaps="checkbox,control,nativewindow"
+					capname="checkbox"
+					id="fa47c1af-016d-4f86-bfd1-63389c5ae160"
+					name="CollectActualQueryPlans"
+					refimgid="20fdae72-c3f7-4df5-9588-24c6aa0906ba"
+					refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='queryMonitorPropertyPage']/container[@controlname='tableLayoutPanel18']/container[@controlname='tableLayoutPanel19']/checkbox[@controlname='chkCollectQueryPlans']"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']/checkbox[@controlname='chkCollectQueryPlans']
+					</item>
+					<item
+					addcaps="radiobutton,control,nativewindow"
+					capname="radiobutton"
+					id="79b90d43-3f5d-4fcc-a127-110ee3eee746"
+					name="CollectQueryDataUsingSQLTrace"
+					refimgid="efb81f64-5ad2-448a-8fec-51ab2f7b5f05"
+					refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='queryMonitorPropertyPage']/container[@controlname='tableLayoutPanel18']/container[@controlname='tableLayoutPanel19']/radiobutton[@controlname='rButtonUseTrace']"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']/radiobutton[@controlname='rButtonUseTrace']
+					</item>
+					<item
+					addcaps="radiobutton,control,nativewindow"
+					capname="radiobutton"
+					id="98fede11-de6d-46ea-89c1-a9767fb8dfd5"
+					name="CollectQueryDataUsingExtendedEvents"
+					refimgid="bf192967-8826-498d-9145-9b67ec978cd8"
+					refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='queryMonitorPropertyPage']/container[@controlname='tableLayoutPanel18']/container[@controlname='tableLayoutPanel19']/radiobutton[@controlname='rButtonUseExtendedEvents']"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']/radiobutton[@controlname='rButtonUseExtendedEvents']
+					</item>
+					<item
+					addcaps="checkbox,control,nativewindow"
+					capname="checkbox"
+					id="45fae6d9-4dec-401f-987a-718b7e3eb562"
+					name="Copy_of_CollectActualQueryPlans"
+					refimgid="9fac9335-b071-45c7-8b08-f6073e71a64b"
+					refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='queryMonitorPropertyPage']/container[@controlname='tableLayoutPanel18']/container[@controlname='tableLayoutPanel19']/checkbox[@controlname='chkCollectQueryPlans']"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']/checkbox[@controlname='chkCollectQueryPlans']
+					</item>
+					<item
+					addcaps="radiobutton,control,nativewindow"
+					capname="radiobutton"
+					id="49e0d07c-3593-4c79-adee-25cd6a59e41e"
+					name="Copy_of_CollectQueryDataUsingSQLTrace"
+					refimgid="53d78378-bba8-4655-ae1c-d3075b9107db"
+					refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='queryMonitorPropertyPage']/container[@controlname='tableLayoutPanel18']/container[@controlname='tableLayoutPanel19']/radiobutton[@controlname='rButtonUseTrace']"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']/radiobutton[@controlname='rButtonUseTrace']
+					</item>
+					<item
+					addcaps="listitem,accessible"
+					capname="listitem"
+					id="8257caf7-1fdc-4704-99cd-981b72538e6d"
+					name="WaitMonitoring"
+					refimgid="1411186c-7280-4feb-a845-c817782ff5e2"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']/container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']/?/?/listitem[@index='11']
+					</item>
+					<item
+					addcaps="checkbox,control,nativewindow"
+					capname="checkbox"
+					id="1b731c71-5699-49d0-8731-e05bd206e1fb"
+					name="UseExtendedEvents"
+					refimgid="9607b480-188d-4125-b6c9-db2948582268"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']/container[@controlname='propertiesControl']//container[@controlname='waitPropertyPage']/?/?/container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseXE']
+					</item>
+					<item
+					addcaps="checkbox,control,nativewindow"
+					capname="checkbox"
+					id="0745ecaf-011d-46cd-a4ba-601877ea01ff"
+					name="UseQueryStore"
+					refimgid="7e1aa353-4eba-4e25-8129-915fd5a8d800"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']/container[@controlname='propertiesControl']//container[@controlname='waitPropertyPage']/?/?/container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseQs']
+					</item>
 					<basepath>
 						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel19']
 					</basepath>
@@ -292,6 +689,133 @@ rKRbD7kzTcEuzNudTrR623xK7m877TsTxG+W+SGNGP784AAAAABJRU5ErkJggg==
 				refimgid="6f9a2602-569a-46b2-985b-41939b6c7278"
 				searchtimeout="30000ms">
 					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//button[@accessiblename='Close']
+				</item>
+				<folder
+				capname="container"
+				id="f59392ca-e780-4e79-b8c6-4682d765a6d1"
+				isrooted="True"
+				name="PropertiesControl"
+				refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="container,control,nativewindow"
+					capname="container"
+					id="c0aa1e23-d6bf-4eac-bdb3-2f9dacb1dc2f"
+					name="DurationThresholdSpinner"
+					refimgid="a948c0c0-1cb9-4fa3-9cd7-bfa4e37bf7a1"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='durationThresholdSpinner']
+					</item>
+					<item
+					addcaps="text,control,nativewindow"
+					capname="text"
+					id="287a998b-cfba-4d47-856b-bb7f4cf248d8"
+					name="Duration"
+					refimgid="a0368624-e75b-486a-93f9-7172fee129c3"
+					refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container/container/container[@controlname='panel2']/container/container[@controlname='tableLayoutPanel18']/container[@controlname='tableLayoutPanel16']/container/container/container[@controlname='durationThresholdSpinner']/text[@controlname='upDownEdit']"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='durationThresholdSpinner']/text[@controlname='upDownEdit']
+					</item>
+					<item
+					addcaps="container,control,nativewindow"
+					capname="container"
+					id="22483f7d-7a14-4fc0-8073-77051f383236"
+					name="TopPlanSpinner"
+					refimgid="e405199b-f2de-46a1-b294-68ad96d9fb60"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']
+					</item>
+					<item
+					addcaps="combobox,accessible"
+					capname="combobox"
+					id="f5164fc7-ce9c-4284-add6-e335818cbeb9"
+					name="SelectTop"
+					refimgid="f0a40eee-1fcc-45df-831b-1d1045b555f4"
+					refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container/container/container[@controlname='panel2']/container/container[@controlname='tableLayoutPanel18']/container[@controlname='tableLayoutPanel16']/container/container/container[@controlname='topPlanTableLayoutPanel']/container/combobox[@accessiblename='Select Top ']"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/combobox[@accessiblename='Select Top ']
+					</item>
+					<item
+					addcaps="container,control,nativewindow"
+					capname="container"
+					id="3374fafa-5e46-49d7-9ac8-2a8e7eb58413"
+					name="TraceThresholdsTableLayoutPanel"
+					refimgid="90aacea3-d921-415b-8b7d-d7b53a235296"
+					refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container/container/container[@controlname='panel2']/container/container[@controlname='tableLayoutPanel18']/container[@controlname='tableLayoutPanel16']/container/container[@controlname='traceThresholdsTableLayoutPanel']"
+					searchtimeout="30000ms">
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/container[@controlname='traceThresholdsTableLayoutPanel']
+					</item>
+					<basepath>
+						/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']
+					</basepath>
+				</folder>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="74a77f89-4a57-4057-9405-30436930db47"
+				name="SelectTop"
+				refimgid="f4841c3c-c512-4266-8e4c-eeb273d1ff5a"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="c470d435-ae78-4514-9202-ff51817c0704"
+				name="Cancle"
+				refimgid="d83a90b9-276d-43e0-8904-1e03901d8a4b"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/button[@controlname='cancelButton']
+				</item>
+				<item
+				addcaps="listitem,accessible"
+				capname="listitem"
+				id="3c5ee180-4733-4c77-9f5d-9fa78f92149f"
+				name="QueryMonitor"
+				refimgid="1d9ca4ea-9763-4656-a77b-20c5a4a5cd3a"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']//listitem[@index='2']
+				</item>
+				<item
+				addcaps="listitem,accessible"
+				capname="listitem"
+				id="8e1364ad-72f6-4d26-9f53-94f169373247"
+				name="WaitMonitoring"
+				refimgid="a27b2acd-6c2e-44d2-a1c7-6fb78ffbefe0"
+				refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel1']/list[@controlname='propertyPageListBox']/list[@accessiblerole='List']/listitem[@accessiblerole='ListItem' and @index='11']"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']/?/?/listitem[@index='11']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="5848e5ba-995e-44bd-b289-6bc77be9f243"
+				name="UseExtendedEvents"
+				refimgid="8b849244-3471-41d8-b5fe-0b4c21a465ee"
+				refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='waitPropertyPage']/container[@controlname='waitMonitoringMainContainer']/container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseXE']"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='waitPropertyPage']/?/?/container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseXE']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="44ebfaaf-090a-49ba-af2a-ee0ad545328b"
+				name="UseQueryStore"
+				refimgid="7fd2ccb8-69a0-47ad-baa2-2e77b7565958"
+				refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='waitPropertyPage']/container[@controlname='waitMonitoringMainContainer']/container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseQs']"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='waitPropertyPage']/?/?/container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseQs']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="30826ffd-68a7-4d90-a55a-2cb382915168"
+				name="CancelButton"
+				refimgid="297258da-e85c-46d5-abd6-40d39dfa9ded"
+				refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/button[@controlname='cancelButton']"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/button[@controlname='cancelButton']
 				</item>
 				<basepath>
 					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']
@@ -877,6 +1401,103 @@ TkSuQmCC
 				</icon>
 			</appfolder>
 		</folder>
+		<appfolder
+		capname="form"
+		id="64fd2311-82f1-462d-a152-310a5dcf70fe"
+		isrooted="True"
+		name="ExceptionMessageBoxForm"
+		refpath="/form[@controlname='ExceptionMessageBoxForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="aa11a30f-ebc7-483e-b3e5-61c68292826b"
+			name="Yes"
+			refimgid="d9395fc0-a4e9-4f6a-b32f-61c8a09dc22d"
+			refpath="/form[@controlname='ExceptionMessageBoxForm']/container/container[@controlname='pnlButtons']/button[@controlname='button1']"
+			searchtimeout="30000ms">
+				/form[@controlname='ExceptionMessageBoxForm']/?/?/container[@controlname='pnlButtons']/button[@controlname='button1']
+			</item>
+			<basepath>
+				/form[@controlname='ExceptionMessageBoxForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAPNJREFUOE+tkrENgzAQRW8QFmAHpnDPJIhV6FJ6BUqa9G4ZI+XPffsI
+BzFSlMTSEwb7fZ9t5C8tzRHfYLrIsi77i2tpFGCNABQ+yRwyUcdsmkj0aa6lSZBMTGsRC3IMOJTj
+GifhJBIGD70L4BZSowMnIis4iQS1AGgVmIwxIjJAK0hedP33CrIYkEgfMNQC7FkPMDHTuYCK/BZw
+uz9e4kYQnWj3zVviImdMLxVwxUBE5YboKjPAcMJ+ZioEPSfTr68x6Ll4KYtG23/wJ+YAL447becC
+rv5ElnkUI1p+09UPAdwCq2CQPzDufetvY36O6b80kSd0xs622v0JbQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="88306e91-c665-4bc2-822d-3facd4a671cb"
+		isrooted="True"
+		name="QueryDiagram"
+		refpath="/form[@controlname='Query Diagram']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="a72a3f53-a305-4437-b1fd-85ec7dab6c52"
+			name="QueryDetailsClose"
+			refimgid="2ab1c426-5900-49e6-8bbe-8a0c45c1c0ad"
+			refpath="/form[@controlname='Query Diagram']/titlebar[@accessiblerole='TitleBar']/button[@accessiblename='Close']"
+			searchtimeout="30000ms">
+				/form[@controlname='Query Diagram']/?/?/button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@controlname='Query Diagram']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAANFJREFUOE+NUYENwyAM46RxU9Wnqt5ET9kJLHYSmkawLZElSGwToKzi
+fNUeYeXfAXLfyxJfzWaCDOTUZEbOKG8RH7p+mPwaG2gCZKyZ/D49EyKQMIk1TuGne2LE2pusJJzI
+2lOM/nadauBCbZw0YNNMSJ+IuYbBeJhjYxOPFff10j0A83q1sR9XaDuH1KJkGxPddQijmH1/RCeN
+BqRyMqZrh5rg9Mjh9dWhc4LY3ERMW9vnPjAM/BoZ+dsyKPZYmaxgsmf8a2L0dcyMUAOMYlHKB2f4
+38mYACnNAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="webdocument"
+		id="40c1e179-2e05-42e1-a0a0-9d9a2c15fce1"
+		isrooted="True"
+		name="Blank"
+		refpath="/dom[1]"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,canvastag"
+			capname="canvastag"
+			id="719898bc-f5aa-4734-a2a4-524baa3a8ac4"
+			name="LineCanvas"
+			refimgid="95103b22-e8df-4e8d-ab65-50e8290a23b5"
+			refpath="/dom[1]//canvas[#'lineCanvas']"
+			searchtimeout="30000ms">
+				/dom[1]//canvas[#'lineCanvas']
+			</item>
+			<basepath>
+				/dom[1]
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>

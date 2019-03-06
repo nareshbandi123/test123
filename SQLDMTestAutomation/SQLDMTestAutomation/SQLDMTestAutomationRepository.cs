@@ -29,6 +29,9 @@ namespace SQLDMTestAutomation
         static SQLDMTestAutomationRepository instance = new SQLDMTestAutomationRepository();
         SQLDMTestAutomationRepositoryFolders.SQLDMFolder _sqldm;
         SQLDMTestAutomationRepositoryFolders.SSMSFolder _ssms;
+        SQLDMTestAutomationRepositoryFolders.ExceptionMessageBoxFormAppFolder _exceptionmessageboxform;
+        SQLDMTestAutomationRepositoryFolders.QueryDiagramAppFolder _querydiagram;
+        SQLDMTestAutomationRepositoryFolders.BlankAppFolder _blank;
 
         /// <summary>
         /// Gets the singleton class instance representing the SQLDMTestAutomationRepository element repository.
@@ -47,6 +50,9 @@ namespace SQLDMTestAutomation
         {
             _sqldm = new SQLDMTestAutomationRepositoryFolders.SQLDMFolder(this);
             _ssms = new SQLDMTestAutomationRepositoryFolders.SSMSFolder(this);
+            _exceptionmessageboxform = new SQLDMTestAutomationRepositoryFolders.ExceptionMessageBoxFormAppFolder(this);
+            _querydiagram = new SQLDMTestAutomationRepositoryFolders.QueryDiagramAppFolder(this);
+            _blank = new SQLDMTestAutomationRepositoryFolders.BlankAppFolder(this);
         }
 
 #region Variables
@@ -93,6 +99,33 @@ namespace SQLDMTestAutomation
         public virtual SQLDMTestAutomationRepositoryFolders.SSMSFolder SSMS
         {
             get { return _ssms; }
+        }
+
+        /// <summary>
+        /// The ExceptionMessageBoxForm folder.
+        /// </summary>
+        [RepositoryFolder("64fd2311-82f1-462d-a152-310a5dcf70fe")]
+        public virtual SQLDMTestAutomationRepositoryFolders.ExceptionMessageBoxFormAppFolder ExceptionMessageBoxForm
+        {
+            get { return _exceptionmessageboxform; }
+        }
+
+        /// <summary>
+        /// The QueryDiagram folder.
+        /// </summary>
+        [RepositoryFolder("88306e91-c665-4bc2-822d-3facd4a671cb")]
+        public virtual SQLDMTestAutomationRepositoryFolders.QueryDiagramAppFolder QueryDiagram
+        {
+            get { return _querydiagram; }
+        }
+
+        /// <summary>
+        /// The Blank folder.
+        /// </summary>
+        [RepositoryFolder("40c1e179-2e05-42e1-a0a0-9d9a2c15fce1")]
+        public virtual SQLDMTestAutomationRepositoryFolders.BlankAppFolder Blank
+        {
+            get { return _blank; }
         }
     }
 
@@ -215,6 +248,42 @@ namespace SQLDMTestAutomation
             RepoItemInfo _userviewtreeviewInfo;
             RepoItemInfo _querywaitstabInfo;
             RepoItemInfo _configuretabInfo;
+            RepoItemInfo _server1Info;
+            RepoItemInfo _button1Info;
+            RepoItemInfo _server2005Info;
+            RepoItemInfo _server2008Info;
+            RepoItemInfo _server2016Info;
+            RepoItemInfo _dmserver2016Info;
+            RepoItemInfo _closemainwindowInfo;
+            RepoItemInfo _servercmwin2016Info;
+            RepoItemInfo _statementmodeInfo;
+            RepoItemInfo _showsqlstatementsInfo;
+            RepoItemInfo _showsqlbatchesInfo;
+            RepoItemInfo _showstoredprocedureInfo;
+            RepoItemInfo _excludecurrentlyrunningqueriesInfo;
+            RepoItemInfo _globalqueryiconInfo;
+            RepoItemInfo _server11Info;
+            RepoItemInfo _copy_of_server2016Info;
+            RepoItemInfo _server2Info;
+            RepoItemInfo _detailsInfo;
+            RepoItemInfo _server3Info;
+            RepoItemInfo _server12Info;
+            RepoItemInfo _server4Info;
+            RepoItemInfo _server13Info;
+            RepoItemInfo _server5Info;
+            RepoItemInfo _server14Info;
+            RepoItemInfo _server6Info;
+            RepoItemInfo _server15Info;
+            RepoItemInfo _server7Info;
+            RepoItemInfo _server16Info;
+            RepoItemInfo _server8Info;
+            RepoItemInfo _server17Info;
+            RepoItemInfo _server9Info;
+            RepoItemInfo _server18Info;
+            RepoItemInfo _server10Info;
+            RepoItemInfo _server19Info;
+            RepoItemInfo _server20Info;
+            RepoItemInfo _server110Info;
 
             /// <summary>
             /// Creates a new IderaSQLDiagnosticManagerSQLdmRepo  folder.
@@ -235,6 +304,42 @@ namespace SQLDMTestAutomation
                 _userviewtreeviewInfo = new RepoItemInfo(this, "UserViewTreeView", "?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']/?/?/container[@controlname='ultraExplorerBarContainerControl1']/?/?/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']", 30000, null, "36ded65f-a0b2-45e9-bde0-7bc3ae732691");
                 _querywaitstabInfo = new RepoItemInfo(this, "QueryWaitsTAB", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[4]", 30000, null, "12a9f12a-1a22-4a3a-b2e1-3f56feb5082e");
                 _configuretabInfo = new RepoItemInfo(this, "ConfigureTAB", ".//tabpage[@automationid='Queries']/toolbar[@automationid='actionsRibbonGroup']/button[2]", 30000, null, "0e44c7f3-5104-4bbb-9bd5-03a19da794bd");
+                _server1Info = new RepoItemInfo(this, "Server1", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "dcb2dcb4-7e4e-4b9d-a9a4-307f290777e4");
+                _button1Info = new RepoItemInfo(this, "Button1", "container[@controlname='pnlForm']/?/?/button[@controlname='button1']", 30000, null, "d7dec6c8-2af8-4d87-b009-f9d6f8294119");
+                _server2005Info = new RepoItemInfo(this, "Server2005", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='AUT-HOOVER\\SQL2005']", 30000, null, "2ffb9c88-54c4-4d51-ad09-3383ca2c839e");
+                _server2008Info = new RepoItemInfo(this, "Server2008", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='QA-HOOVER\\SQL2008']", 30000, null, "5fe92936-ad74-4eb2-a59a-1c1ecf55e99f");
+                _server2016Info = new RepoItemInfo(this, "Server2016", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='SSBUDDYDROPTEST\\SQL2016']", 30000, null, "b8e13f09-d4dc-4a58-b212-98dcc4607462");
+                _dmserver2016Info = new RepoItemInfo(this, "DMServer2016", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='DM-LICTEST16']", 30000, null, "97ee2f1b-7233-4116-b277-a4ec89fb477b");
+                _closemainwindowInfo = new RepoItemInfo(this, "CloseMainWindow", "?/?/button[@automationid='XamRibbonCaptionButton_Right']", 30000, null, "78bb39d7-f327-4b48-bec5-6a58f3c0ab63");
+                _servercmwin2016Info = new RepoItemInfo(this, "ServerCMWIN2016", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='CMWIN2016-S8']", 30000, null, "73a7f00c-8df8-4db3-a588-82cb4cce0eb1");
+                _statementmodeInfo = new RepoItemInfo(this, "StatementMode", ".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabViewsGroup']/container[@caption='']/radiobutton[2]/container[@automationid='textLarge']/text[@automationid='PART_Line1']", 30000, null, "080fe1f6-3c6c-497a-a6c2-8f9ce9252183");
+                _showsqlstatementsInfo = new RepoItemInfo(this, "ShowSqlStatements", "?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//checkbox[@controlname='includeSqlStatementsCheckBox']", 30000, null, "95a33e14-aa35-4546-8135-adc03edc4f50");
+                _showsqlbatchesInfo = new RepoItemInfo(this, "ShowSqlBatches", "?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//checkbox[@controlname='includeSqlBatchesCheckBox']", 30000, null, "c2aab8d1-3fc3-4322-81c4-0f29564d344f");
+                _showstoredprocedureInfo = new RepoItemInfo(this, "ShowStoredProcedure", "?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//checkbox[@controlname='includeStoredProcedureCheckBox']", 30000, null, "4ed89fc1-2165-4917-91d1-a36191782dd3");
+                _excludecurrentlyrunningqueriesInfo = new RepoItemInfo(this, "ExcludeCurrentlyRunningQueries", "?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//checkbox[@controlname='includeOnlyResourceRowsCheckBox']", 30000, null, "f023e6fe-7e30-4fd1-912f-82a1d359c4ee");
+                _globalqueryiconInfo = new RepoItemInfo(this, "GlobalQueryIcon", "?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename~'^There\\ are\\ no\\ items\\ to\\ sho']/row[1]/cell", 30000, null, "7c322676-9566-49e4-a04e-897612794157");
+                _server11Info = new RepoItemInfo(this, "Server11", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "20cb345a-d8d9-40c5-ba16-126f43bf70ba");
+                _copy_of_server2016Info = new RepoItemInfo(this, "Copy_of_Server2016", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='SSBUDDYDROPTEST\\SQL2016']", 30000, null, "f9a7978f-a089-4a34-b029-83f8fd31c849");
+                _server2Info = new RepoItemInfo(this, "Server2", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "a5ac85c7-f930-4031-ae17-4769ea2132dc");
+                _detailsInfo = new RepoItemInfo(this, "Details", "?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='QueryMonitorView']//table[@accessiblename='Loading...']/row[@accessiblename='row 1']/cell[@accessiblename='Details']", 30000, null, "b8dea0e2-1c8e-49b1-b555-f621fddcb9a2");
+                _server3Info = new RepoItemInfo(this, "Server3", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "23ff01bf-c520-4d5e-b13f-f7a08297cc3a");
+                _server12Info = new RepoItemInfo(this, "Server12", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "c1a886f4-8a15-40b2-9789-4c5c5769e971");
+                _server4Info = new RepoItemInfo(this, "Server4", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "aabddb9d-db55-4ccd-ab51-24fcf2892871");
+                _server13Info = new RepoItemInfo(this, "Server13", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "9a9eeb37-b0dd-48da-a070-2845fe09c800");
+                _server5Info = new RepoItemInfo(this, "Server5", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "b9825b27-391c-4dc0-b27d-60b617f48c9d");
+                _server14Info = new RepoItemInfo(this, "Server14", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "4c2c7300-6036-4070-a08f-aec6ff932e9a");
+                _server6Info = new RepoItemInfo(this, "Server6", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "d2abe7f3-7cf0-4ab2-8e37-f40230b5cab7");
+                _server15Info = new RepoItemInfo(this, "Server15", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "ede706bb-321f-4715-b7bb-26a38eff2fa0");
+                _server7Info = new RepoItemInfo(this, "Server7", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "a4199afc-d567-45ce-a137-c893c7773243");
+                _server16Info = new RepoItemInfo(this, "Server16", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "b7072446-2a63-4400-8c15-4dffd4ae50ac");
+                _server8Info = new RepoItemInfo(this, "Server8", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "a6f28f4c-6baa-420a-b414-51ab3a6095bf");
+                _server17Info = new RepoItemInfo(this, "Server17", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "93e532d2-9607-4d1d-bc0f-14e3b99d81b1");
+                _server9Info = new RepoItemInfo(this, "Server9", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "b7121313-aad7-426c-bf25-22740ef9d40c");
+                _server18Info = new RepoItemInfo(this, "Server18", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "994351d9-5771-4c93-8016-52e67371c80d");
+                _server10Info = new RepoItemInfo(this, "Server10", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "9cba274e-ed31-4ac6-bfed-500dd84966f8");
+                _server19Info = new RepoItemInfo(this, "Server19", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "54d68de1-9701-433d-beca-83a322e6c6b4");
+                _server20Info = new RepoItemInfo(this, "Server20", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename='JS-XW7S8\\SQL2008']", 30000, null, "cb8c362a-70b5-44b6-a658-56414ed10d2e");
+                _server110Info = new RepoItemInfo(this, "Server110", ".//container[@controlname='NavigationPaneControl']//container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']//treeitem[@accessiblename=$ServerName]", 30000, null, "9c3fcb0d-b667-45e4-ba83-512ca18b0262");
             }
 
             /// <summary>
@@ -572,6 +677,870 @@ namespace SQLDMTestAutomation
                     return _configuretabInfo;
                 }
             }
+
+            /// <summary>
+            /// The Server1 item.
+            /// </summary>
+            [RepositoryItem("dcb2dcb4-7e4e-4b9d-a9a4-307f290777e4")]
+            public virtual Ranorex.TreeItem Server1
+            {
+                get
+                {
+                    return _server1Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server1 item info.
+            /// </summary>
+            [RepositoryItemInfo("dcb2dcb4-7e4e-4b9d-a9a4-307f290777e4")]
+            public virtual RepoItemInfo Server1Info
+            {
+                get
+                {
+                    return _server1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Button1 item.
+            /// </summary>
+            [RepositoryItem("d7dec6c8-2af8-4d87-b009-f9d6f8294119")]
+            public virtual Ranorex.Button Button1
+            {
+                get
+                {
+                    return _button1Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button1 item info.
+            /// </summary>
+            [RepositoryItemInfo("d7dec6c8-2af8-4d87-b009-f9d6f8294119")]
+            public virtual RepoItemInfo Button1Info
+            {
+                get
+                {
+                    return _button1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server2005 item.
+            /// </summary>
+            [RepositoryItem("2ffb9c88-54c4-4d51-ad09-3383ca2c839e")]
+            public virtual Ranorex.TreeItem Server2005
+            {
+                get
+                {
+                    return _server2005Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server2005 item info.
+            /// </summary>
+            [RepositoryItemInfo("2ffb9c88-54c4-4d51-ad09-3383ca2c839e")]
+            public virtual RepoItemInfo Server2005Info
+            {
+                get
+                {
+                    return _server2005Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server2008 item.
+            /// </summary>
+            [RepositoryItem("5fe92936-ad74-4eb2-a59a-1c1ecf55e99f")]
+            public virtual Ranorex.TreeItem Server2008
+            {
+                get
+                {
+                    return _server2008Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server2008 item info.
+            /// </summary>
+            [RepositoryItemInfo("5fe92936-ad74-4eb2-a59a-1c1ecf55e99f")]
+            public virtual RepoItemInfo Server2008Info
+            {
+                get
+                {
+                    return _server2008Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server2016 item.
+            /// </summary>
+            [RepositoryItem("b8e13f09-d4dc-4a58-b212-98dcc4607462")]
+            public virtual Ranorex.TreeItem Server2016
+            {
+                get
+                {
+                    return _server2016Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server2016 item info.
+            /// </summary>
+            [RepositoryItemInfo("b8e13f09-d4dc-4a58-b212-98dcc4607462")]
+            public virtual RepoItemInfo Server2016Info
+            {
+                get
+                {
+                    return _server2016Info;
+                }
+            }
+
+            /// <summary>
+            /// The DMServer2016 item.
+            /// </summary>
+            [RepositoryItem("97ee2f1b-7233-4116-b277-a4ec89fb477b")]
+            public virtual Ranorex.TreeItem DMServer2016
+            {
+                get
+                {
+                    return _dmserver2016Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DMServer2016 item info.
+            /// </summary>
+            [RepositoryItemInfo("97ee2f1b-7233-4116-b277-a4ec89fb477b")]
+            public virtual RepoItemInfo DMServer2016Info
+            {
+                get
+                {
+                    return _dmserver2016Info;
+                }
+            }
+
+            /// <summary>
+            /// The CloseMainWindow item.
+            /// </summary>
+            [RepositoryItem("78bb39d7-f327-4b48-bec5-6a58f3c0ab63")]
+            public virtual Ranorex.Button CloseMainWindow
+            {
+                get
+                {
+                    return _closemainwindowInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CloseMainWindow item info.
+            /// </summary>
+            [RepositoryItemInfo("78bb39d7-f327-4b48-bec5-6a58f3c0ab63")]
+            public virtual RepoItemInfo CloseMainWindowInfo
+            {
+                get
+                {
+                    return _closemainwindowInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ServerCMWIN2016 item.
+            /// </summary>
+            [RepositoryItem("73a7f00c-8df8-4db3-a588-82cb4cce0eb1")]
+            public virtual Ranorex.TreeItem ServerCMWIN2016
+            {
+                get
+                {
+                    return _servercmwin2016Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ServerCMWIN2016 item info.
+            /// </summary>
+            [RepositoryItemInfo("73a7f00c-8df8-4db3-a588-82cb4cce0eb1")]
+            public virtual RepoItemInfo ServerCMWIN2016Info
+            {
+                get
+                {
+                    return _servercmwin2016Info;
+                }
+            }
+
+            /// <summary>
+            /// The StatementMode item.
+            /// </summary>
+            [RepositoryItem("080fe1f6-3c6c-497a-a6c2-8f9ce9252183")]
+            public virtual Ranorex.Text StatementMode
+            {
+                get
+                {
+                    return _statementmodeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The StatementMode item info.
+            /// </summary>
+            [RepositoryItemInfo("080fe1f6-3c6c-497a-a6c2-8f9ce9252183")]
+            public virtual RepoItemInfo StatementModeInfo
+            {
+                get
+                {
+                    return _statementmodeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ShowSqlStatements item.
+            /// </summary>
+            [RepositoryItem("95a33e14-aa35-4546-8135-adc03edc4f50")]
+            public virtual Ranorex.CheckBox ShowSqlStatements
+            {
+                get
+                {
+                    return _showsqlstatementsInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ShowSqlStatements item info.
+            /// </summary>
+            [RepositoryItemInfo("95a33e14-aa35-4546-8135-adc03edc4f50")]
+            public virtual RepoItemInfo ShowSqlStatementsInfo
+            {
+                get
+                {
+                    return _showsqlstatementsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ShowSqlBatches item.
+            /// </summary>
+            [RepositoryItem("c2aab8d1-3fc3-4322-81c4-0f29564d344f")]
+            public virtual Ranorex.CheckBox ShowSqlBatches
+            {
+                get
+                {
+                    return _showsqlbatchesInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ShowSqlBatches item info.
+            /// </summary>
+            [RepositoryItemInfo("c2aab8d1-3fc3-4322-81c4-0f29564d344f")]
+            public virtual RepoItemInfo ShowSqlBatchesInfo
+            {
+                get
+                {
+                    return _showsqlbatchesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ShowStoredProcedure item.
+            /// </summary>
+            [RepositoryItem("4ed89fc1-2165-4917-91d1-a36191782dd3")]
+            public virtual Ranorex.CheckBox ShowStoredProcedure
+            {
+                get
+                {
+                    return _showstoredprocedureInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ShowStoredProcedure item info.
+            /// </summary>
+            [RepositoryItemInfo("4ed89fc1-2165-4917-91d1-a36191782dd3")]
+            public virtual RepoItemInfo ShowStoredProcedureInfo
+            {
+                get
+                {
+                    return _showstoredprocedureInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ExcludeCurrentlyRunningQueries item.
+            /// </summary>
+            [RepositoryItem("f023e6fe-7e30-4fd1-912f-82a1d359c4ee")]
+            public virtual Ranorex.CheckBox ExcludeCurrentlyRunningQueries
+            {
+                get
+                {
+                    return _excludecurrentlyrunningqueriesInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExcludeCurrentlyRunningQueries item info.
+            /// </summary>
+            [RepositoryItemInfo("f023e6fe-7e30-4fd1-912f-82a1d359c4ee")]
+            public virtual RepoItemInfo ExcludeCurrentlyRunningQueriesInfo
+            {
+                get
+                {
+                    return _excludecurrentlyrunningqueriesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GlobalQueryIcon item.
+            /// </summary>
+            [RepositoryItem("7c322676-9566-49e4-a04e-897612794157")]
+            public virtual Ranorex.Cell GlobalQueryIcon
+            {
+                get
+                {
+                    return _globalqueryiconInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GlobalQueryIcon item info.
+            /// </summary>
+            [RepositoryItemInfo("7c322676-9566-49e4-a04e-897612794157")]
+            public virtual RepoItemInfo GlobalQueryIconInfo
+            {
+                get
+                {
+                    return _globalqueryiconInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Server11 item.
+            /// </summary>
+            [RepositoryItem("20cb345a-d8d9-40c5-ba16-126f43bf70ba")]
+            public virtual Ranorex.TreeItem Server11
+            {
+                get
+                {
+                    return _server11Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server11 item info.
+            /// </summary>
+            [RepositoryItemInfo("20cb345a-d8d9-40c5-ba16-126f43bf70ba")]
+            public virtual RepoItemInfo Server11Info
+            {
+                get
+                {
+                    return _server11Info;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_Server2016 item.
+            /// </summary>
+            [RepositoryItem("f9a7978f-a089-4a34-b029-83f8fd31c849")]
+            public virtual Ranorex.TreeItem Copy_of_Server2016
+            {
+                get
+                {
+                    return _copy_of_server2016Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_Server2016 item info.
+            /// </summary>
+            [RepositoryItemInfo("f9a7978f-a089-4a34-b029-83f8fd31c849")]
+            public virtual RepoItemInfo Copy_of_Server2016Info
+            {
+                get
+                {
+                    return _copy_of_server2016Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server2 item.
+            /// </summary>
+            [RepositoryItem("a5ac85c7-f930-4031-ae17-4769ea2132dc")]
+            public virtual Ranorex.TreeItem Server2
+            {
+                get
+                {
+                    return _server2Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server2 item info.
+            /// </summary>
+            [RepositoryItemInfo("a5ac85c7-f930-4031-ae17-4769ea2132dc")]
+            public virtual RepoItemInfo Server2Info
+            {
+                get
+                {
+                    return _server2Info;
+                }
+            }
+
+            /// <summary>
+            /// The Details item.
+            /// </summary>
+            [RepositoryItem("b8dea0e2-1c8e-49b1-b555-f621fddcb9a2")]
+            public virtual Ranorex.Cell Details
+            {
+                get
+                {
+                    return _detailsInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Details item info.
+            /// </summary>
+            [RepositoryItemInfo("b8dea0e2-1c8e-49b1-b555-f621fddcb9a2")]
+            public virtual RepoItemInfo DetailsInfo
+            {
+                get
+                {
+                    return _detailsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Server3 item.
+            /// </summary>
+            [RepositoryItem("23ff01bf-c520-4d5e-b13f-f7a08297cc3a")]
+            public virtual Ranorex.TreeItem Server3
+            {
+                get
+                {
+                    return _server3Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server3 item info.
+            /// </summary>
+            [RepositoryItemInfo("23ff01bf-c520-4d5e-b13f-f7a08297cc3a")]
+            public virtual RepoItemInfo Server3Info
+            {
+                get
+                {
+                    return _server3Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server12 item.
+            /// </summary>
+            [RepositoryItem("c1a886f4-8a15-40b2-9789-4c5c5769e971")]
+            public virtual Ranorex.TreeItem Server12
+            {
+                get
+                {
+                    return _server12Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server12 item info.
+            /// </summary>
+            [RepositoryItemInfo("c1a886f4-8a15-40b2-9789-4c5c5769e971")]
+            public virtual RepoItemInfo Server12Info
+            {
+                get
+                {
+                    return _server12Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server4 item.
+            /// </summary>
+            [RepositoryItem("aabddb9d-db55-4ccd-ab51-24fcf2892871")]
+            public virtual Ranorex.TreeItem Server4
+            {
+                get
+                {
+                    return _server4Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server4 item info.
+            /// </summary>
+            [RepositoryItemInfo("aabddb9d-db55-4ccd-ab51-24fcf2892871")]
+            public virtual RepoItemInfo Server4Info
+            {
+                get
+                {
+                    return _server4Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server13 item.
+            /// </summary>
+            [RepositoryItem("9a9eeb37-b0dd-48da-a070-2845fe09c800")]
+            public virtual Ranorex.TreeItem Server13
+            {
+                get
+                {
+                    return _server13Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server13 item info.
+            /// </summary>
+            [RepositoryItemInfo("9a9eeb37-b0dd-48da-a070-2845fe09c800")]
+            public virtual RepoItemInfo Server13Info
+            {
+                get
+                {
+                    return _server13Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server5 item.
+            /// </summary>
+            [RepositoryItem("b9825b27-391c-4dc0-b27d-60b617f48c9d")]
+            public virtual Ranorex.TreeItem Server5
+            {
+                get
+                {
+                    return _server5Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server5 item info.
+            /// </summary>
+            [RepositoryItemInfo("b9825b27-391c-4dc0-b27d-60b617f48c9d")]
+            public virtual RepoItemInfo Server5Info
+            {
+                get
+                {
+                    return _server5Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server14 item.
+            /// </summary>
+            [RepositoryItem("4c2c7300-6036-4070-a08f-aec6ff932e9a")]
+            public virtual Ranorex.TreeItem Server14
+            {
+                get
+                {
+                    return _server14Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server14 item info.
+            /// </summary>
+            [RepositoryItemInfo("4c2c7300-6036-4070-a08f-aec6ff932e9a")]
+            public virtual RepoItemInfo Server14Info
+            {
+                get
+                {
+                    return _server14Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server6 item.
+            /// </summary>
+            [RepositoryItem("d2abe7f3-7cf0-4ab2-8e37-f40230b5cab7")]
+            public virtual Ranorex.TreeItem Server6
+            {
+                get
+                {
+                    return _server6Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server6 item info.
+            /// </summary>
+            [RepositoryItemInfo("d2abe7f3-7cf0-4ab2-8e37-f40230b5cab7")]
+            public virtual RepoItemInfo Server6Info
+            {
+                get
+                {
+                    return _server6Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server15 item.
+            /// </summary>
+            [RepositoryItem("ede706bb-321f-4715-b7bb-26a38eff2fa0")]
+            public virtual Ranorex.TreeItem Server15
+            {
+                get
+                {
+                    return _server15Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server15 item info.
+            /// </summary>
+            [RepositoryItemInfo("ede706bb-321f-4715-b7bb-26a38eff2fa0")]
+            public virtual RepoItemInfo Server15Info
+            {
+                get
+                {
+                    return _server15Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server7 item.
+            /// </summary>
+            [RepositoryItem("a4199afc-d567-45ce-a137-c893c7773243")]
+            public virtual Ranorex.TreeItem Server7
+            {
+                get
+                {
+                    return _server7Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server7 item info.
+            /// </summary>
+            [RepositoryItemInfo("a4199afc-d567-45ce-a137-c893c7773243")]
+            public virtual RepoItemInfo Server7Info
+            {
+                get
+                {
+                    return _server7Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server16 item.
+            /// </summary>
+            [RepositoryItem("b7072446-2a63-4400-8c15-4dffd4ae50ac")]
+            public virtual Ranorex.TreeItem Server16
+            {
+                get
+                {
+                    return _server16Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server16 item info.
+            /// </summary>
+            [RepositoryItemInfo("b7072446-2a63-4400-8c15-4dffd4ae50ac")]
+            public virtual RepoItemInfo Server16Info
+            {
+                get
+                {
+                    return _server16Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server8 item.
+            /// </summary>
+            [RepositoryItem("a6f28f4c-6baa-420a-b414-51ab3a6095bf")]
+            public virtual Ranorex.TreeItem Server8
+            {
+                get
+                {
+                    return _server8Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server8 item info.
+            /// </summary>
+            [RepositoryItemInfo("a6f28f4c-6baa-420a-b414-51ab3a6095bf")]
+            public virtual RepoItemInfo Server8Info
+            {
+                get
+                {
+                    return _server8Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server17 item.
+            /// </summary>
+            [RepositoryItem("93e532d2-9607-4d1d-bc0f-14e3b99d81b1")]
+            public virtual Ranorex.TreeItem Server17
+            {
+                get
+                {
+                    return _server17Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server17 item info.
+            /// </summary>
+            [RepositoryItemInfo("93e532d2-9607-4d1d-bc0f-14e3b99d81b1")]
+            public virtual RepoItemInfo Server17Info
+            {
+                get
+                {
+                    return _server17Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server9 item.
+            /// </summary>
+            [RepositoryItem("b7121313-aad7-426c-bf25-22740ef9d40c")]
+            public virtual Ranorex.TreeItem Server9
+            {
+                get
+                {
+                    return _server9Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server9 item info.
+            /// </summary>
+            [RepositoryItemInfo("b7121313-aad7-426c-bf25-22740ef9d40c")]
+            public virtual RepoItemInfo Server9Info
+            {
+                get
+                {
+                    return _server9Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server18 item.
+            /// </summary>
+            [RepositoryItem("994351d9-5771-4c93-8016-52e67371c80d")]
+            public virtual Ranorex.TreeItem Server18
+            {
+                get
+                {
+                    return _server18Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server18 item info.
+            /// </summary>
+            [RepositoryItemInfo("994351d9-5771-4c93-8016-52e67371c80d")]
+            public virtual RepoItemInfo Server18Info
+            {
+                get
+                {
+                    return _server18Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server10 item.
+            /// </summary>
+            [RepositoryItem("9cba274e-ed31-4ac6-bfed-500dd84966f8")]
+            public virtual Ranorex.TreeItem Server10
+            {
+                get
+                {
+                    return _server10Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server10 item info.
+            /// </summary>
+            [RepositoryItemInfo("9cba274e-ed31-4ac6-bfed-500dd84966f8")]
+            public virtual RepoItemInfo Server10Info
+            {
+                get
+                {
+                    return _server10Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server19 item.
+            /// </summary>
+            [RepositoryItem("54d68de1-9701-433d-beca-83a322e6c6b4")]
+            public virtual Ranorex.TreeItem Server19
+            {
+                get
+                {
+                    return _server19Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server19 item info.
+            /// </summary>
+            [RepositoryItemInfo("54d68de1-9701-433d-beca-83a322e6c6b4")]
+            public virtual RepoItemInfo Server19Info
+            {
+                get
+                {
+                    return _server19Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server20 item.
+            /// </summary>
+            [RepositoryItem("cb8c362a-70b5-44b6-a658-56414ed10d2e")]
+            public virtual Ranorex.TreeItem Server20
+            {
+                get
+                {
+                    return _server20Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server20 item info.
+            /// </summary>
+            [RepositoryItemInfo("cb8c362a-70b5-44b6-a658-56414ed10d2e")]
+            public virtual RepoItemInfo Server20Info
+            {
+                get
+                {
+                    return _server20Info;
+                }
+            }
+
+            /// <summary>
+            /// The Server110 item.
+            /// </summary>
+            [RepositoryItem("9c3fcb0d-b667-45e4-ba83-512ca18b0262")]
+            public virtual Ranorex.TreeItem Server110
+            {
+                get
+                {
+                    return _server110Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Server110 item info.
+            /// </summary>
+            [RepositoryItemInfo("9c3fcb0d-b667-45e4-ba83-512ca18b0262")]
+            public virtual RepoItemInfo Server110Info
+            {
+                get
+                {
+                    return _server110Info;
+                }
+            }
         }
 
         /// <summary>
@@ -581,6 +1550,7 @@ namespace SQLDMTestAutomation
         public partial class MonitoredSqlServerInstancePropertiesDialAppFolder : RepoGenBaseFolder
         {
             SQLDMTestAutomationRepositoryFolders.TableLayoutPanel19Folder _tablelayoutpanel19;
+            SQLDMTestAutomationRepositoryFolders.PropertiesControlFolder _propertiescontrol;
             RepoItemInfo _enablequerymonitortracecheckboxInfo;
             RepoItemInfo _someindicatorInfo;
             RepoItemInfo _updowneditInfo;
@@ -588,6 +1558,13 @@ namespace SQLDMTestAutomation
             RepoItemInfo _okbuttonInfo;
             RepoItemInfo _listitemInfo;
             RepoItemInfo _closeInfo;
+            RepoItemInfo _selecttopInfo;
+            RepoItemInfo _cancleInfo;
+            RepoItemInfo _querymonitorInfo;
+            RepoItemInfo _waitmonitoringInfo;
+            RepoItemInfo _useextendedeventsInfo;
+            RepoItemInfo _usequerystoreInfo;
+            RepoItemInfo _cancelbuttonInfo;
 
             /// <summary>
             /// Creates a new MonitoredSqlServerInstancePropertiesDial  folder.
@@ -596,6 +1573,7 @@ namespace SQLDMTestAutomation
                     base("MonitoredSqlServerInstancePropertiesDial", "/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']", parentFolder, 30000, null, true, "ca2ce607-39c3-44b6-924e-0fef773d1433", "")
             {
                 _tablelayoutpanel19 = new SQLDMTestAutomationRepositoryFolders.TableLayoutPanel19Folder(this);
+                _propertiescontrol = new SQLDMTestAutomationRepositoryFolders.PropertiesControlFolder(this);
                 _enablequerymonitortracecheckboxInfo = new RepoItemInfo(this, "EnableQueryMonitorTraceCheckBox", "container[@controlname='propertiesControl']//container[@controlname='queryMonitorPropertyPage']//container[@controlname='tableLayoutPanel17']/checkbox[@controlname='enableQueryMonitorTraceCheckBox']", 30000, null, "c19e42bd-757e-41bc-9bda-4986a05f4d11");
                 _someindicatorInfo = new RepoItemInfo(this, "SomeIndicator", "container[@controlname='propertiesControl']/?/?/container[@controlname='panel2']/container[@controlname='queryMonitorPropertyPage']//indicator", 30000, null, "30680a87-cdd0-4419-9dac-7e6c4395c1ad");
                 _updowneditInfo = new RepoItemInfo(this, "UpDownEdit", "container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']", 30000, null, "270a3822-0209-436d-ae49-588334cdc551");
@@ -603,6 +1581,13 @@ namespace SQLDMTestAutomation
                 _okbuttonInfo = new RepoItemInfo(this, "OkButton", "button[@controlname='okButton']", 30000, null, "a9de51d9-a3bf-4e60-9edc-68fd0f899217");
                 _listitemInfo = new RepoItemInfo(this, "ListItem", "container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']//listitem[@index='2']", 30000, null, "b6de4d46-b632-483a-a92e-906aaba2138a");
                 _closeInfo = new RepoItemInfo(this, "Close", ".//button[@accessiblename='Close']", 30000, null, "5c72cc6d-67da-4d27-90cc-fd25a0c1765f");
+                _selecttopInfo = new RepoItemInfo(this, "SelectTop", "container[@controlname='propertiesControl']//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']//container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/text[@controlname='upDownEdit']", 30000, null, "74a77f89-4a57-4057-9405-30436930db47");
+                _cancleInfo = new RepoItemInfo(this, "Cancle", "button[@controlname='cancelButton']", 30000, null, "c470d435-ae78-4514-9202-ff51817c0704");
+                _querymonitorInfo = new RepoItemInfo(this, "QueryMonitor", "container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']//listitem[@index='2']", 30000, null, "3c5ee180-4733-4c77-9f5d-9fa78f92149f");
+                _waitmonitoringInfo = new RepoItemInfo(this, "WaitMonitoring", "container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']/?/?/listitem[@index='11']", 30000, null, "8e1364ad-72f6-4d26-9f53-94f169373247");
+                _useextendedeventsInfo = new RepoItemInfo(this, "UseExtendedEvents", "container[@controlname='propertiesControl']//container[@controlname='waitPropertyPage']/?/?/container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseXE']", 30000, null, "5848e5ba-995e-44bd-b289-6bc77be9f243");
+                _usequerystoreInfo = new RepoItemInfo(this, "UseQueryStore", "container[@controlname='propertiesControl']//container[@controlname='waitPropertyPage']/?/?/container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseQs']", 30000, null, "44ebfaaf-090a-49ba-af2a-ee0ad545328b");
+                _cancelbuttonInfo = new RepoItemInfo(this, "CancelButton", "button[@controlname='cancelButton']", 30000, null, "30826ffd-68a7-4d90-a55a-2cb382915168");
             }
 
             /// <summary>
@@ -798,12 +1783,189 @@ namespace SQLDMTestAutomation
             }
 
             /// <summary>
+            /// The SelectTop item.
+            /// </summary>
+            [RepositoryItem("74a77f89-4a57-4057-9405-30436930db47")]
+            public virtual Ranorex.Text SelectTop
+            {
+                get
+                {
+                    return _selecttopInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SelectTop item info.
+            /// </summary>
+            [RepositoryItemInfo("74a77f89-4a57-4057-9405-30436930db47")]
+            public virtual RepoItemInfo SelectTopInfo
+            {
+                get
+                {
+                    return _selecttopInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Cancle item.
+            /// </summary>
+            [RepositoryItem("c470d435-ae78-4514-9202-ff51817c0704")]
+            public virtual Ranorex.Button Cancle
+            {
+                get
+                {
+                    return _cancleInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cancle item info.
+            /// </summary>
+            [RepositoryItemInfo("c470d435-ae78-4514-9202-ff51817c0704")]
+            public virtual RepoItemInfo CancleInfo
+            {
+                get
+                {
+                    return _cancleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The QueryMonitor item.
+            /// </summary>
+            [RepositoryItem("3c5ee180-4733-4c77-9f5d-9fa78f92149f")]
+            public virtual Ranorex.ListItem QueryMonitor
+            {
+                get
+                {
+                    return _querymonitorInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The QueryMonitor item info.
+            /// </summary>
+            [RepositoryItemInfo("3c5ee180-4733-4c77-9f5d-9fa78f92149f")]
+            public virtual RepoItemInfo QueryMonitorInfo
+            {
+                get
+                {
+                    return _querymonitorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WaitMonitoring item.
+            /// </summary>
+            [RepositoryItem("8e1364ad-72f6-4d26-9f53-94f169373247")]
+            public virtual Ranorex.ListItem WaitMonitoring
+            {
+                get
+                {
+                    return _waitmonitoringInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WaitMonitoring item info.
+            /// </summary>
+            [RepositoryItemInfo("8e1364ad-72f6-4d26-9f53-94f169373247")]
+            public virtual RepoItemInfo WaitMonitoringInfo
+            {
+                get
+                {
+                    return _waitmonitoringInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UseExtendedEvents item.
+            /// </summary>
+            [RepositoryItem("5848e5ba-995e-44bd-b289-6bc77be9f243")]
+            public virtual Ranorex.CheckBox UseExtendedEvents
+            {
+                get
+                {
+                    return _useextendedeventsInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UseExtendedEvents item info.
+            /// </summary>
+            [RepositoryItemInfo("5848e5ba-995e-44bd-b289-6bc77be9f243")]
+            public virtual RepoItemInfo UseExtendedEventsInfo
+            {
+                get
+                {
+                    return _useextendedeventsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UseQueryStore item.
+            /// </summary>
+            [RepositoryItem("44ebfaaf-090a-49ba-af2a-ee0ad545328b")]
+            public virtual Ranorex.CheckBox UseQueryStore
+            {
+                get
+                {
+                    return _usequerystoreInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UseQueryStore item info.
+            /// </summary>
+            [RepositoryItemInfo("44ebfaaf-090a-49ba-af2a-ee0ad545328b")]
+            public virtual RepoItemInfo UseQueryStoreInfo
+            {
+                get
+                {
+                    return _usequerystoreInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CancelButton item.
+            /// </summary>
+            [RepositoryItem("30826ffd-68a7-4d90-a55a-2cb382915168")]
+            public virtual Ranorex.Button CancelButton
+            {
+                get
+                {
+                    return _cancelbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CancelButton item info.
+            /// </summary>
+            [RepositoryItemInfo("30826ffd-68a7-4d90-a55a-2cb382915168")]
+            public virtual RepoItemInfo CancelButtonInfo
+            {
+                get
+                {
+                    return _cancelbuttonInfo;
+                }
+            }
+
+            /// <summary>
             /// The TableLayoutPanel19 folder.
             /// </summary>
             [RepositoryFolder("579708fb-78d2-4af0-a9a6-29bb75132e22")]
             public virtual SQLDMTestAutomationRepositoryFolders.TableLayoutPanel19Folder TableLayoutPanel19
             {
                 get { return _tablelayoutpanel19; }
+            }
+
+            /// <summary>
+            /// The PropertiesControl folder.
+            /// </summary>
+            [RepositoryFolder("f59392ca-e780-4e79-b8c6-4682d765a6d1")]
+            public virtual SQLDMTestAutomationRepositoryFolders.PropertiesControlFolder PropertiesControl
+            {
+                get { return _propertiescontrol; }
             }
         }
 
@@ -816,6 +1978,14 @@ namespace SQLDMTestAutomation
             RepoItemInfo _chkcollectestimatedqueryplansInfo;
             RepoItemInfo _chkcollectqueryplansInfo;
             RepoItemInfo _rbuttonusetraceInfo;
+            RepoItemInfo _collectactualqueryplansInfo;
+            RepoItemInfo _collectquerydatausingsqltraceInfo;
+            RepoItemInfo _collectquerydatausingextendedeventsInfo;
+            RepoItemInfo _copy_of_collectactualqueryplansInfo;
+            RepoItemInfo _copy_of_collectquerydatausingsqltraceInfo;
+            RepoItemInfo _waitmonitoringInfo;
+            RepoItemInfo _useextendedeventsInfo;
+            RepoItemInfo _usequerystoreInfo;
 
             /// <summary>
             /// Creates a new TableLayoutPanel19  folder.
@@ -826,6 +1996,14 @@ namespace SQLDMTestAutomation
                 _chkcollectestimatedqueryplansInfo = new RepoItemInfo(this, "ChkCollectEstimatedQueryPlans", "checkbox[@controlname='chkCollectEstimatedQueryPlans']", 30000, null, "7c2076de-a198-46df-b1f7-46de12aef923");
                 _chkcollectqueryplansInfo = new RepoItemInfo(this, "ChkCollectQueryPlans", "checkbox[@controlname='chkCollectQueryPlans']", 30000, null, "a15cd278-674f-424e-889c-e49392021203");
                 _rbuttonusetraceInfo = new RepoItemInfo(this, "RButtonUseTrace", "radiobutton[@controlname='rButtonUseTrace']", 30000, null, "043f7ebd-efe5-49ac-a1da-41a31cc64ea8");
+                _collectactualqueryplansInfo = new RepoItemInfo(this, "CollectActualQueryPlans", "checkbox[@controlname='chkCollectQueryPlans']", 30000, null, "fa47c1af-016d-4f86-bfd1-63389c5ae160");
+                _collectquerydatausingsqltraceInfo = new RepoItemInfo(this, "CollectQueryDataUsingSQLTrace", "radiobutton[@controlname='rButtonUseTrace']", 30000, null, "79b90d43-3f5d-4fcc-a127-110ee3eee746");
+                _collectquerydatausingextendedeventsInfo = new RepoItemInfo(this, "CollectQueryDataUsingExtendedEvents", "radiobutton[@controlname='rButtonUseExtendedEvents']", 30000, null, "98fede11-de6d-46ea-89c1-a9767fb8dfd5");
+                _copy_of_collectactualqueryplansInfo = new RepoItemInfo(this, "Copy_of_CollectActualQueryPlans", "checkbox[@controlname='chkCollectQueryPlans']", 30000, null, "45fae6d9-4dec-401f-987a-718b7e3eb562");
+                _copy_of_collectquerydatausingsqltraceInfo = new RepoItemInfo(this, "Copy_of_CollectQueryDataUsingSQLTrace", "radiobutton[@controlname='rButtonUseTrace']", 30000, null, "49e0d07c-3593-4c79-adee-25cd6a59e41e");
+                _waitmonitoringInfo = new RepoItemInfo(this, "WaitMonitoring", "container[@controlname='propertiesControl']//list[@controlname='propertyPageListBox']/?/?/listitem[@index='11']", 30000, null, "8257caf7-1fdc-4704-99cd-981b72538e6d");
+                _useextendedeventsInfo = new RepoItemInfo(this, "UseExtendedEvents", "container[@controlname='propertiesControl']//container[@controlname='waitPropertyPage']/?/?/container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseXE']", 30000, null, "1b731c71-5699-49d0-8731-e05bd206e1fb");
+                _usequerystoreInfo = new RepoItemInfo(this, "UseQueryStore", "container[@controlname='propertiesControl']//container[@controlname='waitPropertyPage']/?/?/container[@controlname='collectStatisticsSecondaryContainer']/checkbox[@controlname='chkUseQs']", 30000, null, "0745ecaf-011d-46cd-a4ba-601877ea01ff");
             }
 
             /// <summary>
@@ -921,6 +2099,368 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _rbuttonusetraceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CollectActualQueryPlans item.
+            /// </summary>
+            [RepositoryItem("fa47c1af-016d-4f86-bfd1-63389c5ae160")]
+            public virtual Ranorex.CheckBox CollectActualQueryPlans
+            {
+                get
+                {
+                    return _collectactualqueryplansInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CollectActualQueryPlans item info.
+            /// </summary>
+            [RepositoryItemInfo("fa47c1af-016d-4f86-bfd1-63389c5ae160")]
+            public virtual RepoItemInfo CollectActualQueryPlansInfo
+            {
+                get
+                {
+                    return _collectactualqueryplansInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CollectQueryDataUsingSQLTrace item.
+            /// </summary>
+            [RepositoryItem("79b90d43-3f5d-4fcc-a127-110ee3eee746")]
+            public virtual Ranorex.RadioButton CollectQueryDataUsingSQLTrace
+            {
+                get
+                {
+                    return _collectquerydatausingsqltraceInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CollectQueryDataUsingSQLTrace item info.
+            /// </summary>
+            [RepositoryItemInfo("79b90d43-3f5d-4fcc-a127-110ee3eee746")]
+            public virtual RepoItemInfo CollectQueryDataUsingSQLTraceInfo
+            {
+                get
+                {
+                    return _collectquerydatausingsqltraceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CollectQueryDataUsingExtendedEvents item.
+            /// </summary>
+            [RepositoryItem("98fede11-de6d-46ea-89c1-a9767fb8dfd5")]
+            public virtual Ranorex.RadioButton CollectQueryDataUsingExtendedEvents
+            {
+                get
+                {
+                    return _collectquerydatausingextendedeventsInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CollectQueryDataUsingExtendedEvents item info.
+            /// </summary>
+            [RepositoryItemInfo("98fede11-de6d-46ea-89c1-a9767fb8dfd5")]
+            public virtual RepoItemInfo CollectQueryDataUsingExtendedEventsInfo
+            {
+                get
+                {
+                    return _collectquerydatausingextendedeventsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_CollectActualQueryPlans item.
+            /// </summary>
+            [RepositoryItem("45fae6d9-4dec-401f-987a-718b7e3eb562")]
+            public virtual Ranorex.CheckBox Copy_of_CollectActualQueryPlans
+            {
+                get
+                {
+                    return _copy_of_collectactualqueryplansInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_CollectActualQueryPlans item info.
+            /// </summary>
+            [RepositoryItemInfo("45fae6d9-4dec-401f-987a-718b7e3eb562")]
+            public virtual RepoItemInfo Copy_of_CollectActualQueryPlansInfo
+            {
+                get
+                {
+                    return _copy_of_collectactualqueryplansInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_CollectQueryDataUsingSQLTrace item.
+            /// </summary>
+            [RepositoryItem("49e0d07c-3593-4c79-adee-25cd6a59e41e")]
+            public virtual Ranorex.RadioButton Copy_of_CollectQueryDataUsingSQLTrace
+            {
+                get
+                {
+                    return _copy_of_collectquerydatausingsqltraceInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_CollectQueryDataUsingSQLTrace item info.
+            /// </summary>
+            [RepositoryItemInfo("49e0d07c-3593-4c79-adee-25cd6a59e41e")]
+            public virtual RepoItemInfo Copy_of_CollectQueryDataUsingSQLTraceInfo
+            {
+                get
+                {
+                    return _copy_of_collectquerydatausingsqltraceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The WaitMonitoring item.
+            /// </summary>
+            [RepositoryItem("8257caf7-1fdc-4704-99cd-981b72538e6d")]
+            public virtual Ranorex.ListItem WaitMonitoring
+            {
+                get
+                {
+                    return _waitmonitoringInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The WaitMonitoring item info.
+            /// </summary>
+            [RepositoryItemInfo("8257caf7-1fdc-4704-99cd-981b72538e6d")]
+            public virtual RepoItemInfo WaitMonitoringInfo
+            {
+                get
+                {
+                    return _waitmonitoringInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UseExtendedEvents item.
+            /// </summary>
+            [RepositoryItem("1b731c71-5699-49d0-8731-e05bd206e1fb")]
+            public virtual Ranorex.CheckBox UseExtendedEvents
+            {
+                get
+                {
+                    return _useextendedeventsInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UseExtendedEvents item info.
+            /// </summary>
+            [RepositoryItemInfo("1b731c71-5699-49d0-8731-e05bd206e1fb")]
+            public virtual RepoItemInfo UseExtendedEventsInfo
+            {
+                get
+                {
+                    return _useextendedeventsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UseQueryStore item.
+            /// </summary>
+            [RepositoryItem("0745ecaf-011d-46cd-a4ba-601877ea01ff")]
+            public virtual Ranorex.CheckBox UseQueryStore
+            {
+                get
+                {
+                    return _usequerystoreInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UseQueryStore item info.
+            /// </summary>
+            [RepositoryItemInfo("0745ecaf-011d-46cd-a4ba-601877ea01ff")]
+            public virtual RepoItemInfo UseQueryStoreInfo
+            {
+                get
+                {
+                    return _usequerystoreInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The PropertiesControlFolder folder.
+        /// </summary>
+        [RepositoryFolder("f59392ca-e780-4e79-b8c6-4682d765a6d1")]
+        public partial class PropertiesControlFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _durationthresholdspinnerInfo;
+            RepoItemInfo _durationInfo;
+            RepoItemInfo _topplanspinnerInfo;
+            RepoItemInfo _selecttopInfo;
+            RepoItemInfo _tracethresholdstablelayoutpanelInfo;
+
+            /// <summary>
+            /// Creates a new PropertiesControl  folder.
+            /// </summary>
+            public PropertiesControlFolder(RepoGenBaseFolder parentFolder) :
+                    base("PropertiesControl", "container[@controlname='propertiesControl']", parentFolder, 30000, null, false, "f59392ca-e780-4e79-b8c6-4682d765a6d1", "")
+            {
+                _durationthresholdspinnerInfo = new RepoItemInfo(this, "DurationThresholdSpinner", ".//container[@controlname='queryMonitorPropertyPage']/?/?/container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='durationThresholdSpinner']", 30000, null, "c0aa1e23-d6bf-4eac-bdb3-2f9dacb1dc2f");
+                _durationInfo = new RepoItemInfo(this, "Duration", ".//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='durationThresholdSpinner']/text[@controlname='upDownEdit']", 30000, null, "287a998b-cfba-4d47-856b-bb7f4cf248d8");
+                _topplanspinnerInfo = new RepoItemInfo(this, "TopPlanSpinner", ".//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']", 30000, null, "22483f7d-7a14-4fc0-8073-77051f383236");
+                _selecttopInfo = new RepoItemInfo(this, "SelectTop", ".//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/?/?/container[@controlname='topPlanTableLayoutPanel']/container[@controlname='topPlanSpinner']/combobox[@accessiblename='Select Top ']", 30000, null, "f5164fc7-ce9c-4284-add6-e335818cbeb9");
+                _tracethresholdstablelayoutpanelInfo = new RepoItemInfo(this, "TraceThresholdsTableLayoutPanel", ".//container[@controlname='tableLayoutPanel16']/container[@controlname='fmePoorlyPerformingThresholds']/container[@controlname='traceThresholdsTableLayoutPanel']", 30000, null, "3374fafa-5e46-49d7-9ac8-2a8e7eb58413");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f59392ca-e780-4e79-b8c6-4682d765a6d1")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f59392ca-e780-4e79-b8c6-4682d765a6d1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DurationThresholdSpinner item.
+            /// </summary>
+            [RepositoryItem("c0aa1e23-d6bf-4eac-bdb3-2f9dacb1dc2f")]
+            public virtual Ranorex.Container DurationThresholdSpinner
+            {
+                get
+                {
+                    return _durationthresholdspinnerInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DurationThresholdSpinner item info.
+            /// </summary>
+            [RepositoryItemInfo("c0aa1e23-d6bf-4eac-bdb3-2f9dacb1dc2f")]
+            public virtual RepoItemInfo DurationThresholdSpinnerInfo
+            {
+                get
+                {
+                    return _durationthresholdspinnerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Duration item.
+            /// </summary>
+            [RepositoryItem("287a998b-cfba-4d47-856b-bb7f4cf248d8")]
+            public virtual Ranorex.Text Duration
+            {
+                get
+                {
+                    return _durationInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Duration item info.
+            /// </summary>
+            [RepositoryItemInfo("287a998b-cfba-4d47-856b-bb7f4cf248d8")]
+            public virtual RepoItemInfo DurationInfo
+            {
+                get
+                {
+                    return _durationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TopPlanSpinner item.
+            /// </summary>
+            [RepositoryItem("22483f7d-7a14-4fc0-8073-77051f383236")]
+            public virtual Ranorex.Container TopPlanSpinner
+            {
+                get
+                {
+                    return _topplanspinnerInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TopPlanSpinner item info.
+            /// </summary>
+            [RepositoryItemInfo("22483f7d-7a14-4fc0-8073-77051f383236")]
+            public virtual RepoItemInfo TopPlanSpinnerInfo
+            {
+                get
+                {
+                    return _topplanspinnerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SelectTop item.
+            /// </summary>
+            [RepositoryItem("f5164fc7-ce9c-4284-add6-e335818cbeb9")]
+            public virtual Ranorex.ComboBox SelectTop
+            {
+                get
+                {
+                    return _selecttopInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SelectTop item info.
+            /// </summary>
+            [RepositoryItemInfo("f5164fc7-ce9c-4284-add6-e335818cbeb9")]
+            public virtual RepoItemInfo SelectTopInfo
+            {
+                get
+                {
+                    return _selecttopInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TraceThresholdsTableLayoutPanel item.
+            /// </summary>
+            [RepositoryItem("3374fafa-5e46-49d7-9ac8-2a8e7eb58413")]
+            public virtual Ranorex.Container TraceThresholdsTableLayoutPanel
+            {
+                get
+                {
+                    return _tracethresholdstablelayoutpanelInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TraceThresholdsTableLayoutPanel item info.
+            /// </summary>
+            [RepositoryItemInfo("3374fafa-5e46-49d7-9ac8-2a8e7eb58413")]
+            public virtual RepoItemInfo TraceThresholdsTableLayoutPanelInfo
+            {
+                get
+                {
+                    return _tracethresholdstablelayoutpanelInfo;
                 }
             }
         }
@@ -1963,6 +3503,204 @@ namespace SQLDMTestAutomation
                 get
                 {
                     return _openInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ExceptionMessageBoxFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("64fd2311-82f1-462d-a152-310a5dcf70fe")]
+        public partial class ExceptionMessageBoxFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _yesInfo;
+
+            /// <summary>
+            /// Creates a new ExceptionMessageBoxForm  folder.
+            /// </summary>
+            public ExceptionMessageBoxFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ExceptionMessageBoxForm", "/form[@controlname='ExceptionMessageBoxForm']", parentFolder, 30000, null, true, "64fd2311-82f1-462d-a152-310a5dcf70fe", "")
+            {
+                _yesInfo = new RepoItemInfo(this, "Yes", "?/?/container[@controlname='pnlButtons']/button[@controlname='button1']", 30000, null, "aa11a30f-ebc7-483e-b3e5-61c68292826b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("64fd2311-82f1-462d-a152-310a5dcf70fe")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("64fd2311-82f1-462d-a152-310a5dcf70fe")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Yes item.
+            /// </summary>
+            [RepositoryItem("aa11a30f-ebc7-483e-b3e5-61c68292826b")]
+            public virtual Ranorex.Button Yes
+            {
+                get
+                {
+                    return _yesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Yes item info.
+            /// </summary>
+            [RepositoryItemInfo("aa11a30f-ebc7-483e-b3e5-61c68292826b")]
+            public virtual RepoItemInfo YesInfo
+            {
+                get
+                {
+                    return _yesInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The QueryDiagramAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("88306e91-c665-4bc2-822d-3facd4a671cb")]
+        public partial class QueryDiagramAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _querydetailscloseInfo;
+
+            /// <summary>
+            /// Creates a new QueryDiagram  folder.
+            /// </summary>
+            public QueryDiagramAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("QueryDiagram", "/form[@controlname='Query Diagram']", parentFolder, 30000, null, true, "88306e91-c665-4bc2-822d-3facd4a671cb", "")
+            {
+                _querydetailscloseInfo = new RepoItemInfo(this, "QueryDetailsClose", "?/?/button[@accessiblename='Close']", 30000, null, "a72a3f53-a305-4437-b1fd-85ec7dab6c52");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("88306e91-c665-4bc2-822d-3facd4a671cb")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("88306e91-c665-4bc2-822d-3facd4a671cb")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The QueryDetailsClose item.
+            /// </summary>
+            [RepositoryItem("a72a3f53-a305-4437-b1fd-85ec7dab6c52")]
+            public virtual Ranorex.Button QueryDetailsClose
+            {
+                get
+                {
+                    return _querydetailscloseInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The QueryDetailsClose item info.
+            /// </summary>
+            [RepositoryItemInfo("a72a3f53-a305-4437-b1fd-85ec7dab6c52")]
+            public virtual RepoItemInfo QueryDetailsCloseInfo
+            {
+                get
+                {
+                    return _querydetailscloseInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The BlankAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("40c1e179-2e05-42e1-a0a0-9d9a2c15fce1")]
+        public partial class BlankAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _linecanvasInfo;
+
+            /// <summary>
+            /// Creates a new Blank  folder.
+            /// </summary>
+            public BlankAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Blank", "/dom[1]", parentFolder, 30000, null, false, "40c1e179-2e05-42e1-a0a0-9d9a2c15fce1", "")
+            {
+                _linecanvasInfo = new RepoItemInfo(this, "LineCanvas", ".//canvas[#'lineCanvas']", 30000, null, "719898bc-f5aa-4734-a2a4-524baa3a8ac4");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("40c1e179-2e05-42e1-a0a0-9d9a2c15fce1")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("40c1e179-2e05-42e1-a0a0-9d9a2c15fce1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LineCanvas item.
+            /// </summary>
+            [RepositoryItem("719898bc-f5aa-4734-a2a4-524baa3a8ac4")]
+            public virtual Ranorex.CanvasTag LineCanvas
+            {
+                get
+                {
+                    return _linecanvasInfo.CreateAdapter<Ranorex.CanvasTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LineCanvas item info.
+            /// </summary>
+            [RepositoryItemInfo("719898bc-f5aa-4734-a2a4-524baa3a8ac4")]
+            public virtual RepoItemInfo LineCanvasInfo
+            {
+                get
+                {
+                    return _linecanvasInfo;
                 }
             }
         }
