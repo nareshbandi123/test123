@@ -1,3 +1,0 @@
-INSERT INTO ads_table (url, name)
-VALUES
- ('http://www.facebook.com','Facebook')

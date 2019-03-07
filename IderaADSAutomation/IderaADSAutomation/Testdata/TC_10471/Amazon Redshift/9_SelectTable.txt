@@ -1,1 +1,0 @@
-select * from ads_table1

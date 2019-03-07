@@ -1,1 +1,0 @@
-CREATE TABLE empdetails ( id UUID PRIMARY KEY, lastname text,firstname text)

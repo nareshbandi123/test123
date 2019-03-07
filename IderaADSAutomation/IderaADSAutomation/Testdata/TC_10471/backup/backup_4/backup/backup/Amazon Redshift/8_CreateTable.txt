@@ -1,1 +1,0 @@
-create table IF NOT EXISTS ads_table1 (id int, name varchar, project varchar);

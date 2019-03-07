@@ -1,1 +1,0 @@
-CREATE TABLE ads_table (i integer, s varchar(10) )
