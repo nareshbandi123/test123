@@ -192,6 +192,18 @@
       <id>6061a156-42c1-4d92-a48a-81d01ae8eb2a</id>
       <BoundTo>f97c3d41-8f4a-4c58-ab83-49793dc8db38</BoundTo>
     </Compile>
+    <Compile Include="SQLDMRecordings\GlobalIconQuery.cs">
+      <DependentUpon>GlobalIconQuery.rxrec</DependentUpon>
+      <id>235a06db-dddd-41c6-8c89-03062790cbd7</id>
+      <BoundTo>20153d66-08b4-4faf-a55d-ae42d5fb5494</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\GlobalIconQuery.UserCode.cs">
+      <DependentUpon>GlobalIconQuery.rxrec</DependentUpon>
+      <id>affa10ec-1390-4ef8-91c7-1a84b8b4df63</id>
+      <BoundTo>20153d66-08b4-4faf-a55d-ae42d5fb5494</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
     <Compile Include="SQLDMRecordings\LaunchApplication.cs">
       <DependentUpon>LaunchApplication.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -216,6 +228,30 @@
       <id>a2b3d84a-9684-4d2b-8afa-627e9a763db6</id>
       <BoundTo>f454fd29-d88a-4255-9095-4b7de90cae0b</BoundTo>
     </Compile>
+    <Compile Include="SQLDMRecordings\ODEQPNDSQLSTMT.cs">
+      <DependentUpon>ODEQPNDSQLSTMT.rxrec</DependentUpon>
+      <id>594b77d8-de77-4f45-ac15-0d6fdbdb326c</id>
+      <BoundTo>97a2d157-7954-4532-859f-01e3aa13ff23</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\ODEQPNDSQLSTMT.UserCode.cs">
+      <DependentUpon>ODEQPNDSQLSTMT.rxrec</DependentUpon>
+      <id>c5a24c97-87fd-4d4f-9710-e7271ee8529b</id>
+      <BoundTo>97a2d157-7954-4532-859f-01e3aa13ff23</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\ODEQPWithNoData.cs">
+      <DependentUpon>ODEQPWithNoData.rxrec</DependentUpon>
+      <id>0a9b4222-cc39-4951-bd0e-d2ed8596163a</id>
+      <BoundTo>b15eafea-6cd1-4f08-83c2-f6d4aa7ae504</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\ODEQPWithNoData.UserCode.cs">
+      <DependentUpon>ODEQPWithNoData.rxrec</DependentUpon>
+      <id>277719d0-9ce0-4169-a4af-e52bc695ba54</id>
+      <BoundTo>b15eafea-6cd1-4f08-83c2-f6d4aa7ae504</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
     <Compile Include="SQLDMRecordings\OpenConfigureQueryMonitor.cs">
       <DependentUpon>OpenConfigureQueryMonitor.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -228,6 +264,18 @@
       <id>99d07303-38d7-46af-932d-eedd702c77a9</id>
       <BoundTo>06083215-b9f8-4bed-b549-71458738aea7</BoundTo>
     </Compile>
+    <Compile Include="SQLDMRecordings\PerformQueryOperations.cs">
+      <DependentUpon>PerformQueryOperations.rxrec</DependentUpon>
+      <id>b4980c01-f359-47e9-8e8f-a7407b18e213</id>
+      <BoundTo>e8b3b1d3-6eef-4e93-ab81-0e7ae96b0e76</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\PerformQueryOperations.UserCode.cs">
+      <DependentUpon>PerformQueryOperations.rxrec</DependentUpon>
+      <id>a5989bec-2e3f-4c92-a0ba-654aa67ca3e6</id>
+      <BoundTo>e8b3b1d3-6eef-4e93-ab81-0e7ae96b0e76</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
     <Compile Include="SQLDMRecordings\PreconditionQueryMonitor.cs">
       <BoundTo>274815f3-d28b-40ae-b040-313da54ec82e</BoundTo>
       <DependentUpon>PreconditionQueryMonitor.rxrec</DependentUpon>
@@ -239,6 +287,18 @@
       <DependentUpon>PreconditionQueryMonitor.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>9dc54cc1-b0ba-4064-be21-8cb5e1d69c7e</id>
+    </Compile>
+    <Compile Include="SQLDMRecordings\PreOnDemandEstimatedPlan.cs">
+      <DependentUpon>PreOnDemandEstimatedPlan.rxrec</DependentUpon>
+      <id>b3935a91-243a-4d34-aeb3-a0e3ccc98d81</id>
+      <BoundTo>e27d38f1-4404-4310-ad4a-eb6eee1cb140</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\PreOnDemandEstimatedPlan.UserCode.cs">
+      <DependentUpon>PreOnDemandEstimatedPlan.rxrec</DependentUpon>
+      <id>8e8eb6f2-3a9f-42b6-aded-4c6868a23cf5</id>
+      <BoundTo>e27d38f1-4404-4310-ad4a-eb6eee1cb140</BoundTo>
+      <UserCode>true</UserCode>
     </Compile>
     <Compile Include="SQLDMRecordings\QueriesTAB\ClickQueriesTab.cs">
       <BoundTo>b180049f-b0bc-4405-90ca-da663a8b79aa</BoundTo>
@@ -300,6 +360,30 @@
       <id>ef522ab6-cd88-4269-9b00-1db860f0b090</id>
       <BoundTo>f7c74583-fbe2-475c-8200-5a3d52c51bb5</BoundTo>
     </Compile>
+    <Compile Include="SQLDMRecordings\RunQueryForSQLStatement.cs">
+      <DependentUpon>RunQueryForSQLStatement.rxrec</DependentUpon>
+      <id>603c183a-8b04-4534-8f91-c4989d0e6e14</id>
+      <BoundTo>63ca19bb-1ac1-49b8-9503-bd1120fd953d</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\RunQueryForSQLStatement.UserCode.cs">
+      <DependentUpon>RunQueryForSQLStatement.rxrec</DependentUpon>
+      <id>5eae445a-6967-43e3-a7e0-d0b917092c16</id>
+      <BoundTo>63ca19bb-1ac1-49b8-9503-bd1120fd953d</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\RunQueryForStoredProcedure.cs">
+      <DependentUpon>RunQueryForStoredProcedure.rxrec</DependentUpon>
+      <id>1bb443c8-cca4-4e4e-ab21-863933471a7e</id>
+      <BoundTo>e1e87028-260c-4eba-89f3-827d8862dc79</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\RunQueryForStoredProcedure.UserCode.cs">
+      <DependentUpon>RunQueryForStoredProcedure.rxrec</DependentUpon>
+      <id>237ebff4-06f2-4908-b81b-426efbfcda81</id>
+      <BoundTo>e1e87028-260c-4eba-89f3-827d8862dc79</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
     <Compile Include="SQLDMRecordings\SelectQueryMonitorTab.cs">
       <DependentUpon>SelectQueryMonitorTab.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -336,6 +420,42 @@
       <id>bd95d3c4-6e9c-49d2-a51a-a9d134b25bca</id>
       <BoundTo>89fdfa42-3254-4ac1-bf7f-5de7aeb29bab</BoundTo>
     </Compile>
+    <Compile Include="SQLDMRecordings\SQLBatches.cs">
+      <DependentUpon>SQLBatches.rxrec</DependentUpon>
+      <id>26599f13-3bf9-4955-8bf2-602095eac67f</id>
+      <BoundTo>de11fec9-4eda-467f-a66c-8f3d9d38f2f3</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\SQLBatches.UserCode.cs">
+      <DependentUpon>SQLBatches.rxrec</DependentUpon>
+      <id>d3bb626b-dddf-4722-bfde-b324edd94b2b</id>
+      <BoundTo>de11fec9-4eda-467f-a66c-8f3d9d38f2f3</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\SQLStatement.cs">
+      <DependentUpon>SQLStatement.rxrec</DependentUpon>
+      <id>43a85dd6-1f26-47fe-a0e2-2b0348068d29</id>
+      <BoundTo>e64fae87-dd60-42e6-95fe-4ac7c1d13625</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\SQLStatement.UserCode.cs">
+      <DependentUpon>SQLStatement.rxrec</DependentUpon>
+      <id>cb164e34-fbb9-4d1f-a564-91545c8717f5</id>
+      <BoundTo>e64fae87-dd60-42e6-95fe-4ac7c1d13625</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\StoredProcedures.cs">
+      <DependentUpon>StoredProcedures.rxrec</DependentUpon>
+      <id>c7b9a73e-2074-4b35-a26d-b10c0577c2a4</id>
+      <BoundTo>cfda9153-bbd7-49bf-8d7b-95c426215c06</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\StoredProcedures.UserCode.cs">
+      <DependentUpon>StoredProcedures.rxrec</DependentUpon>
+      <id>1795b0d7-babd-4153-a0d8-4b6ff2cc2696</id>
+      <BoundTo>cfda9153-bbd7-49bf-8d7b-95c426215c06</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
     <Compile Include="SQLDMRecordings\VerifyCollectQueryPlansToBeDisabled.cs">
       <DependentUpon>VerifyCollectQueryPlansToBeDisabled.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -347,6 +467,30 @@
       <UserCode>true</UserCode>
       <id>631ab16a-058c-4470-baf2-8fae8b4d3a80</id>
       <BoundTo>b10fcf68-3e6e-429f-b105-1bf8ada48c26</BoundTo>
+    </Compile>
+    <Compile Include="SQLDMRecordings\Verifyquerydatadefaultcollectionoption.cs">
+      <DependentUpon>Verifyquerydatadefaultcollectionoption.rxrec</DependentUpon>
+      <id>ad87e229-99f6-4f68-b059-af78270af2d3</id>
+      <BoundTo>116cb98b-7e85-452e-ad44-4747fad0a6d4</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\Verifyquerydatadefaultcollectionoption.UserCode.cs">
+      <DependentUpon>Verifyquerydatadefaultcollectionoption.rxrec</DependentUpon>
+      <id>c9f7a1ae-7829-4b02-9426-dcfea5131ff7</id>
+      <BoundTo>116cb98b-7e85-452e-ad44-4747fad0a6d4</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\VerifyQueryStoreOption.cs">
+      <DependentUpon>VerifyQueryStoreOption.rxrec</DependentUpon>
+      <id>c899800b-d558-4525-bf1d-a9940f8fdce8</id>
+      <BoundTo>b9df3e03-5188-4625-9323-099f58f8d231</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="SQLDMRecordings\VerifyQueryStoreOption.UserCode.cs">
+      <DependentUpon>VerifyQueryStoreOption.rxrec</DependentUpon>
+      <id>968b5a22-442c-4100-ab5d-3af902da88e3</id>
+      <BoundTo>b9df3e03-5188-4625-9323-099f58f8d231</BoundTo>
+      <UserCode>true</UserCode>
     </Compile>
     <Compile Include="SQLDMRecordings\VerifySelectByAndPlansBy.cs">
       <DependentUpon>VerifySelectByAndPlansBy.rxrec</DependentUpon>
@@ -562,6 +706,11 @@
       <id>f97c3d41-8f4a-4c58-ab83-49793dc8db38</id>
       <recordtableid>e47225b1-940d-4538-842a-92bdbab6c105</recordtableid>
     </None>
+    <None Include="SQLDMRecordings\GlobalIconQuery.rxrec">
+      <id>20153d66-08b4-4faf-a55d-ae42d5fb5494</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>cb150a51-6b7f-4fb8-bf18-e38f18a438b4</recordtableid>
+    </None>
     <None Include="SQLDMRecordings\LaunchApplication.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>48d2f75e-153f-47c6-ad5f-19d9774f4d12</id>
@@ -572,15 +721,35 @@
       <id>f454fd29-d88a-4255-9095-4b7de90cae0b</id>
       <recordtableid>cd7340b8-4836-440c-9e77-d6f24d4e7b66</recordtableid>
     </None>
+    <None Include="SQLDMRecordings\ODEQPNDSQLSTMT.rxrec">
+      <id>97a2d157-7954-4532-859f-01e3aa13ff23</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>cd69b04e-3d7e-4707-bca5-f80010d72027</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\ODEQPWithNoData.rxrec">
+      <id>b15eafea-6cd1-4f08-83c2-f6d4aa7ae504</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>bf3c9cd0-c0cf-42d0-add7-7214d9a7e38a</recordtableid>
+    </None>
     <None Include="SQLDMRecordings\OpenConfigureQueryMonitor.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>06083215-b9f8-4bed-b549-71458738aea7</id>
       <recordtableid>a3e16002-ad31-41c7-be31-fdb013b90bf3</recordtableid>
     </None>
+    <None Include="SQLDMRecordings\PerformQueryOperations.rxrec">
+      <id>e8b3b1d3-6eef-4e93-ab81-0e7ae96b0e76</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>1a2b45b0-2c4a-422a-b00c-b3e8d8036959</recordtableid>
+    </None>
     <None Include="SQLDMRecordings\PreconditionQueryMonitor.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>274815f3-d28b-40ae-b040-313da54ec82e</id>
       <recordtableid>0291cea1-dc2d-4c65-bd36-64defc99dc49</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\PreOnDemandEstimatedPlan.rxrec">
+      <id>e27d38f1-4404-4310-ad4a-eb6eee1cb140</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>df70801f-8cae-4e95-8c11-a9662ea30c2f</recordtableid>
     </None>
     <None Include="SQLDMRecordings\QueriesTAB\ClickQueriesTab.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
@@ -607,6 +776,16 @@
       <id>f7c74583-fbe2-475c-8200-5a3d52c51bb5</id>
       <recordtableid>b77ac04e-4994-4896-a8e5-19399d6c8ae7</recordtableid>
     </None>
+    <None Include="SQLDMRecordings\RunQueryForSQLStatement.rxrec">
+      <id>63ca19bb-1ac1-49b8-9503-bd1120fd953d</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>83b5a487-26f9-4eb4-81ef-b05b5ec4529b</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\RunQueryForStoredProcedure.rxrec">
+      <id>e1e87028-260c-4eba-89f3-827d8862dc79</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>6a4615ca-1d9f-4fec-a51a-021e119a7bf6</recordtableid>
+    </None>
     <None Include="SQLDMRecordings\SelectQueryMonitorTab.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>772a362e-3b37-4996-8fe6-68b818720ecc</id>
@@ -622,10 +801,35 @@
       <id>89fdfa42-3254-4ac1-bf7f-5de7aeb29bab</id>
       <recordtableid>01b3441a-f0cc-40a2-a450-4183372c0d20</recordtableid>
     </None>
+    <None Include="SQLDMRecordings\SQLBatches.rxrec">
+      <id>de11fec9-4eda-467f-a66c-8f3d9d38f2f3</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>bd593d24-e8bc-4b0a-9c3d-2046c1b6a5bd</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\SQLStatement.rxrec">
+      <id>e64fae87-dd60-42e6-95fe-4ac7c1d13625</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>a000f05b-e6be-4016-ac28-93e276dd7333</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\StoredProcedures.rxrec">
+      <id>cfda9153-bbd7-49bf-8d7b-95c426215c06</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>4df882d6-f79c-4784-a51b-aa0d2551226e</recordtableid>
+    </None>
     <None Include="SQLDMRecordings\VerifyCollectQueryPlansToBeDisabled.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
       <id>b10fcf68-3e6e-429f-b105-1bf8ada48c26</id>
       <recordtableid>79464ac0-d913-4fe2-8642-ef9c687ae205</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\Verifyquerydatadefaultcollectionoption.rxrec">
+      <id>116cb98b-7e85-452e-ad44-4747fad0a6d4</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>b459d5ec-28a3-4b56-8f55-f7e6a1b623bb</recordtableid>
+    </None>
+    <None Include="SQLDMRecordings\VerifyQueryStoreOption.rxrec">
+      <id>b9df3e03-5188-4625-9323-099f58f8d231</id>
+      <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
+      <recordtableid>18dbc3c6-bc36-4c59-92c1-72ac8f1bf9aa</recordtableid>
     </None>
     <None Include="SQLDMRecordings\VerifySelectByAndPlansBy.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
