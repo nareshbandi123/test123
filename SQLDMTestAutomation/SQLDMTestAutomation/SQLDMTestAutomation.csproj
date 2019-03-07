@@ -749,7 +749,7 @@
     <None Include="SQLDMRecordings\PreOnDemandEstimatedPlan.rxrec">
       <id>e27d38f1-4404-4310-ad4a-eb6eee1cb140</id>
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
-      <recordtableid>df70801f-8cae-4e95-8c11-a9662ea30c2f</recordtableid>
+      <recordtableid>d25ec1fb-6c2d-487a-882e-11de0a253d55</recordtableid>
     </None>
     <None Include="SQLDMRecordings\QueriesTAB\ClickQueriesTab.rxrec">
       <BoundTo>ec1bfeac-2eb2-4515-95d4-d163aa9f6887</BoundTo>
