@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="274f26339554c58"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQLDM-006"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/13/2019 5:13:28 AM"
+		timestampiso="2019-02-13T11:13:28"
+		endtime="2/13/2019 5:13:43 AM"
+		timeoutfactor="1"
+		module="VerifyCollectQueryPlansWithInvaildData">
+		<detail>
+			VerifyCollectQueryPlansWithInvaildData
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.663"
+			timeRelativeToTestModuleStartTime="00:02.669"
+			timeWallClock="05:13:31"
+			time="00:02.663"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>durationCombo, EnabledValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.960"
+			timeRelativeToTestModuleStartTime="00:02.965"
+			timeWallClock="05:13:31"
+			time="00:02.960"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{ENTER}' with focus on 'IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button"
+				itempath=".//toolbar[@automationid='ribbon']/tabpage[@automationid='Queries']/toolbar[@automationid='queriesTabPropertiesGroup']/button"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.ConfigureQueryMonitor"
+				id="7e4be6b177be424fa4b6f25c97eedbd3"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\VerifyCollectQueryPlansWithInvaildData.cs"
+				codeline="108"
+				itemindex="11"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1ca768db2a2da0c"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQL-DEV-001"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1600x900"
+		timestamp="3/6/2019 6:29:15 AM"
+		timestampiso="2019-03-06T12:29:15"
+		endtime="3/6/2019 6:29:45 AM"
+		timeoutfactor="1"
+		module="RunQuery">
+		<detail>
+			RunQuery
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.751"
+			timeRelativeToTestModuleStartTime="00:02.757"
+			timeWallClock="06:29:18"
+			time="00:02.751"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'MicrosoftSQLServerManagementStudio.QueryEditor' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']"
+				itempath=".//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.QueryEditor"
+				id="ce631a238fe94448908648e5a3cf3f50"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\RunQuery.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.512"
+			timeRelativeToTestModuleStartTime="00:13.519"
+			timeWallClock="06:29:29"
+			time="00:13.512"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'select * from SQLQueryPlans where PlanID = '610';' with focus on 'MicrosoftSQLServerManagementStudio.QueryEditor'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']"
+				itempath=".//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.QueryEditor"
+				id="ce631a238fe94448908648e5a3cf3f50"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\RunQuery.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:24.602"
+			timeRelativeToTestModuleStartTime="00:24.609"
+			timeWallClock="06:29:40"
+			time="00:24.602"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'MicrosoftSQLServerManagementStudio.Execute' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//toolbar[@accessiblename='SQL Editor']/button[@accessiblename='Execute']"
+				itempath=".//toolbar[@accessiblename='SQL Editor']/button[@accessiblename='Execute']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.Execute"
+				id="59ce75d684374e3ab4a44739726c192a"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\RunQuery.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:26.943"
+			timeRelativeToTestModuleStartTime="00:26.950"
+			timeWallClock="06:29:42"
+			time="00:26.943"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'MicrosoftSQLServerManagementStudio.Execute' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//toolbar[@accessiblename='SQL Editor']/button[@accessiblename='Execute']"
+				itempath=".//toolbar[@accessiblename='SQL Editor']/button[@accessiblename='Execute']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.Execute"
+				id="59ce75d684374e3ab4a44739726c192a"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\RunQuery.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

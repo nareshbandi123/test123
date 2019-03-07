@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="e4a834be157de09"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQL-DEV-001"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1600x900"
+		timestamp="3/4/2019 1:24:10 AM"
+		timestampiso="2019-03-04T07:24:10"
+		endtime="3/4/2019 1:24:27 AM"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="17.27s"
+			durationms="17267"
+			type="test-suite"
+			rid="f30bc0a7a8b728"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="1"
+			totalblockedtestcasecount="0"
+			childsuccesscount="0"
+			childfailedcount="1"
+			childblockedcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="SQLDMTestAutomation"
+			headertext="SQLDMTestAutomation"
+			runconfigname="TestRun"
+			runlabel="">
+			<params>
+			</params>
+			<activity
+				result="Failed"
+				duration="17.21s"
+				durationms="17207"
+				type="test-case"
+				rid="3cebb51dd134fe0"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="1"
+				totalblockedtestcasecount="0"
+				childsuccesscount="0"
+				childfailedcount="1"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="C170476_verify_Estimated_Query_plan_is_collected_when_globe_icon_of_a_stored_procedure_type_SQL_stat"
+				testcontainerid="30935b64-5a49-4ff5-aa18-479b6df6d0f6"
+				headertext="C170476_verify_Estimated_Query_plan_is_collected_when_globe_icon_of_a_stored_procedure_type_SQL_stat"
+				displayName="C170476_verify_Estimated_Query_plan_is_collected_when_globe_icon_of_a_stored_procedure_type_SQL_stat"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Failed"
+					duration="17.12s"
+					durationms="17122"
+					type="test-module"
+					rid="836039e85baf08"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="LaunchApplication"
+					displayName="LaunchApplication"
+					moduleid="73fb0df9-782d-480a-b57f-0e0513e3249c"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<errormessage>
+						WaitForAttributeContains failed. Element for item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday' does not exist  (Exception of type 'Ranorex.ApplicationNotRespondingException' was thrown.).
+					</errormessage>
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.417"
+						timeRelativeToTestModuleStartTime="00:00.073"
+						timeWallClock="01:24:10"
+						time="00:00.417"
+						level="Info"
+						category="Application"
+						errimg="images_SQLDMTes_8dc35392\SQLDMTes_8dc35392_f165f7ca_trace.jpg"
+						errthumb="images_SQLDMTes_8dc35392\SQLDMTes_8dc35392_f165f7ca_trace_thumb.jpg">
+						<message>
+							Run application 'C:\Program Files\Idera\Idera SQL diagnostic manager\SQLdmDesktopClient.exe' with arguments '' in normal mode.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchApplication.cs"
+							codeline="82"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.169"
+						timeRelativeToTestModuleStartTime="00:00.824"
+						timeWallClock="01:24:11"
+						time="00:01.169"
+						level="Info"
+						category="Wait"
+						errimg="images_SQLDMTes_8dc35392\SQLDMTes_8dc35392_98cbf101_trace.jpg"
+						errthumb="images_SQLDMTes_8dc35392\SQLDMTes_8dc35392_98cbf101_trace_thumb.jpg">
+						<message>
+							Waiting 5s for the attribute 'Text' to contain the specified value 'SQLDM Today'. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']"
+							itempath=".//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']"
+							fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday"
+							id="0a7c7718a97047cfbbdacba2e04e6f8a"
+							timeout="60000"
+							codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchApplication.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:17.005"
+						timeRelativeToTestModuleStartTime="00:16.659"
+						timeWallClock="01:24:27"
+						time="00:17.005"
+						level="Error"
+						category="Module"
+						errimg="images_SQLDMTes_8dc35392\SQLDMTes_8dc35392_9c2d22a5_trace.jpg"
+						errthumb="images_SQLDMTes_8dc35392\SQLDMTes_8dc35392_9c2d22a5_trace_thumb.jpg">
+						<message>
+							WaitForAttributeContains failed. Element for item 'SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday' does not exist  (Exception of type 'Ranorex.ApplicationNotRespondingException' was thrown.).
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.WaitForAttributeInternal(Duration waitTimeout, String name, Object value, WaitForAction action)
+   at Ranorex.Core.Repository.RepoItemInfo.WaitForAttributeContains(Duration waitTimeout, String name, Object value)
+   at SQLDMTestAutomation.LaunchApplication.Ranorex.Core.Testing.ITestModule.Run() in c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchApplication.cs:line 87
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+							codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchApplication.cs"
+							codeline="87"
+							loglvl="Error"
+							id="0a7c7718a97047cfbbdacba2e04e6f8a"
+							path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']"
+							fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday"
+							itemindex="1">
+						</metainfo>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

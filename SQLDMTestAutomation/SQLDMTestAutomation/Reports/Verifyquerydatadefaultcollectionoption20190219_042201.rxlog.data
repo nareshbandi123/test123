@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="3759bd6280a70d95"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQL-DEV-001"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1364x768"
+		timestamp="2/19/2019 4:22:06 AM"
+		timestampiso="2019-02-19T10:22:06"
+		endtime="2/19/2019 4:22:50 AM"
+		timeoutfactor="1"
+		module="Verifyquerydatadefaultcollectionoption">
+		<detail>
+			Verifyquerydatadefaultcollectionoption
+		</detail>
+		<errormessage>
+			Exception of type 'Ranorex.ApplicationNotRespondingException' was thrown.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.644"
+			timeRelativeToTestModuleStartTime="00:02.654"
+			timeWallClock="04:22:09"
+			time="00:02.644"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'C:\Windows\Installer\{CD76EE79-F19A-4108-8280-B2E90A270004}\NewShortcut1_3992A72BB239486C94808729C2D1F48D.exe' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verifyquerydatadefaultcollectionoption.cs"
+				codeline="82"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.760"
+			timeRelativeToTestModuleStartTime="00:02.770"
+			timeWallClock="04:22:09"
+			time="00:02.760"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{LControlKey down}'.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verifyquerydatadefaultcollectionoption.cs"
+				codeline="86"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.897"
+			timeRelativeToTestModuleStartTime="00:02.907"
+			timeWallClock="04:22:09"
+			time="00:02.897"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'Explorer.IderaSQLDiagnosticManagerSQLdmRepo' at 34;16.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/menubar[@processname='explorer']/container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^Idera\ SQL\ diagnostic\ mana']"
+				itempath="container[@controlid='40965']//toolbar[@accessiblename='Running applications']/button[@accessiblename~'^Idera\ SQL\ diagnostic\ mana']"
+				fullname="SQLDMTestAutomationRepository.Explorer.IderaSQLDiagnosticManagerSQLdmRepo"
+				id="15743ba6c86a4884857964c5770de1db"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verifyquerydatadefaultcollectionoption.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.498"
+			timeRelativeToTestModuleStartTime="00:27.507"
+			timeWallClock="04:22:34"
+			time="00:27.498"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence '{LControlKey up}'.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verifyquerydatadefaultcollectionoption.cs"
+				codeline="94"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:28.718"
+			timeRelativeToTestModuleStartTime="00:28.728"
+			timeWallClock="04:22:35"
+			time="00:28.718"
+			level="Info"
+			category="Mouse"
+			errimg=".\Verifyqu_7a51dab7_67a062f8_trace.jpg"
+			errthumb=".\Verifyqu_7a51dab7_67a062f8_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'IderaSQLDiagnosticManagerSQLdmRepo.UserViewTreeView' at 52;27.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']/?/?/container[@controlname='ultraExplorerBarContainerControl1']/?/?/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']"
+				itempath="?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']/?/?/container[@controlname='ultraExplorerBarContainerControl1']/?/?/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.UserViewTreeView"
+				id="fbbfc846764c4d10888b63008ab7728d"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verifyquerydatadefaultcollectionoption.cs"
+				codeline="98"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:37.601"
+			timeRelativeToTestModuleStartTime="00:37.610"
+			timeWallClock="04:22:44"
+			time="00:37.601"
+			level="Info"
+			category="Mouse"
+			errimg=".\Verifyqu_7a51dab7_bad77e9f_trace.jpg"
+			errthumb=".\Verifyqu_7a51dab7_bad77e9f_trace_thumb.jpg">
+			<message>
+				Mouse Right Click item 'IderaSQLDiagnosticManagerSQLdmRepo.UserViewTreeView' at 52;27.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']/?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']/?/?/container[@controlname='ultraExplorerBarContainerControl1']/?/?/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']"
+				itempath="?/?/container[@automationid='navigationPaneHost']/?/?/container[@controlname='NavigationPaneControl']/?/?/container[@controlname='ultraExplorerBarContainerControl1']/?/?/container[@controlname='serverGroupPanel']/tree[@controlname='userViewTreeView']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.UserViewTreeView"
+				id="fbbfc846764c4d10888b63008ab7728d"
+				timeout="60000"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verifyquerydatadefaultcollectionoption.cs"
+				codeline="102"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:42.888"
+			timeRelativeToTestModuleStartTime="00:42.898"
+			timeWallClock="04:22:49"
+			time="00:42.888"
+			level="Error"
+			category="Module"
+			errimg=".\Verifyqu_7a51dab7_182b2dcd_trace.jpg"
+			errthumb=".\Verifyqu_7a51dab7_182b2dcd_trace_thumb.jpg">
+			<message>
+				Exception of type 'Ranorex.ApplicationNotRespondingException' was thrown.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.FunctionExecuteWithTimeout.TryExecute[T](Func`1 func, TimeSpan timeout)&#13;&#10;   at Ranorex.Core.FunctionExecuteWithTimeout.WithTimeout[T](Func`1 func, Nullable`1 timeout)&#13;&#10;   at Ranorex.Plugin.ZombieableExtensions.WithZombieCheck[T](IZombieable self, Func`1 function, ZombieCheckOptions options)&#13;&#10;   at Ranorex.Plugin.WpfRemoteObject.GetChildren(TreeBuildConfiguration configuration, WpfRemoteObject apparentParent)&#13;&#10;   at Ranorex.Plugin.WpfChildrenRule.Execute(GlueRuleExecutionState state)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, GlueRuleExecutionStateImpl state, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.Element.GetChildren(CacheSession session)&#13;&#10;   at Ranorex.Core.Element.get_Children()&#13;&#10;   at Ranorex.Core.RxPath.collectAxis(LocationStep step, Axis optimizedAxis, Element self, IList`1 elements, Boolean quitOnFirstGoodNode)&#13;&#10;   at Ranorex.Core.RxPath.ApplyInternal(RxPath path, Element startElement, Duration timeout, Boolean findSingle, CacheSession&amp; usedCacheSession)&#13;&#10;   at Ranorex.Core.RxPath.Apply(Element startElement, Duration timeout, Boolean findSingle, CacheSession&amp; usedCacheSession)&#13;&#10;   at Ranorex.Core.Element.TryFindInternal(RxPath path, Duration timeout, Boolean findSingle, IList`1&amp; foundElements, CacheSession&amp; usedCacheSession)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SQLDMTestAutomation.SQLDMTestAutomationRepositoryFolders.IderaSQLDiagnosticManagerSQLdmRepoAppFolder.get_UserViewTreeView() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\SQLDMTestAutomationRepository.cs:line 334&#13;&#10;   at SQLDMTestAutomation.Verifyquerydatadefaultcollectionoption.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verifyquerydatadefaultcollectionoption.cs:line 103&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\administrator.SIMPSONS\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\Verifyquerydatadefaultcollectionoption.cs"
+				codeline="103"
+				loglvl="Error"
+				itemindex="5">
+			</metainfo>
+		</item>
+	</activity>
+</report>

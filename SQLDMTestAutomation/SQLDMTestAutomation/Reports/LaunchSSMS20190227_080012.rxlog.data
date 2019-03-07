@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="15e2a9395e0aa874"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="administrator"
+		rxversion="8.2.1.0"
+		host="AUT-SQL-DEV-001"
+		osversion="Windows Server 2008 R2 Service Pack 1 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1600x900"
+		timestamp="2/27/2019 8:00:17 AM"
+		timestampiso="2019-02-27T14:00:17"
+		endtime="2/27/2019 8:01:41 AM"
+		timeoutfactor="1"
+		module="LaunchSSMS">
+		<detail>
+			LaunchSSMS
+		</detail>
+		<errormessage>
+			Setting attribute 'Text' failed on element '{Text:selected text}'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.317"
+			timeRelativeToTestModuleStartTime="00:02.322"
+			timeWallClock="08:00:20"
+			time="00:02.317"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>Query
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.467"
+			timeRelativeToTestModuleStartTime="00:02.472"
+			timeWallClock="08:00:20"
+			time="00:02.467"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\Ssms.exe' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="95"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:02.595"
+			timeRelativeToTestModuleStartTime="00:02.600"
+			timeWallClock="08:00:20"
+			time="00:02.595"
+			level="Info"
+			category="Wait">
+			<message>
+				Waiting 5s for the attribute 'Text' to contain the specified value 'SQLDM Today'. Associated repository item: 'IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday'
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Idera\ SQL\ diagnostic\ mana']//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']"
+				itempath=".//container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']"
+				fullname="SQLDMTestAutomationRepository.IderaSQLDiagnosticManagerSQLdmRepo.SQLDMToday"
+				id="0a7c7718a97047cfbbdacba2e04e6f8a"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.123"
+			timeRelativeToTestModuleStartTime="00:09.128"
+			timeWallClock="08:00:26"
+			time="00:09.123"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 20s.
+			</message>
+			<metainfo
+				itemindex="2"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="102"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:29.304"
+			timeRelativeToTestModuleStartTime="00:29.309"
+			timeWallClock="08:00:47"
+			time="00:29.304"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'ConnectionDialog.ServerNameToConnect' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='ConnectionDialog']/container[@controlname='simpleView']//combobox[@controlname='serverInstance']/text[@controlid='1001']"
+				itempath="container[@controlname='simpleView']//combobox[@controlname='serverInstance']/text[@controlid='1001']"
+				fullname="SQLDMTestAutomationRepository.ConnectionDialog.ServerNameToConnect"
+				id="a97de4785d5f46c7bd537e03154ecfe3"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="105"
+				itemindex="3"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:35.301"
+			timeRelativeToTestModuleStartTime="00:35.306"
+			timeWallClock="08:00:53"
+			time="00:35.301"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key 'Ctrl+A' Press with focus on 'ConnectionDialog.ServerNameToConnect'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='ConnectionDialog']/container[@controlname='simpleView']//combobox[@controlname='serverInstance']/text[@controlid='1001']"
+				itempath="container[@controlname='simpleView']//combobox[@controlname='serverInstance']/text[@controlid='1001']"
+				fullname="SQLDMTestAutomationRepository.ConnectionDialog.ServerNameToConnect"
+				id="a97de4785d5f46c7bd537e03154ecfe3"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="109"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:37.525"
+			timeRelativeToTestModuleStartTime="00:37.530"
+			timeWallClock="08:00:55"
+			time="00:37.525"
+			level="Info"
+			category="Keyboard">
+			<message>
+				Key sequence 'AUT-SQL-DEV-001' with focus on 'ConnectionDialog.ServerNameToConnect'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='ConnectionDialog']/container[@controlname='simpleView']//combobox[@controlname='serverInstance']/text[@controlid='1001']"
+				itempath="container[@controlname='simpleView']//combobox[@controlname='serverInstance']/text[@controlid='1001']"
+				fullname="SQLDMTestAutomationRepository.ConnectionDialog.ServerNameToConnect"
+				id="a97de4785d5f46c7bd537e03154ecfe3"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="114"
+				itemindex="5"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:41.659"
+			timeRelativeToTestModuleStartTime="00:41.664"
+			timeWallClock="08:00:59"
+			time="00:41.659"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'ConnectionDialog.Connect' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='ConnectionDialog']/button[@controlname='connect']"
+				itempath="button[@controlname='connect']"
+				fullname="SQLDMTestAutomationRepository.ConnectionDialog.Connect"
+				id="2ee93f0397564461a126ea0bcc60550e"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="118"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:42.431"
+			timeRelativeToTestModuleStartTime="00:42.436"
+			timeWallClock="08:01:00"
+			time="00:42.431"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ConnectionDialog.Connect' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='ConnectionDialog']/button[@controlname='connect']"
+				itempath="button[@controlname='connect']"
+				fullname="SQLDMTestAutomationRepository.ConnectionDialog.Connect"
+				id="2ee93f0397564461a126ea0bcc60550e"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="122"
+				itemindex="7"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:43.300"
+			timeRelativeToTestModuleStartTime="00:43.305"
+			timeWallClock="08:01:01"
+			time="00:43.300"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'MicrosoftSQLServerManagementStudio.Databases' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='Databases']"
+				itempath=".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='Databases']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.Databases"
+				id="a9c6051d78594aa1aaee5c3c24dd7177"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="126"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:48.655"
+			timeRelativeToTestModuleStartTime="00:48.660"
+			timeWallClock="08:01:06"
+			time="00:48.655"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'MicrosoftSQLServerManagementStudio.Databases' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='Databases']"
+				itempath=".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='Databases']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.Databases"
+				id="a9c6051d78594aa1aaee5c3c24dd7177"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="130"
+				itemindex="9"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:54.074"
+			timeRelativeToTestModuleStartTime="00:54.079"
+			timeWallClock="08:01:11"
+			time="00:54.074"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Move item 'MicrosoftSQLServerManagementStudio.SQLdmRepository' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']"
+				itempath=".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.SQLdmRepository"
+				id="604f2d5402124abd98cca8634c06a10a"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="134"
+				itemindex="10"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:58.431"
+			timeRelativeToTestModuleStartTime="00:58.436"
+			timeWallClock="08:01:16"
+			time="00:58.431"
+			level="Info"
+			category="Invoke action">
+			<message>
+				Invoking Select() on item 'MicrosoftSQLServerManagementStudio.SQLdmRepository'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']"
+				itempath=".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.SQLdmRepository"
+				id="604f2d5402124abd98cca8634c06a10a"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="138"
+				itemindex="11"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:03.413"
+			timeRelativeToTestModuleStartTime="01:03.418"
+			timeWallClock="08:01:21"
+			time="01:03.413"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Right Click item 'MicrosoftSQLServerManagementStudio.SQLdmRepository' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']"
+				itempath=".//tree[@controlname='ObjectExplorerTree']/tree[@accessiblename='Object Explorer Hierarchy']/treeitem[@accessiblename='SQLdmRepository']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.SQLdmRepository"
+				id="604f2d5402124abd98cca8634c06a10a"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="142"
+				itemindex="12"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:06.208"
+			timeRelativeToTestModuleStartTime="01:06.213"
+			timeWallClock="08:01:23"
+			time="01:06.208"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Right Click item 'SSMS_SomeContextMenu.NewQuery' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/contextmenu/menuitem[@accessiblename='New Query']"
+				itempath="menuitem[@accessiblename='New Query']"
+				fullname="SQLDMTestAutomationRepository.SSMS_SomeContextMenu.NewQuery"
+				id="517499e7e3c94655847af2c6575bbfb5"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="146"
+				itemindex="13"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:07.250"
+			timeRelativeToTestModuleStartTime="01:07.255"
+			timeWallClock="08:01:25"
+			time="01:07.250"
+			level="Info"
+			category="Mouse"
+			errimg=".\LaunchSS_e913fd14_d73aa164_trace.jpg"
+			errthumb=".\LaunchSS_e913fd14_d73aa164_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'MicrosoftSQLServerManagementStudio.QueryEditor' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']"
+				itempath=".//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.QueryEditor"
+				id="ce631a238fe94448908648e5a3cf3f50"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="150"
+				itemindex="14"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:17.799"
+			timeRelativeToTestModuleStartTime="01:17.804"
+			timeWallClock="08:01:35"
+			time="01:17.799"
+			level="Info"
+			category="Set value"
+			errimg=".\LaunchSS_e913fd14_42042b82_trace.jpg"
+			errthumb=".\LaunchSS_e913fd14_42042b82_trace_thumb.jpg">
+			<message>
+				Setting attribute Text to '$Query' on item 'MicrosoftSQLServerManagementStudio.QueryEditor'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^Microsoft\ SQL\ Server\ Mana']//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']"
+				itempath=".//element[@controlname='m_Editor']//text[@accessiblename~'^SQLQuery']/text[@accessiblename='selected text']"
+				fullname="SQLDMTestAutomationRepository.MicrosoftSQLServerManagementStudio.QueryEditor"
+				id="ce631a238fe94448908648e5a3cf3f50"
+				timeout="60000"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="154"
+				itemindex="15"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:23.102"
+			timeRelativeToTestModuleStartTime="01:23.107"
+			timeWallClock="08:01:40"
+			time="01:23.102"
+			level="Error"
+			category="Module"
+			errimg=".\LaunchSS_e913fd14_46313c4d_trace.jpg"
+			errthumb=".\LaunchSS_e913fd14_46313c4d_trace_thumb.jpg">
+			<message>
+				Setting attribute 'Text' failed on element '{Text:selected text}'.<br/>The operation is not supported.<br/>Member not found. (Exception from HRESULT: 0x80020003 (DISP_E_MEMBERNOTFOUND))
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Element.SetAttributeValue(String name, Object value)
+   at Ranorex.Core.Element.SetAttributeValue(String name, String value)
+   at SQLDMTestAutomation.LaunchSSMS.Ranorex.Core.Testing.ITestModule.Run() in c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs:line 155
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\AnkammaRao\00_SQLdmSuites\26_Feb_2019\SQLDMTestAutomation\SQLDMTestAutomation\LaunchSSMS.cs"
+				codeline="155"
+				loglvl="Error"
+				itemindex="15">
+			</metainfo>
+		</item>
+	</activity>
+</report>

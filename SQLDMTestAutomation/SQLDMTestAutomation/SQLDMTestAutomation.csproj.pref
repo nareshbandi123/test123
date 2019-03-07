@@ -1,0 +1,24 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="SQLDMTestAutomation.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="SQLDMTestAutomation.rxtst" />
+    <Element value="SQLDMTestAutomationRepository.rxrep" />
+    <Element value="PerformQueryOperations.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="SQLDMTestAutomation.SQLStatement.VerifyFilterOpetions()" />
+      <Element value="SQLDMTestAutomation.PreOnDemandEstimatedPlan.EnableQueryMonitor()" />
+      <Element value="SQLDMTestAutomation.PreOnDemandEstimatedPlan.FilterOpetions()" />
+      <Element value="SQLDMTestAutomation.PreOnDemandEstimatedPlan.sgggfsf()" />
+      <Element value="SQLDMTestAutomation.DisableQueryMonitor.DisableQueryMonitorTraceCheckBox(RepoItemInfo checkboxInfo)" />
+      <Element value="SQLDMTestAutomation.OpenConfigureQueryMonitor.ClickQueryMonitorTraceCheckBox(RepoItemInfo checkboxInfo)" />
+    </Array>
+  </Properties>
+</Properties>

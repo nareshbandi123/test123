@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="73fb0df9-782d-480a-b57f-0e0513e3249c"
+mode="Global"
+rxversion="8.2">
+	<name>
+		LaunchApplication
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="LaunchApplication"
+	namespace="SQLDMTestAutomation">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<filename>
+				C:\Program Files\Idera\Idera SQL diagnostic manager\SQLdmDesktopClient.exe
+			</filename>
+			<workingdir>
+				C:\Program Files\Idera\Idera SQL diagnostic manager
+			</workingdir>
+			<args>
+			</args>
+		</runapprecorditem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="Text"
+		matchvalue="SQLDM Today"
+		optional="False"
+		searchpropertyid="de421303-0d02-4df5-b395-c38e1f6698b4"
+		waitaction="AttributeContains"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0a7c7718-a970-47cf-bbda-cba2e04e6f8a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="accessible"
+				dontcache="False"
+				enabled="True"
+				flavor="msaa"
+				hasfocus="False"
+				index="0"
+				prefcap="text"
+				rect="-31647,-31915,120,24"
+				role="text"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						SQLDM Today
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						SQLDM Today
+					</attribute>
+					<attribute
+					name="accessiblename"
+					type="System.String">
+						SQLDM Today
+					</attribute>
+					<attribute
+					name="accessiblerole"
+					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						StaticText
+					</attribute>
+					<attribute
+					name="accessiblestate"
+					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+						ReadOnly
+					</attribute>
+					<attribute
+					name="accessiblevalue"
+					type="System.String">
+					</attribute>
+				</element>
+				<path>
+					/form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//toolbar[@controlname='headerStrip']/text[@accessiblename='SQLDM Today']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<explicitdelayitem
+		duration="20000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="f786a100-360b-442d-a1a8-e04f271dd75e"
+	name="SQLDMTestAutomationRepository"
+	relativepath="SQLDMTestAutomationRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="SQLDMTestAutomationRepository"
+		namespace="SQLDMTestAutomation">
+		</codegen>
+		<rootfolder
+		id="fef44676-cf73-4211-820e-be7621cd7bfd"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		LaunchApplication.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
