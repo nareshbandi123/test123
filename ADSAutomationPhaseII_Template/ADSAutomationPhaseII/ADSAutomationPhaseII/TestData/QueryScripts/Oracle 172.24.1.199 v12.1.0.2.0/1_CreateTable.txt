@@ -1,0 +1,5 @@
+CREATE TABLE ads_table 
+( supplier_id number(10) NOT NULL, 
+  supplier_name varchar2(50) NOT NULL, 
+  city varchar2(50) , firstname varchar(50), lastname varchar(20)
+)

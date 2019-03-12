@@ -1,0 +1,20 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="TC_10548\TC10548Repo.rxrep" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="ADSAutomationPhaseII.rxtst" />
+    <Element value="TC_10548\TC2\ServersTabSettingsTemplate.cs" />
+    <Element value="TC_10548\Steps.cs" />
+    <Element value="TC_10555\TC1\ADSHelptemplate.cs" />
+    <Element value="TC_10548\TC10548Repo.rxrep" />
+    <Element value="TC_10555\Steps.cs" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>

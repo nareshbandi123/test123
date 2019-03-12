@@ -1,0 +1,57 @@
+﻿<repository
+id="f8d285fa-17bd-4dd5-93ed-e37f10fde6c3"
+name="AppRepo"
+rxversion="8.2">
+	<codegen
+	classname="AppRepo"
+	namespace="ADSAutomationPhaseII.Application">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="095da91e-bafd-4e99-b3cf-35acdddb771e"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="3b8a2993-6988-4129-8826-6cccf827f450"
+		isrooted="True"
+		name="Application"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="bb207b71-6751-41d3-9a02-dc7c3c6f40cd"
+			name="CloseButton"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@title='Aqua Data Studio']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="29cd3ef3-9879-4f52-a65a-6ed9289cebb0"
+		isrooted="True"
+		name="ConfirmWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="dd589901-7f3e-49fa-a066-e9b5b9281c58"
+			name="ConfirmExitButton"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio' and @class='SunAwtDialog']//container[@type='CPanel']/?/?/button[@name='defaultButton']
+			</item>
+			<basepath>
+				/form[@processname='datastudio' and @class='SunAwtDialog']
+			</basepath>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

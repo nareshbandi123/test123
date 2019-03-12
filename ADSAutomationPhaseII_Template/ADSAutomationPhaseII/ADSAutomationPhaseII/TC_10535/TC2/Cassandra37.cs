@@ -1,0 +1,72 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Drawing;
+using System.Threading;
+using WinForms = System.Windows.Forms;
+
+using Ranorex;
+using Ranorex.Core;
+using Ranorex.Core.Testing;
+
+using ADSAutomationPhaseII.Base;
+using ADSAutomationPhaseII.Commons;
+
+namespace ADSAutomationPhaseII.TC_10535.TC2
+{
+   
+    [TestModule("1337D0BC-9789-4819-AB77-ED43C2F08075", ModuleType.UserCode, 1)]
+    public class Cassandra37 : BaseClass, ITestModule
+    {
+        
+        public Cassandra37()
+        {
+        }
+
+        void ITestModule.Run()
+        {
+            StartProcess();
+        }
+        
+        bool StartProcess()
+        {
+        	try 
+        	{
+        		Steps.ClickOnERModelerMenu();
+        		Steps.SelectNew();
+        		Steps.SelectDataTypeAndVersion(Steps.DatabaseTypes.ApacheCassandra, "37");
+        		Steps.ValidateTree(false, true, false, true, true);
+        		Steps.RightClickOnTables();
+        		Steps.CreateNewTable();
+        		Steps.RightClickOnTables();
+        		Steps.CreateNewTable();
+        		Steps.RightClickOnTable1();       		
+        		Steps.SelectProperties();
+        		Steps.EnterParentTableName();        		
+        		Steps.CreateColumns();
+        		Steps.EditColumns();
+        		Steps.RightClickOnTable2();       		
+        		Steps.SelectProperties();
+        		Steps.EnterChildTableName();
+        		Steps.CreateColumns();
+        		Steps.CreateNewRelationship();
+        		Steps.EnterRelationshipName();
+        		Steps.SelectParentTableComboBox();
+        		Steps.SelectChildTableComboBox();
+        		Steps.CheckParentTableCheckbox();
+        		Steps.CheckChildTableCheckbox();
+        		Steps.ClickRelationshipOkButton();
+        		Steps.SaveERD();
+        		Steps.ClickOnERModelerMenu();
+        		Steps.SelectOpen();
+        		Steps.OpenERD();
+        	} 
+        	catch (Exception ex) 
+        	{
+        		Reports.ReportLog(ex.ToString(), Reports.ADSReportLevel.Fail, null, Configuration.Config.TestCaseName);
+        	}
+        	return true;
+        }
+    }
+}

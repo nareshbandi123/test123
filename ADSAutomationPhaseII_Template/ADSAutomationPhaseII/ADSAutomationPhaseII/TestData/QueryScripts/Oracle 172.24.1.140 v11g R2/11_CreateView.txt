@@ -1,0 +1,1 @@
+CREATE VIEW ads_view AS SELECT lastname, firstname FROM ads_table

@@ -1,0 +1,4 @@
+INSERT INTO ads_table 
+(supplier_id, supplier_name, city, firstname, lastname) 
+VALUES  
+(50, 'Flipkart','Hyd','VOS','Marianne')

@@ -1,0 +1,1 @@
+INSERT INTO ads_db1.ads_table VALUES (10, 'male', 'DPR', 'MA', 35,'VOS','Marianne')

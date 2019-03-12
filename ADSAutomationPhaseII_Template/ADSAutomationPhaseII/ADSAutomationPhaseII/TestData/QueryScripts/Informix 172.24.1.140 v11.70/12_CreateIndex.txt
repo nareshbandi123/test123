@@ -1,0 +1,2 @@
+CREATE INDEX ads_index ON ads_table (firstname, LastName);
+

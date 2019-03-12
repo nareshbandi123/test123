@@ -1,0 +1,9 @@
+INSERT INTO ads_table ( EmployeeNo,  DOB, JoinedDate, DepartmentNo, firstname, lastname)
+VALUES ( 
+   101, 
+   '1980-01-05', 
+   '2005-03-27',
+   01,
+  'VOS',
+  'Marianne'
+)

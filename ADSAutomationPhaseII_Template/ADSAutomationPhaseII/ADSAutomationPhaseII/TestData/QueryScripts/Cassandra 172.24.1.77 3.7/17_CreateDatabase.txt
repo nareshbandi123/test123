@@ -1,0 +1,2 @@
+CREATE KEYSPACE ads_db1
+WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};

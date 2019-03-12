@@ -1,0 +1,1 @@
+CREATE TABLE ads_db.ads_table (employee_id INTEGER, employee_gender CHAR(1),firstname varchar, lastname varchar, PRIMARY KEY (employee_id, employee_gender))

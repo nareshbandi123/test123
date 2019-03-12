@@ -1,0 +1,1 @@
+Create view ads_view as select firstname from ads_table where firstname = 'LeAnn Rimes'

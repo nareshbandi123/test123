@@ -1,0 +1,1 @@
+drop table ads_db1.ads_table

@@ -1,0 +1,7 @@
+CREATE TABLE ads_table (
+ ID int NOT NULL,
+ lastname varchar(255) NOT NULL,
+ firstname varchar(255),
+ Age int,
+ CONSTRAINT PK_Person PRIMARY KEY (ID,lastname)
+)

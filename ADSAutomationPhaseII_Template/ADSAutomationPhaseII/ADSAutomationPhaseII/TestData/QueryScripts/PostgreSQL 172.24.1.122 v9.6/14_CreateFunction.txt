@@ -1,0 +1,5 @@
+CREATE OR REPLACE FUNCTION ads_func() RETURNS TRIGGER AS $ads_sample$ BEGIN
+update ads_db.ads_table set id=10;
+RETURN NEW;
+END;
+$ads_sample$ LANGUAGE plpgsql

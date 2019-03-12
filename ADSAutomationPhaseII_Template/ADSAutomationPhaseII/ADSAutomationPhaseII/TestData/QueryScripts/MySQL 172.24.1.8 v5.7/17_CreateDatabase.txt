@@ -1,0 +1,1 @@
+create database ads_db1

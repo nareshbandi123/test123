@@ -1,0 +1,24 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{2D0883E6-11C7-418C-A21A-6C87CC31E99A}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>72e6f30c-443e-480b-8ccb-8393d0533e24</string>
+      <string>8853b551-0a2e-4880-a3ed-252c97fab07f</string>
+      <string>fbc6e6c3-e044-4e02-8695-0aad045f85f9</string>
+      <string>7e2cb882-023e-4bcb-b4ba-13ea1fdf251e</string>
+      <string>bd3e4f74-2054-45da-b172-c345f0a31f8d</string>
+      <string>a5f47f2d-972b-4ef0-8f41-39cb5a6bd456</string>
+      <string>88d68f0c-17aa-42aa-b809-c8e5b53f6b48</string>
+      <string>fddaeafc-3a81-4957-83eb-d988d1e4889b</string>
+      <string>e166c11e-0b2f-4068-a6d5-27792b17c35b</string>
+      <string>fef5fd4d-6038-466c-bbda-5aa43323aa8d</string>
+      <string>8684af6c-f466-46ec-acce-8e7c0599e6f5</string>
+      <string>b5756152-a2d0-4c3e-af40-8e97e1401683</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution ADSAutomationPhaseII[Solution Items[]ADSAutomationPhaseII[TC_10548[TC1[]]]]]&#xD;&#xA;Solution ADSAutomationPhaseII\ADSAutomationPhaseII\TC_10548\TC10548Repo.rxrep&#xD;&#xA;Solution ADSAutomationPhaseII" />
+  <StartupProject value="{2D0883E6-11C7-418C-A21A-6C87CC31E99A}" />
+</Properties>

@@ -1,0 +1,278 @@
+﻿<repository
+id="9f583610-1aee-447e-8d8f-bdb3a51ba7c1"
+name="TC10555Repo"
+rxversion="8.2">
+	<codegen
+	classname="TC10555Repo"
+	namespace="ADSAutomationPhaseII.TC_10555">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="f4615b81-6cde-49c8-b8b7-1f4a93fd5713"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="5e471603-9951-49b8-9176-68773de39a9e"
+		isrooted="True"
+		name="Application"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="menuitem"
+			id="691e7ffd-a83d-49f9-8624-27ac06cc351c"
+			name="Help"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//menuitem[@text='Help']
+			</item>
+			<item
+			capname="checkbox"
+			id="489913cd-c4a5-48d0-80c5-29e769b9f399"
+			name="F1Menu"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@name='myLeftStripe']/checkbox[@text='F1: Servers']
+			</item>
+			<basepath>
+				/form[@title='Aqua Data Studio']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="e60bec27-0b83-4d1f-81cf-6ca15da0a975"
+		isrooted="True"
+		name="SunAwtWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="menuitem"
+			id="e2c2a185-7736-4e87-b4f9-939864e7da6a"
+			name="License"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='License']
+			</item>
+			<item
+			capname="checkbox"
+			id="91c8cd71-9203-4f7b-a40d-27ce848afe53"
+			name="Uncheckbutton"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//container[@type='N&#41411;&#41706;&#42058;&#10324;']//checkbox[@name='fOa']
+			</item>
+			<item
+			capname="button"
+			id="4c2bcf88-7515-43a2-8f82-790bb07f8684"
+			name="OkayButton"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/button[@name='defaultButton']
+			</item>
+			<item
+			capname="button"
+			id="da016369-67e1-4642-9f94-e79d8592c544"
+			name="CloseButton"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@class='SunAwtWindow']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="57e100d9-9fd9-471a-bbfa-b57729680519"
+		isrooted="True"
+		name="ADSMenu"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="b7ac7243-7f20-4f12-98fe-380eed22589b"
+			name="CloseADS"
+			searchtimeout="30000ms">
+				/form[@title~'^About\ Aqua\ Data\ Studio\ -\ ']//container[1]/?/?/button[@text='Close']
+			</item>
+			<item
+			capname="button"
+			id="e9168197-ae15-4d8e-bbe7-be4e097f4713"
+			name="DeactivateButton"
+			searchtimeout="30000ms">
+				/form[@title~'^About\ Aqua\ Data\ Studio\ -\ ']//container[2]/container[@name='ftL']//button[1]
+			</item>
+			<item
+			capname="tabpage"
+			id="af42897c-3d5e-4629-ac8a-b5bea87e9db0"
+			name="JDBCdrivers"
+			searchtimeout="30000ms">
+				/form[@title~'^About\ Aqua\ Data\ Studio\ -\ ']//container[1]/?/?/tabpage[@title='JDBC Drivers   ']
+			</item>
+			<basepath>
+				/form[@title~'^About\ Aqua\ Data\ Studio\ -\ ']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="d2777a50-e6e0-475b-9c8c-d31d6de5ca1b"
+		isrooted="True"
+		name="LiceseMenu"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="a9bdae95-b479-4c53-8356-beaabf1b185b"
+			name="ClickonProxy"
+			searchtimeout="30000ms">
+				/form[@title~'^License\ for\ Aqua\ Data\ Stu']//container[2]/container[@name='ftL']//button[@name='ftH']
+			</item>
+			<item
+			capname="button"
+			id="0659fa4a-aad9-4098-b345-00b8b0b76980"
+			name="LicenseAgreement"
+			searchtimeout="30000ms">
+				/form[@title~'^License\ for\ Aqua\ Data\ Stu']//container[2]/container[@name='ftL']//button[@text='License Agreement']
+			</item>
+			<basepath>
+				/form[@title~'^License\ for\ Aqua\ Data\ Stu']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="290cbc14-3d93-41fa-8f27-ef8f811e124c"
+		isrooted="True"
+		name="ProxyWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="cf3835ae-5075-4549-a55d-e499dd214b21"
+			name="Close"
+			searchtimeout="30000ms">
+				/form[@title='Proxy Settings']//button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@title='Proxy Settings']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="44730b5c-e845-4738-bc9b-7d25aaedde60"
+		isrooted="True"
+		name="LicenseAgreementWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="28d08007-654d-4089-812e-c0ba0d02c8b3"
+			name="Close"
+			searchtimeout="30000ms">
+				/form[@title='License Agreement']/container[2]/?/?/button[@name='defaultButton']
+			</item>
+			<basepath>
+				/form[@title='License Agreement']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="6b29385e-c6bb-40ed-b3af-9dd51dcf6698"
+		isrooted="True"
+		name="SupportInfoMenu"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="1269fb40-57a4-495b-8143-d691f31ec9e5"
+			name="Close"
+			searchtimeout="30000ms">
+				/form[@title='Support Information']//button[@name='defaultButton']
+			</item>
+			<basepath>
+				/form[@title='Support Information']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="c09a5ef7-0410-4e4a-a84a-1028d036491d"
+		isrooted="True"
+		name="JDBCMenu"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="a30cc5d0-1bd9-48de-9ec1-690feeb96afd"
+			name="Close"
+			searchtimeout="30000ms">
+				/form[@title~'^About\ Aqua\ Data\ Studio\ -\ ']//container[1]/?/?/button[@name='defaultButton']
+			</item>
+			<item
+			capname="tabpage"
+			id="86923f9b-ee77-42bb-be0e-41c2d4d29dfb"
+			name="JDBC"
+			searchtimeout="30000ms">
+				/form[@title~'^About\ Aqua\ Data\ Studio\ -\ ']//container[1]/?/?/tabpage[@title='JDBC Drivers   ']
+			</item>
+			<basepath>
+				/form[@title~'^About\ Aqua\ Data\ Studio\ -\ ']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="b77c4a74-3172-43de-8531-5f0199734428"
+		isrooted="True"
+		name="LicenseforADS"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="26b649bb-1a5b-4060-b5c5-92573a4e8c6d"
+			name="CancelButton"
+			searchtimeout="30000ms">
+				/form[@title~'^License\ for\ Aqua\ Data\ Stu']//container[2]/container[@name='tabPanel']//button[@name='_btnDeactivateCancel']
+			</item>
+			<item
+			capname="button"
+			id="80f2cd76-6ece-4e25-9763-501709dcea3d"
+			name="LicenceAgreement"
+			searchtimeout="30000ms">
+				/form[@title~'^License\ for\ Aqua\ Data\ Stu']//container[2]/container[@name='tabPanel']//button[@name='_btnDeactivateLicenseAgreement']
+			</item>
+			<item
+			capname="button"
+			id="6654ca0d-4ba7-4e0f-bc88-6c084d10b773"
+			name="ProxySetting"
+			searchtimeout="30000ms">
+				/form[@title~'^License\ for\ Aqua\ Data\ Stu']//container[2]/container[@name='tabPanel']//button[@name='_btnDeactivateProxySettings']
+			</item>
+			<basepath>
+				/form[@title~'^License\ for\ Aqua\ Data\ Stu']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="2844846b-d766-4498-9cfb-5e6333dd25fb"
+		isrooted="True"
+		name="DataStudio"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="menuitem"
+			id="2677bff3-4625-4269-91f9-8ac3e6507cb1"
+			name="AboutADS"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='About Aqua Data Studio']
+			</item>
+			<item
+			capname="menuitem"
+			id="9ea5b654-722d-4adb-a89e-cfd5a094f12e"
+			name="SupportInformation"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Support Information']
+			</item>
+			<basepath>
+				/form[@processname='datastudio']
+			</basepath>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

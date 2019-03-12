@@ -1,0 +1,2 @@
+INSERT INTO `ads_table`(`product_id`, `product_name`, `firstname`, `lastname`)
+VALUES(2, 'audi', 'kapoor', 'yash')

@@ -1,0 +1,696 @@
+//*******************************************************************
+// Database Schema and Data Exporter
+//
+// Extracts the DDLs of all database objects for the chosen database/schema to the
+// user-specified directory. In addition, all table data is exported in CSV, XML, or
+// XLS file format. Optionally, the generated files can be archived to ZIP, TAR or TGZ format.
+//
+// For more information about Aqua Open API visit link: http://docs.aquafold.com/ads/19.5/openapi/
+//*******************************************************************
+
+//*******************************************************************
+// Input parameters.
+//*******************************************************************
+var server = "";
+var database = "";
+var schema = "";
+var exportFolder = ""
+var fieldSeparator = ","; // The field separator.
+var textDelimiter = "\""; // Text delimitier for the field in the datafile.
+var qualifyWithSchema = true; // Qualify file name with schema.
+var dataFileFormat = "csv"; // This variable is for the datafile file format - valid file formats are "csv", "xml" and "xls".
+var scriptLineSeparator = "\n";
+var scriptQualifyObject = true;
+var scriptLeadingQuoteIdentifier = '"'; // Set leading quote identifier string.
+var scriptTrailingQuoteIdentifier = '"'; // Set trailing quote identifier string.
+var scriptStatementSeparator = "GO";
+var archiveType = ""; // The archive type will be used as file extension. Valid options are "tar", "zip" and "tgz".
+var archiveFolder = "";
+var archiveFilename = "database_schema_and_data_exporter";
+
+var conn = aqua.project.getServerConnection(server);
+conn.connect();
+
+if (schema.equals("")) {
+	schema = null;
+}
+
+if (database != null) {
+	conn.changeDatabase(database);
+}
+
+if (schema != null) {
+	conn.changeSchema(schema);
+}
+
+var metadata = conn.getMetadata();
+var scriptOptions = conn.getScriptOptions();
+setScriptOptions(scriptOptions);
+
+if (isObjectSupported('Sequences', conn)) {
+	exportDDLs(metadata.extractSequences(database, schema));
+}
+
+if (isObjectSupported('Projections', conn)) {
+	exportDDLs(metadata.extractProjections(database, schema));
+}
+
+if (isObjectSupported('Synonyms', conn)) {
+	exportDDLs(metadata.extractSynonyms(database, schema));
+}
+
+if (isObjectSupported('Packages', conn)) {
+	exportDDLs(metadata.extractPackages(database, schema));
+}
+
+if (isObjectSupported('Indexes', conn)) {
+	exportDDLs(metadata.extractNonSystemIndexes(database, schema));
+}
+
+if (isObjectSupported('Triggers', conn)) {
+	exportDDLs(metadata.extractTriggers(database, schema));
+}
+
+if (isObjectSupported('DataTypes', conn)) {
+	exportDDLs(metadata.extractDataTypes(database, schema));
+}
+
+if (isObjectSupported('Functions', conn)) {
+	exportDDLs(metadata.extractFunctions(database, schema));
+}
+
+if (isObjectSupported('Procedures', conn)) {
+	exportDDLs(metadata.extractProcedures(database, schema));
+}
+
+if (isObjectSupported('Views', conn)) {
+	exportDDLs(metadata.extractViews(database, schema));
+}
+
+if (isObjectSupported('Rules', conn)) {
+	exportDDLs(metadata.extractRules(database, schema));
+}
+
+if (isObjectSupported('Tables', conn)) {
+	exportDDLs(metadata.extractTables(database, schema));
+}
+
+if (isObjectSupported('MatViews', conn)) {
+	exportDDLs(metadata.extractMatViews(database, schema));
+}
+
+if (isObjectSupported('DatabaseLinkes', conn)) {
+	exportDDLs(metadata.extractDatabaseLinks(database, schema));
+}
+
+if (isObjectSupported('Defaults', conn)) {
+	exportDDLs(metadata.extractDefaults(database, schema));
+}
+
+if (conn.metadata.isMssql()) {
+	exportDDLs(metadata.extractAsymmetricKeys(database));
+	exportDDLs(metadata.extractSymmetricKeys(database));
+	exportDDLs(metadata.extractCertificates(database));
+	exportDDLs(metadata.extractXmlSchemaCollections(database));
+	exportDDLs(metadata.extractAssemblies(database));
+}
+
+if (conn.metadata.isOracle()) {
+	exportDDLs(metadata.extractArrayTypes(database, schema));
+	exportDDLs(metadata.extractObjectTypes(database, schema));
+	exportDDLs(metadata.extractClusters(database, schema));
+	exportDDLs(metadata.extractPackageBodies(database, schema));
+	exportDDLs(metadata.extractTableTypes(database, schema));
+	exportDDLs(metadata.extractJavaSources(database, schema));
+}
+
+if (conn.metadata.isPostgreSQL()) {
+	exportDDLs(metadata.extractObjectTypes(database, schema));
+}
+
+if (isObjectSupported('NickNames', conn)) {
+	exportDDLs(metadata.extractNicknames(database, schema));
+}
+
+if (isObjectSupported('Segments', conn)) {
+	exportDDLs(metadata.extractSegments(database, schema));
+}
+
+if (isObjectSupported('Events', conn)) {
+	exportDDLs(metadata.extractEvents(database, schema));
+}
+
+if (isObjectSupported('Roles', conn)) {
+	exportDDLs(metadata.extractRoles(database, schema));
+}
+
+if (isObjectSupported('Schemas', conn)) {
+	exportDDLs(metadata.extractSchemas(database));
+}
+
+if (isObjectSupported('Users', conn)) {
+	exportDDLs(metadata.extractUsers(database, schema));
+}
+
+dumpTables(conn, database, schema);
+archiveData();
+
+//*******************************************************************
+// This function creates the table data.
+//*******************************************************************
+function dumpTables(conn, database, schema) {
+	var tables = metadata.extractTables(database, schema);
+	if (tables != null) {
+		for (i = 0; i < tables.length; i++) {
+			if (aqua.filesystem.exists(exportFolder) == false) {
+				aqua.filesystem.createDirectory(exportFolder);
+			}
+			exportTableData(tables[i], generateTableFilename(tables[i]));
+		}
+	}
+}
+
+//*******************************************************************
+// This function writes data to a file.
+//*******************************************************************
+function getFileWriter() {
+	var file;
+	if (dataFileFormat == "csv") {
+		file = aqua.io.newTextWriter();
+		file.setCellDelimiter(fieldSeparator);
+		file.setQuoteIdentifier(textDelimiter);
+	}
+	else if (dataFileFormat == "xml") {
+		file = aqua.io.newXmlWriter();
+	}
+	else {
+		throw dataFileFormat + " is an invalid value";
+	}
+	return file;
+}
+
+//*******************************************************************
+// This function exports the table data.
+//*******************************************************************
+function exportTableData(table, filename) {
+	/**
+	PLEASE NOTE: If you are using Windows and you have two database objects with
+	the same name but different cases, the second object that is extracted will overwrite
+	the first one.
+	**/
+
+	var file;
+	var sheet;
+	if (dataFileFormat == "xls") {
+		sheet = aqua.data.excelSpreadsheet(filename);
+		sheet.clear();
+	}
+	else {
+		file = getFileWriter();
+		file.setFile(filename);
+	}
+	var sqlstmt = "select * from ";
+	if (conn.metadata.isTeradata()) {
+		if(table.getDatabaseName() != null && table.getDatabaseName().length() > 0) {
+			sqlstmt += metadata.getLeadingObjectQuoteIdentifier();
+			sqlstmt += table.getDatabaseName();
+			sqlstmt += metadata.getTrailingObjectQuoteIdentifier();
+			sqlstmt += "."
+		}
+	}
+
+	if (table.getSchemaName() != null && table.getSchemaName().length() > 0) {
+		sqlstmt += metadata.getLeadingObjectQuoteIdentifier();
+		sqlstmt += table.getSchemaName();
+		if (!conn.metadata.isBigQuery()) {
+			sqlstmt += metadata.getTrailingObjectQuoteIdentifier();
+		}
+		sqlstmt += ".";
+	}
+
+	if (server != null && (!conn.metadata.isInformix() && !conn.metadata.isBigQuery())) {
+		sqlstmt += metadata.getLeadingObjectQuoteIdentifier();
+	}
+
+	sqlstmt += table.getName();
+
+	if (server != null && !conn.metadata.isInformix()) {
+		sqlstmt += metadata.getTrailingObjectQuoteIdentifier();
+	}
+
+	try {
+		aqua.console.println(sqlstmt);
+		var resultset = conn.executeQuery(sqlstmt);
+		var rowcount = 0;
+		var tablenameforprint = "";
+
+		if (table.getDatabaseName() != null && table.getDatabaseName() != "") {
+			tablenameforprint += table.getDatabaseName() + ".";
+		}
+
+		if (!(conn.metadata.isMySQL() || conn.metadata.isMariaDB())) {
+			if (table.getSchemaName() != null && table.getSchemaName() != "") {
+				tablenameforprint += table.getSchemaName() + ".";
+			}
+		}
+
+		if (table.getName() != null && table.getName() != "") {
+			tablenameforprint += table.getName();
+		}
+
+		if (conn.metadata.isMongoDB()) {
+			aqua.console.println("Exporting Collection : " + tablenameforprint);
+		}
+		else {
+			aqua.console.println("Exporting table : " + tablenameforprint);
+		}
+
+		if (dataFileFormat == "xls") {
+			sheet.insert(resultset.columnStructure);
+			sheet.setAutoResize(true);
+		}
+		else if (dataFileFormat == "csv") {
+			file.write(resultset.columnStructure);
+		}
+
+		if (dataFileFormat == "xml") {
+			var dataSet = "";
+			try {
+				var dataSet = resultset.read();
+				rowcount = dataSet.getRowCount();
+			}
+			catch (e) {
+				dataSet = "(err)";
+			}
+			if(rowcount > 0) {
+				file.write(dataSet);
+			}
+		}
+		else {
+			while (resultset.next()) {
+				var row = "";
+				try {
+					row = resultset.getRow();
+				}
+				catch (e) {
+					row = "(err)";
+				}
+				if (dataFileFormat == "xls") {
+					sheet.insert(row);
+				}
+				else {
+					file.write(row);
+				}
+				rowcount++;
+			}
+		}
+
+		resultset.close();
+
+		aqua.console.println("Row Count: " + rowcount);
+		if (dataFileFormat == "xls") {
+			if (sheet.getRow() > 1) {
+				sheet.save();
+			}
+		}
+		else {
+			file.close();
+		}
+	}
+	catch (e) {
+		aqua.console.println("*ERROR* - "+e);
+		if (e == "JavaException: java.lang.NullPointerException: null" ) {
+			if (server != null && conn.metadata.isOracle()) {
+				try {
+					conn.executeQuery("SELECT 0 FROM DUAL");
+				}
+				catch (err) {
+					if (err == "JavaException: java.sql.SQLException: OALL8 is in an inconsistent state" ) {
+						/**
+						Oracle has the possibility of having columns with an UNDEFINED data type.
+						This causes the jdbc driver to go into an inconsistent state and we need to
+						reestablish a new connection.
+						**/
+						conn.disconnect();
+						conn.connect();
+						conn.changeDatabase(database);
+						conn.changeSchema(schema);
+					}
+				}
+			}
+		}
+
+		if (dataFileFormat == "xls") {
+			if(sheet.getRow() > 1){
+				sheet.save();
+			}
+		}
+		else {
+			file.close();
+		}
+	}
+}
+
+//*******************************************************************
+// This function exports ddl information.
+//*******************************************************************
+function exportDDLs(objs) {
+	for (var i=0; i<objs.length; i++) {
+		var file = aqua.io.newTextWriter();
+
+		/**
+		PLEASE NOTE: If you are using Windows and you have two database objects with
+		the same name but different cases, the second object that is extracted will overwrite
+		the first one.
+		**/
+		file.setFile(generateDDLFilename(objs[i]));
+		try {
+			//noinspection : suppresses syntax highlighting warning for the following statement
+			file.write(objs[i].scriptCREATEFULL());
+			aqua.console.println("Exported DDL for:- Schema Object Type: [" + objs[i].getTypeName() + "]\t Object Name: [" + objs[i].getName() + "]");
+		}
+		catch(e) {
+			try {
+				file.write(objs[i].scriptCREATE());
+				aqua.console.println("Exported DDL for:- Schema Object Type: [" + objs[i].getTypeName() + "]\t Object Name: [" + objs[i].getName() + "]");
+			}
+			catch(e) {
+				aqua.console.println("["+objs[i].getTypeName() + "] [" + objs[i].getName() +"].scriptCREATE(): "+e);
+			}
+		}
+		file.close();
+	}
+}
+
+//*******************************************************************
+// This function generates the table filename.
+//*******************************************************************
+function generateTableFilename(table) {
+	var dir = exportFolder + "/data/";
+	if (aqua.filesystem.exists(dir) == false) {
+		aqua.filesystem.createDirectory(dir);
+	}
+
+	var filename = "";
+	if (table.getDatabaseName() != null && table.getDatabaseName() != "") {
+		filename += table.getDatabaseName() + ".";
+	}
+
+	if (!(conn.metadata.isMySQL() || conn.metadata.isMariaDB())) {
+		if (table.getSchemaName() != null && table.getSchemaName() != "") {
+			filename += table.getSchemaName() + ".";
+		}
+	}
+
+	filename += table.getName() + "." + dataFileFormat;
+	return (dir + filename.replace("/",""));
+}
+
+//*******************************************************************
+// This function generates the ddl filename.
+//*******************************************************************
+function generateDDLFilename(obj) {
+	var dir      = exportFolder + "/DDL/" + obj.getTypeName().replace(" ", "_") + "/";
+	var filename = dir;
+
+	if (aqua.filesystem.exists(dir) == false) {
+		aqua.filesystem.createDirectory(dir);
+	}
+
+	if (obj.getDatabaseName() != null && obj.getDatabaseName() != "") {
+		filename += obj.getDatabaseName() + ".";
+	}
+
+	if (!(conn.metadata.isMySQL() || conn.metadata.isMariaDB())) {
+		if (obj.getSchemaName() != null && obj.getSchemaName() != "") {
+			filename += obj.getSchemaName() + ".";
+		}
+	}
+
+	if (obj.getTypeName() == "Index") {
+		//noinspection : suppresses syntax highlighting warning for the following statement
+		filename += obj.getTableName() + ".";
+	}
+
+	if (obj.getTypeName() == "Rule" || obj.getTypeName() == "Trigger") {
+		//noinspection : suppresses syntax highlighting warning for the following statement
+		if (obj.getTableName() != null && obj.getTableName().length() > 0) {
+			//noinspection : suppresses syntax highlighting warning for the following statement
+			filename += obj.getTableName() + ".";
+		}
+	}
+
+	if ((obj.getTypeName() == "Function") || (obj.getTypeName() == "Procedure")) {
+		//noinspection : suppresses syntax highlighting warning for the following statement
+		if ((conn.metadata.isVertica() || conn.metadata.isHana()) && obj.getSpecificName() == null) {
+			filename += obj.getName();
+		}
+		else {
+			filename += obj.getSpecificName();
+		}
+	}
+	else {
+		filename += obj.getName().replace("/","");
+	}
+
+	if (filename.length < 256) {
+		filename += ".ddl";
+	}
+	else {
+		filename = filename.substring(0, 255) + ".ddl";
+	}
+
+	return filename;
+}
+
+//*******************************************************************
+// This function archives the data.
+//*******************************************************************
+function archiveData() {
+	var archiveFile = archiveFolder + "/" + archiveFilename;
+
+	if (archiveType == null || archiveType == "") {
+		return;
+	}
+	else if (archiveType == "zip") {
+		archiveFile += "." + archiveType;
+		aqua.archive.zip(exportFolder, archiveFile);
+	}
+	else if (archiveType == "tgz") {
+		var tarFile  = archiveFile + ".tar";
+		archiveFile += "." + archiveType;
+		aqua.archive.tar(exportFolder, tarFile);
+		aqua.archive.gzip(tarFile, archiveFile);
+		aqua.filesystem.deleteFile(tarFile);
+	}
+	else if (archiveType == "tar") {
+		archiveFile += "." + archiveType;
+		aqua.archive.tar(exportFolder, archiveFile);
+	}
+	else {
+		throw archiveType + " is an invalid value";
+	}
+}
+
+//*******************************************************************
+// This function sets the script options.
+//*******************************************************************
+function setScriptOptions(options) {
+	if (scriptLineSeparator != null) {
+		options.setLineSeparator(scriptLineSeparator);
+	}
+
+	if (scriptQualifyObject != null) {
+		options.setQualifyObject(scriptQualifyObject);
+	}
+
+	if (scriptLeadingQuoteIdentifier != null || scriptTrailingQuoteIdentifier) {
+		options.setQuoteIdentifier(scriptLeadingQuoteIdentifier, scriptTrailingQuoteIdentifier);
+	}
+
+	if (scriptStatementSeparator != null) {
+		options.setStatementSeparator(scriptStatementSeparator);
+	}
+}
+
+//*******************************************************************
+// This function tests if an object is supported for a database.
+//*******************************************************************
+function isObjectSupported(object, conn) {
+	switch (object) {
+		case 'Sequences':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isInformix() || conn.metadata.isPostgreSQL() || conn.metadata.isGreenplum() || conn.metadata.isNetezza() ||
+					conn.metadata.isHana() || conn.metadata.isVertica() ||  conn.metadata.isOracle() || conn.metadata.isSybaseAnywhere()) {
+				return true;
+			}
+			break;
+
+		case 'Synonyms':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isInformix() || conn.metadata.isOracle() || conn.metadata.isApacheDerby() || conn.metadata.isNetezza() ||
+					conn.metadata.isHana() || conn.metadata.isAzure()) {
+				return true;
+			}
+			break;
+
+		case 'Packages':
+			if (conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isOracle()) {
+				return true;
+			}
+			break;
+
+		case 'Indexes':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isPostgreSQL() || conn.metadata.isNCluster() ||
+					conn.metadata.isApacheDerby() || conn.metadata.isTeradata() || conn.metadata.isRedShift() || conn.metadata.isCassandra() ||
+					conn.metadata.isGreenplum() || conn.metadata.isVoltDB() || conn.metadata.isSQLite() || conn.metadata.isHana() ||
+					conn.metadata.isMongoDB() || conn.metadata.isAzure() || conn.metadata.isParAccel() || conn.metadata.isHive()) {
+				return true;
+			}
+			break;
+
+		case 'Triggers':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isMySQL() || conn.metadata.isPostgreSQL() || conn.metadata.isApacheDerby() ||
+					conn.metadata.isTeradata() || conn.metadata.isGreenplum() || conn.metadata.isSQLite() || conn.metadata.isHana() ||
+					conn.metadata.isAzure() || conn.metadata.isMariaDB()) {
+				return true;
+			}
+			break;
+
+		case 'DataTypes':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isPostgreSQL() || conn.metadata.isRedShift() || conn.metadata.isGreenplum() ||
+					conn.metadata.isVertica() || conn.metadata.isParAccel() || conn.metadata.isAzure() || conn.metadata.isHana()) {
+				return true;
+			}
+			break;
+
+		case 'Functions':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isInformix() || conn.metadata.isPostgreSQL() ||
+					conn.metadata.isMySQL() || conn.metadata.isApacheDerby() || conn.metadata.isTeradata() || conn.metadata.isGreenplum() ||
+					conn.metadata.isNetezza() || conn.metadata.isHana() || conn.metadata.isVertica() || conn.metadata.isParAccel() ||
+					conn.metadata.isAzure() || conn.metadata.isMariaDB()) {
+				return true;
+			}
+			break;
+
+		case 'Procedures':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isPostgreSQL() || conn.metadata.isMySQL() || conn.metadata.isApacheDerby() ||
+					conn.metadata.isTeradata() || conn.metadata.isNetezza() || conn.metadata.isVertica() || conn.metadata.isGreenplum() ||
+					conn.metadata.isParAccel() || conn.metadata.isVoltDB() || conn.metadata.isAzure() || conn.metadata.isHana() || conn.metadata.isMariaDB()) {
+				return true;
+			}
+			break;
+
+		case 'Views':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isMySQL() || conn.metadata.isPostgreSQL() || conn.metadata.isNCluster() ||
+					conn.metadata.isApacheDerby() || conn.metadata.isTeradata() || conn.metadata.isGreenplum() || conn.metadata.isRedShift() ||
+					conn.metadata.isNetezza() || conn.metadata.isVoltDB() || conn.metadata.isSQLite() || conn.metadata.isHana() ||
+					conn.metadata.isVertica() || conn.metadata.isHive() || conn.metadata.isMongoDB() || conn.metadata.isAzure() ||
+					conn.metadata.isParAccel() || conn.metadata.isBigQuery() || conn.metadata.isMariaDB()) {
+				return true;
+			}
+			break;
+
+		case 'Projections':
+			if(conn.metadata.isVertica){
+				return true;
+			}
+			break;
+
+		case 'Rules':
+			if (conn.metadata.isMssql() || conn.metadata.isSybaseASE() || conn.metadata.isPostgreSQL() || conn.metadata.isGreenplum()) {
+				return true;
+			}
+			break;
+
+		case 'Tables':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isMySQL() || conn.metadata.isPostgreSQL() || conn.metadata.isNCluster() ||
+					conn.metadata.isApacheDerby() || conn.metadata.isTeradata() || conn.metadata.isRedShift() || conn.metadata.isCassandra() ||
+					conn.metadata.isGreenplum() || conn.metadata.isNetezza() || conn.metadata.isVoltDB() || conn.metadata.isSQLite() ||
+					conn.metadata.isHana() || conn.metadata.isVertica() || conn.metadata.isHive() || conn.metadata.isMariaDB() ||
+					conn.metadata.isMongoDB() || conn.metadata.isAzure() || conn.metadata.isParAccel() || conn.metadata.isBigQuery()) {
+				return true;
+			}
+			break;
+
+		case 'MatViews':
+			if(conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isOracle() ||
+					conn.metadata.isGreenplum() || conn.metadata.isNetezza() || conn.metadata.isSybaseASE() || conn.metadata.isPostgreSQL()
+					|| conn.metadata.isCassandra()) {
+				return true;
+			}
+			break;
+
+		case 'DatabaseLinks':
+			if (conn.metadata.isMssql() || conn.metadata.isOracle() ||  conn.metadata.isSybaseASE()) {
+				return true;
+			}
+			break;
+
+		case 'Defaults':
+			if (conn.metadata.isMssql() || conn.metadata.isSybaseASE()) {
+				return true;
+			}
+			break;
+
+		case 'NickNames':
+			if (conn.metadata.isDB2()) {
+				return true;
+			}
+			break;
+
+		case 'Segments':
+			if (conn.metadata.isSybaseASE()) {
+				return true;
+			}
+			break;
+
+		case 'Events':
+			if (conn.metadata.isSybaseIQ() || conn.metadata.isSybaseAnywhere() || conn.metadata.isMySQL() || conn.metadata.isMariaDB()) {
+				return true;
+			}
+			break;
+
+		case 'Roles':
+			if (conn.metadata.isSybaseASE() || conn.metadata.isMssql() || conn.metadata.isInformix() || conn.metadata.isHana() ||
+					conn.metadata.isMongoDB() || conn.metadata.isAzure() || conn.metadata.isNCluster()) {
+				return true;
+			}
+			break;
+
+		case 'Schemas':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isPostgreSQL() || conn.metadata.isApacheDerby() || conn.metadata.isTeradata() ||
+					conn.metadata.isRedShift() || conn.metadata.isGreenplum() || conn.metadata.isHana() || conn.metadata.isVertica() ||
+					conn.metadata.isAzure() || conn.metadata.isNetezza() || conn.metadata.isNCluster()) {
+				return true;
+			}
+			break;
+
+		case 'Users':
+			if (conn.metadata.isMssql() || conn.metadata.isSybaseASE() || conn.metadata.isInformix() || conn.metadata.isRedShift() ||
+					conn.metadata.isGreenplum() || conn.metadata.isNetezza() || conn.metadata.isHana() || conn.metadata.isMongoDB() ||
+					conn.metadata.isAzure() || conn.metadata.isParAccel() || conn.metadata.isNCluster()) {
+				return true;
+			}
+			break;
+
+		default:
+			return false;
+	}
+	return false;
+}

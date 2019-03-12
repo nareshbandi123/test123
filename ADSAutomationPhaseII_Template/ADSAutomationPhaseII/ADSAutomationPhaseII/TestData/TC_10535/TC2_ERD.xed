@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><Diagram version="1.0" type="CASSANDRA" versionMajor="3" versionMinor="0" groupSchema="false" hide_inv="false">
+<Table id="0" name="ads_ParentTable" schema="" database="" background="16777165">
+<Column id="1" name="EMPID" type="int" length="-1" nulls="true"/>
+<Column id="2" name="Name" type="text" length="-1" nulls="true"/>
+<Column id="3" name="DOB" type="decimal" length="-1" nulls="true"/>
+<Column id="4" name="Active" type="boolean" length="-1" nulls="true"/>
+<Storage name="DistributeRandom" value="false"/>
+<Storage name="CompactionBucketHigh" value=""/>
+<Storage name="CompactionSSTableSizeInMB" value=""/>
+<Storage name="CompactionMaxThreshold" value=""/>
+<Storage name="CompactionMinSSTableSize" value=""/>
+<Storage name="db2zRestrictOnDrop" value="false"/>
+<Storage name="CompactionTombstoneCompactionInterval" value=""/>
+<Storage name="CompactionMinThreshold" value=""/>
+<Storage name="CompressionSSTableCompression" value=""/>
+<Storage name="DirectiveCompactStorage" value="false"/>
+<Storage name="StorageDCLocalReadRepairChance" value=""/>
+<Storage name="StorageCaching" value="{'keys':'NONE', 'rows_per_partition':'NONE'}"/>
+<Storage name="CompactionTombstoneThreshold" value=""/>
+<Storage name="ValueCompression" value="false"/>
+<Storage name="NoLogging" value="false"/>
+<Storage name="CompressionCRCCheckChance" value=""/>
+<Storage name="WithCRCols" value="false"/>
+<Storage name="CompactionBucketLow" value=""/>
+<Storage name="DirectiveClusteringOrder" value=""/>
+<Storage name="StorageGCGraceSeconds" value=""/>
+<Storage name="CompressionChunkLengthKB" value=""/>
+<Storage name="transferTable" value="false"/>
+<Storage name="db2zVolatile" value="false"/>
+<Storage name="StorageReadRepairChance" value=""/>
+<Storage name="AppendMode" value="false"/>
+<Storage name="External" value="false"/>
+<Storage name="CompactionStrategyClass" value=""/>
+<Storage name="StorageBloomFilterFPChance" value=""/>
+</Table>
+<Table id="5" name="ads_ChildTable" schema="" database="" background="16777165">
+<Column id="6" name="ID" type="int" length="-1" nulls="true"/>
+<Column id="7" name="Name" type="text" length="-1" nulls="true"/>
+<Column id="8" name="DOB" type="decimal" length="-1" nulls="true"/>
+<Column id="9" name="Active" type="boolean" length="-1" nulls="true"/>
+<Storage name="DistributeRandom" value="false"/>
+<Storage name="CompactionBucketHigh" value=""/>
+<Storage name="CompactionSSTableSizeInMB" value=""/>
+<Storage name="CompactionMaxThreshold" value=""/>
+<Storage name="CompactionMinSSTableSize" value=""/>
+<Storage name="db2zRestrictOnDrop" value="false"/>
+<Storage name="CompactionTombstoneCompactionInterval" value=""/>
+<Storage name="CompactionMinThreshold" value=""/>
+<Storage name="CompressionSSTableCompression" value=""/>
+<Storage name="DirectiveCompactStorage" value="false"/>
+<Storage name="StorageDCLocalReadRepairChance" value=""/>
+<Storage name="StorageCaching" value="{'keys':'NONE', 'rows_per_partition':'NONE'}"/>
+<Storage name="CompactionTombstoneThreshold" value=""/>
+<Storage name="ValueCompression" value="false"/>
+<Storage name="NoLogging" value="false"/>
+<Storage name="CompressionCRCCheckChance" value=""/>
+<Storage name="WithCRCols" value="false"/>
+<Storage name="CompactionBucketLow" value=""/>
+<Storage name="DirectiveClusteringOrder" value=""/>
+<Storage name="StorageGCGraceSeconds" value=""/>
+<Storage name="CompressionChunkLengthKB" value=""/>
+<Storage name="transferTable" value="false"/>
+<Storage name="db2zVolatile" value="false"/>
+<Storage name="StorageReadRepairChance" value=""/>
+<Storage name="AppendMode" value="false"/>
+<Storage name="External" value="false"/>
+<Storage name="CompactionStrategyClass" value=""/>
+<Storage name="StorageBloomFilterFPChance" value=""/>
+</Table>
+<Relation id="10" name="ads_Relation" cardinality="-2" identifying="false" nulls="false">
+<FK>1</FK>
+<PK>6</PK>
+<Text/>
+</Relation>
+<Sheet name="Untitled 1" id="11" disp_at="true" disp_ph="true" disp_co="true" disp_rn="true">
+<Place id="0" visible="true">10,10,120,60</Place>
+<Place id="5" visible="true">20,20,120,60</Place>
+<Place id="10" visible="true">500,0,0,0</Place>
+</Sheet>
+<Settings sheet="11" zoom="1.0"/>
+</Diagram>

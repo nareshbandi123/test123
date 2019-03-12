@@ -1,0 +1,1 @@
+create view ads_view as select * from ads_table where id=10

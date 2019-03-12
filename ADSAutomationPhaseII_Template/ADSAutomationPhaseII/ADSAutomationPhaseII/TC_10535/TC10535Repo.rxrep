@@ -1,0 +1,1305 @@
+﻿<repository
+id="975ef1ba-93ae-4f3b-af1e-3a6ed923ebad"
+name="TC10535Repo"
+rxversion="8.2">
+	<codegen
+	classname="TC10535Repo"
+	namespace="ADSAutomationPhaseII.TC_10535">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="2510bc26-e460-40a3-a4eb-56b8d18cd507"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="b062234d-34f9-41a1-a07a-d020ff7fb820"
+		isrooted="True"
+		name="Application"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="checkbox"
+			id="489913cd-c4a5-48d0-80c5-29e769b9f399"
+			name="F1Menu"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']//container[@name='myLeftStripe']/checkbox[@text='F1: Servers']
+			</item>
+			<item
+			capname="checkbox"
+			id="bd0501ce-6dee-46c8-9d89-7e7ba12444a4"
+			name="F3Menu"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']//container[@name='myLeftStripe']/checkbox[@text='F3: Projects']
+			</item>
+			<item
+			capname="treeitem"
+			id="618ab7c1-8eff-4d80-9c2e-60c027058ff9"
+			name="ProjectsTree"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='fGA']/treeitem[@text='Projects']
+			</item>
+			<item
+			capname="treeitem"
+			id="b9766c66-f0e0-494a-9f9e-68e4f48c0c2a"
+			name="TemplateTree"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='fGA']/?/?/treeitem[@text~'^Database\ Schema\ and\ Data\ ']
+			</item>
+			<item
+			capname="tabpage"
+			id="e2c06e88-20ad-4410-be03-61eeb00e94dd"
+			name="Tab"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']//container[@type='e&#41020;&#10423;&#41641;&#41114;Objectinstanceof']//tabpage[@title~'^Database\ Schema\ and\ Data\ ']
+			</item>
+			<item
+			capname="treeitem"
+			id="faa39c23-8c74-489b-9cee-880135241ace"
+			name="AquaScripts"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGA']//treeitem[@text='AquaScripts']
+			</item>
+			<item
+			capname="treeitem"
+			id="9d414544-a19a-4205-9d31-95fdb6bf624a"
+			name="Servers"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGA']//treeitem[@text='Servers']
+			</item>
+			<item
+			capname="treeitem"
+			id="c6d999b1-8ab5-4a06-9b50-83045fde4fbf"
+			name="UserFiles"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGA']//treeitem[@text='User Files']
+			</item>
+			<item
+			capname="treeitem"
+			id="2a5d3463-33bf-4d99-9088-ec77212ad642"
+			name="NewProjectFile"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGA']//treeitem[@text='AquaScripts']/treeitem[@text~'^Database\ Schema\ and\ Data\ ']
+			</item>
+			<item
+			capname="menuitem"
+			id="ab7d47c5-d4d4-48d5-a6ae-8b743df84e66"
+			name="ERModelerMenu"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']//menuitem[@text='ER Modeler']
+			</item>
+			<item
+			capname="unknown"
+			id="57fac13a-df86-4df1-b079-107ac0c64f6d"
+			name="NewItem"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']/element
+			</item>
+			<item
+			capname="unknown"
+			id="c8b88963-16d6-4ef7-970f-4f597bc4727a"
+			name="NewItem1"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio 19.5.0']/element
+			</item>
+			<basepath>
+				/form[@title='Aqua Data Studio 19.5.0']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="f689f428-1ec9-4ad4-b637-215e0253597c"
+		isrooted="True"
+		name="DataStudio"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="menuitem"
+			id="602ad7ce-7b4b-4250-b9a7-07d31ae90667"
+			name="NewProjectMenu"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='New Project']
+			</item>
+			<item
+			capname="menuitem"
+			id="b57b66db-5df6-4ae9-83c1-121232adcf3b"
+			name="RemoveMenu"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Remove']
+			</item>
+			<item
+			capname="menuitem"
+			id="ec093472-e162-4a8b-ab5b-ac8fb0455d6d"
+			name="TabCloseMenu"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@name='TabDocumentPane.close']
+			</item>
+			<basepath>
+				/form[@processname='datastudio']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="d02feddb-2a8b-4a3a-9412-edeedfb71fa5"
+		isrooted="True"
+		name="NewProject"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="listitem"
+			id="041ad1d6-2d22-4d63-b888-72ebf5369847"
+			name="DatabaseSchemaAndDataImportListItem"
+			searchtimeout="30000ms">
+				/form[@title='New Project']//container[@name='gro']//list[@name='options']/listitem[@text~'^Database\ Schema\ and\ Data\ ']
+			</item>
+			<item
+			capname="text"
+			id="7f8e838a-ad7d-4ae9-860c-82a45fbfccbd"
+			name="FolderPathTextbox"
+			searchtimeout="30000ms">
+				/form[@title='New Project']//container[@type='JPanel']//text[@name='gmt']
+			</item>
+			<item
+			capname="button"
+			id="cd6965d6-c947-49b8-895d-7a749db3c59c"
+			name="OkButton"
+			searchtimeout="30000ms">
+				/form[@title='New Project']//container[@name='buttonPanel']/button[@text='Create']
+			</item>
+			<item
+			capname="button"
+			id="a4a05c49-b9c9-4245-87c3-e959eb48334d"
+			name="BrowseButton"
+			searchtimeout="30000ms">
+				/form[@title='New Project']//container[@type='JPanel']//button[@text='...']
+			</item>
+			<basepath>
+				/form[@title='New Project']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="b431ad76-6e70-4944-a77f-5314099520fe"
+		isrooted="True"
+		name="RemoveWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="3eb912ca-d622-4648-a206-404b7bd174fe"
+			name="YesButton"
+			searchtimeout="30000ms">
+				/form[@title='Remove']//container[@name='OptionPane.buttonArea']/button[@text='Yes']
+			</item>
+			<basepath>
+				/form[@title='Remove']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="2af9e6c0-4bdb-401e-888d-e47d2b34d714"
+		isrooted="True"
+		name="SelectFolder"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="6e9d1775-5487-44de-9695-e43ba63f7d0a"
+			name="FolderPathTextbox"
+			searchtimeout="30000ms">
+				/form[@title='Select Folder']/element/container[@type='JPanel']/container[3]/container[2]/text[@accessiblename='Folder name:']
+			</item>
+			<item
+			capname="button"
+			id="54eb4a75-968e-4fae-ad2c-8c8f01de794b"
+			name="SelectButton"
+			searchtimeout="30000ms">
+				/form[@title='Select Folder']/element/container[@type='JPanel']/container[3]/container[3]/button[@text='Select']
+			</item>
+			<basepath>
+				/form[@title='Select Folder']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="f97fffa4-056e-4948-845a-822db07e8f2c"
+		isrooted="True"
+		name="SunAwtWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="menuitem"
+			id="c7b0139c-1405-4228-a3e8-5a5fb12f8ca9"
+			name="New"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='New']
+			</item>
+			<item
+			capname="menuitem"
+			id="8c6df57a-08c5-4f5d-b93d-c3edfd5321d0"
+			name="NewTable"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='New Table...']
+			</item>
+			<item
+			capname="menuitem"
+			id="c47fa800-0a39-4548-8de8-15a7ce501ca2"
+			name="Properties"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='Properties']
+			</item>
+			<item
+			capname="menuitem"
+			id="d7ff55e0-6b17-4b50-95cb-d48e393081b3"
+			name="NewRelationship"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='New Relationship...']
+			</item>
+			<item
+			capname="menuitem"
+			id="6695659e-eb34-44a3-a5ec-676b2ec09ba8"
+			name="DeleteColumn"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='Delete Column']
+			</item>
+			<item
+			capname="menuitem"
+			id="ddb39eec-f64c-49bb-a52e-90d22ead6d90"
+			name="Open"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='Open']
+			</item>
+			<item
+			capname="menuitem"
+			id="95541ca7-de29-4f2f-88f1-89624de68f60"
+			name="NewCollection"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='New Collection...']
+			</item>
+			<item
+			capname="unknown"
+			id="f4aaa21a-e01b-4158-9971-34de5b35dc03"
+			name="NewItem"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']/element
+			</item>
+			<basepath>
+				/form[@class='SunAwtWindow']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="29fce121-d7ca-4d59-86c9-53f5ab5c95d2"
+		isrooted="True"
+		name="NewERDDatatype"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="listitem"
+			id="467629dd-5bad-4f07-bf93-e946425b3ed7"
+			name="Amazon"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Amazon RedShift']
+			</item>
+			<item
+			capname="listitem"
+			id="78d70a54-3f67-452e-b19c-2387c96ef64a"
+			name="ApacheCassandra"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Apache Cassandra']
+			</item>
+			<item
+			capname="listitem"
+			id="e64562b6-12a8-40c5-ae07-9ee518fc0d9b"
+			name="ApacheDerby"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Apache Derby']
+			</item>
+			<item
+			capname="listitem"
+			id="f57b034a-851c-46e2-b300-3054a8c287c4"
+			name="DB2LUW"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='DB2 - LUW']
+			</item>
+			<item
+			capname="listitem"
+			id="9c818296-5c66-4b0f-9b86-b4caf5846202"
+			name="Greenplum"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Greenplum']
+			</item>
+			<item
+			capname="listitem"
+			id="6a19845b-47c3-4531-ba67-6b54c6b1d832"
+			name="Informix"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Informix']
+			</item>
+			<item
+			capname="listitem"
+			id="f0bdc1da-3ab7-44f2-9ea0-bb247b9a9e75"
+			name="MariaDB"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='MariaDB 10.x']
+			</item>
+			<item
+			capname="listitem"
+			id="ad8ea239-915b-4234-9654-7a2d62c282ad"
+			name="MongoDB"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='MongoDB']
+			</item>
+			<item
+			capname="listitem"
+			id="97a8e3b1-9f0a-456f-8e47-6a5d127dd27c"
+			name="MSSQLServer"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='MS SQL Server']
+			</item>
+			<item
+			capname="listitem"
+			id="3d06c909-2b0f-4a2f-97f2-4b7db049bf25"
+			name="MySQL"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='MySQL']
+			</item>
+			<item
+			capname="listitem"
+			id="bc9fde21-62a8-43df-8bc6-332b17ac039b"
+			name="Netezza"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Netezza']
+			</item>
+			<item
+			capname="listitem"
+			id="4866f56c-5c10-40a0-9561-a22ac9403836"
+			name="Oracle"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Oracle']
+			</item>
+			<item
+			capname="listitem"
+			id="54b61a76-cca5-467a-9e15-c8461849d149"
+			name="PostgreSQL"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='PostgreSQL']
+			</item>
+			<item
+			capname="listitem"
+			id="4955e0b3-4c28-46e0-a4a0-04956fc0434a"
+			name="SybaseAnywhere"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Sybase Anywhere']
+			</item>
+			<item
+			capname="listitem"
+			id="54226c7c-49f1-420d-94f3-b3d676db1873"
+			name="SybaseASE"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Sybase ASE']
+			</item>
+			<item
+			capname="listitem"
+			id="cea597be-bbab-4a55-a4ab-9963aaebf582"
+			name="SybaseIQ"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Sybase IQ']
+			</item>
+			<item
+			capname="listitem"
+			id="e2cb7c81-0b64-4164-abfd-6f832a75b5d6"
+			name="TeradataDatabase"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Teradata Database']
+			</item>
+			<item
+			capname="listitem"
+			id="0db45abf-3d2a-4df6-8b48-882ed9511c7f"
+			name="Vertica"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='Vertica']
+			</item>
+			<item
+			capname="listitem"
+			id="7a20779f-2955-4987-8e6b-6c2d13e0375c"
+			name="SAPHana"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='SAP Hana']
+			</item>
+			<item
+			capname="listitem"
+			id="fac94436-adab-48d8-9c92-a113dde332e7"
+			name="MSSQLAzure"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEK']/listitem[@text='MS SQL Database (Azure)']
+			</item>
+			<folder
+			capname="unknown"
+			id="3867ef8c-66e9-4d73-bcf9-c22e764417db"
+			isrooted="False"
+			name="AmazonVersion"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="d5e2ae24-4931-43ef-aadc-f67824c129e6"
+				name="V1"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']/container[@name='kTO']//list[@name='kEL']/listitem[@text='1.0']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="2e43c955-9947-4593-a25e-ce6c48fd1472"
+			isrooted="False"
+			name="Cassandra"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="4409a5df-6a06-4b03-9bb8-ee9df6dc2993"
+				name="V37"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='3.0']
+				</item>
+				<item
+				capname="listitem"
+				id="374a08bb-eefb-45da-a9bd-5458ef368a08"
+				name="V22"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='2.0']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="751d47b4-77ae-4614-9885-121ae999ff3b"
+			isrooted="False"
+			name="Derby"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="ade9275e-2ce2-478d-8aed-2fd5bd5bac6a"
+				name="V1014"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='10.14']
+				</item>
+				<item
+				capname="listitem"
+				id="d5774f5f-fa16-439b-bc4e-e3275f27a8a6"
+				name="V1013"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='10.13']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="0ebdef45-206c-48c8-a223-27768054112c"
+			isrooted="False"
+			name="DB2"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="ed080e83-d8ec-4620-809c-c001eb0e16c5"
+				name="V111"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='11.1']
+				</item>
+				<item
+				capname="listitem"
+				id="4a56b8a2-c090-4d9e-872e-313229a163ef"
+				name="V105"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='10.5']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="c076ab21-3c37-48f2-9489-0bd5874f818c"
+			isrooted="False"
+			name="GreenplumDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="1d8706a7-9685-4f9b-988e-b34b6befc307"
+				name="V4312"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='4.3']
+				</item>
+				<item
+				capname="listitem"
+				id="cd29a739-f830-4fe6-9de1-37a43f947936"
+				name="V5"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='4.3']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="43fcc0be-1668-4917-892d-a1c11bcd5c10"
+			isrooted="False"
+			name="InformixDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="9346f69a-0258-4db1-b174-cd28a8cc30e9"
+				name="V121"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='12.1']
+				</item>
+				<item
+				capname="listitem"
+				id="aaf8489c-a8c1-4240-85c6-220890679dfe"
+				name="V117"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='11.7']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="820b17ad-afff-4219-9372-9d344aa32c52"
+			isrooted="False"
+			name="Maria10XDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="738f8b67-89e7-4be5-8064-bd59811f597e"
+				name="V102"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='10.2']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="72446302-7c56-4fd5-bd02-d8a5d502334c"
+			isrooted="False"
+			name="MongoXDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="65d93412-4937-4735-b4c7-bfe76cba5b0e"
+				name="V341"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='3.4']
+				</item>
+				<item
+				capname="listitem"
+				id="931a10d2-b58b-447f-9d84-dbdbdbe28fec"
+				name="V321"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='3.2']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="55500f39-582e-4a57-ba0e-8b99f79b6fd0"
+			isrooted="False"
+			name="MySQLDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="9bb986d9-e629-4c93-89da-1c86de7272e9"
+				name="V8"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='8.0']
+				</item>
+				<item
+				capname="listitem"
+				id="4d825e30-e3cf-4cc7-ab61-c2ece3f2c2ca"
+				name="V57"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='5.7']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="a53a3ab2-7701-4ad8-aa89-8d048983c641"
+			isrooted="False"
+			name="Netteza"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="7b86a7fa-678d-4d60-9723-e56d4f0173cd"
+				name="V72"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='7.2']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="89953fb1-71c8-4e92-acd6-501ba9f7209e"
+			isrooted="False"
+			name="OracleDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="b478ba62-fe71-44da-afa0-44b4d6eb58ff"
+				name="V12"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='12c']
+				</item>
+				<item
+				capname="listitem"
+				id="04ab4f2e-018f-443b-8e05-29c6860e904e"
+				name="V11"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='11g']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="76707458-59ac-437b-bbc5-a798834868c7"
+			isrooted="False"
+			name="PostgreSQLDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="6f3e451b-658d-4e64-bbcf-50bcdb98874a"
+				name="V10"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='10.4']
+				</item>
+				<item
+				capname="listitem"
+				id="f9c11c7b-d0ce-4535-9c89-169b7319956d"
+				name="V96"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='9.6']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="71b7d134-bfbf-45b1-944d-fe8407896798"
+			isrooted="False"
+			name="SAPHanaDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="9e800c98-f48f-4f8d-a614-e21f2333e1d3"
+				name="V2"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='2.0']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="8a408430-5653-41de-93db-6dba5067450a"
+			isrooted="False"
+			name="MSAzureDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="98435283-810b-4222-8dab-255c6c9522e3"
+				name="V12"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='2012']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="6665fa96-d548-4d4e-bba5-8a785dde9cfd"
+			isrooted="False"
+			name="MSSQLDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="d6f02a39-ae90-4e26-8ea9-cd7df11caa19"
+				name="V2017"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='2017']
+				</item>
+				<item
+				capname="listitem"
+				id="0668dbba-66d0-435b-b34a-ba661c66b54f"
+				name="V2016"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='2016']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="28aa2dc2-4368-4c7a-9416-b40e550f41e2"
+			isrooted="False"
+			name="SybaseAny"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="119e7797-3b26-4dd5-a7e9-3963fb0b09a9"
+				name="V17"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='17.0']
+				</item>
+				<item
+				capname="listitem"
+				id="4563cacd-e8e5-4dd9-8130-b632b0f4a784"
+				name="V16"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='16.0']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="578cc29a-a626-45ef-8f3e-e7ae633de97e"
+			isrooted="False"
+			name="SybaseASEDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="e279792d-9423-4a0b-b0c9-a7fb0970b365"
+				name="V16"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='16.0']
+				</item>
+				<item
+				capname="listitem"
+				id="7fe8f6fe-aee5-426f-b4bc-23bec4da7aa9"
+				name="V157"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='15.7']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="cd02322a-0a58-4a34-bc00-643a2a2e9878"
+			isrooted="False"
+			name="SybaseIQDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="7247d3f9-9e75-419e-a358-5a97305c1a81"
+				name="V16"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='16.0']
+				</item>
+				<item
+				capname="listitem"
+				id="38633ccd-720d-4ef4-bb84-b148973cc5b3"
+				name="V154"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='15.4']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="edcf7496-24fd-4a37-ad6f-a5786b9db05a"
+			isrooted="False"
+			name="Teradata"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="85a388ed-f7dc-4d33-9838-9e4ecc3ed537"
+				name="V1620"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='16.0']
+				</item>
+				<item
+				capname="listitem"
+				id="5839aa89-2eac-4e90-a983-c63d75cc85ca"
+				name="V1510"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='15.0']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="2c0ff236-69a9-4778-a0f9-226efae666c8"
+			isrooted="False"
+			name="VerticaDB"
+			searchtimeout="0ms">
+				<item
+				capname="listitem"
+				id="f00118fa-0819-42b4-b8a7-e903fa43d05e"
+				name="V91"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='9.1']
+				</item>
+				<item
+				capname="listitem"
+				id="10b2debd-cda9-47c7-878d-15d53e204960"
+				name="V8"
+				searchtimeout="30000ms">
+					/form[@title~'^New\ Entity\ Relationship\ D']//container[@name='kTO']//list[@name='kEL']/listitem[@text='8.0']
+				</item>
+			</folder>
+			<item
+			capname="button"
+			id="cbbe8d4c-f947-4d27-9c2d-8f9092d56913"
+			name="OkButton"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']//button[@text='OK']
+			</item>
+			<item
+			capname="unknown"
+			id="a4c5720f-2f04-4bab-b96c-b308628832df"
+			name="NewItem"
+			searchtimeout="30000ms">
+				/form[@title~'^New\ Entity\ Relationship\ D']/element
+			</item>
+			<basepath>
+				/form[@title~'^New\ Entity\ Relationship\ D']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="952c031f-759a-461f-a5ab-5fd833ecf577"
+		isrooted="True"
+		name="EntityRelationshipDiagram"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="treeitem"
+			id="7bca7502-c11e-43e4-8616-2781ae0eb1e8"
+			name="Tables"
+			searchtimeout="30000ms">
+				/form[@title~'^Entity\ Relationship\ Diagr']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='kGV']/?/?/container[@name='viewport']/tree[@name='dmu']/?/?/treeitem[@text='Tables']
+			</item>
+			<item
+			capname="treeitem"
+			id="96fe6a3e-1234-46a2-8a5c-cc021da27709"
+			name="Views"
+			searchtimeout="30000ms">
+				/form[@title~'^Entity\ Relationship\ Diagr']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='kGV']/?/?/container[@name='viewport']/tree[@name='dmu']/?/?/treeitem[@text='Views']
+			</item>
+			<item
+			capname="treeitem"
+			id="0a1a0bac-c436-4346-83d9-5173a4f8ea81"
+			name="Relationships"
+			searchtimeout="30000ms">
+				/form[@title~'^Entity\ Relationship\ Diagr']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='kGV']/?/?/container[@name='viewport']/tree[@name='dmu']/?/?/treeitem[@text='Relationships']
+			</item>
+			<item
+			capname="treeitem"
+			id="03a23812-19b5-450d-bf44-69447f5ed078"
+			name="Notes"
+			searchtimeout="30000ms">
+				/form[@title~'^Entity\ Relationship\ Diagr']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='kGV']/?/?/container[@name='viewport']/tree[@name='dmu']/?/?/treeitem[@text='Notes']
+			</item>
+			<item
+			capname="treeitem"
+			id="5df30fd0-2b3e-418b-9b51-3f9c7b148beb"
+			name="Table1"
+			searchtimeout="30000ms">
+				/form[@title~'^Entity\ Relationship\ Diagr']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='joC']/container[@name='viewport']/tree[@name='dmu']//treeitem[@text='Table_1']
+			</item>
+			<item
+			capname="treeitem"
+			id="35b416ad-eb70-433b-9090-679de5784a28"
+			name="Table2"
+			searchtimeout="30000ms">
+				/form[@title~'^Entity\ Relationship\ Diagr']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='joC']/container[@name='viewport']/tree[@name='dmu']//treeitem[@text='Table_2']
+			</item>
+			<item
+			capname="button"
+			id="e3b07aba-ee0e-40bd-a92b-b115e64ea65c"
+			name="SaveButton"
+			searchtimeout="30000ms">
+				/form[@title~'^Entity\ Relationship\ Diagr']//container[@type='T&#41287;&#42069;0&#41372;forpublic']/button[1]
+			</item>
+			<item
+			capname="treeitem"
+			id="c80927be-883b-42db-a41f-7bccab1bc132"
+			name="Collections"
+			searchtimeout="30000ms">
+				/form[@title~'^Entity\ Relationship\ Diagr']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='kGV']/?/?/container[@name='viewport']/tree[@name='dmu']/?/?/treeitem[@text='Collections']
+			</item>
+			<item
+			capname="treeitem"
+			id="7535d0e3-99b0-4902-85ca-55d946c26ee5"
+			name="Collection1"
+			searchtimeout="30000ms">
+				/form[@title~'^Entity\ Relationship\ Diagr']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='joC']/container[@name='viewport']/tree[@name='dmu']//treeitem[@text='Collection_1']
+			</item>
+			<item
+			capname="treeitem"
+			id="12df5774-846c-448a-a848-9535d891069d"
+			name="Collection2"
+			searchtimeout="30000ms">
+				/form[@title~'^Entity\ Relationship\ Diagr']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='joC']/container[@name='viewport']/tree[@name='dmu']//treeitem[@text='Collection_2']
+			</item>
+			<basepath>
+				/form[@title~'^Entity\ Relationship\ Diagr']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="beaf8f96-4a65-4a73-adf1-5296a2bdd33b"
+		isrooted="True"
+		name="TableProperties"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="1df7c315-eba0-487b-83b6-542beff7c1f4"
+			name="TableNameTextbox"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']//text[@name='fGh']
+			</item>
+			<item
+			capname="cell"
+			id="61ae44e3-37b0-4471-890c-c358c94b28d6"
+			name="Row1Column1"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='0']/cell[@columnindex='0']
+			</item>
+			<item
+			capname="cell"
+			id="62e429c0-303e-46cf-a440-596ebe642139"
+			name="Row1Column2"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='0']/cell[@columnindex='1']
+			</item>
+			<item
+			capname="cell"
+			id="b8af21a6-ce90-49de-8c92-b68069137d92"
+			name="Row1Column4"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='0']/cell[@columnindex='3']
+			</item>
+			<item
+			capname="cell"
+			id="de3f7837-28ff-442a-9a03-56fd1281c9ae"
+			name="Row2Column1"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='1']/cell[@columnindex='0']
+			</item>
+			<item
+			capname="cell"
+			id="a16f5f8f-c0fa-4fd0-9212-0b4b7ca2ad53"
+			name="Row2Column2"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='1']/cell[@columnindex='1']
+			</item>
+			<item
+			capname="cell"
+			id="564311fb-f157-4a7f-bea0-c7e6e4808944"
+			name="Row2Column3"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='1']/cell[@columnindex='2']
+			</item>
+			<item
+			capname="cell"
+			id="f5710e62-d58e-440f-a08b-32220e27e39f"
+			name="Row2Column4"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='1']/cell[@columnindex='3']
+			</item>
+			<item
+			capname="cell"
+			id="f859f283-7d1a-4e12-8018-744f8235c2f3"
+			name="Row3Column1"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='2']/cell[@columnindex='0']
+			</item>
+			<item
+			capname="cell"
+			id="a71c996c-6b10-4eed-87ee-58614a1a6fdf"
+			name="Row3Column2"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='2']/cell[@columnindex='1']
+			</item>
+			<item
+			capname="cell"
+			id="db6b9fa5-6cd9-4e0e-ad3f-81dfd2621a94"
+			name="Row3Column3"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='2']/cell[@columnindex='2']
+			</item>
+			<item
+			capname="cell"
+			id="c71c4570-f29d-4d74-9562-f1d3f137685e"
+			name="Row3Column4"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='2']/cell[@columnindex='3']
+			</item>
+			<item
+			capname="cell"
+			id="8252131e-4a6e-4454-99b5-5b058110caef"
+			name="Row4Column1"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='3']/cell[@columnindex='0']
+			</item>
+			<item
+			capname="cell"
+			id="5f5422df-67db-4caf-87ed-87d5e228c628"
+			name="Row4Column2"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='3']/cell[@columnindex='1']
+			</item>
+			<item
+			capname="cell"
+			id="518bde4f-690e-4d32-adc5-2606686f5aa7"
+			name="Row4Column3"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='3']/cell[@columnindex='2']
+			</item>
+			<item
+			capname="cell"
+			id="79abcbf4-f342-49e8-a6ec-588c0bb1e3b5"
+			name="Row4Column4"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='3']/cell[@columnindex='3']
+			</item>
+			<item
+			capname="button"
+			id="ea427c02-5c7b-43f3-b630-7f1c1fff4423"
+			name="OKButton"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//button[@text='OK']
+			</item>
+			<item
+			capname="cell"
+			id="32669eb8-3e75-404a-9e79-0923643e8a07"
+			name="ExtraRow"
+			searchtimeout="30000ms">
+				/form[@title='Table Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']//table[@name='a']/?/?/cell[@text='5']
+			</item>
+			<basepath>
+				/form[@title='Table Properties']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="e8d4f6a8-3990-44cb-aba8-f9627de32fc5"
+		isrooted="True"
+		name="RelationshipProperties"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="86b6c85c-6a22-4658-af42-63b8a72e05b2"
+			name="RelationshipNameTextbox"
+			searchtimeout="30000ms">
+				/form[@title='Relationship Properties']//container[@name='kTO']/?/?/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/text[@name='fGh']
+			</item>
+			<item
+			capname="combobox"
+			id="ee60e86a-c5a1-45aa-b4b0-aa32b15b78a7"
+			name="ParentTableCombobox"
+			searchtimeout="30000ms">
+				/form[@title='Relationship Properties']//container[@name='kTO']/?/?/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUu']/?/?/container[@name='kUj']/combobox[3]
+			</item>
+			<item
+			capname="combobox"
+			id="8734ff88-6e2e-4514-9c78-54de9288b884"
+			name="ChildTableCombobox"
+			searchtimeout="30000ms">
+				/form[@title='Relationship Properties']//container[@name='kTO']/?/?/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUu']/?/?/container[@name='kUk']/combobox[3]
+			</item>
+			<item
+			capname="table"
+			id="0a449adb-5442-423c-932e-2ca2b44da683"
+			name="ParentTableIDColumn"
+			searchtimeout="30000ms">
+				/form[@title='Relationship Properties']//container[@name='kTO']/?/?/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUu']//container[@name='viewport']/table[@name='kUn']
+			</item>
+			<item
+			capname="table"
+			id="34481616-b2af-4109-859a-3265af856a7b"
+			name="ChildTableIDColumn"
+			searchtimeout="30000ms">
+				/form[@title='Relationship Properties']//container[@name='kTO']/?/?/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUu']/container[@accessiblename=' Child Table ']/container[@type='JScrollPane']/container[@name='viewport']/table[@name='kUo']
+			</item>
+			<item
+			capname="button"
+			id="c0c3a8cf-de25-4bce-b7eb-a6a079bcb0a5"
+			name="OkButton"
+			searchtimeout="30000ms">
+				/form[@title='Relationship Properties']//button[@name='defaultButton']
+			</item>
+			<basepath>
+				/form[@title='Relationship Properties']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="b64cb9cc-8262-40b2-8728-9aedb906948d"
+		isrooted="True"
+		name="SaveWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="6ae7db05-d2ce-4579-9d33-a1c4032dd108"
+			name="SaveFilePath"
+			searchtimeout="30000ms">
+				/form[@title='Save']//element/container[@type='JPanel']/container[3]/container[2]/text[@accessiblename='File name:']
+			</item>
+			<item
+			capname="button"
+			id="08929193-9490-4da1-9275-c25fdd2320b1"
+			name="SaveButton"
+			searchtimeout="30000ms">
+				/form[@title='Save']//element/container[@type='JPanel']/container[3]/container[3]/button[@text='Save']
+			</item>
+			<basepath>
+				/form[@title='Save']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="1c23491f-07eb-4941-81ba-5809113cd092"
+		isrooted="True"
+		name="OpenWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="3b3b34f8-16f1-47cc-ba1d-5bb2ba0175a6"
+			name="FilePathTextbox"
+			searchtimeout="30000ms">
+				/form[@title='Open']//element/container[@type='JPanel']/container[3]/container[2]/text[@accessiblename='File name:']
+			</item>
+			<item
+			capname="button"
+			id="90c5e750-f569-4481-9c25-0a53c737f39a"
+			name="OpenButton"
+			searchtimeout="30000ms">
+				/form[@title='Open']//element/container[@type='JPanel']/container[3]/container[3]/button[@text='Open']
+			</item>
+			<basepath>
+				/form[@title='Open']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="acc6ef4c-b557-43bc-a255-25c95fb2fd48"
+		isrooted="True"
+		name="CollectionProperties"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="c3f63c84-5275-4857-bb93-946faf65dbab"
+			name="CollectionNameTextBox"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']//text[@name='fGh']
+			</item>
+			<item
+			capname="cell"
+			id="008036a2-1c51-4c5a-b475-a98f94a29724"
+			name="Row1Column1"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='0']/cell[@columnindex='0']
+			</item>
+			<item
+			capname="cell"
+			id="68675f15-5d8c-4343-b7e8-449a213fc56c"
+			name="Row1Column2"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='0']/cell[@columnindex='1']
+			</item>
+			<item
+			capname="cell"
+			id="69b8be62-aaeb-4f89-b47a-d46644ac7070"
+			name="Row1Column4"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='0']/cell[@columnindex='3']
+			</item>
+			<item
+			capname="cell"
+			id="2e26b477-8ebd-43be-b9e2-b34f902850b8"
+			name="Row2Column1"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='1']/cell[@columnindex='0']
+			</item>
+			<item
+			capname="cell"
+			id="39d7a4ef-fe4d-45d6-8106-a59aa2b200d7"
+			name="Row2Column2"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='1']/cell[@columnindex='1']
+			</item>
+			<item
+			capname="cell"
+			id="492517ee-17db-475f-b7d1-d082bc1a9192"
+			name="Row2Column3"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='1']/cell[@columnindex='2']
+			</item>
+			<item
+			capname="cell"
+			id="ca09750f-3671-4533-bacd-406958a51a9c"
+			name="Row2Column4"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='1']/cell[@columnindex='3']
+			</item>
+			<item
+			capname="cell"
+			id="771fd573-7edd-4d62-ad19-93d64591dc77"
+			name="Row3Column1"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='2']/cell[@columnindex='0']
+			</item>
+			<item
+			capname="cell"
+			id="b68ab425-226c-423e-bf44-0a74a93eecf9"
+			name="Row3Column2"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='2']/cell[@columnindex='1']
+			</item>
+			<item
+			capname="cell"
+			id="5bafa5a0-2ec5-4909-aeef-a073e3daa046"
+			name="Row3Column3"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='2']/cell[@columnindex='2']
+			</item>
+			<item
+			capname="cell"
+			id="633b99f0-788d-4c63-87c3-4e810b3c6512"
+			name="Row3Column4"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='2']/cell[@columnindex='3']
+			</item>
+			<item
+			capname="cell"
+			id="4ae95aa0-11f8-4180-ab7c-2b2b661f2504"
+			name="Row4Column1"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='3']/cell[@columnindex='0']
+			</item>
+			<item
+			capname="cell"
+			id="df90a8c5-c731-4d3e-9fb2-5ec8a719d5b6"
+			name="Row4Column2"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='3']/cell[@columnindex='1']
+			</item>
+			<item
+			capname="cell"
+			id="88f8eeda-b4a4-4508-8312-92a7629c1206"
+			name="Row4Column3"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='3']/cell[@columnindex='2']
+			</item>
+			<item
+			capname="cell"
+			id="1ca46e7b-6867-4955-9aee-80468e0febb4"
+			name="Row4Column4"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']/container[@type='G&#41178;&#10484;&#41590;&#42025;8case']/container[5]/table[@type='G&#41178;&#10484;&#41590;&#42025;8case$1']/row[@index='3']/cell[@columnindex='3']
+			</item>
+			<item
+			capname="button"
+			id="6ae522c8-801f-462b-b6b9-97a4d0779a87"
+			name="OKButton"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//button[@text='OK']
+			</item>
+			<item
+			capname="cell"
+			id="5ccf40a1-77f2-4d99-a323-3c909018018b"
+			name="ExtraRow"
+			searchtimeout="30000ms">
+				/form[@title='Collection Properties']//container[@name='kTO']/container/container[@type='N&#41411;&#41706;&#42058;&#10324;']/?/?/container[@name='kUK']//table[@name='a']/?/?/cell[@text='5']
+			</item>
+			<basepath>
+				/form[@title='Collection Properties']
+			</basepath>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

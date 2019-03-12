@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 8.2
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{28F0F91B-F526-4C63-94F2-8E086170007D}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADSAutomationPhaseII", "ADSAutomationPhaseII\ADSAutomationPhaseII.csproj", "{2D0883E6-11C7-418C-A21A-6C87CC31E99A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D0883E6-11C7-418C-A21A-6C87CC31E99A}.Debug|x86.Build.0 = Debug|x86
+		{2D0883E6-11C7-418C-A21A-6C87CC31E99A}.Debug|x86.ActiveCfg = Debug|x86
+		{2D0883E6-11C7-418C-A21A-6C87CC31E99A}.Release|x86.Build.0 = Release|x86
+		{2D0883E6-11C7-418C-A21A-6C87CC31E99A}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

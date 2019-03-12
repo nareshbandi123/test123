@@ -1,0 +1,2133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{2D0883E6-11C7-418C-A21A-6C87CC31E99A}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ADSAutomationPhaseII</RootNamespace>
+    <AssemblyName>ADSAutomationPhaseII</AssemblyName>
+    <RanorexVersion>8.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>e6b257bf-8464-4198-94b9-3fd068283d9e</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\AppRepo.cs">
+      <BoundTo>12b22f2c-3c09-4f55-a647-bb8bb3448179</BoundTo>
+      <DependentUpon>AppRepo.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>ce8463e3-c295-4424-a700-ab1a8ede0938</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>72342de8-0ab3-47d6-8035-bc7ec62c32c4</id>
+    </Compile>
+    <Compile Include="Base\BaseClass.cs">
+      <id>6c898bb2-e604-432e-b483-684515d7d82f</id>
+    </Compile>
+    <Compile Include="Commons\Common.cs">
+      <id>c2b48929-5ded-4b69-a00e-fcf65c0f64b8</id>
+    </Compile>
+    <Compile Include="Commons\Reports.cs">
+      <id>503fe76e-138b-4a3f-b6e5-3331aa27fac4</id>
+    </Compile>
+    <Compile Include="Commons\ServerListConstants.cs">
+      <id>2592f8c0-3321-494a-ba01-e430641720b3</id>
+    </Compile>
+    <Compile Include="Configuration\Config.cs">
+      <id>6a046bd7-1d80-4c33-8634-61fde374112a</id>
+    </Compile>
+    <Compile Include="Extensions\Extension.cs">
+      <id>ef2bd479-7e2d-4dc1-a3d3-7ae56b9b7bb1</id>
+    </Compile>
+    <Compile Include="Application\CloseADS.cs">
+      <id>08c29411-0575-4551-85f8-6d645674d98c</id>
+    </Compile>
+    <Compile Include="Application\OpenADS.cs">
+      <id>f1c528db-6c3d-4c75-a16b-effc50035760</id>
+    </Compile>
+    <Compile Include="Preconditions\PreconditionRepo.cs">
+      <BoundTo>1b366457-dfbb-4278-be92-e9a336ea5dcb</BoundTo>
+      <DependentUpon>PreconditionRepo.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>5b38d766-60c2-4436-b9d2-682a29040b09</id>
+    </Compile>
+    <Compile Include="Preconditions\Steps.cs">
+      <id>606b111d-b4b7-4437-b90c-7e52a1de4189</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>107919d7-f11c-49a3-b30d-8f804eaa02fa</id>
+    </Compile>
+    <Compile Include="TC_10535\Steps.cs">
+      <id>f29b86bf-db67-4a18-a65a-de165d9308ed</id>
+    </Compile>
+    <Compile Include="TC_10535\TC10535Repo.cs">
+      <BoundTo>e6b257bf-8464-4198-94b9-3fd068283d9e</BoundTo>
+      <DependentUpon>TC10535Repo.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>6e424269-1aca-48c9-954a-489611ad9a93</id>
+    </Compile>
+    <Compile Include="TC_10535\TC1\CreateNewprojectTemplate.cs">
+      <id>88b62dbd-2c56-4dce-8942-41698b78bfb6</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Amazon_Redshift.cs">
+      <id>a3012b63-3340-41c0-835c-d709c421c5af</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Cassandra22.cs">
+      <id>168f13cc-228d-45bb-827a-34ce6a30bc4f</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Cassandra37.cs">
+      <id>ccf8dd64-1356-4fb7-8701-6c825cc3946f</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\DB2LUW105.cs">
+      <id>993c421d-547f-4b32-ac7d-28aefcecbf91</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\DB2LUW111.cs">
+      <id>a9c749ba-7545-4095-90c1-eca8642b616e</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Derby1013.cs">
+      <id>f8cac08c-c50c-4ba6-9f88-3a350a44c4f1</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Derby1014.cs">
+      <id>848ce0ec-e761-4954-a604-330ab6db4e97</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\GreenPlum4312.cs">
+      <id>61936b7b-e38a-4bde-b3eb-6c8c7ed8f52b</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\GreenPlum5.cs">
+      <id>fe5d5ab7-02c9-4603-bb4c-bc5ba5e9b2eb</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Informix117.cs">
+      <id>79165fc7-d532-4e27-b2bc-b1d56442105b</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Informix121.cs">
+      <id>5e142e48-6bf5-4658-94be-17bfacd77f5b</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\MariaDB102.cs">
+      <id>60132173-8dca-4c7c-85b0-0d859a36c246</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\MongoDB321.cs">
+      <id>5c982595-1db3-4ac5-b7f2-1506b0d08b4a</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\MongoDB341.cs">
+      <id>4f82b8a0-8307-4936-8f6f-49bfa172e879</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\MSSQLAzureDB.cs">
+      <id>d2d3a868-f5ef-4122-9139-591520b2289d</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\MSSQLDB2016.cs">
+      <id>4a1245a8-bc48-4229-a326-8325456c1beb</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\MSSQLDB2017.cs">
+      <id>dec7423e-3d3f-4105-a664-1ff59db2377e</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\MYSQLDB57.cs">
+      <id>74bee33a-9399-47bf-85ee-ec2887c83529</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\MYSQLDB8.cs">
+      <id>6fb414c1-4496-40db-94ae-dd466a0bb738</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Netezza.cs">
+      <id>41781316-caba-459f-86b9-33a993f44180</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Oracle11.cs">
+      <id>b308e0f9-fc34-48a2-840d-d938fd3cc240</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Oracle12.cs">
+      <id>1bf5f98a-fe8e-4545-afb1-85848537bc24</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\PostgreSQL10.cs">
+      <id>b9ab2497-c298-49bd-abfa-68f0a6eb45a8</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\PostgreSQL96.cs">
+      <id>017c98fb-6ea3-4f9b-9173-5939904f2faa</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\SAPHana.cs">
+      <id>cff29a77-e3fe-4f0f-add4-fc8faddb1a70</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\SysbaseAny157.cs">
+      <id>154d68d6-bc16-4f1d-946d-c0eaec781db4</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\SysbaseAny16.cs">
+      <id>74c34a26-0a45-4054-924c-95cf09d332e1</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\SysbaseASE157.cs">
+      <id>0a3143a1-ae31-4fcd-bd79-f8eff1ac8178</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\SysbaseASE16.cs">
+      <id>b1b7ff05-d1b5-4011-8ebb-81ea015c4d33</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\SysbaseIQ154.cs">
+      <id>211971cf-66ec-42ed-a290-2c581fe76bee</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\SysbaseIQ16.cs">
+      <id>83cd2db0-929a-4cc6-886e-cc12da50abd1</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Teradata1510.cs">
+      <id>dd5e42fe-91f5-4917-9f09-faa8aa5b65e5</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Teradata1620.cs">
+      <id>e84a5704-8487-4322-84d8-9aac19fdc13f</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Vertica8.cs">
+      <id>3307788f-156a-49f4-a42a-d205cff318d2</id>
+    </Compile>
+    <Compile Include="TC_10535\TC2\Vertica91.cs">
+      <id>e380511f-df38-4f2e-93cf-6ff8c79c9ded</id>
+    </Compile>
+    <Compile Include="TC_10535\TC3\Amazon_Redshift.cs">
+      <id>e81b945d-1245-4250-a104-d62359b742bc</id>
+    </Compile>
+    <Compile Include="TC_10535\TC3\Cleanup.cs">
+      <id>5e2c4e7a-8a7c-4607-a609-ffd63cc1aac2</id>
+    </Compile>
+    <Compile Include="TC_10535\TC3\Precondition.cs">
+      <id>99b77e84-02b3-4ee2-8d3c-6377e3d6b70e</id>
+    </Compile>
+    <Compile Include="TC_10548\Cleanup.cs">
+      <id>fb3c0ee0-608f-4f4a-beef-629ee10c2f2d</id>
+    </Compile>
+    <Compile Include="TC_10548\TC1\ServersTab_ExpandCollapseTemplate.cs">
+      <id>6f4c17b9-74b1-404c-8ca1-e85457ac6703</id>
+    </Compile>
+    <Compile Include="TC_10548\TC2\ServersTabSettingsTemplate.cs">
+      <id>894051ce-3ce8-45a3-bf80-71cf05638f41</id>
+    </Compile>
+    <Compile Include="TC_10548\Steps.cs">
+      <id>7aac1b9d-7ef9-4d6b-a102-6c543fe3c6c0</id>
+    </Compile>
+    <Compile Include="TC_10548\TC10548Repo.cs">
+      <BoundTo>dadad7a4-45a8-4908-b1f1-1d658705d94f</BoundTo>
+      <DependentUpon>TC10548Repo.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>2d871831-8806-4817-b4ce-c4ea45030f1e</id>
+    </Compile>
+    <Compile Include="TC_10548\TC3\ProjectsTabTemplate.cs">
+      <id>e6f8ccae-8c72-45f4-9603-88440729d92e</id>
+    </Compile>
+    <Compile Include="TC_10548\TC4\FilesTabTemplate.cs">
+      <id>3cefae19-e967-45f6-bcdd-918c7c0147ad</id>
+    </Compile>
+    <Compile Include="TC_10555\Steps.cs">
+      <id>765881be-34be-4bc9-9c40-e564faefa074</id>
+    </Compile>
+    <Compile Include="TC_10555\TC10555Repo.cs">
+      <BoundTo>972502fa-32e6-4d80-b8bb-9aa92a8c2bd8</BoundTo>
+      <DependentUpon>TC10555Repo.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>8692991e-5f74-4507-b6d9-9bc8872c0a0a</id>
+    </Compile>
+    <Compile Include="TC_10555\TC1\ADSHelptemplate.cs">
+      <id>5e96432c-4f2a-4406-a7b3-b0b4abc5c84a</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>5736eceb-0898-4e37-9263-9ddedc1fc430</id>
+    </None>
+    <None Include="Application\AppRepo.rximg">
+      <BoundTo>12b22f2c-3c09-4f55-a647-bb8bb3448179</BoundTo>
+      <DependentUpon>AppRepo.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>17bbc709-da3f-4a26-9d37-abe990b2f8e9</id>
+    </None>
+    <None Include="Application\AppRepo.rxrep">
+      <id>12b22f2c-3c09-4f55-a647-bb8bb3448179</id>
+      <repoid>f8d285fa-17bd-4dd5-93ed-e37f10fde6c3</repoid>
+      <reporootid>095da91e-bafd-4e99-b3cf-35acdddb771e</reporootid>
+    </None>
+    <None Include="Preconditions\PreconditionRepo.rximg">
+      <BoundTo>1b366457-dfbb-4278-be92-e9a336ea5dcb</BoundTo>
+      <DependentUpon>PreconditionRepo.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>7eecbd69-aa19-42b0-b4fb-0d7780a619a1</id>
+    </None>
+    <None Include="Preconditions\PreconditionRepo.rxrep">
+      <id>1b366457-dfbb-4278-be92-e9a336ea5dcb</id>
+      <repoid>90119539-cae8-47d1-9b3b-6f0b6156408b</repoid>
+      <reporootid>c350295c-8dce-42ea-a15a-b3d424358fb2</reporootid>
+    </None>
+    <None Include="TC_10535\TC10535Repo.rximg">
+      <BoundTo>e6b257bf-8464-4198-94b9-3fd068283d9e</BoundTo>
+      <DependentUpon>TC10535Repo.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>133325da-f845-4e60-a9cf-1243e6ab9239</id>
+    </None>
+    <None Include="TC_10535\TC10535Repo.rxrep">
+      <id>e6b257bf-8464-4198-94b9-3fd068283d9e</id>
+      <repoid>975ef1ba-93ae-4f3b-af1e-3a6ed923ebad</repoid>
+      <reporootid>2510bc26-e460-40a3-a4eb-56b8d18cd507</reporootid>
+    </None>
+    <None Include="TC_10548\TC10548Repo.rximg">
+      <BoundTo>dadad7a4-45a8-4908-b1f1-1d658705d94f</BoundTo>
+      <DependentUpon>TC10548Repo.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>d29ddc84-117e-4ac8-9362-7b91352d97b8</id>
+    </None>
+    <None Include="TC_10548\TC10548Repo.rxrep">
+      <id>dadad7a4-45a8-4908-b1f1-1d658705d94f</id>
+      <repoid>d2d62735-a8bf-49b8-86d6-910dbbffd531</repoid>
+      <reporootid>873720e9-6af3-4bfd-a945-c111a32b3929</reporootid>
+    </None>
+    <None Include="TC_10555\TC10555Repo.rximg">
+      <BoundTo>972502fa-32e6-4d80-b8bb-9aa92a8c2bd8</BoundTo>
+      <DependentUpon>TC10555Repo.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>8d51a9d2-c0ec-4581-9305-c21f97b1d1ae</id>
+    </None>
+    <None Include="TC_10555\TC10555Repo.rxrep">
+      <id>972502fa-32e6-4d80-b8bb-9aa92a8c2bd8</id>
+      <repoid>9f583610-1aee-447e-8d8f-bdb3a51ba7c1</repoid>
+      <reporootid>f4615b81-6cde-49c8-b8b7-1f4a93fd5713</reporootid>
+    </None>
+    <None Include="TestData\NewServerRegistration.xls">
+      <id>6152d0e3-6377-4429-9332-ed1946f74227</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\10_CreateTableWithConstraints.txt">
+      <id>7ce8cdc2-b62e-4c57-aef0-725072ff4508</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\11_CreateView.txt">
+      <id>6e15c126-cf4b-41f8-8b4a-51ea9d02cbdf</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\12_CreateIndex.txt">
+      <id>8bd19fe4-4a4c-46de-8bac-d8d1cae50030</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\13_CreateTrigger.txt">
+      <id>59a83cd1-525b-46c1-b9f2-362d06bb175e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\14_DropView.txt">
+      <id>38e3b456-8d5d-4972-8653-78e037cdca9a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\15_DropIndex.txt">
+      <id>8cb2b55b-7357-4938-9137-a07f223fc741</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\16_DropTrigger.txt">
+      <id>a0100fee-2d60-4f87-841a-dae8d96290d4</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\17_CreateDatabase.txt">
+      <id>f3604145-a330-491b-bc92-08fdc6559f96</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\18_DropDatabase.txt">
+      <id>19a95d85-f7f4-4201-bdb8-41e0d2a13b31</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\1_CreateTable.txt">
+      <id>3467249c-dc7a-4c7e-9b6d-2b3dbe70fded</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\2_InsertTable.txt">
+      <id>3a1ce53b-da34-4197-87ae-1405d0c3a1bb</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\3_SelectTable.txt">
+      <id>96827499-7c03-4304-921e-3275cb285d22</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\4_ValidateData.txt">
+      <id>916d087a-b6ab-49ae-8bab-95a1d7ca3cf5</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\5_DropTable.txt">
+      <id>c9d7a099-00bf-4b55-98bf-9fbfea799c60</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\6_CreateDatabase.txt">
+      <id>a2e4d70d-df9b-491d-a266-829b52c46462</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\7_DropDatabase.txt">
+      <id>fe7ded77-9549-4dcf-b688-b97fd652fffe</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\8_CreateTable.txt">
+      <id>2b4a9fcc-0694-4377-80ab-349f9e4877b9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Amazon Redshift\9_SelectTable.txt">
+      <id>63219c48-36fa-4f87-893d-efd7f9b60de4</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\10_CreateTableWithConstraints.txt">
+      <id>513492de-b6c9-4b12-9052-0a10484af2e9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\11_CreateView.txt">
+      <id>23dc88a4-ce57-4cb0-aed0-b324fa753ac9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\12_CreateIndex.txt">
+      <id>2818a665-99a0-48d3-bec6-e113d7440c4e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\13_CreateTrigger.txt">
+      <id>5cd79d25-be9e-48b2-a382-1bc0e8236d69</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\14_DropView.txt">
+      <id>b16e2a1b-65a8-40bb-aa30-9e2dee741973</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\15_DropIndex.txt">
+      <id>fd07e0b8-8e5a-4814-ae7c-243b1bddc7b9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\16_DropTrigger.txt">
+      <id>1d694aca-1368-4b3f-aaa9-f2e8e00f3611</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\17_CreateDatabase.txt">
+      <id>f0c44a8a-5e5e-4e01-a0fa-7d60c8df2da3</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\18_DropDatabase.txt">
+      <id>914dcd58-1443-499b-996f-9a07a5c521f4</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\1_CreateTable.txt">
+      <id>ca4f4f85-1f01-4e7f-8db8-50d8a8db41b2</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\2_InsertTabe.txt">
+      <id>bbffe20e-0afc-436b-81b8-817aa16a2e3c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\3_SelectTable.txt">
+      <id>c7e8b431-39d2-4c57-b1a9-4c367be7e02f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\4_ValidateTable.txt">
+      <id>27f72935-531d-4eb1-9894-3e02a3adfcb8</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\5_DropTable.txt">
+      <id>e4cef6d0-8733-41ab-972d-a08f9eb429e6</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\6_CreateDatabase.txt">
+      <id>ea224be0-c59e-40f6-810e-671d3b1d3d36</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\7_DropDatabase.txt">
+      <id>f498b8bd-e981-4f48-bd51-d51ba45e47d9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\8_CreateTable.txt">
+      <id>1790adc3-7266-4f74-8e89-11de94bcc1db</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2\9_SelectTable.txt">
+      <id>ec6267f3-38ba-464d-b854-18174761fd2e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\10_CreateTableWithConstraints.txt">
+      <id>af39668b-1881-4887-a48a-3bcc90747c74</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\11_CreateView.txt">
+      <id>8cd9a649-7dd5-4425-864f-a08d24ae67c1</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\12_CreateIndex.txt">
+      <id>f05ea5d7-f068-4826-b5f0-072aa175e16c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\13_CreateTrigger.txt">
+      <id>33da53a3-1cca-4ad4-8a40-327c3b0024fa</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\14_DropView.txt">
+      <id>606a4d3e-d2d8-46c9-8744-b684febdc10d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\15_DropIndex.txt">
+      <id>acab7fd4-1bac-4916-b98c-f4d3275a864d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\16_DropTrigger.txt">
+      <id>d0f404d8-9717-4989-853a-d5a903339bc6</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\17_CreateDatabase.txt">
+      <id>b4cb00f3-39b2-4d1f-9c47-615d113ab00b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\18_DropDatabase.txt">
+      <id>b894a590-c903-4f49-bdfb-340e1606ba26</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\1_CreateTable.txt">
+      <id>a78f4598-136b-49f5-af8b-f0e27fc26f77</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\2_InsertTabe.txt">
+      <id>d31322c5-0be8-4b29-81b0-a884a2e1d918</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\3_SelectTable.txt">
+      <id>337def59-0824-4cb7-84b5-e7ce8c682008</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\4_ValidateTable.txt">
+      <id>565f3cb6-8f0c-45d1-8262-89ecb17a879d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\5_DropTable.txt">
+      <id>b7e5a4e1-e57b-408e-8fd0-d441885a6802</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\6_CreateDatabase.txt">
+      <id>b0108edf-deb9-4e99-bc61-cceebaa564af</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\7_DropDatabase.txt">
+      <id>dca7a6f5-4387-4973-b86e-570ac75cf9f2</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\8_CreateTable.txt">
+      <id>f7ea49bb-6981-4601-86d7-0c9ef64b798b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7\9_SelectTable.txt">
+      <id>59afe377-2b26-4da3-a171-c1323474be8c</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\10_CreateTableWithConstraints.txt">
+      <id>f01101da-5c66-4f68-abb0-0e461636dd26</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\11_CreateView.txt">
+      <id>a3d790d5-772b-4cc8-ad54-0db7d9702d4f</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\12_CreateIndex.txt">
+      <id>3580ccfa-6f56-4735-838a-ad9f0fe3676e</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\13_CreateTrigger.txt">
+      <id>f71014ea-e4bb-405f-ab07-ca3439233baa</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\14_DropView.txt">
+      <id>ffeb5b66-064a-4384-b60b-d49cad3ff71f</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\15_DropIndex.txt">
+      <id>083e7f26-9706-44bd-92a8-42fd8c755ecd</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\16_DropTrigger.txt">
+      <id>16863cb2-30b2-4908-b632-9011d9df31da</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\17_CreateDatabase.txt">
+      <id>c0c0208b-cbfb-4054-8f5d-493b998e70b8</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\18_DropDatabase.txt">
+      <id>086d655c-ab57-473b-83ad-455227dc1dc1</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\1_CreateTable.txt">
+      <id>bf1b98e8-49fe-42c5-bd05-4b290e86e5a0</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\2_InsertTable.txt">
+      <id>716dd484-1732-4d2f-a283-9eba34910e4a</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\3_SelectTable.txt">
+      <id>28226357-3eda-45ee-b48b-329acbe29c2f</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\4_Validation.txt">
+      <id>bfa7999c-d712-4a02-b550-7b1a291f7060</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\5_DropTable.txt">
+      <id>84e599f8-1e5e-4ca2-9dbe-92ae80ea6496</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\6_CreateDatabase.txt">
+      <id>5ad9c5c5-5ba3-4207-b4b0-ddc9ea241b01</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\7_DropDatabase.txt">
+      <id>f3ec5ba4-37c0-4a7d-9d44-e125f300a550</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\8_CreateTable.txt">
+      <id>7e7cb804-29eb-4441-a2c9-2fc2c62b6d29</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5\9_SelectTable.txt">
+      <id>ceae3c40-d1fb-4897-ab0a-2c7cc29ec4ed</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\10_CreateTableWithConstraints.txt">
+      <id>e756685a-5acf-4a63-86b1-a6ac1b402587</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\11_CreateView.txt">
+      <id>2abecf53-aed7-4d44-b8a1-04d681b43703</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\12_CreateIndex.txt">
+      <id>09da97c1-eec9-403a-807e-76637ed6364d</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\13_CreateTrigger.txt">
+      <id>670b6a3a-2e92-4ca9-9477-87d03aaac093</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\14_DropView.txt">
+      <id>7e4a54a2-f611-456a-8dbb-3b13d6cc93cc</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\15_DropIndex.txt">
+      <id>a9677e22-3f2e-4023-994f-de418b2d1913</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\16_DropTrigger.txt">
+      <id>74202457-aea6-48de-90f4-586303cfb46c</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\17_CreateDatabase.txt">
+      <id>61b1c325-4570-4062-9253-ff5d8eead16a</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\18_DropDatabase.txt">
+      <id>7160e0f9-4507-4630-a0fa-c91f15dd5449</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\1_CreateTable.txt">
+      <id>d0cc6701-be92-43a7-8ccb-e85f60c967bd</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\2_InsertTable.txt">
+      <id>e00ae055-09a1-44a8-98fd-f20a64015707</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\3_SelectTable.txt">
+      <id>2e824e16-8da9-4d1a-95d1-83b616cfe962</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\4_Validation.txt">
+      <id>d04b537c-3921-4eba-b6e7-baeddfb1cab6</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\5_DropTable.txt">
+      <id>b6b2336c-ade3-4a7c-92e6-ed52c0e447f4</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\6_CreateDatabase.txt">
+      <id>618ddcfc-55f7-4347-98db-99606e8ee556</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\7_DropDatabase.txt">
+      <id>6815039e-2dac-4b06-87e0-c980ddf73a5e</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\8_CreateTable.txt">
+      <id>8de35737-6880-4867-a228-643dcd4d0ab3</id>
+    </None>
+    <None Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1\9_SelectTable.txt">
+      <id>d01f1a6f-67ce-4c41-8da1-74b7064279f1</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\10_CreateTableWithConstraints.txt">
+      <id>7e9667c3-23cd-49b3-9173-425d57a4a66b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\11_CreateView.txt">
+      <id>2e450b81-b19a-44b2-9b7b-a1cf7c9d32fe</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\12_CreateIndex.txt">
+      <id>ccf30328-7947-4165-8974-1306c2cf1bf5</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\13_CreateTrigger.txt">
+      <id>7815e711-e193-4d4c-918b-086867b6fa7d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\14_DropView.txt">
+      <id>bdd0c169-9eb0-4a1d-b6b1-0384e905efab</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\15_DropIndex.txt">
+      <id>e0640266-4792-48dc-8791-1476459468c6</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\16_DropTrigger.txt">
+      <id>94b4ed53-0f38-4933-902b-0e55ad212c65</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\17_CreateDatabase.txt">
+      <id>122021b7-b57a-49fc-84c0-f5d9983b1f18</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\18_DropDatabase.txt">
+      <id>b45c2751-d290-495e-bb66-0426de6d4f31</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\1_CreateTable.txt">
+      <id>484f591b-d487-46f9-9969-4eb81cdba56a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\2_InsertTable.txt">
+      <id>7fc68b2f-4b68-4f8d-8212-27ddd2abad4d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\3_SelectTable.txt">
+      <id>083712cf-9fe2-42ed-893e-e417b6da1330</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\4_Validation.txt">
+      <id>e9358df3-b32d-4458-85bc-a94ea02deef5</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\5_DropTable.txt">
+      <id>ef02d54a-66d2-47dd-a0d1-894127e5e95f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\6_CreateDatabase.txt">
+      <id>cba13cd5-55ee-4e48-b44e-73be599d60f5</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\7_DropDatabase.txt">
+      <id>4ada6e37-97ea-4f7e-9a26-dcea092d4245</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\8_CreateTable.txt">
+      <id>ccd0b9e6-dc56-4170-bc63-52d96d7f36d0</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14\9_SelectTable.txt">
+      <id>267386af-74fb-4afb-a3c3-aad8dc798386</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\10_CreateTableWithConstraints.txt">
+      <id>b75fc50c-17b6-41ce-bed4-ec3d4c671cc3</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\11_CreateView.txt">
+      <id>4acf8c1f-7be8-4184-9bc4-03fdef64bcdb</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\12_CreateIndex.txt">
+      <id>a1122045-54c0-443f-9d24-0cc806899a92</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\13_CreateTrigger.txt">
+      <id>a7131e3f-8036-46da-b1b4-8ab69e6eb526</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\14_DropView.txt">
+      <id>2a781733-9209-446e-b0fe-51cab21b67f2</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\15_DropIndex.txt">
+      <id>4a14aadb-bc21-48d6-b794-0ebd31625c50</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\16_DropTrigger.txt">
+      <id>caa250b9-8d10-4d55-8134-c50044f3a586</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\17_CreateDatabase.txt">
+      <id>1239e637-cac3-4985-a5aa-3dd816653348</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\18_DropDatabase.txt">
+      <id>6b988e3e-105b-4df5-ad95-f31e9ba1b48d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\1_CreateTable.txt">
+      <id>77a6f9a3-ad31-4337-a3d2-9989f2b67f03</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\2_InsertTable.txt">
+      <id>4202e11b-2b26-4ca8-a067-8d8a009eb53a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\3_SelectTable.txt">
+      <id>a6382779-cd2b-4600-90f5-4b5d2196981d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\4_Validation.txt">
+      <id>e523a6c0-2246-4982-97d1-36713c86403b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\5_DropTable.txt">
+      <id>020de342-afdd-4957-8c40-eccf6c8d0c15</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\6_CreateDatabase.txt">
+      <id>b7bc225c-f44b-4f3d-9440-74530471b5d4</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\7_DropDatabase.txt">
+      <id>aa45b28f-e2da-4ba0-be02-42e63fa96b2e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\8_CreateTable.txt">
+      <id>5ce0d55d-9268-4cd0-b6d3-7898a9fa4492</id>
+    </None>
+    <None Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13\9_SelectTable.txt">
+      <id>2cdd2752-a091-4bf8-b687-abfdbb2b8283</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\10_CreateTableWithConstraints.txt">
+      <id>77a610a9-6cce-41fc-ad73-0e834f5719e9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\11_CreateView.txt">
+      <id>b2117f4f-1db3-4b6e-a090-4e2b2e25ee14</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\12_CreateIndex.txt">
+      <id>48ff6054-ca10-4e69-b350-7d843404a643</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\13_CreateTrigger.txt">
+      <id>ae647c4a-17bf-4d35-89d0-a0a0d0d5b910</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\14_DropView.txt">
+      <id>c657f998-c71a-4dfb-9287-65f5a3a6870e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\15_DropIndex.txt">
+      <id>73d4436c-59f4-44ba-a062-7e2c4b25c052</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\16_DropTrigger.txt">
+      <id>3f8cd32a-565e-4007-a48f-2d80d5b64173</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\17_CreateDatabase.txt">
+      <id>68076f12-dc8e-45e3-8c2e-4ad342184bd3</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\18_DropDatabase.txt">
+      <id>038dcb40-1dac-43cd-af2b-228d1e3247d2</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\1_CreateTable.txt">
+      <id>9c0186a2-fc3f-4035-9e88-d240a2135412</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\2_InsertTable.txt">
+      <id>c254b856-1ee5-4e5c-ad2d-0344930bfbfc</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\3_SelectTable.txt">
+      <id>bce9ca1d-131c-4ca6-92f7-8b139128a4e8</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\4_Validation.txt">
+      <id>2df277db-05ab-479e-8c01-f725facf761d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\5_DropTable.txt">
+      <id>5877a7c9-2519-44e1-a72c-5580c3ac4aaa</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\6_CreateDatabase.txt">
+      <id>4d3cb28f-580a-4f47-a73c-fbdab7872ebe</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\7_DropDatabase.txt">
+      <id>9fc6cfa1-a3f9-4130-b751-27bda73a7340</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\8_CreateTable.txt">
+      <id>853b21eb-c9ae-4f53-93f1-69a43074e95b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0\9_SelectTable.txt">
+      <id>197e85f8-c94d-4edb-ae6b-16706e06844a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\10_CreateTableWithConstraints.txt">
+      <id>90552bb2-6be2-4583-aba9-05c02a2ca4c7</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\11_CreateView.txt">
+      <id>4459502c-a4cf-4bd5-b658-f34cae108cc8</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\12_CreateIndex.txt">
+      <id>c1efe0d3-2fdb-4ece-8008-9ccd0519317d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\13_CreateTrigger.txt">
+      <id>2827aaf8-64c9-462f-9476-41a41ff5de4e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\14_DropView.txt">
+      <id>9a85c648-6986-406d-b121-e62b956a7cea</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\15_DropIndex.txt">
+      <id>421bb862-b84f-471e-888e-9e6533692abe</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\16_DropTrigger.txt">
+      <id>1799148b-da0a-4832-a657-d91501e37833</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\17_CreateDatabase.txt">
+      <id>ff183a1a-07fd-4b12-b4f0-34fe8cafa46a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\18_DropDatabase.txt">
+      <id>9473c642-1aa4-4269-8247-ed65f6eaf885</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\1_CreateTable.txt">
+      <id>edc1598f-c7c8-48bd-86a2-0698ceceecf9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\2_InsertTable.txt">
+      <id>2f8d4c61-3b06-4544-a3f9-15d9f2633a26</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\3_SelectTable.txt">
+      <id>7a9f2aa4-c089-47bc-b23d-366861e7f88c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\4_Validation.txt">
+      <id>7fbceed5-8d52-421d-8a00-8e7fe1a365ad</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\5_DropTable.txt">
+      <id>12542b63-2dcc-41e2-bf72-a245baba7b7a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\6_CreateDatabase.txt">
+      <id>01fbf3ca-ce9c-413f-af23-4f8cbd9cff50</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\7_DropDatabase.txt">
+      <id>1bac2ece-be89-4e7a-b3a5-d35b671d6f20</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\8_CreateTable.txt">
+      <id>8b22f718-3d1c-4207-9032-eae666a7d680</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70\9_SelectTable.txt">
+      <id>a468a430-f362-433c-b301-421b51caaf03</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\10_CreateTableWithConstraints.txt">
+      <id>0150bd33-a18a-4f07-be5a-50c9c4ed87b5</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\11_CreateView.txt">
+      <id>4c1fcba2-dd61-45b0-92c9-8d29a8489f31</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\12_CreateIndex.txt">
+      <id>27ad4e8b-c2b7-4ad3-9a0e-2c9118a5d6ab</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\13_CreateTrigger.txt">
+      <id>ab1854e8-f748-4bc5-85ff-8f151c258bac</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\14_DropView.txt">
+      <id>67cf6793-8c1c-4810-9182-942324c41660</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\15_DropIndex.txt">
+      <id>67386ed7-4139-41ee-858f-d1fe2cd9c1c0</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\16_DropTrigger.txt">
+      <id>84031ae5-094a-4613-8e06-20a2496de929</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\17_CreateDatabase.txt">
+      <id>361af8da-b082-4c12-a95d-8276323da9b5</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\18_DropDatabase.txt">
+      <id>a5f8ca6b-1983-4ac1-a61e-d11ce2dd2ea6</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\1_CreateTable.txt">
+      <id>708d1801-762d-45bc-b5df-6648f22a7a70</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\2_InsertTable.txt">
+      <id>4b8efad2-f447-4cdd-aee1-b1ed70074afa</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\3_SelectTable.txt">
+      <id>850c3446-ff74-467a-87ec-9fcb58bed2a5</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\4_Validation.txt">
+      <id>036a42fb-bd78-47ab-8f97-51b440688183</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\5_DropTable.txt">
+      <id>37665f5d-b245-49ed-824a-4e94f6138c95</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\6_CreateDatabase.txt">
+      <id>5168968e-e471-4709-9507-5ce4b6db48ed</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\7_DropDatabase.txt">
+      <id>499c171b-ca07-4b8f-acaf-afbdf2bf843e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\8_CreateTable.txt">
+      <id>9afd6c05-51d9-436e-856d-4049168a4858</id>
+    </None>
+    <None Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10\9_SelectTable.txt">
+      <id>8a9f49f4-8f63-4ad7-a2ab-a1c8b575134f</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\10_CreateTableWithConstraints.txt">
+      <id>ab8bf2db-a118-49b0-8ed5-5e3c9157f29a</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\11_CreateView.txt">
+      <id>d8250ce5-ddc3-4913-8cb2-9cbf738dec6a</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\12_CreateIndex.txt">
+      <id>6f400641-0deb-4414-a398-9eaed594ef7d</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\13_CreateTrigger.txt">
+      <id>4cceb7dc-7ac7-4254-a377-2a65199d571b</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\14_DropView.txt">
+      <id>2411b40d-03c7-4650-81b8-70997737e2e4</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\15_DropIndex.txt">
+      <id>c0e7ad0d-52dc-4c20-a2ff-d7cf2c431579</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\16_DropTrigger.txt">
+      <id>e1c65dc2-d09c-4b6c-bbd0-c4024cc43824</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\17_CreateDatabase.txt">
+      <id>5eace4da-ab39-4b1e-9cbf-1e180a27a634</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\18_DropDatabase.txt">
+      <id>2d2a0315-6869-49b3-98f4-5d396eb10a34</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\1_CreateTable.txt">
+      <id>ad2c82b7-2d0b-4975-a404-69786e90acb8</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\2_InsertTable.txt">
+      <id>2458bc05-ed98-462a-9cd5-bfc74a554b8f</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\3_SelectTable.txt">
+      <id>af395ca0-71c1-43b3-9fde-a97068fd5bda</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\4_ValidateData.txt">
+      <id>1a1770e1-dd18-41f2-8bd9-b8a54bbceca9</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\5_DropTable.txt">
+      <id>0edcdd5e-d6d5-476c-9cbe-6912c272bb6d</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\6_CreateDatabase.txt">
+      <id>24a2fb98-76b2-4561-a6be-91ed99f7c265</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\7_DropDatabase.txt">
+      <id>2d467c3c-9ce8-4789-9ee7-24077b72d4de</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\8_CreateTable.txt">
+      <id>91fab2ee-87f9-4ed9-9261-f4374ea60a24</id>
+    </None>
+    <None Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2\9_SelectTable.txt">
+      <id>94072fe1-9de2-433e-9232-6252d6fc6e59</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\10_CreateTableWithConstraints.txt">
+      <id>3af9462a-e6f2-49c1-9e4f-bb04108b2fd7</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\11_CreateView.txt">
+      <id>36998748-f92a-44fa-adf9-4747de074432</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\12_CreateIndex.txt">
+      <id>0e9eec8f-5e94-4d93-83e5-75adf51cb846</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\13_CreateTrigger.txt">
+      <id>3c00d2fd-1abe-44d0-8418-c72bd7446611</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\14_DropView.txt">
+      <id>a18b5067-93c1-4a5b-8de0-088186a24717</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\15_DropIndex.txt">
+      <id>bcf9110f-fd41-4dbb-ba38-fe72c9d32b3c</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\16_DropTrigger.txt">
+      <id>6990ce6d-13ba-4675-89bb-45e29fdd2acd</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\17_CreateDatabase.txt">
+      <id>2085bad7-dd4a-4248-ae27-72d1761fa1fc</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\18_DropDatabase.txt">
+      <id>33045c16-11e8-4980-ae99-8363c95e0885</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\1_CreateTable.txt">
+      <id>66f5b4ac-21fc-47a3-a504-2e7b2d2d53a2</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\2_InsertTable.txt">
+      <id>43392a1a-6ac0-4b85-a490-5015e54590e4</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\3_SelectTable.txt">
+      <id>6c81aacd-ac48-4bcb-855e-69080bd98cfa</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\4_Validation.txt">
+      <id>940418c7-1571-4285-9448-7485bd9950d3</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\5_DropTable.txt">
+      <id>49ec3e89-fe56-4fcb-b071-561f9618d9f0</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\6_CreateDatabase.txt">
+      <id>74e93de1-9f9d-48ed-99e1-a6a814727109</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\7_DropDatabase.txt">
+      <id>cc2d9c84-dff3-4438-9ee4-89cb475180db</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\8_CreateTable.txt">
+      <id>28762e53-d968-447a-b029-d7a9f4589bf3</id>
+    </None>
+    <None Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7\9_SelectTable.txt">
+      <id>4e2d3e3b-096c-40f5-8cbf-9292fe562d95</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\10_CreateTableWithConstraints.txt">
+      <id>c5b4dffa-46e4-4b13-8eb4-fdaa75e9b4e0</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\11_CreateView.txt">
+      <id>333309e9-12e3-499b-b314-3be11ce9ce07</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\12_CreateIndex.txt">
+      <id>0c92c774-24f5-41c2-b4ec-2558cf5f9764</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\13_CreateTrigger.txt">
+      <id>5883947f-5c62-4df1-bdb9-2847479493d3</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\14_DropView.txt">
+      <id>cdb40190-34fc-4d23-ae7c-60bbcc4887ef</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\15_DropIndex.txt">
+      <id>2199545b-125f-48f1-a752-93bbdd8bcb7b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\16_DropTrigger.txt">
+      <id>da7af60f-bf3b-4530-a41a-b7970698ea05</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\17_CreateDatabase.txt">
+      <id>dc201798-e8bc-4dbe-bd85-3a5fce5219e0</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\18_DropDatabase.txt">
+      <id>4e9c5ace-dbfe-4347-9657-bb416aa42f1c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\1_CreateTable.txt">
+      <id>df4c706a-e3e5-4f27-8864-75a1b7559946</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\2_InsertTabe.txt">
+      <id>56dfc7f3-e101-4071-b0de-b5325868683f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\3_SelectTable.txt">
+      <id>949b9386-ace1-46e1-8b16-06caf8a8bfe2</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\4_ValidateTable.txt">
+      <id>2dd3a5c3-292d-42cb-a806-55d8295b10e8</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\5_DropTable.txt">
+      <id>0d7b3036-5fde-47ec-8c85-c65973f20e6a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\6_CreateDatabase.txt">
+      <id>6cb9621b-0ab3-4561-bede-5d4e42fe9b4c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\7_DropDatabase.txt">
+      <id>a3395170-95b3-4603-8445-dc8b7189a973</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\8_CreateTable.txt">
+      <id>030f7784-3c62-4f00-80e8-becfbc66b515</id>
+    </None>
+    <None Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2\9_SelectTable.txt">
+      <id>50acf763-f566-4874-9975-7fca12e6d118</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\10_CreateTablewithConstraints.txt">
+      <id>0256fa9d-f1cc-459a-aae9-3df199dc435b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\11_CreateView.txt">
+      <id>55bef42c-4ed4-4aa7-80a7-ef27807ef480</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\12_CreateIndex.txt">
+      <id>2a9d9257-b6c2-4137-8487-d3b70b29d541</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\13_CreateTrigger.txt">
+      <id>64bc83b9-50f3-4f8e-8ff3-3114b51ddee6</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\14_DropView.txt">
+      <id>4c367aab-ccf4-45fa-b880-087fa983378c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\15_DropIndex.txt">
+      <id>cdd2d082-fff2-49e0-9ed6-90afe74d0c31</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\16_DropTrigger.txt">
+      <id>32ac9db0-607b-4b34-8470-e317d95e573b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\17_CreateDatabase.txt">
+      <id>de8a39ea-62a6-4caa-826e-77a089000a8b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\18_DropDatabase.txt">
+      <id>5f1cf112-d786-49b8-bc10-854e92caf4a1</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\1_CreateTable.txt">
+      <id>457de770-434c-479c-8e92-97b66d019f26</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\2_InsertTable.txt">
+      <id>87866ff1-0eb0-475b-82ba-19c0b88a3eaf</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\3_SelectTable.txt">
+      <id>d271f48b-0d16-4250-8302-a72e8af886bd</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\4_Validation.txt">
+      <id>b9ca5e72-33e8-443f-91b4-2654cc99de70</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\5_DropTable.txt">
+      <id>c8128f2a-69f4-4f6c-a48a-8d374715e234</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\6_CreateDatabase.txt">
+      <id>cf546237-8be2-448a-9916-086956fc6394</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\7_DropDatabase.txt">
+      <id>4fa37721-6361-44f4-8e05-313653ff4e9a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\8_CreateTable.txt">
+      <id>bb673d28-2dcc-401f-9be5-58e180eedc13</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2\9_SelectTable.txt">
+      <id>0f0f723d-fe57-4681-b04d-4e1fb0f297cd</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\10_CreateTablewithConstraints.txt">
+      <id>8b6d2778-832a-4891-bdb6-a620993df336</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\11_CreateView.txt">
+      <id>b66cc64a-11af-4b70-bc53-fe798135ee2d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\12_CreateIndex.txt">
+      <id>14ee18b6-de2c-4e11-9154-8074cb7a4454</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\13_CreateTrigger.txt">
+      <id>28162748-e04e-4856-8322-2598f5fe3c83</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\14_DropView.txt">
+      <id>699a4609-d561-406b-bee0-00e2e51c3a17</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\15_DropIndex.txt">
+      <id>2cf85100-8b29-49a3-ab8c-97deef7a50af</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\16_DropTrigger.txt">
+      <id>f49e0c78-db7b-4f7c-919d-6ca459ad48c5</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\17_CreateDatabase.txt">
+      <id>1fb4b270-6fe6-4dd6-9cbc-dec93cdf74c7</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\18_DropDatabase.txt">
+      <id>cb40d784-543c-47aa-819d-f0f0e4f442e9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\1_CreateTable.txt">
+      <id>4e6c89a4-b699-4a1b-9434-51c60172814e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\2_InsertTable.txt">
+      <id>c2e4ae08-27d7-48e8-b3b7-be523fc4dbdf</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\3_SelectTable.txt">
+      <id>d1477834-7feb-4a89-a4e9-63d29c894be9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\4_Validation.txt">
+      <id>55ec819b-7e15-4c38-8413-c7ce4f4fa6f0</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\5_DropTable.txt">
+      <id>05b52fc4-6871-4451-92a4-59d16c298cd4</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\6_CreateDatabase.txt">
+      <id>3ce4351d-ac07-479b-b965-ee79e611590f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\7_DropDatabase.txt">
+      <id>6cfca66e-f9e3-4ffa-a425-2232808ac551</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\8_CreateTable.txt">
+      <id>f5ec756e-f54c-49a8-8da0-263be69de97f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0\9_SelectTable.txt">
+      <id>8b066075-dd44-4eba-9f45-7602dfe2b702</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\10_CreateTableWithConstraints.txt">
+      <id>7dcd6713-be7b-4818-824c-4b7580cf8f77</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\11_CreateView.txt">
+      <id>4b8f72fa-4877-4e50-b395-ada96cf1acdb</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\12_CreateIndex.txt">
+      <id>d01ab6d1-05c3-4c72-b220-619952fa65b4</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\13_CreateTrigger.txt">
+      <id>3cf4c863-ed7a-4d33-9ff2-121bed3c5147</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\14_CreateFunction.txt">
+      <id>1eae2852-e86b-48c7-92e5-48851b118b20</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\15_CreateTrigger.txt">
+      <id>04c54232-e230-4d61-aca3-0457dd3bf9d9</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\16_DropView.txt">
+      <id>44e3f045-7583-41c5-8e44-2e71b9a9a90e</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\17_CreateDatabase.txt">
+      <id>8770aff6-c42c-4e7b-b88a-66fafd0ddf89</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\18_DropDatabase.txt">
+      <id>8f13da5e-6f37-4af3-a651-0590d0f8cc93</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\1_CreateTable.txt">
+      <id>3c6ef995-b152-476a-a40b-f240c6c943f2</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\2_InsertTable.txt">
+      <id>348c2717-1eba-4416-86d6-6465fa2e8b7f</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\3_SelectTable.txt">
+      <id>92a3349b-e9c3-45f9-926c-a1968d871c52</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\4_Validation.txt">
+      <id>1caa2f6e-7886-4c23-9600-699b24efae78</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\5_DropTable.txt">
+      <id>d0d4b617-231d-44ed-a189-3624f846d40b</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\6_CreateDatabase.txt">
+      <id>fcbdb392-f630-45ad-80b6-ad021904196e</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\7_DropDatabase.txt">
+      <id>94a31375-5499-4883-9274-85d900cfcc74</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\8_CreateTable.txt">
+      <id>7a1df2b4-950f-40e1-81e1-b70e16fc6f59</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6\9_SelectTable.txt">
+      <id>cbc9343c-322a-4e20-ba50-ad065ad37aec</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\10_CreateTableWithConstraints.txt">
+      <id>40ca0d1b-d839-4048-95da-32e07784a301</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\11_CreateView.txt">
+      <id>f1d4d6b5-7224-4db7-80f5-943bcea918f0</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\12_CreateIndex.txt">
+      <id>c157744e-859b-401c-8b96-25e8ff082031</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\13_CreateTrigger.txt">
+      <id>c1b26fa2-ec7a-41ee-8403-ecb4d555d5a6</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\14_CreateFunction.txt">
+      <id>06c14300-ad91-4e3a-a62c-b7431592c843</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\15_CreateTrigger.txt">
+      <id>46f547fa-324f-4a91-bc33-6797d41b1c8c</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\16_DropView.txt">
+      <id>3dcb4631-8add-472d-ab5c-d4a098e4c463</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\17_CreateDatabase.txt">
+      <id>6b481c70-2b52-4589-8a39-7f59ca707640</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\18_DropDatabase.txt">
+      <id>483d9e47-d623-49ec-a589-7f4278550901</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\1_CreateTable.txt">
+      <id>522ab0c0-ec21-4574-931d-edc3a3ff82c5</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\2_InsertTable.txt">
+      <id>e0fd2cd3-c339-4b40-b988-622c7e9f62f3</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\3_SelectTable.txt">
+      <id>1bf44ca3-ecb0-4767-8d5f-12e29724e034</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\4_Validation.txt">
+      <id>7ba4dc05-7cc8-44c0-82af-a0facfd4ed2c</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\5_DropTable.txt">
+      <id>6e238870-e7fc-4497-bc39-ff3c59f91cc9</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\6_CreateDatabase.txt">
+      <id>203530a4-ba56-49b9-a8cf-023f65d67543</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\7_DropDatabase.txt">
+      <id>084fd43b-1ea9-49ea-8e84-e57a848efa46</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\8_CreateTable.txt">
+      <id>1a28c1b3-fdd5-4d2c-a287-4fa4cbdca5b0</id>
+    </None>
+    <None Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0\9_SelectTable.txt">
+      <id>0476451c-dbe5-43af-b00a-9408220b6a28</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\10_CreateTableWithConstraints.txt">
+      <id>ed1a9d0e-e75d-4a1a-8a8d-659b75810be1</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\11_CreateView.txt">
+      <id>8021c7a8-5897-4dbd-93ee-ba4ccc0d2d6f</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\12_CreateIndex.txt">
+      <id>66ecab6c-2b33-4c17-96ef-db750b08223d</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\13_CreateTrigger.txt">
+      <id>2819fe4e-84e4-41a9-9a26-b7cb77f3fe5d</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\14_DropView.txt">
+      <id>58177df6-b757-4c01-bb08-c368948937da</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\15_DropIndex.txt">
+      <id>d18d1c3e-01e1-4acb-998d-84f6db77207f</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\16_DropTrigger.txt">
+      <id>9be26fc4-429b-4355-917a-14c7d3433c92</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\17_CreateDatabase.txt">
+      <id>f81cacdc-dcd7-4cb7-bc0c-b6dfa61e606c</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\18_DropDatabase.txt">
+      <id>c2c9bf1b-d58b-4187-b6b5-92d330f27664</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\1_CreateTable.txt">
+      <id>517acb47-e9b2-4a76-82a9-d1d2a3e3ca57</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\2_InsertTable.txt">
+      <id>63acc03f-8b30-4fa4-8a8b-8a4b1bef4540</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\3_SelectTable.txt">
+      <id>b7ae30ea-b93d-461b-925d-a0811c048618</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\4_Validation.txt">
+      <id>ccae41e5-d05a-4ab5-b6ac-17dad0036545</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\5_DropTable.txt">
+      <id>2baf1823-13da-4679-b06a-e29c00ee1ef0</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\6_CreateDatabase.txt">
+      <id>c60c5e97-0d9e-44d9-aa56-e48d364e495a</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\7_DropDatabase.txt">
+      <id>9d92b8ed-7d7b-4200-9cb2-178c0e99a5f6</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\8_CreateTable.txt">
+      <id>5fef8255-504a-482f-928f-ebe44d811298</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017\9_SelectTable.txt">
+      <id>73576262-6948-4777-981e-0d312161ff15</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\10_CreateTableWithConstraints.txt">
+      <id>24311d84-ed8f-498a-a8d1-0785536f719e</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\11_CreateView.txt">
+      <id>894685b6-1ea1-4f8b-8533-61c859346f6e</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\12_CreateIndex.txt">
+      <id>58498f33-430c-4609-a6c6-eb9ad9e51324</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\13_CreateTrigger.txt">
+      <id>c9984323-041d-4894-816e-c88e84e8455c</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\14_DropView.txt">
+      <id>e62b34e7-15de-4850-8ba8-aa479a64bb06</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\15_DropIndex.txt">
+      <id>5b3a3a45-27c6-4f11-8cc5-94a836fb8d9c</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\16_DropTrigger.txt">
+      <id>6a1467db-cf7e-43eb-8483-052baa96b367</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\17_CreateDatabase.txt">
+      <id>e57fad1a-a6cf-4619-9e34-c55cfe0e59bf</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\18_DropDatabase.txt">
+      <id>bd629652-42ce-4f17-abe3-407c5161ad95</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\1_CreateTable.txt">
+      <id>f84c590e-c352-4cdb-aa6e-55077554fa80</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\2_InsertTable.txt">
+      <id>428bddd4-32ae-4b51-ad82-b6179aeefdc9</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\3_SelectTable.txt">
+      <id>538ace86-ed49-47e5-aba3-6f8d45e585e8</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\4_Validation.txt">
+      <id>a8b32fa8-53a6-49e0-96f9-189b64a5007e</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\5_DropTable.txt">
+      <id>96e20205-8b9d-4d36-b01f-fdf25ad0c523</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\6_CreateDatabase.txt">
+      <id>13e9b7f8-e431-4640-a00a-88ed03912f96</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\7_DropDatabase.txt">
+      <id>625d3eea-48c8-4bea-8744-4b094786c0e5</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\8_CreateTable.txt">
+      <id>bd0bb0e3-29bd-47de-a69a-c820d995b26d</id>
+    </None>
+    <None Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016\9_SelectTable.txt">
+      <id>1d01e583-4e5a-442d-a80c-e83bc9c553a8</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\10_CreateTableWithConstraints.txt">
+      <id>8e05ea52-3b7c-4f65-b4d8-df2f3e453dce</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\11_CreateView.txt">
+      <id>99677b77-3bb6-4a86-be01-9d3cf978e335</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\12_CreateIndex.txt">
+      <id>e43c15ce-552e-46a6-983e-fca63bfbf1a4</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\13_CreateTrigger.txt">
+      <id>799a7f06-d601-480b-b163-8aa49a41b98b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\14_DropView.txt">
+      <id>18f2db5f-1581-4a0c-a666-a77fd4c41561</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\15_DropIndex.txt">
+      <id>2c8832e2-f709-4bea-8071-8f5d35eab126</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\16_DropTrigger.txt">
+      <id>b947264f-c47d-41a9-aeb1-0a01ae79085c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\17_CreateDatabase.txt">
+      <id>9f646b67-b8c4-4a28-a7c1-6c026f05db50</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\18_DropDatabase.txt">
+      <id>da93ef13-11a3-4ba2-bbbe-aac4a9582b3d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\1_CreateTable.txt">
+      <id>a312767e-300b-4368-a567-cf037da96a4c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\2_InsertTable.txt">
+      <id>5c76d73c-1727-44bb-a256-bb147e937a5b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\3_SelectTable.txt">
+      <id>9c2b90be-ed30-463b-a495-b5f45365afc7</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\4_Validation.txt">
+      <id>9a6ec38a-8fd1-4a5b-bb06-bb8ca58878dd</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\5_DropTable.txt">
+      <id>cccfb7cf-5cb1-479f-a4f3-80a928fb03db</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\6_CreateDatabase.txt">
+      <id>61e7ffb3-5e44-4ba5-8c3a-7548090a737a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\7_DropDatabase.txt">
+      <id>09636ec5-c3e3-4d11-a603-cf10b7d42cbb</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\8_CreateTable.txt">
+      <id>7df15ba4-a2f6-40dc-990a-a80508c09b48</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16\9_SelectTable.txt">
+      <id>1378a259-4901-4ae6-ac61-b17d61181d15</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\10_CreateTableWithConstraints.txt">
+      <id>57520118-370d-42f9-80f8-9a200edd0bf5</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\11_CreateView.txt">
+      <id>ca9a7bc4-2745-46b2-888d-2e7f6cac6052</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\12_CreateIndex.txt">
+      <id>ae429701-d70a-467a-a41c-4f7485d6849f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\13_CreateTrigger.txt">
+      <id>9d25c16f-9a17-46fc-9e00-2c9833776574</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\14_DropView.txt">
+      <id>8bef4412-c735-41d9-bf04-594a687516dd</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\15_DropIndex.txt">
+      <id>941a702d-78f4-44af-b708-64bd9ed0f5b5</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\16_DropTrigger.txt">
+      <id>29ca95de-c5ab-4f2b-8288-c9f9a2e094bb</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\17_CreateDatabase.txt">
+      <id>a80c5503-a825-42ef-8b3d-d97f0d29d6fd</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\18_DropDatabase.txt">
+      <id>db1b4f29-ff8d-42b3-b8c7-e51fb8c3636a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\1_CreateTable.txt">
+      <id>139ddda7-e239-4230-9351-35f384f22d72</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\2_InsertTable.txt">
+      <id>d2ed06d4-a33d-4760-bcca-b88b31732674</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\3_SelectTable.txt">
+      <id>d38b230b-aa01-4b9b-b530-65396b4a7f11</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\4_Validation.txt">
+      <id>01152afd-a373-4d03-addd-2bbc58879f74</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\5_DropTable.txt">
+      <id>a670d7aa-440b-4726-8516-542084e48eb1</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\6_CreateDatabase.txt">
+      <id>d29c8c6b-8841-4c97-9ff2-c75d8eb3cc19</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\7_DropDatabase.txt">
+      <id>2eec4ce3-96e3-46ab-bd65-16bc01f8933f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\8_CreateTable.txt">
+      <id>9b898996-dd83-4a8f-9e4b-0c929888bf53</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17\9_SelectTable.txt">
+      <id>76a9cf1e-5864-4597-9d6e-e46728607d64</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\10_CreateTableWithConstraints.txt">
+      <id>7f7a0799-166e-4a7c-bb19-934bb227e73e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\11_CreateView.txt">
+      <id>b02a56d7-8436-4e67-8bad-6e753b2096b4</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\12_CreateIndex.txt">
+      <id>ae768ad3-256d-4031-ba2d-ca1d3aed4d1d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\13_CreateTrigger.txt">
+      <id>0613987f-c913-4e50-9235-c67f646b9f9b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\14_DropView.txt">
+      <id>3c574ee8-ad83-4dc3-8ac4-d5aece0068dc</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\15_DropIndex.txt">
+      <id>4eaae026-d7ad-42c6-a982-5df57533a1a1</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\16_DropTrigger.txt">
+      <id>fc2bdd0a-31a1-4d9d-a990-c2b6576a823b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\17_CreateDatabase.txt">
+      <id>05aeb318-2e38-4a59-951f-f430e586bc36</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\18_DropDatabase.txt">
+      <id>6ed7e11c-d2c0-43c5-af99-939f761d85c4</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\1_CreateTable.txt">
+      <id>37c5c45f-184b-4e54-9bcf-f4d24856fe8a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\2_InsertTable.txt">
+      <id>f84c3f63-3203-40e9-bf44-66a230cee04d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\3_SelectTable.txt">
+      <id>085a4ad7-caf4-4e44-ba45-0c729d8be735</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\4_Validation.txt">
+      <id>dda02d16-5149-4cda-9f79-4e5ddcd333ff</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\5_DropTable.txt">
+      <id>1ccc9710-6ebe-49c9-a377-03b29e8ee512</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\6_CreateDatabase.txt">
+      <id>371189b5-ef6b-485a-a5e5-0d41d5759d0e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\7_DropDatabase.txt">
+      <id>6ac39f03-7cb0-4f0c-8f12-c00a6622c18c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\8_CreateTable.txt">
+      <id>acf495f0-6228-4670-b88a-4df060bf72ea</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16\9_SelectTable.txt">
+      <id>3cf202a7-6f56-4733-ba93-64cc01f9beb0</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\10_CreateTableWithConstraints.txt">
+      <id>c4998271-e599-46ad-bf88-daea944e4d2f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\11_CreateView.txt">
+      <id>40b19de2-06ca-41e7-b372-9734e4fb4b2d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\12_CreateIndex.txt">
+      <id>ad3d7766-2a3c-4113-83e8-6c3903e80fda</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\13_CreateTrigger.txt">
+      <id>82474f39-fc75-4dcc-bf0d-e3e449c3e565</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\14_DropView.txt">
+      <id>44d64743-829e-4c95-a488-e6b1ffee6341</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\15_DropIndex.txt">
+      <id>c271982c-f137-43d5-9888-47efc0ed51df</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\16_DropTrigger.txt">
+      <id>cfb8d602-0ab7-4e14-ab21-ca520e9a2f30</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\17_CreateDatabase.txt">
+      <id>f244ef68-41c5-4c0e-8943-ce55906fabaf</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\18_DropDatabase.txt">
+      <id>61885a94-b4b3-4776-9508-3861d2358344</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\1_CreateTable.txt">
+      <id>6ddae4c4-46be-4f5a-81a0-49692bee77ef</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\2_InsertTable.txt">
+      <id>1e0b358e-24aa-4d7a-a47d-9ff47f47ab16</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\3_SelectTable.txt">
+      <id>2b1a126f-4ac0-4d67-9e63-8830675cdbb3</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\4_Validation.txt">
+      <id>bb740eef-3e7d-4700-8013-547e874b944e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\5_DropTable.txt">
+      <id>164f0f32-9884-4322-9035-a9e5bcd1fe38</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\6_CreateDatabase.txt">
+      <id>2fb286ce-4611-4f4f-b928-79ba95a56186</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\7_DropDatabase.txt">
+      <id>d64668d4-20e3-4aa6-a467-374456b13997</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\8_CreateTable.txt">
+      <id>c8960e48-b906-484c-8194-d7df88800074</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7\9_SelectTable.txt">
+      <id>ed62fcdc-4da1-43f8-bf6f-636966a60d06</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\10_CreateTableWithConstraints.txt">
+      <id>c5febe87-2fde-408e-bc22-b345dd65eb0a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\11_CreateView.txt">
+      <id>8e897160-e63e-45c4-bd7f-62c0bf38eeae</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\12_CreateIndex.txt">
+      <id>eda2929f-a4d2-46de-bdd7-8acbbde4b3a6</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\13_CreateTrigger.txt">
+      <id>0dcfdb2c-998c-49a9-b843-6b3ff9a2a98e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\14_DropView.txt">
+      <id>9744bbe6-d3cf-4651-b82c-5a3b71019b42</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\15_DropIndex.txt">
+      <id>2ab729d3-5a8a-4cd6-a029-69c22738d9e2</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\16_DropTrigger.txt">
+      <id>c35420f1-4d44-4a34-9cbb-e181833965ba</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\17_CreateDatabase.txt">
+      <id>869774f1-07ca-49f7-8911-c77a921b5511</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\18_DropDatabase.txt">
+      <id>0fd82516-4ae5-462f-bd6d-ec7fc37d96ec</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\1_CreateTable.txt">
+      <id>8389ecec-2619-474c-863b-f36062fde00d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\2_InsertTable.txt">
+      <id>da45a1aa-3596-41d0-a85c-24d54238241e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\3_SelectTable.txt">
+      <id>27adde58-287d-46da-9334-a928ce3f3d99</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\4_Validation.txt">
+      <id>4d77a96e-f465-41ba-aab8-29c11bec09a9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\5_DropTable.txt">
+      <id>6379197b-24c8-45d1-85cb-5912b4182618</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\6_CreateDatabase.txt">
+      <id>65361024-bc83-4fc8-8534-a2b2b76433c2</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\7_DropDatabase.txt">
+      <id>5d016800-4c79-4444-b265-c860ba1629c2</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\8_CreateTable.txt">
+      <id>41f2fd12-1997-486b-8901-72aaed57166c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0\9_SelectTable.txt">
+      <id>505cfcda-836b-4cbf-b341-e6cb77d02fda</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\10_CreateTableWithConstraints.txt">
+      <id>9fcd9a2f-037d-48db-b77a-da64989f3634</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\11_CreateView.txt">
+      <id>e29dc1f7-4201-4e28-a38e-b656528ebf45</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\12_CreateIndex.txt">
+      <id>d601047a-accf-467e-8d3a-3c809ff223ff</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\13_CreateTrigger.txt">
+      <id>a12cf6ab-8e85-4e09-beec-c3f7bbdaf68b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\14_DropView.txt">
+      <id>77b6fe9a-e431-4b16-bfbc-2042e36f2811</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\15_DropIndex.txt">
+      <id>392a2235-3531-468c-9b4e-2b1a9a7274a8</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\16_DropTrigger.txt">
+      <id>2c21d7de-f8cd-42e5-95bb-9b1801fe1ef4</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\17_CreateDatabase.txt">
+      <id>96a05ed7-49f9-4ba8-91e9-75089edfcec3</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\18_DropDatabase.txt">
+      <id>153b2f15-f35a-45e0-8654-bab00aa1b28e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\1_CreateTable.txt">
+      <id>c8e27774-e7d7-4e3a-a2f7-4860f872f673</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\2_InsertTable.txt">
+      <id>b720495c-2f70-4fb4-bda2-1681720b386c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\3_SelectTable.txt">
+      <id>dd2ac310-255a-4dcf-96fc-701c97c48cb7</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\4_Validation.txt">
+      <id>86094884-8448-4c85-89b8-c2a6135efefe</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\5_DropTable.txt">
+      <id>aa8ec16b-ea82-447b-93b4-4f5810fe0032</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\6_CreateDatabase.txt">
+      <id>6ce9444a-1354-4595-b957-7e411da9a13c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\7_DropDatabase.txt">
+      <id>a297c53b-d1b6-4ce2-9075-a131394665e7</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\8_CreateTable.txt">
+      <id>c66906af-38b2-4eac-a57c-776806d5c28b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4\9_SelectTable.txt">
+      <id>96e40181-cb40-42a4-9e46-d2bb77590ee7</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\10_CreateTableWithConstraints.txt">
+      <id>0158a238-74da-455b-ade2-4db3ed1beeca</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\11_CreateView.txt">
+      <id>66668fe9-2ae3-46fe-bcb7-ff8878293f2e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\12_CreateIndex.txt">
+      <id>f47da84e-d8cc-4f08-a62f-e090667e6b21</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\13_CreateTrigger.txt">
+      <id>0460f26d-8969-4976-a638-d847e3cdc697</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\14_DropView.txt">
+      <id>40094aaf-3e59-4568-aff2-a7e6d63ee186</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\15_DropIndex.txt">
+      <id>387689e6-35d6-463c-9d8e-8a25b18b178b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\16_DropTrigger.txt">
+      <id>73696a61-f76a-4a16-9e90-bb619e551aba</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\17_CreateDatabase.txt">
+      <id>866ca8ea-0a95-460e-9735-75c417300659</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\18_DropDatabase.txt">
+      <id>dc7bf432-caf4-46fc-8b66-3cda0759b6b2</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\1_CreateTable.txt">
+      <id>1c7c4420-ca78-460a-b1f2-d85c3eec1dea</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\2_InsertTable.txt">
+      <id>5d479ab9-5aac-4933-8017-02bdcceb8419</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\3_SelectTable.txt">
+      <id>75c626af-2416-48ad-8fc1-db192917c408</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\4_Validation.txt">
+      <id>9240d9f1-d0d7-47c0-a175-110d6a68f60e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\5_DropTable.txt">
+      <id>7fc631b9-3d26-41e1-bac6-3fe29dbc459c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\6_CreateDatabase.txt">
+      <id>137cb67b-30a7-4868-8646-ae8b0b69db34</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\7_DropDatabase.txt">
+      <id>5e0ed18c-e130-4d54-ab9d-ef0d4236f094</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\8_CreateTable.txt">
+      <id>e6325548-5d6c-488e-8642-9a9d2ea4dab1</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20\9_SelectTable.txt">
+      <id>2cf8714e-6180-419c-8d27-59c426b02de1</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\10_CreateTableWithConstraints.txt">
+      <id>8481e445-c778-4933-b80d-6aa5c8c05e31</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\11_CreateView.txt">
+      <id>1c041cfb-f749-4b65-9f93-dfb278ab607a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\12_CreateIndex.txt">
+      <id>ca57b2d8-208b-4754-818a-f897cd1cb247</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\13_CreateTrigger.txt">
+      <id>83fa4a4d-4b9a-426a-9688-2106606430d1</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\14_DropView.txt">
+      <id>854dbd71-4652-4280-983d-6252792c96be</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\15_DropIndex.txt">
+      <id>ec4eb1dc-a1e2-4d5b-ac28-20c3b2693c06</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\16_DropTrigger.txt">
+      <id>451d2e46-8620-48c7-8fd4-8903b75345d9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\17_CreateDatabase.txt">
+      <id>e1fd22b2-34dd-45a2-bc97-a4f2b03ed3da</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\18_DropDatabase.txt">
+      <id>b5aa2b27-0d04-4c7f-95a6-8fb4089d784e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\1_CreateTable.txt">
+      <id>0dbb1712-6d2a-46af-b5d0-7b84ff2be01a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\2_InsertTable.txt">
+      <id>f48810cf-438a-46e2-bdb1-24a72b60bae8</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\3_SelectTable.txt">
+      <id>86ceb8e1-0772-4b93-b932-ae0e1822f0a1</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\4_Validation.txt">
+      <id>a1bc8005-de4f-4677-84bf-8401b14bdfcc</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\5_DropTable.txt">
+      <id>3f6585de-c216-4596-b965-2d0db4d883d9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\6_CreateDatabase.txt">
+      <id>2746d0a6-725f-4beb-b255-b8f3f0cc2c1f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\7_DropDatabase.txt">
+      <id>805f5551-3294-4466-8c58-e543927f7753</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\8_CreateTable.txt">
+      <id>f5e56846-d078-4586-8e19-eb1a5e2cf325</id>
+    </None>
+    <None Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0\9_SelectTable.txt">
+      <id>dc5d6269-52ea-45b6-b1f4-686bddd3ffef</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\10_CreateTableWithConstraints.txt">
+      <id>ad43a33b-160d-4284-8f69-5f7785d832d9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\11_CreateView.txt">
+      <id>4497eba1-0b41-45b3-bd1d-3b6c68aeed24</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\12_CreateIndex.txt">
+      <id>c5156688-dfc6-4160-acb3-ad50fa1d0f0f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\13_CreateTrigger.txt">
+      <id>0021e7d4-0b92-4fea-90f3-b44c15023d8b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\14_DropView.txt">
+      <id>a54e28b4-5475-424f-87c5-8a20257ff7fe</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\15_DropIndex.txt">
+      <id>1e843b57-eac4-476a-b798-02c0bb7c452c</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\16.DropTrigger.txt">
+      <id>7dc13871-c05c-4a29-b094-cce6c768e81e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\17_CreateDatabase.txt">
+      <id>f9f5b0b5-caa3-4a67-b6d0-2912d5078fd9</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\18_DropDatabase.txt">
+      <id>7659031c-6a44-4402-9c15-f876218c9f27</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\1_CreateTable.txt">
+      <id>5e194dfd-b3c8-46f7-b4c1-6bbfc2fbd54e</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\2_InsertTable.txt">
+      <id>54bcdf02-cc81-4ac3-8d1e-68b4d4ba5766</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\3_SelectTable.txt">
+      <id>f9c9359f-f3ee-48e0-9aa1-f0d8891b9526</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\4_Validation.txt">
+      <id>c6c74751-e3db-4371-aa94-74fc7b619279</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\5_DropTable.txt">
+      <id>d55be11e-9f77-4f80-baa1-6c67bbef105f</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\6_CreateDatabase.txt">
+      <id>238057fc-ea57-41ef-8abf-3dedeb36f69b</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\7_DropDatabase.txt">
+      <id>eb15e46c-cfe8-45cb-a6a7-8c9baa038b37</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\8_CreateTable.txt">
+      <id>3a64c4eb-a072-44c8-ad78-da636e38e922</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0\9_SelectTable.txt">
+      <id>e613a430-3043-405c-bd2c-c25ddb754578</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\10_CreateTableWithConstraints.txt">
+      <id>c87582b2-d9be-448c-b6a8-530da57efe1a</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\11_CreateView.txt">
+      <id>34dfec57-c642-4594-b897-4eaafa33d524</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\12_CreateIndex.txt">
+      <id>c94f8ff3-a737-41bb-91fc-4f10b0afbf00</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\13_CreateTrigger.txt">
+      <id>25c4aa5e-1278-430e-836a-75ae2834e3d0</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\14_DropView.txt">
+      <id>208d20a3-c52d-4686-9d1a-da0f6c301023</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\15_DropIndex.txt">
+      <id>94254d38-3150-454a-a7ad-2631f557cca0</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\16.DropTrigger.txt">
+      <id>8331fc0c-ecae-4795-afe0-bc83973504d8</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\17_CreateDatabase.txt">
+      <id>6d4758b0-21fd-4fe3-bc27-4bfa372712f7</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\18_DropDatabase.txt">
+      <id>a5d2352b-0cc1-4ef3-8c80-87861eb6776d</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\19_SelectTable.txt">
+      <id>05691b14-876e-409c-97b8-527d925a1d00</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\1_CreateTable.txt">
+      <id>14cc48f0-b98e-4976-861a-b63a6141beca</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\20_DropTable.txt">
+      <id>4c3485ab-110f-4d22-bc6f-1f66005c2776</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\2_InsertTable.txt">
+      <id>fee45a36-1e7e-4a06-9b52-d66873939354</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\3_SelectTable.txt">
+      <id>17e9c8d7-5714-4c99-8edc-517876319e55</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\4_Validation.txt">
+      <id>70883a1b-380c-44f2-8412-856e50227bbc</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\5_DropTable.txt">
+      <id>3fa0bc2c-92e4-47dd-b59a-b9510f446da7</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\6_CreateDatabase.txt">
+      <id>e4a9f063-0497-4e69-84e7-b0aaa6b871e7</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\7_DropDatabase.txt">
+      <id>1d3bfe1f-1b0d-4d9f-953f-b11a81a65cfe</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\8_CreateTable.txt">
+      <id>e9b1efcb-3104-49bd-bd86-c33f100d3b59</id>
+    </None>
+    <None Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1\9_InsertTable.txt">
+      <id>1d3a03ce-0cf1-46c2-983c-95f84a78e65f</id>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADSAutomationPhaseII.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>b50ed18c-1552-492d-86d2-1ad6bd0e3017</id>
+    </Content>
+    <Content Include="ADSAutomationPhaseII.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>eb90de82-5e10-4844-b17a-593b40906ab4</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions">
+      <id>fc706583-e167-44fe-9a78-271d79b3b019</id>
+    </Folder>
+    <Folder Include="Commons">
+      <id>44ef077b-e7a9-4bab-a3a3-fe8b0bc85b8d</id>
+    </Folder>
+    <Folder Include="Configuration">
+      <id>e72524e9-c807-481b-8ad9-ba7bb1baf5ec</id>
+    </Folder>
+    <Folder Include="Application">
+      <id>72e6f30c-443e-480b-8ccb-8393d0533e24</id>
+    </Folder>
+    <Folder Include="Base">
+      <id>9c9eb014-d114-464f-8003-f0284105359a</id>
+    </Folder>
+    <Folder Include="TC_10548">
+      <id>a5f47f2d-972b-4ef0-8f41-39cb5a6bd456</id>
+    </Folder>
+    <Folder Include="TC_10548\TC4">
+      <id>fef5fd4d-6038-466c-bbda-5aa43323aa8d</id>
+    </Folder>
+    <Folder Include="TC_10548\TC3">
+      <id>e166c11e-0b2f-4068-a6d5-27792b17c35b</id>
+    </Folder>
+    <Folder Include="TC_10548\TC1">
+      <id>88d68f0c-17aa-42aa-b809-c8e5b53f6b48</id>
+    </Folder>
+    <Folder Include="TC_10548\TC2">
+      <id>fddaeafc-3a81-4957-83eb-d988d1e4889b</id>
+    </Folder>
+    <Folder Include="TC_10555">
+      <id>8684af6c-f466-46ec-acce-8e7c0599e6f5</id>
+    </Folder>
+    <Folder Include="TC_10555\TC1">
+      <id>b5756152-a2d0-4c3e-af40-8e97e1401683</id>
+    </Folder>
+    <Folder Include="TC_10535\TC3">
+      <id>bd3e4f74-2054-45da-b172-c345f0a31f8d</id>
+    </Folder>
+    <Folder Include="TC_10535\TC1">
+      <id>fbc6e6c3-e044-4e02-8695-0aad045f85f9</id>
+    </Folder>
+    <Folder Include="TC_10535\TC2">
+      <id>7e2cb882-023e-4bcb-b4ba-13ea1fdf251e</id>
+    </Folder>
+    <Folder Include="TestData">
+      <id>6f2926f7-635a-4da5-822c-db2e529af733</id>
+    </Folder>
+    <Folder Include="TC_10535">
+      <id>8853b551-0a2e-4880-a3ed-252c97fab07f</id>
+    </Folder>
+    <Folder Include="Preconditions">
+      <id>9460752a-20b4-4ead-9661-b5518d2fbd04</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts">
+      <id>025ae1e1-eb97-4487-b65c-2c7c822ae4bf</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Amazon Redshift">
+      <id>8cb032a4-ed1e-40d8-ab56-69b9469718b5</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Cassandra 172.24.1.77 3.7">
+      <id>d158cd5c-87cc-496b-bba9-82bf87cc43ce</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Cassandra 172.24.1.122 2.2">
+      <id>e529bb9c-3da0-40f0-85c1-6f6963ca8e5a</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\DB2 LUW 172.24.1.8 v11.1">
+      <id>b7fc94ce-2f64-497a-9b12-dc5c78e0d88b</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\DB2 LUW 172.24.1.145 v10.5">
+      <id>41572450-b4f0-4169-92e8-9a48cfac0294</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Derby 172.24.1.8 v10.13">
+      <id>e115c80d-0f74-4da7-8efe-698c7485a4ee</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Derby 172.24.1.199 v10.14">
+      <id>c36249db-d1fc-49ba-a03e-21e82a320dce</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Greenplum 10.90.1.146 v5.0">
+      <id>c399a49b-a7de-4bb6-9999-7d758eb710d5</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Informix 172.24.1.140 v11.70">
+      <id>afcbff9b-dfcd-425a-b799-c4f98f0d4026</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Informix 172.24.1.145 v12.10">
+      <id>f14e1565-daf3-4315-b8b9-013ffdaf954a</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\MariaDB 172.24.1.8 v10.2">
+      <id>b25f48f6-b893-41f2-b6b9-5e0cb98b903f</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\MongoDB 172.24.1.155 v3.2.1">
+      <id>ac3a3a75-e0f5-476c-bd8b-2c8d7cebd32e</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\MongoDB 172.24.1.155 v3.4.1">
+      <id>d7d0a5c9-2bc0-4da2-b83e-41145d68ba9f</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\MySQL 172.24.1.8 v5.7">
+      <id>0ad5cd5e-23af-4663-a1fd-7a7cab1c44ab</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Netezza 10.90.1.21 7.2">
+      <id>46e0d1fe-30c2-49e4-a554-0462e22fdd44</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Vertica 10.90.1.176 v8.0">
+      <id>84e922b2-9395-453d-8fde-fa98442b66b6</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Vertica 10.90.1.54 v9.1">
+      <id>4bae9709-08d5-46ff-9c72-7434591ae3f2</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Teradata 10.90.1.175 v15.0">
+      <id>04098f13-2253-460f-83ae-336e7cebbe3f</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Teradata 10.90.1.169 v16.20">
+      <id>4c83bc2b-acdf-47a8-949e-7528ba075a78</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Sybase IQ 172.24.1.140 16.0">
+      <id>e6a1e623-4a43-479a-b133-cb2722512de4</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Sybase IQ 172.24.1.6 15.4">
+      <id>fd6db6b7-22f9-494b-bd32-bc51e6806165</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Sybase ASE 172.24.1.145 v16">
+      <id>0ed8f5a1-d99c-4078-926d-2bf6812b293e</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Sybase ASE 172.24.1.6 v15.7">
+      <id>9ba7c729-1fa3-4b9c-9160-37aaaee9ee27</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Sybase Any 172.24.1.145 v16">
+      <id>9b72a2bc-a76f-49a6-9cfb-945fc7343224</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Sybase Any 172.24.1.50 v17">
+      <id>ba80a25d-689b-4026-b8f0-2def81401951</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\SQL Server 172.24.1.199 2016">
+      <id>b9c26143-8485-41a8-bc23-cfce1eaeaeec</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\SQL Server 172.24.1.154 2017">
+      <id>a09a2f98-4ae7-4a10-92a7-6042a754031e</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\SAP Hana 10.90.1.194 v1.0">
+      <id>297b9749-0129-4031-ac3e-b1c076a88def</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\SAP Hana 10.90.1.96 v2.0">
+      <id>7f2613b8-b2b1-4c82-bc7a-58fb1fbb2145</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\PostgreSQL 172.24.1.122 v9.6">
+      <id>474dfd57-388f-4b80-9bff-b6e91f64a0dc</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\PostgreSQL 172.24.1.8 v10.0">
+      <id>fda21bb1-c5bf-4535-99b6-b963ffde5165</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Oracle 172.24.1.199 v12.1.0.2.0">
+      <id>c70be701-b8b5-4eb0-b4be-930ec6ba0723</id>
+    </Folder>
+    <Folder Include="TestData\QueryScripts\Oracle 172.24.1.140 v11g R2">
+      <id>98def6dc-c065-41a6-888f-92deb329251a</id>
+    </Folder>
+    <Folder Include="TestData\TC_10535">
+      <id>128afefd-02b6-40cb-a6d0-49f3a72d9b33</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
