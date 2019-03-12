@@ -1,0 +1,4 @@
+CREATE TRIGGER ads_trigger
+AFTER INSERT ON ads_table
+FOR EACH ROW 
+UPDATE productid_count SET productid.productid = productid.productid+1;

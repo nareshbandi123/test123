@@ -1,0 +1,4 @@
+CREATE TABLE ads_table  (id INT NOT NULL,
+ firstname varchar(25), lastname varchar(20),
+ CONSTRAINT id PRIMARY KEY(id)
+)

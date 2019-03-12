@@ -1,0 +1,1 @@
+CREATE TABLE ads_table ( id text PRIMARY KEY, lastname text,firstname text)

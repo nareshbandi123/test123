@@ -1,0 +1,1 @@
+drop schema ads_db restrict

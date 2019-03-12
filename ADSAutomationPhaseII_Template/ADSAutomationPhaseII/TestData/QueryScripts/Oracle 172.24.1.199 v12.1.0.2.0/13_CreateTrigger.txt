@@ -1,0 +1,7 @@
+CREATE OR REPLACE TRIGGER "ads_db"."ADS_TRIGGER"
+  BEFORE
+    ALTER ON DATABASE
+    DISABLE
+BEGIN
+      DBMS_OUTPUT.put_line('ads_db.ads_table - Executed');
+      END;

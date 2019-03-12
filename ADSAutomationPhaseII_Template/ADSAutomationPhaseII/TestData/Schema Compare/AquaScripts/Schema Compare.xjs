@@ -1,0 +1,618 @@
+//*******************************************************************
+// Schema Compare
+//
+// Compares the source and the target schemas and writes the differences to
+// an HTML file.
+//
+// For more information about Aqua Open API visit link: http://docs.aquafold.com/ads/19.5/openapi/
+//*******************************************************************
+
+//*******************************************************************
+// Input parameters.
+//*******************************************************************
+var compareFolder= ""; // This is to specify the output folder.
+var masterFolder = "master"; // Master connnection folder.
+var slaveFolder  = "slaves"; // Slave connection folder
+var masterDB     = "";
+var masterSchema = "";
+var slaveDB      = "";
+var slaveSchema  = "";
+var outputToFileIfNoDiff = true; // Output to file if no differences are found.
+var displayToConsoleIfNoDiff = true; // Display to console if no differences are found.
+var ignoreCaseForObjectDef = false; // Ignore case for object definition.
+var includeObjectPermissions = false;
+var includeIndexesTriggers = true;
+var includeTableConstraints = true;
+var includeTableConstraintsNames = true;
+var includeTableStorage = false;
+var includeComments = true;
+var orderTableColumnsByName = true;
+
+var masterConnection = null;
+var slaveConnections = null;
+var recursive        = true;
+var d = aqua.type.getDate();
+
+var connRootFolder   = aqua.project.getServerConnectionsRootFolder();
+if (connRootFolder == null) {
+	throw "Expected: root folder != null but was: " + connRootFolder;
+}
+
+aqua.console.println("[" + d.newDate().toString() + "] Getting list of folders under Servers");
+var subFolders = connRootFolder.list();
+
+for (var i = 0; i < subFolders.length; i++) {
+	if (subFolders[i].isFolder() && (subFolders[i].getName() == masterFolder)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Master folder [" + masterFolder + "] found.");
+		masterConnection = aqua.project.getServerConnections(subFolders[i].getName(), recursive)[0];
+		masterConnection.connect();
+	}
+	else if (subFolders[i].isFolder() && (subFolders[i].getName() == slaveFolder)) {
+		// there should be a list of slave connections
+		aqua.console.println("[" + d.newDate().toString() + "] Slave folder [" + slaveFolder + "] found.");
+		aqua.console.println("[" + d.newDate().toString() + "] Getting list of connections from the slave folder [" + slaveFolder + "].");
+		slaveConnections = aqua.project.getServerConnections(subFolders[i].getName(), recursive);
+	}
+}
+
+for (var i = 0; i < slaveConnections.length; i++) {
+	slaveConnections[i].connect();
+	aqua.console.println("[" + d.newDate().toString() + "] Comparing [" + masterConnection.getName() + "] and [" + slaveConnections[i].getName() + "].");
+	compare(masterConnection, slaveConnections[i]);
+}
+
+masterConnection.disconnect();
+for (var i = 0; slaveConnections.length < i; i++) {
+	slaveConnections[i].disconnect();
+}
+
+//*******************************************************************
+// This function compares master and slave folders.
+//*******************************************************************
+function compare(master, slave) {
+	if (masterSchema.equals("")) {
+		masterSchema = null;
+	}
+	if (slaveSchema.equals("")) {
+		slaveSchema = null;
+	}
+
+	var cmp = aqua.compare.newSchemaComparator();
+	if ((masterSchema === null && slaveSchema !== null) || (masterSchema !== null && slaveSchema === null)) {
+		throw "Either both masterSchema and slaveSchema must be specified or both must be blank.";
+	}
+	else {
+		if (masterSchema === null && slaveSchema === null) {
+			cmp.setQualifySchema(true);
+			cmp.options.setQualifyObject(true);
+		}
+		else {
+			cmp.setQualifySchema(false);
+			cmp.options.setQualifyObject(false);
+		}
+	}
+
+	cmp.setIgnoreCaseForObjectDef(ignoreCaseForObjectDef);
+	cmp.options.setIncludePermissions(includeObjectPermissions);
+	cmp.options.setIncludeIndexesTriggers(includeIndexesTriggers);
+	cmp.options.setIncludeTableConstraints(includeTableConstraints);
+	if (includeTableConstraints === false) {
+		cmp.options.setIncludeTableConstraintNames(false);
+	}
+	else {
+		cmp.options.setIncludeTableConstraintNames(includeTableConstraintsNames);
+	}
+	cmp.options.setIncludeStorage(includeTableStorage);
+	cmp.options.setIncludeComments(includeComments);
+	cmp.options.setSortTableColumns(orderTableColumnsByName);
+
+	var masterMetadata = master.getMetadata();
+	var slaveMetadata  = slave.getMetadata();
+
+	if (isObjectSupported('Tables', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [tables] for comparison.");
+		var masterObjs = masterMetadata.extractTables(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractTables(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Views', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [views] for comparison.");
+		var masterObjs = masterMetadata.extractViews(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractViews(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Sequences', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [sequences] for comparison.");
+		var masterObjs = masterMetadata.extractSequences(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractSequences(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('ArrayTypes', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [array types] for comparison.");
+		var masterObjs = masterMetadata.extractArrayTypes(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractArrayTypes(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('ObjectTypes', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [object types] for comparison.");
+		var masterObjs = masterMetadata.extractObjectTypes(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractObjectTypes(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('TableTypes', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [table types] for comparison.");
+		var masterObjs = masterMetadata.extractTableTypes(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractTableTypes(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Clusters', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [clusters] for comparison.");
+		var masterObjs = masterMetadata.extractClusters(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractClusters(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Synonyms', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [synonyms] for comparison.");
+		var masterObjs = masterMetadata.extractSynonyms(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractSynonyms(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Packages', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [packages] for comparison.");
+		var masterObjs = masterMetadata.extractPackages(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractPackages(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('PackageBodies', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [package bodies] for comparison.");
+		var masterObjs = masterMetadata.extractPackageBodies(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractPackageBodies(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Procedures', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [procedures] for comparison.");
+		var masterObjs = masterMetadata.extractProcedures(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractProcedures(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Functions', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [functions] for comparison.");
+		var masterObjs = masterMetadata.extractFunctions(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractFunctions(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Indexes', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [indexes] for comparison.");
+		var masterObjs = masterMetadata.extractNonSystemIndexes(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractNonSystemIndexes(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Triggers', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [triggers] for comparison.");
+		var masterObjs = masterMetadata.extractTriggers(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractTriggers(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Defaults', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [defaults] for comparison.");
+		var masterObjs = masterMetadata.extractDefaults(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractDefaults(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Rules', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [rules] for comparison.");
+		var masterObjs = masterMetadata.extractRules(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractRules(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Events', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [events] for comparison.");
+		var masterObjs = masterMetadata.extractEvents(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractEvents(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Roles', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [roles] for comparison.");
+		var masterObjs = masterMetadata.extractRoles(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractRoles(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('Users', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [users] for comparison.");
+		var masterObjs = masterMetadata.extractUsers(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractUsers(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('MatViews', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [materialized views] for comparison.");
+		var masterObjs = masterMetadata.extractMatViews(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractMatViews(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('MatViewLogs', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [materialized view logs] for comparison.");
+		var masterObjs = masterMetadata.extractMatViewLogs(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractMatViewLogs(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	if (isObjectSupported('DataTypes', masterConnection)) {
+		aqua.console.println("[" + d.newDate().toString() + "] Extracting [data types] for comparison.");
+		var masterObjs = masterMetadata.extractDataTypes(masterDB, masterSchema);
+		var slaveObjs  = slaveMetadata.extractDataTypes(slaveDB, slaveSchema);
+
+		for (var i = 0; i < masterObjs.length; i++) {
+			cmp.addLeft(masterObjs[i]);
+		}
+
+		for (var i = 0; i < slaveObjs.length; i++) {
+			cmp.addRight(slaveObjs[i]);
+		}
+	}
+
+	var ignore = cmp.compareOptions.newIgnore();
+	ignore.setDoNotIgnore();
+	cmp.compareOptions.setIgnore(ignore);
+
+	aqua.console.println("[" + d.newDate().toString() + "] Running compare.");
+	var result = cmp.compare();
+	aqua.console.println("[" + d.newDate().toString() + "] Compare completed.");
+	result.addSortingByTypeAscending();
+	result.addSortingByNameDescending();
+	result.addSortingByResultAscending();
+
+	aqua.console.println("[" + d.newDate().toString() + "] Running sort.");
+	result.sort();
+	aqua.console.println("[" + d.newDate().toString() + "] Sort completed.");
+
+	if (outputToFileIfNoDiff || result.hasChanges()) {
+		result.saveToHtml(compareFolder + slave.getName());
+	}
+
+	if (displayToConsoleIfNoDiff || result.hasChanges()) {
+		aqua.console.println(result.toString());
+	}
+}
+
+//*******************************************************************
+// This function checks to see if an object is supported for a database.
+//*******************************************************************
+function isObjectSupported(object, conn) {
+	switch (object) {
+		case 'Sequences':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isInformix() || conn.metadata.isPostgreSQL() || conn.metadata.isGreenplum() || conn.metadata.isNetezza() ||
+					conn.metadata.isHana() || conn.metadata.isVertica() ||  conn.metadata.isOracle() || conn.metadata.isSybaseAnywhere()) {
+				return true;
+			}
+			break;
+
+		case 'Synonyms':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isInformix() || conn.metadata.isOracle() || conn.metadata.isApacheDerby() || conn.metadata.isNetezza() ||
+					conn.metadata.isHana() || conn.metadata.isAzure()) {
+				return true;
+			}
+			break;
+
+		case 'Packages':
+			if (conn.metadata.isDB2zOS() || conn.metadata.isOracle()) {
+				return true;
+			}
+			break;
+
+		case 'Indexes':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isPostgreSQL() || conn.metadata.isNCluster() || conn.metadata.isApacheDerby() ||
+					conn.metadata.isTeradata() || conn.metadata.isCassandra() || conn.metadata.isGreenplum() || conn.metadata.isVoltDB() ||
+					conn.metadata.isSQLite() || conn.metadata.isHana() || conn.metadata.isMongoDB() || conn.metadata.isAzure()) {
+				return true;
+			}
+			break;
+
+		case 'Triggers':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isMySQL() || conn.metadata.isPostgreSQL() || conn.metadata.isApacheDerby() ||
+					conn.metadata.isTeradata() || conn.metadata.isGreenplum() || conn.metadata.isSQLite() || conn.metadata.isHana() ||
+					conn.metadata.isAzure() || conn.metadata.isMariaDB()) {
+				return true;
+			}
+			break;
+
+		case 'Functions':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isInformix() || conn.metadata.isPostgreSQL() ||
+					conn.metadata.isMySQL() || conn.metadata.isApacheDerby() || conn.metadata.isTeradata() || conn.metadata.isGreenplum() ||
+					conn.metadata.isHana() || conn.metadata.isVertica() || conn.metadata.isParAccel()) {
+				return true;
+			}
+			break;
+
+		case 'Procedures':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isPostgreSQL() || conn.metadata.isMySQL() || conn.metadata.isApacheDerby() ||
+					conn.metadata.isTeradata() || conn.metadata.isGreenplum() || conn.metadata.isParAccel() || conn.metadata.isVoltDB() ||
+					conn.metadata.isNetezza() || conn.metadata.isMariaDB()) {
+				return true;
+			}
+			break;
+
+		case 'Views':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isMySQL() || conn.metadata.isPostgreSQL() || conn.metadata.isNCluster() ||
+					conn.metadata.isApacheDerby() || conn.metadata.isTeradata() || conn.metadata.isGreenplum() || conn.metadata.isRedShift() ||
+					conn.metadata.isNetezza() || conn.metadata.isVoltDB() || conn.metadata.isSQLite() || conn.metadata.isHana() ||
+					conn.metadata.isVertica() || conn.metadata.isHive() || conn.metadata.isAzure() || conn.metadata.isParAccel() ||
+					conn.metadata.isBigQuery() || conn.metadata.isMariaDB()) {
+				return true;
+			}
+			break;
+
+		case 'Tables':
+			if (conn.metadata.isDB2() || conn.metadata.isDB2iSeries() || conn.metadata.isDB2zOS() || conn.metadata.isMssql() ||
+					conn.metadata.isOracle() || conn.metadata.isSybaseASE() || conn.metadata.isSybaseAnywhere() || conn.metadata.isSybaseIQ() ||
+					conn.metadata.isInformix() || conn.metadata.isMySQL() || conn.metadata.isPostgreSQL() || conn.metadata.isNCluster() ||
+					conn.metadata.isApacheDerby() || conn.metadata.isTeradata() || conn.metadata.isRedShift() || conn.metadata.isCassandra() ||
+					conn.metadata.isGreenplum() || conn.metadata.isNetezza() || conn.metadata.isVoltDB() || conn.metadata.isSQLite() ||
+					conn.metadata.isHana() || conn.metadata.isVertica() || conn.metadata.isHive() || conn.metadata.isMongoDB() ||
+					conn.metadata.isAzure() || conn.metadata.isParAccel() || conn.metadata.isBigQuery() || conn.metadata.isMariaDB()) {
+				return true;
+			}
+			break;
+
+		case 'ArrayTypes':
+			if (conn.metadata.isOracle()) {
+				return true;
+			}
+			break;
+
+		case 'ObjectTypes':
+			if (conn.metadata.isOracle() || conn.metadata.isPostgreSQL()) {
+				return true;
+			}
+			break;
+
+		case 'Defaults':
+			if (conn.metadata.isMssql() || conn.metadata.isSybaseASE()) {
+				return true;
+			}
+			break;
+
+		case 'Rules':
+			if (conn.metadata.isMssql() || conn.metadata.isSybaseASE() || conn.metadata.isPostgreSQL() || conn.metadata.isGreenplum()) {
+				return true;
+			}
+			break;
+
+		case 'Events':
+			if (conn.metadata.isMySQL() || conn.metadata.isMariaDB()) {
+				return true;
+			}
+			break;
+
+		case 'Roles':
+			if (conn.metadata.isHana()) {
+				return true;
+			}
+			break;
+
+		case 'Users':
+			if (conn.metadata.isHana()) {
+				return true;
+			}
+			break;
+
+		case 'MatViews':
+			if (conn.metadata.isOracle() || conn.metadata.isDB2() || conn.metadata.isSybaseASE() || conn.metadata.isPostgreSQL()) {
+				return true;
+			}
+			break;
+
+		case 'MatViewLogs':
+			if (conn.metadata.isOracle()) {
+				return true;
+			}
+			break;
+
+		case 'DataTypes':
+			if (conn.metadata.isInformix() || conn.metadata.isHana() || conn.metadata.isTeradata()  || conn.metadata.isDB2iSeries() ||
+					conn.metadata.isAzure() || conn.metadata.isMssql() || conn.metadata.isDB2() || conn.metadata.isSybaseASE()
+					|| conn.metadata.isSybaseIQ() || conn.metadata.isPostgreSQL()) {
+				return true;
+			}
+			break;
+
+		case 'TableTypes':
+			if (conn.metadata.isOracle()) {
+				return true;
+			}
+			break;
+
+		case 'Clusters':
+			if (conn.metadata.isOracle()) {
+				return true;
+			}
+			break;
+
+		case 'PackageBodies':
+			if (conn.metadata.isOracle()) {
+				return true;
+			}
+			break;
+
+		default:
+			return false;
+	}
+	return false;
+}

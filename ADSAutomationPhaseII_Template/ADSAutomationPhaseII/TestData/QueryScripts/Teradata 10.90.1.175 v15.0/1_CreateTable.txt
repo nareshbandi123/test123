@@ -1,0 +1,8 @@
+CREATE SET TABLE ads_table( 
+   EmployeeNo INTEGER,     
+   DOB DATE FORMAT 'YYYY-MM-DD', 
+   JoinedDate DATE FORMAT 'YYYY-MM-DD', 
+   DepartmentNo BYTEINT, 
+   firstname varchar(30), 
+   lastname varchar(30) 
+) UNIQUE PRIMARY INDEX (EmployeeNo)

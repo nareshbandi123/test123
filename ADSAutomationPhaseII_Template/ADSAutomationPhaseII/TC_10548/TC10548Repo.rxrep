@@ -1,0 +1,646 @@
+﻿<repository
+id="d2d62735-a8bf-49b8-86d6-910dbbffd531"
+name="TC10548Repo"
+rxversion="8.2">
+	<codegen
+	classname="TC10548Repo"
+	namespace="ADSAutomationPhaseII.TC_10548">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="873720e9-6af3-4bfd-a945-c111a32b3929"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="b062234d-34f9-41a1-a07a-d020ff7fb820"
+		isrooted="True"
+		name="Application"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="checkbox"
+			id="489913cd-c4a5-48d0-80c5-29e769b9f399"
+			name="F1Menu"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@name='myLeftStripe']/checkbox[@text='F1: Servers']
+			</item>
+			<item
+			capname="treeitem"
+			id="dd817a3d-ff38-459e-af67-b151e8178be2"
+			name="TreeItem"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']/container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='schemaTree']/?/?/treeitem[@text='Local Database Servers']
+			</item>
+			<folder
+			capname="unknown"
+			id="4a94d1fe-6c41-4f14-a9d4-fe6baf8bd9ab"
+			isrooted="False"
+			name="Settings"
+			searchtimeout="0ms">
+				<item
+				capname="container"
+				id="dd3e688b-b8db-4004-bb86-f748632cd4e6"
+				name="SettingIcon"
+				searchtimeout="30000ms">
+					/form[@title='Aqua Data Studio']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/?/?/container[@type='ThreeComponentsSplitter']/container[@name='myFirstComponent']//container[@type='ToolWindowHeader$3']
+				</item>
+				<item
+				capname="container"
+				id="d1c1bdae-3bd4-479c-a632-ade33cfaf25f"
+				name="SettingIconD"
+				searchtimeout="30000ms">
+					/form[@title='Aqua Data Studio']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']//container[@name='myHeader']/?/?/container[@type='ToolWindowHeader$3']
+				</item>
+			</folder>
+			<item
+			capname="treeitem"
+			id="618ab7c1-8eff-4d80-9c2e-60c027058ff9"
+			name="ProjectsTree"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='projectTree']/treeitem[@text='Projects']
+			</item>
+			<item
+			capname="treeitem"
+			id="c6d999b1-8ab5-4a06-9b50-83045fde4fbf"
+			name="UserFiles"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGA']//treeitem[@text='User Files']
+			</item>
+			<item
+			capname="treeitem"
+			id="2a5d3463-33bf-4d99-9088-ec77212ad642"
+			name="NewProjectFile"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGA']//treeitem[@text='AquaScripts']/treeitem[@text~'^Database\ Schema\ and\ Data\ ']
+			</item>
+			<item
+			capname="checkbox"
+			id="bd0501ce-6dee-46c8-9d89-7e7ba12444a4"
+			name="F3Menu"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@name='myLeftStripe']/checkbox[@text='F3: Projects']
+			</item>
+			<item
+			capname="treeitem"
+			id="2b5207a4-80c1-478c-9aaa-f876310f38fa"
+			name="FileSystemtree"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']/container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='scriptTree']/treeitem[@text='Filesystem']
+			</item>
+			<item
+			capname="checkbox"
+			id="0420b920-720d-4464-b760-f446d5f25916"
+			name="F2Menu"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@name='myLeftStripe']/checkbox[@text='F2: Files']
+			</item>
+			<item
+			capname="treeitem"
+			id="9c739c5a-9c06-436c-bf1f-8d7364541bc0"
+			name="DDL"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='scriptTree']/?/?/treeitem[@text='C:\DDL']
+			</item>
+			<item
+			capname="treeitem"
+			id="e1bffd08-1fb2-4488-bb91-e2166f605faa"
+			name="DB2SQL"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='scriptTree']//treeitem[@text='DB2LUW.sql']
+			</item>
+			<item
+			capname="tabpage"
+			id="9736c743-0d41-482d-8f44-da61c2ea60e5"
+			name="WindowsTabs"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']//container[@type='e&#41020;&#10423;&#41641;&#41114;Objectinstanceof']//tabpage[@title~'^root@Amazon\ Redshift\ \[DB2']
+			</item>
+			<item
+			capname="treeitem"
+			id="6c4e88e9-2477-4be9-b797-4fc18e8ab525"
+			name="AdsTable"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='scriptTree']/?/?/treeitem[@text='ads Table']
+			</item>
+			<item
+			capname="treeitem"
+			id="72437dae-0eac-48cf-be10-d876b3953f75"
+			name="Desktop"
+			searchtimeout="30000ms">
+				/form[@title='Aqua Data Studio']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='scriptTree']/?/?/treeitem[@text='Desktop']
+			</item>
+			<basepath>
+				/form[@title='Aqua Data Studio']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="3c3db03a-4b1d-490f-b5bb-a8825a123302"
+		isrooted="True"
+		name="ModesMenu"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="menuitem"
+			id="d20503b6-5dc0-45ef-a4fb-5864a5679ef9"
+			name="FloatingMode"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Floating Mode']
+			</item>
+			<item
+			capname="contextmenu"
+			id="9d29fe36-afbd-4bb7-be98-50699a675415"
+			name="ContextMenu"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//contextmenu
+			</item>
+			<item
+			capname="menuitem"
+			id="bf33a432-5672-40ff-a024-f232f962765d"
+			name="PinnedMode"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Pinned Mode']
+			</item>
+			<item
+			capname="menuitem"
+			id="1a9f6345-e68d-4246-9cfa-21e9860f8af1"
+			name="Docked_Mode"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Docked Mode']
+			</item>
+			<item
+			capname="menuitem"
+			id="b9a04402-66f5-4222-a791-aa8160bf6ee3"
+			name="SplitMode"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Split Mode']
+			</item>
+			<item
+			capname="menuitem"
+			id="ed7279c5-796e-4272-86f9-73df8e62eac4"
+			name="Momentum"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem
+			</item>
+			<basepath>
+				/form[@processname='datastudio']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="5fad070b-83a6-4fb1-ac30-384255bf61f2"
+		isrooted="True"
+		name="FloatingMenu"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="menuitem"
+			id="144bd8a8-62ad-4f7f-93b9-138bbbeb548b"
+			name="FloatingMode"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='Floating Mode']
+			</item>
+			<item
+			capname="contextmenu"
+			id="2380fb98-0e2e-4449-bd54-06346f286202"
+			name="ContextMenu1"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//contextmenu
+			</item>
+			<basepath>
+				/form[@class='SunAwtWindow']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="198fc4ea-480b-475d-9390-5b725b54b286"
+		isrooted="True"
+		name="Server"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="container"
+			id="eae64fd0-b7ff-482b-9783-4fcbc758858a"
+			name="SettingIcon1"
+			searchtimeout="30000ms">
+				/form[@title='Servers']//container[@name='myInternalDecorator']/?/?/container[@name='myHeader']/?/?/container[@type='ToolWindowHeader$3']
+			</item>
+			<item
+			capname="container"
+			id="5bbb48a3-e039-4574-a25e-ac550f0f0a19"
+			name="JpanelMenu"
+			searchtimeout="30000ms">
+				/form[@title='Servers']//container[@name='myInternalDecorator']/?/?/container[@name='myHeader']/container[@type='JPanel']
+			</item>
+			<basepath>
+				/form[@title='Servers']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="f689f428-1ec9-4ad4-b637-215e0253597c"
+		isrooted="True"
+		name="DataStudio"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="menuitem"
+			id="602ad7ce-7b4b-4250-b9a7-07d31ae90667"
+			name="NewProjectMenu"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='New Project']
+			</item>
+			<item
+			capname="menuitem"
+			id="b57b66db-5df6-4ae9-83c1-121232adcf3b"
+			name="RemoveMenu"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Remove']
+			</item>
+			<item
+			capname="menuitem"
+			id="ec093472-e162-4a8b-ab5b-ac8fb0455d6d"
+			name="CloseAll"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@name='TabDocumentPane.closeAll']
+			</item>
+			<item
+			capname="menuitem"
+			id="516685de-ec58-4f63-90d8-4ffc1e786d0a"
+			name="NewFolderMenu"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='New Folder']
+			</item>
+			<item
+			capname="menuitem"
+			id="5e3d0233-a822-4825-811d-d497b0651ee5"
+			name="ShowDesktop"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Show Desktop']
+			</item>
+			<item
+			capname="menuitem"
+			id="a1d27dff-e03c-49ec-87a6-1273bfa512b8"
+			name="ShowMountDirectory"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Mount Directory']
+			</item>
+			<item
+			capname="menuitem"
+			id="68821575-de9b-40a0-89d3-c3e869f3f083"
+			name="NewFolder"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='New Folder']
+			</item>
+			<item
+			capname="menuitem"
+			id="1bdce418-1bd9-4965-bcb4-e29269eda2ed"
+			name="UnMountDirectory"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Unmount Directory']
+			</item>
+			<item
+			capname="menuitem"
+			id="d0582e05-ebf1-483c-b34d-09bfaee26b4d"
+			name="DeleteAdsTable"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Delete']
+			</item>
+			<item
+			capname="menuitem"
+			id="a78833f6-d78f-43da-999b-943cf2fc03d2"
+			name="HideDesktop"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@text='Hide Desktop']
+			</item>
+			<item
+			capname="menuitem"
+			id="1b89fafc-fe0e-4d94-b980-24324cab980c"
+			name="TabClose"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//menuitem[@name='TabDocumentPane.close']
+			</item>
+			<basepath>
+				/form[@processname='datastudio']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="d02feddb-2a8b-4a3a-9412-edeedfb71fa5"
+		isrooted="True"
+		name="NewProject"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="listitem"
+			id="041ad1d6-2d22-4d63-b888-72ebf5369847"
+			name="DatabaseSchemaAndDataImportListItem"
+			searchtimeout="30000ms">
+				/form[@title='New Project']//container[@name='templatePanel']//list[@name='options']/listitem[@text~'^Database\ Schema\ and\ Data\ ']
+			</item>
+			<item
+			capname="text"
+			id="7f8e838a-ad7d-4ae9-860c-82a45fbfccbd"
+			name="FolderPathTextbox"
+			searchtimeout="30000ms">
+				/form[@title='New Project']//container[@type='JPanel']//text[@name='projectFolderField']
+			</item>
+			<item
+			capname="button"
+			id="cd6965d6-c947-49b8-895d-7a749db3c59c"
+			name="OkButton"
+			searchtimeout="30000ms">
+				/form[@title='New Project']//container[@name='buttonPanel']/button[@text='Create']
+			</item>
+			<item
+			capname="button"
+			id="a4a05c49-b9c9-4245-87c3-e959eb48334d"
+			name="BrowseButton"
+			searchtimeout="30000ms">
+				/form[@title='New Project']//container[@type='JPanel']//button[@text='...']
+			</item>
+			<basepath>
+				/form[@title='New Project']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="2af9e6c0-4bdb-401e-888d-e47d2b34d714"
+		isrooted="True"
+		name="SelectFolder"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="6e9d1775-5487-44de-9695-e43ba63f7d0a"
+			name="FolderPathTextbox"
+			searchtimeout="30000ms">
+				/form[@title='Select Folder']/element/container[@type='JPanel']/container[3]/container[2]/text[@accessiblename='Folder name:']
+			</item>
+			<item
+			capname="button"
+			id="54eb4a75-968e-4fae-ad2c-8c8f01de794b"
+			name="SelectButton"
+			searchtimeout="30000ms">
+				/form[@title='Select Folder']/element/container[@type='JPanel']/container[3]/container[3]/button[@text='Select']
+			</item>
+			<basepath>
+				/form[@title='Select Folder']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="f97fffa4-056e-4948-845a-822db07e8f2c"
+		isrooted="True"
+		name="SunAwtWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="menuitem"
+			id="c7b0139c-1405-4228-a3e8-5a5fb12f8ca9"
+			name="New"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='New']
+			</item>
+			<item
+			capname="menuitem"
+			id="d6223d81-3929-49b5-b470-56f0db5a5d80"
+			name="NewFolder"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@text='New Folder']
+			</item>
+			<basepath>
+				/form[@class='SunAwtWindow']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="6f1bd976-6b22-42da-af66-c0ade1fc2460"
+		isrooted="True"
+		name="NewFolderMenu"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="2eaecb1d-7ba3-44dd-9605-1e616d423f11"
+			name="FolderName"
+			searchtimeout="30000ms">
+				/form[@title='New Folder']//container[@name='OptionPane.realBody']/container[@name='OptionPane.body']/text[@name='OptionPane.textField']
+			</item>
+			<item
+			capname="button"
+			id="065660cf-565a-4104-bfc5-b00b9ce77fbc"
+			name="OkButton"
+			searchtimeout="30000ms">
+				/form[@title='New Folder']//container[@name='OptionPane.buttonArea']/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title='New Folder']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="95e09dfb-ca22-4e31-985c-b201f4d7c683"
+		isrooted="True"
+		name="SelectDirectory"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="599d493e-fc3e-4288-a403-b527a219be95"
+			name="LocalMachinePath"
+			searchtimeout="30000ms">
+				/form[@title='Select Directory']//container[2]/container[1]/text[@type='JTextField']
+			</item>
+			<item
+			capname="button"
+			id="3d97b912-a635-44bf-8d00-e2736a647a10"
+			name="SelectButton"
+			searchtimeout="30000ms">
+				/form[@title='Select Directory']//container[@type='ButtonPanel']/button[@name='defaultButton']
+			</item>
+			<item
+			capname="treeitem"
+			id="72555930-b675-4a72-802d-1ad29de69121"
+			name="FilePath"
+			searchtimeout="30000ms">
+				/form[@title='Select Directory']/container[2]/container[2]/?/?/container[@name='viewport']/tree[@type='BasicFileSystemTree']//treeitem[@text='C:\DDL']
+			</item>
+			<basepath>
+				/form[@title='Select Directory']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="af523b1f-5e4b-40cd-ba8d-eb21fab8a136"
+		isrooted="True"
+		name="Database"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="treeitem"
+			id="702902cb-956e-4c1d-ad9a-03a5666be411"
+			name="LocalServers"
+			searchtimeout="30000ms">
+				/form[@title='Choose Server or Database']//container[@type='JScrollPane']/container[@name='viewport']/tree[@name='dmu']/?/?/treeitem[@text='Local Database Servers']
+			</item>
+			<item
+			capname="treeitem"
+			id="99810501-89cb-4755-be55-9cb6a7a75106"
+			name="AmazonRedshift"
+			searchtimeout="30000ms">
+				/form[@title='Choose Server or Database']//container[@type='JScrollPane']/container[@name='viewport']/tree[@name='tree']//treeitem[@text='Amazon Redshift']
+			</item>
+			<item
+			capname="button"
+			id="540ce1c0-a3a0-4f78-8ff9-3ddecc25f04c"
+			name="OpeningQA"
+			searchtimeout="30000ms">
+				/form[@title='Choose Server or Database']//button[@name='defaultButton']
+			</item>
+			<item
+			capname="button"
+			id="fb620f74-a3de-458d-8369-48736f2f0c9d"
+			name="OpenTextEditor"
+			searchtimeout="30000ms">
+				/form[@title='Choose Server or Database']//button[@text='Open in Text Editor']
+			</item>
+			<basepath>
+				/form[@title='Choose Server or Database']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="6832c317-8695-44d6-92f6-1a1539f35bea"
+		isrooted="True"
+		name="UnmountWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="2078072e-05ce-440e-bb0b-669f7fe24dd7"
+			name="YesButton"
+			searchtimeout="30000ms">
+				/form[@title='Unmount']//container[@name='OptionPane.buttonArea']/button[@text='Yes']
+			</item>
+			<basepath>
+				/form[@title='Unmount']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="73f582aa-fbfe-4e2c-8d61-6c3b8371b3ff"
+		isrooted="True"
+		name="DeleteConfirm"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="19d8a30f-5e8a-4903-a180-dee2bac38d6d"
+			name="YesButton"
+			searchtimeout="30000ms">
+				/form[@title='Delete']//container[@name='OptionPane.buttonArea']/button[@text='Yes']
+			</item>
+			<basepath>
+				/form[@title='Delete']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="b431ad76-6e70-4944-a77f-5314099520fe"
+		isrooted="True"
+		name="RemoveWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="3eb912ca-d622-4648-a206-404b7bd174fe"
+			name="YesButton"
+			searchtimeout="30000ms">
+				/form[@title='Remove']//container[@name='OptionPane.buttonArea']/button[@text='Yes']
+			</item>
+			<basepath>
+				/form[@title='Remove']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="457b1bc5-42ac-4276-a434-1b44c66a2912"
+		isrooted="True"
+		name="DataTree"
+		refimgid="b844f95f-13da-4c58-a252-83bb5f44f112"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="treeitem"
+			id="eab692b4-ea28-4944-bdd9-97fd6ec47bde"
+			name="AquaScripts"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua\ Data\ Studio\ \[Databas']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='projectTree']//treeitem[@text='AquaScripts']
+			</item>
+			<item
+			capname="treeitem"
+			id="33a20079-26e5-4991-865e-a09c4f2914d5"
+			name="Servers"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua\ Data\ Studio\ \[Databas']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='projectTree']//treeitem[@text='Servers']
+			</item>
+			<item
+			capname="treeitem"
+			id="af751947-2c46-4938-90d0-d9e0c4b321e1"
+			name="UserFiles"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua\ Data\ Studio\ \[Databas']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='projectTree']//treeitem[@text='User Files']
+			</item>
+			<item
+			capname="treeitem"
+			id="ba579be9-bf8b-4384-a1e1-ddd9974846db"
+			name="TemplateTree"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua\ Data\ Studio\ \[Databas']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='projectTree']/?/?/treeitem[@text~'^Database\ Schema\ and\ Data\ ']
+			</item>
+			<item
+			capname="tabpage"
+			id="c80fabc3-032d-4c14-9baf-fd1ec417da05"
+			name="Tab"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua\ Data\ Studio\ \[Databas']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']//container[@type='PlatDockingContentPanel']//tabpage[@title~'^Database\ Schema\ and\ Data\ ']
+			</item>
+			<item
+			capname="treeitem"
+			id="522fa866-a439-4787-bd9b-c036dd3c7341"
+			name="NewProjectfile"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua\ Data\ Studio\ \[Databas']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='projectTree']/?/?/treeitem[@text~'^Database\ Schema\ and\ Data\ ']
+			</item>
+			<basepath>
+				/form[@title~'^Aqua\ Data\ Studio\ \[Databas']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="ffab8a1f-e8e3-4af5-9ee3-8ff3682d839d"
+		isrooted="True"
+		name="DB2Windows"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="tabpage"
+			id="6911395a-d7b0-494a-9d1e-cbc9db9b4b68"
+			name="WindowsTabs"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua\ Data\ Studio\ \[DB2LUW\.']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']//container[@type='PlatDockingContentPanel']//tabpage[@title~'^root@Amazon\ Redshift\ \[DB2']
+			</item>
+			<basepath>
+				/form[@title~'^Aqua\ Data\ Studio\ \[DB2LUW\.']
+			</basepath>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

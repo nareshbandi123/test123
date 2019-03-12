@@ -1,0 +1,2 @@
+INSERT INTO ads_db.ADS_TABLE(ID, firstname, lastname)
+VALUES(10, 'john', 'tom')

@@ -1,0 +1,9 @@
+create trigger ads_trigger update of firstname,lastname on ads_table 
+REFERENCING OLD as o
+NEW as n
+ FOR EACH ROW
+ when(o.firstname != n.firstname)
+ (
+update ads_table
+set id=10
+)

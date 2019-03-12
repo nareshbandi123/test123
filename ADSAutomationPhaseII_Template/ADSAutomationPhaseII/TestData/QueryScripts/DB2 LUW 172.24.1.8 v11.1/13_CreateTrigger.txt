@@ -1,0 +1,4 @@
+ CREATE TRIGGER ads_trigger
+    AFTER INSERT ON ads_db.ads_table 
+    FOR EACH ROW
+    UPDATE ads_table SET qty = qty +1

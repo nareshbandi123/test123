@@ -1,0 +1,1 @@
+create schema ads_db

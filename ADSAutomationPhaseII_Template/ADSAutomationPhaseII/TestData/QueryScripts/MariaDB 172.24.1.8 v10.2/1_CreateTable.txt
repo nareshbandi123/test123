@@ -1,0 +1,6 @@
+CREATE TABLE ads_table(
+   product_id INT,
+   product_name VARCHAR(100),
+   firstname Varchar(30),
+   lastname varchar (40)
+   );

@@ -1,0 +1,1 @@
+create trigger ads_trigger on ads_table for insert as if update (aaa) print "aaa updated" if update (bbb) print "bbb updated"

@@ -1,0 +1,2 @@
+CREATE TRIGGER ads_trigger AFTER INSERT ON ads_table
+FOR EACH ROW EXECUTE PROCEDURE ads_func()

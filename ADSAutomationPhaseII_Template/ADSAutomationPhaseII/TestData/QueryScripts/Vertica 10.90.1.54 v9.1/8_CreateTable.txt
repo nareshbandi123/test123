@@ -1,0 +1,10 @@
+CREATE TABLE ads_db1.ads_table (
+    vendor_key INTEGER NOT NULL PRIMARY KEY, 
+    vendor_name VARCHAR(64),
+    vendor_address VARCHAR(64),
+    vendor_city VARCHAR(64),
+    deal_size INTEGER, 
+    firstname varchar(50), 
+    lastname varchar(50)
+)
+

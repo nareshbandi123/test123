@@ -1,0 +1,1 @@
+CREATE TEXT INDEX ads_index AS  Select * from ads_table

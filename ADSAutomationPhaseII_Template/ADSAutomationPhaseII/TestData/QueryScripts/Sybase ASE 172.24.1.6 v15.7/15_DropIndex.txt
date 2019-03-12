@@ -1,0 +1,1 @@
+Drop index ads_index

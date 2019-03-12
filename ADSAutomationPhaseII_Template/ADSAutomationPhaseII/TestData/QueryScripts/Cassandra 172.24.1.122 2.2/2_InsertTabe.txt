@@ -1,0 +1,1 @@
+INSERT INTO ads_table (id, lastname, firstname) VALUES (5b6962dd-3f90-4c93-8f61-eabfa4a803e2, 'VOS','Marianne')

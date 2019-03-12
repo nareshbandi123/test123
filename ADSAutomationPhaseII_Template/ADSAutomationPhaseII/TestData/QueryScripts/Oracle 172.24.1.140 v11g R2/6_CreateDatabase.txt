@@ -1,0 +1,8 @@
+alter session set "_ORACLE_SCRIPT"=true 
+GO
+create user ads_db identified by 1234 
+Go
+grant create session to ads_db
+Go
+ALTER USER ads_db quota unlimited ON USERS
+Go 

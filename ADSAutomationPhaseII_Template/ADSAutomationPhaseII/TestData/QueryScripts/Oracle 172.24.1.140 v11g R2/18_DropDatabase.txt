@@ -1,0 +1,4 @@
+alter session set "_oracle_script"=true
+Go
+drop user ads_db1 cascade
+Go 

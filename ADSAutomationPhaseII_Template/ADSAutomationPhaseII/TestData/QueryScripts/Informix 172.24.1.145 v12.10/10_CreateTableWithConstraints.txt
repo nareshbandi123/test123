@@ -1,0 +1,1 @@
+CREATE TABLE ads_table (ID int NOT NULL PRIMARY KEY, lastname varchar(255) NOT NULL, firstname varchar(255),Age int)

@@ -1,0 +1,4 @@
+create trigger ads_trigger 
+on ads_table 
+for insert, update as 
+print

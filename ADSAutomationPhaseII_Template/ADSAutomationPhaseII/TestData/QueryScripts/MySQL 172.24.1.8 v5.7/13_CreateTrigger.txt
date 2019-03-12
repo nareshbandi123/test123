@@ -1,0 +1,10 @@
+CREATE TRIGGER ads_trigger
+    BEFORE UPDATE ON ads_table
+    FOR EACH ROW 
+BEGIN
+   UPDATE ads_table 
+SET 
+    lastname = 'Phan'
+WHERE
+    tutorial_id  = 1056;  
+END

@@ -1,0 +1,1 @@
+Create unique index ads_index on ads_db.ads_table(id) include (itemname)

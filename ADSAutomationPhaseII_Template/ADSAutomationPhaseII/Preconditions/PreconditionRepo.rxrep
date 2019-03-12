@@ -1,0 +1,393 @@
+﻿<repository
+id="90119539-cae8-47d1-9b3b-6f0b6156408b"
+name="PreconditionRepo"
+rxversion="8.2">
+	<codegen
+	classname="PreconditionRepo"
+	namespace="ADSAutomationPhaseII.Preconditions">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="c350295c-8dce-42ea-a15a-b3d424358fb2"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="074e9ce7-9035-4f66-9c1e-6128b4f5101b"
+		isrooted="True"
+		name="ServersList"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="treeitem"
+			id="0f6e214a-25ee-4eaa-81ac-a97c7eb5ef44"
+			name="LocalDBServersTreeItem"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']//container[@name='viewport']/tree[@name='fGy']/?/?/treeitem[@text='Local Database Servers']
+			</item>
+			<item
+			capname="treeitem"
+			id="42455817-093b-43f2-a874-6b64bbf54c32"
+			name="AmazonRedshift"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='Amazon Redshift']
+			</item>
+			<item
+			capname="treeitem"
+			id="687b1d8a-8279-4b44-b9b9-df583870cdde"
+			name="Cassandra37"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='Cassandra 172.24.1.77 3.7']
+			</item>
+			<item
+			capname="treeitem"
+			id="c3acc780-3500-40ab-9700-abe57717e048"
+			name="Cassandra22"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Cassandra\ 172\.24\.1\.122\ 2\.']
+			</item>
+			<item
+			addcaps="treeitem"
+			capname="treeitem"
+			id="1ebfbf8a-748c-4072-9785-c73c555586e0"
+			name="Derby1014"
+			refimgid="6501c136-3903-4cc9-8e8f-03821ab4e2d1"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='Derby 172.24.1.199 v10.14']
+			</item>
+			<item
+			capname="treeitem"
+			id="8951d885-6114-41bb-88a4-8e67f1954167"
+			name="Derby1013"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='Derby 172.24.1.8 v10.13']
+			</item>
+			<item
+			capname="treeitem"
+			id="e4c2b412-7fed-4196-b33f-034a187a4270"
+			name="DB2111"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='DB2 LUW 172.24.1.8 v11.1']
+			</item>
+			<item
+			capname="treeitem"
+			id="e41fea87-364c-402d-a3df-f6ed69c45513"
+			name="DB2105"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^DB2\ LUW\ 172\.24\.1\.145\ v10\.']
+			</item>
+			<item
+			capname="treeitem"
+			id="d8a9f856-d6ec-46a3-94a2-3317bc42b65c"
+			name="Excell"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='MS Excel']
+			</item>
+			<item
+			capname="treeitem"
+			id="838dd8c3-66c0-4e84-99ea-420f63697081"
+			name="Greenplum50"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Greenplum\ 10\.90\.1\.146\ v5\.']
+			</item>
+			<item
+			capname="unknown"
+			id="bc650173-6ba2-4fad-9143-134c4b4d3593"
+			name="Greenplum4312"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']/element
+			</item>
+			<item
+			capname="treeitem"
+			id="f6382d4e-bc5c-411b-ae82-7b65ff2c0cdf"
+			name="Informix1210"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Informix\ 172\.24\.1\.145\ v12']
+			</item>
+			<item
+			capname="treeitem"
+			id="9684e933-b68d-4b42-93a7-2bc40e524ea1"
+			name="Informix1170"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Informix\ 172\.24\.1\.140\ v11']
+			</item>
+			<item
+			capname="treeitem"
+			id="f96380ae-605b-4713-9452-d6d45b55a5e0"
+			name="MariaDB"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='MariaDB 172.24.1.8 v10.2']
+			</item>
+			<item
+			capname="treeitem"
+			id="d96209e6-546a-46ae-8862-6e64bcafd706"
+			name="MongoDB341"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^MongoDB\ 172\.24\.1\.155\ v3\.4']
+			</item>
+			<item
+			capname="treeitem"
+			id="f46006da-8173-4ad0-93ae-1ba2488ead71"
+			name="MongoDB321"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^MongoDB\ 172\.24\.1\.155\ v3\.2']
+			</item>
+			<item
+			capname="treeitem"
+			id="1ea11b55-56ac-41f6-a396-99a59261cf39"
+			name="MySQL80"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='MySQL 172.24.1.199 v8.0']
+			</item>
+			<item
+			capname="treeitem"
+			id="af69ff7f-c42b-40b6-b521-f1466fc88fc2"
+			name="MySQL57"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='MySQL 172.24.1.8 v5.7']
+			</item>
+			<item
+			capname="treeitem"
+			id="b9e30ee4-c403-479d-9c2c-af188bc556ef"
+			name="Netezza72"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='Netezza 10.90.1.21 7.2']
+			</item>
+			<item
+			capname="treeitem"
+			id="46b9549f-4d70-4b3f-9b34-f91e64c1dab7"
+			name="Oracle20"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Oracle\ 172\.24\.1\.199\ v12\.1']
+			</item>
+			<item
+			capname="treeitem"
+			id="0d531f2c-4e88-4c2b-988b-345f9722315e"
+			name="OracleR2"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Oracle\ 172\.24\.1\.140\ v11g\ ']
+			</item>
+			<item
+			capname="treeitem"
+			id="4b654434-fcde-4b00-bc6f-3e0c6de44651"
+			name="PostgreSQL100"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^PostgreSQL\ 172\.24\.1\.8\ v10']
+			</item>
+			<item
+			capname="treeitem"
+			id="ce8e4ab7-a4c7-458d-a8c3-e42e960c816d"
+			name="PostgreSQL96"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^PostgreSQL\ 172\.24\.1\.122\ v']
+			</item>
+			<item
+			capname="treeitem"
+			id="d91e6c77-cf8b-4d98-938f-48566c07a731"
+			name="SAPHana20"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='SAP Hana 10.90.1.96 v2.0']
+			</item>
+			<item
+			capname="treeitem"
+			id="b01f3092-c3c6-48da-80d3-abb083de9746"
+			name="MicrosoftSQLAzure08"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Microsoft\ SQL\ Azure\ \(RTM\)']
+			</item>
+			<item
+			capname="treeitem"
+			id="dbfecece-a98f-4969-b1c3-f088d6e75c94"
+			name="SQLServer2017"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^SQL\ Server\ 172\.24\.1\.154\ 2']
+			</item>
+			<item
+			capname="treeitem"
+			id="0493e619-8f91-4948-8791-4c4122367fda"
+			name="SQLServer2016"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']/?/?/treeitem[@text='Local Database Servers']/treeitem[85]
+			</item>
+			<item
+			capname="treeitem"
+			id="f64bde53-820a-4717-9d82-bd032061a4d9"
+			name="SybaseAny17"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Sybase\ Any\ 172\.24\.1\.50\ v1']
+			</item>
+			<item
+			capname="treeitem"
+			id="2f78d471-85e8-419c-bfe9-989e0a8c739c"
+			name="SybaseAny16"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Sybase\ Any\ 172\.24\.1\.145\ v']
+			</item>
+			<item
+			capname="treeitem"
+			id="46abdc2b-d4ef-45cf-b3d5-c66482c46a1d"
+			name="SybaseASE16"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Sybase\ ASE\ 172\.24\.1\.145\ v']
+			</item>
+			<item
+			capname="treeitem"
+			id="fb521a3e-9b7b-4db4-868e-516474301981"
+			name="SybaseASE157"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']/?/?/treeitem[@text='Local Database Servers']/treeitem[99]
+			</item>
+			<item
+			capname="treeitem"
+			id="7b4d3898-b708-4347-8da9-3af19c86388a"
+			name="SybaseIQ160"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Sybase\ IQ\ 172\.24\.1\.140\ 16']
+			</item>
+			<item
+			capname="treeitem"
+			id="79930e44-c2c4-4e15-90f7-2e9e70ec5e6b"
+			name="SybaseIQ154"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='Sybase IQ 172.24.1.6 15.4']
+			</item>
+			<item
+			capname="treeitem"
+			id="651cc99b-3c81-43c3-9fb6-d85c85049e36"
+			name="Teradata1620"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text~'^Teradata\ 10\.90\.1\.169\ v16\.']
+			</item>
+			<item
+			capname="unknown"
+			id="906ee06c-bcdf-4e8e-aa54-0f94890646b5"
+			name="Teradata151"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']/element
+			</item>
+			<item
+			capname="treeitem"
+			id="e8b4899d-57ca-4936-8568-a1d20a783207"
+			name="Vertica91"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='Vertica 10.90.1.54 v9.1']
+			</item>
+			<item
+			capname="treeitem"
+			id="8295a42b-eddd-44e0-a636-222c74a9b3cc"
+			name="Vertica80"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua Data Studio 19.5.0']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/container[@name='myVerticalSplitter']/container[@name='myInnerComponent']/container[@name='myFirstComponent']/?/?/container[@type='NonOpaquePanel']//container[@name='viewport']/tree[@name='fGy']//treeitem[@text='Vertica 10.90.1.176 v8.0']
+			</item>
+			<basepath>
+				/form[@title~'^Aqua Data Studio 19.5.0']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="a99d421a-97b3-4265-90b5-6107761dfe5a"
+		isrooted="True"
+		name="Open"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="47729d75-6bd1-41a2-a48d-8f6c2a1e4e67"
+			name="FilePathTextbox"
+			searchtimeout="30000ms">
+				/form[@title='Open']//element/container[@type='JPanel']/container[3]/container[2]/text[@accessiblename='File name:']
+			</item>
+			<item
+			capname="button"
+			id="7af65833-2a49-4b15-825e-494d8b0a72d5"
+			name="OpenButton"
+			searchtimeout="30000ms">
+				/form[@title='Open']//element/container[@type='JPanel']/container[3]/container[3]/button[@text='Open']
+			</item>
+			<item
+			capname="list"
+			id="e8594f2f-3579-49eb-9749-0642268827f5"
+			name="QueryScriptList"
+			searchtimeout="30000ms">
+				/form[@title='Open']//element/container[@type='JPanel']/container[@type='FilePane']//container[@name='viewport']/list[@name='list']
+			</item>
+			<basepath>
+				/form[@title='Open']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="f6b88477-0d52-45f6-b295-5d8cf5cea688"
+		isrooted="True"
+		name="QueryAnalyzer"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="09d3daa1-1798-48ca-99ca-306a7b1572fe"
+			name="QAComboTextbox"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua\ Data\ Studio\ 19\.5\.0\ \[']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/?/?/container[@type='ThreeComponentsSplitter']/container[@name='myInnerComponent']//container[@type='V&#41760;&#42014;&#10314;&#41696;10']//container[@name='gyw']//combobox[@name='dY']/text[@type='BasicComboBoxEditor$BorderlessTextField']
+			</item>
+			<item
+			capname="button"
+			id="64143d5c-e75b-4fb3-b654-5ef88712502f"
+			name="QAComboArrowButton"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua\ Data\ Studio\ 19\.5\.0\ \[']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']/?/?/container[@type='ThreeComponentsSplitter']/container[@name='myInnerComponent']//container[@type='V&#41760;&#42014;&#10314;&#41696;10']//container[@name='gyw']//combobox[@name='dY']/button[@text='']
+			</item>
+			<item
+			capname="container"
+			id="e2c06e88-20ad-4410-be03-61eeb00e94dd"
+			name="Tab"
+			searchtimeout="30000ms">
+				/form[@title~'^Aqua\ Data\ Studio\ 19\.5\.0\ \[']//container[@type='ToolWindowsPane']/container[@name='myLayeredPane']//container[@type='e&#41020;&#10423;&#41641;&#41114;Objectinstanceof']/container[@name='ToolWindowFrame.MainComponent']
+			</item>
+			<basepath>
+				/form[@title~'^Aqua\ Data\ Studio\ 19\.5\.0\ \[']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="de5f70d9-1502-4cd6-a43b-0af6a65cb1da"
+		isrooted="True"
+		name="QueryAnalyzerComboList"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="list"
+			id="8d7a4e32-5d3b-4671-808f-779dad01ab9b"
+			name="DBServerList"
+			searchtimeout="30000ms">
+				/form[@processname='datastudio']//container/list[@name='ComboBox.list']
+			</item>
+			<basepath>
+				/form[@processname='datastudio']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="7ba75842-e062-4ee1-878c-350ec8f536fe"
+		isrooted="True"
+		name="SunAwtWindow"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="menuitem"
+			id="eb500414-461b-4b47-ab8a-2c04c611db2b"
+			name="CloseTab"
+			searchtimeout="30000ms">
+				/form[@class='SunAwtWindow']//menuitem[@name='TabDocumentPane.close']
+			</item>
+			<basepath>
+				/form[@class='SunAwtWindow']
+			</basepath>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

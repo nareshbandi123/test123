@@ -1,0 +1,1 @@
+create table ads_db.ads_table (id bigint not null, itemname varchar(40) not null, firstname varchar(40), lastname varchar(40), qty int not null, price double not null)

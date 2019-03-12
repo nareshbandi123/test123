@@ -1,0 +1,3 @@
+create table ads_table (id int, name 
+varchar(50),jobrole varchar(30),joindate date,
+salary double, firstname varchar(30), lastname varchar(30))

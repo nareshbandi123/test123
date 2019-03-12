@@ -1,0 +1,1 @@
+create trigger ads_trigger on ads_table after update, insert as begin select firstname, lastname from ads_table end

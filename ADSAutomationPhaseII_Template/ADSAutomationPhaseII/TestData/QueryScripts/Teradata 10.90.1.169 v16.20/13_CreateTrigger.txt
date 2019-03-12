@@ -1,0 +1,7 @@
+Create  TRIGGER ads_db.ads_trigger
+AFTER UPDATE OF (firstname) ON ads_db.ads_table
+REFERENCING OLD ROW as EMPLOYEE_old_row
+NEW row  as EMPLOYEE_new_row
+ FOR EACH ROW
+update ads_db.ads_table
+set id=10

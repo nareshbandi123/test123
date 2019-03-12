@@ -1,0 +1,1 @@
+INSERT INTO ads_table VALUES (10,'TEN','VOS','Marianne'),(20,'TWENTY','VOS1','Marianne2'),(30,'THIRTY','VOS2','Marianne3')
