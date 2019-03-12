@@ -1,1 +1,0 @@
-INSERT INTO ads_table (acc_num,acc_code,open_date) VALUES( 10, 121, 2019-12-25 );

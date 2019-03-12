@@ -1,1 +1,0 @@
-select * from empdetails where firstname='Marianne'

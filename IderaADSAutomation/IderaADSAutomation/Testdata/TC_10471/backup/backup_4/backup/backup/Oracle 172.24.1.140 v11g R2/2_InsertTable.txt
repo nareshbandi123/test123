@@ -1,4 +1,0 @@
-INSERT INTO ads_table
-(supplier_id, supplier_name, city)  
-VALUES  
-(50, 'Flipkart','Hyd')

@@ -1,7 +1,0 @@
-CREATE TABLE ads_table (
-    CustomerID int,
-    CustomerName varchar(255),
-    City varchar(255),
-    PostalCode varchar(255),
-    Country varchar(255) 
-)
