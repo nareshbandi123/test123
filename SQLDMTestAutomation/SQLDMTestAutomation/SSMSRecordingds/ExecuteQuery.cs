@@ -150,6 +150,9 @@ namespace SQLDMTestAutomation.SSMSRecordingds
             repo.SSMS.MicrosoftSQLServerManagementStudio.Execute.Click();
             Delay.Milliseconds(200);
             
+            //CommonMethods.ExecuteQueryTest();
+            //Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

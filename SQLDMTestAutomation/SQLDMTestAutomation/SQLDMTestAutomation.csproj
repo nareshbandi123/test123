@@ -910,6 +910,9 @@
     <None Include="Testdata\Sqlqueries\C165705\C165705_1.txt">
       <id>9781902c-fe04-492e-babd-1e7802bc7b24</id>
     </None>
+    <None Include="Testdata\Sqlqueries\C166356\C166356_1.txt">
+      <id>d63e9f72-66a0-4032-abcd-25278e796557</id>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="SQLDMTestAutomation.rxtmg">
@@ -939,6 +942,9 @@
     </Folder>
     <Folder Include="Testdata\Sqlqueries\C165705">
       <id>a6826a1f-9091-4e09-aa7b-5c8dbaa0adab</id>
+    </Folder>
+    <Folder Include="Testdata\Sqlqueries\C166356">
+      <id>4fbd6ad6-4100-4dce-85d5-d2cfa7f1900c</id>
     </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

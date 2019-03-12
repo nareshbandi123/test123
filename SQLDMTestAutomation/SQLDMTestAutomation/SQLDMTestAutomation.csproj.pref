@@ -1,7 +1,25 @@
 ﻿<Properties>
+  <Array name="active">
+    <Element value="SSMSRecordingds\ExecuteQuery.rxrec" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="SSMSRecordingds\ExecuteQuery.rxrec" />
+    <Element value="SQLDMRecordings\PerformQueryOperations.rxrec" />
+    <Element value="CommonMethods.cs" />
+    <Element value="SQLDMRecordings\SQLBatches.rxrec" />
     <Element value="SQLDMTestAutomation.rxtst" />
+    <Element value="SQLDMRecordings\PreOnDemandEstimatedPlan.rxrec" />
+    <Element value="SQLDMRecordings\LaunchApplication.rxrec" />
+    <Element value="SSMSRecordingds\ExecuteQuery1.rxrec" />
+    <Element value="SSMSRecordingds\NewQueryContextMenu.rxrec" />
+    <Element value="SSMSRecordingds\CloseSSMSApplication.rxrec" />
+    <Element value="SSMSRecordingds\ConnectToServer.rxrec" />
+    <Element value="SQLDMRecordings\QueriesTAB\SelectQueryWaitForServers2017AndAbove.rxrec" />
+    <Element value="SSMSRecordingds\LaunchSSMS.rxrec" />
+    <Element value="SQLDMRecordings\SelectServer.rxrec" />
+    <Element value="SQLDMRecordings\SelectSever2017Properties.rxrec" />
+    <Element value="SQLDMRecordings\LaunchApplication.cs" />
     <Element value="SQLDMTestAutomationRepository.rxrep" />
   </Array>
   <Properties name="projectSavedData">
@@ -9,7 +27,7 @@
       <runOnBuild value="False" />
     </Properties>
     <Array name="recentusercodeselections">
-      <Element value="SQLDMTestAutomation.UserCodeCollection1.KillApplicationProcess(String application)" />
+      <Element value="SQLDMTestAutomation.CommonMethods.ExecuteQueryTest()" />
       <Element value="SQLDMTestAutomation.UserCodeCollection1.KillApplicationProcess(String application)" />
       <Element value="SQLDMTestAutomation.UserCodeCollection1.KillApplicationProcess()" />
       <Element value="SQLDMTestAutomation.LaunchApplication.LaunchApplication_Run_application()" />

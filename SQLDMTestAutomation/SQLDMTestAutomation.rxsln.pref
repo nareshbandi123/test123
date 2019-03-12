@@ -6,8 +6,10 @@
       <string>{1377E366-B5A9-4220-B883-3DCECF74FF8C}</string>
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
       <string>522bf6e1-f6da-4bd9-b8dc-7ef2d745539b</string>
+      <string>f1a4274b-260b-44f3-89d5-ef7951d68920</string>
+      <string>e1c8c2df-e00f-4e7e-a823-b8edacfe2fd6</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution SQLDMTestAutomation[SQLDMTestAutomation[SQLDMRecordings[]SQLDMTestAutomationRepository.rxrep[]]]]&#xD;&#xA;Solution SQLDMTestAutomation\SQLDMTestAutomation\SQLDMTestAutomation.rxtst&#xD;&#xA;Solution SQLDMTestAutomation\SQLDMTestAutomation\SQLDMRecordings\ODEQPNDSQLSTMT.rxrec" />
+  <ProjectBrowserState value="[Solution SQLDMTestAutomation[SQLDMTestAutomation[SSMSRecordingds[]Testdata[Sqlqueries[C166356[]]]]]]&#xD;&#xA;Solution SQLDMTestAutomation&#xD;&#xA;Solution SQLDMTestAutomation" />
   <StartupProject value="{1377E366-B5A9-4220-B883-3DCECF74FF8C}" />
 </Properties>

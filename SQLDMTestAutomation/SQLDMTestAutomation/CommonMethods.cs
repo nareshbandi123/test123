@@ -155,7 +155,44 @@ namespace SQLDMTestAutomation
 	            }
             }
         }
-	        
+        
+        
+	    [UserCodeMethod]
+        public static string GetMachineName(RepoItemInfo checkboxInfo)
+        {
+        	return System.Environment.MachineName.ToString();
+        }
+        
+        
+        [UserCodeMethod]
+        public static string ExecuteQueryTest()
+        {
+        	string connetionString = null;
+            SqlConnection connection;
+            SqlCommand command;
+            string sql = null;
+            SqlDataReader dataReader;
+            connetionString = "Data Source=AUT-SQLDM-006;Initial Catalog=SQLdmRepository;Integrated Security=true";
+            sql = "select * from ActiveWaitStatistics";
+            connection = new SqlConnection(connetionString);
+            try
+            {
+                connection.Open();
+                command = new SqlCommand(sql, connection);
+                dataReader = command.ExecuteReader();
+                while (dataReader.Read())
+                {
+                    //MessageBox.Show(dataReader.GetValue(0) + " - " + dataReader.GetValue(1) + " - " + dataReader.GetValue(2));
+                }
+                dataReader.Close();
+                command.Dispose();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Can not open connection ! ");
+            }
+        }
 
     }
 }

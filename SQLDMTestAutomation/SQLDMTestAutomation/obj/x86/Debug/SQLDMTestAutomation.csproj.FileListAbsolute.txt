@@ -28,3 +28,6 @@ C:\Users\administrator.SIMPSONS\AnkammaRao\repos\test123\SQLDMTestAutomation\SQL
 C:\Users\administrator.SIMPSONS\AnkammaRao\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.csprojResolveAssemblyReference.cache
 C:\Users\administrator.SIMPSONS\AnkammaRao\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.exe
 C:\Users\administrator.SIMPSONS\AnkammaRao\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.pdb
+F:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.csprojResolveAssemblyReference.cache
+F:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.exe
+F:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.pdb

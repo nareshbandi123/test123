@@ -210,21 +210,6 @@ rxversion="8.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
-			id="478d8bf9-4565-4d01-800d-ae390332016b"
-			name="SelectServer"
-			ref="24f6bd52-083e-4e49-bf06-cf2fe2ae5d7d"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="ServerName"
-					datasourceid="b99c958d-d010-43d5-b9f2-01f67fc4cfea"
-					variableid="1414cc25-97b1-4e47-ab61-5d306e2f14c6"
-					variablename="ServerName">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="481d15ea-26ac-43b3-b025-d7f05fc256cb"
 			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
@@ -344,6 +329,12 @@ rxversion="8.2">
 			name="setup1">
 			</setup>
 			<testmodule
+			id="61a904d8-2d59-4391-bfe3-5b9c5f617683"
+			name="ClickSQLdmRepositoryInLeftPanel"
+			ref="ef842bbe-065e-438e-87f1-342978211007"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="6334c569-3627-48aa-96e6-e48400524c95"
 			name="CloseSQLDMApplication"
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
@@ -353,6 +344,12 @@ rxversion="8.2">
 			id="663282d9-281b-44bb-bd7b-91131212cf5f"
 			name="RunQueryForSQLStatement"
 			ref="83b5a487-26f9-4eb4-81ef-b05b5ec4529b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="68a5df3d-3dea-4965-8ffe-e3e35131bbb2"
+			name="CloseSSMSApplication"
+			ref="2ec06a5b-43c8-4cd7-b1aa-ccb4a7785eeb"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -379,6 +376,12 @@ rxversion="8.2">
 			id="6f595640-ecc6-4682-93c0-56c668022fc4"
 			name="ClickQueriesTab"
 			ref="3affe88e-acb2-4086-9814-268e6084a36e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7289adf5-7a32-493c-8aeb-5eed52cb860c"
+			name="LaunchSSMS"
+			ref="303a7741-4722-4c12-9533-9fd4939f22c3"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -447,6 +450,12 @@ rxversion="8.2">
 			id="7d086ccc-5aae-4afd-92d4-833b7f264948"
 			name="C170477_verify_Estimated_Query_plan_is_collected_when_globe_icon_of_a_SQL_statement_is_selected">
 			</testcase>
+			<testmodule
+			id="7e6a2866-b4f3-4b84-b76a-cf05cc29bd16"
+			name="NewQueryContextMenu"
+			ref="c943dc6f-4873-4ad7-8fd2-784463b10806"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="81a2c7b4-33f2-486d-8b67-515f40ed29fe"
 			name="LaunchApplication"
@@ -678,13 +687,6 @@ rxversion="8.2">
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
-			<testmodule
-			enabled="False"
-			id="b7f2f1a7-9632-47b3-9bb9-dccaa51e707e"
-			name="LaunchApplication"
-			ref="73fb0df9-782d-480a-b57f-0e0513e3249c"
-			type="Recording">
-			</testmodule>
 			<teardown
 			id="b892faf6-2cbd-4960-95ed-cb7311871c86"
 			name="teardown141">
@@ -770,6 +772,12 @@ rxversion="8.2">
 			ref="9552b69d-f0c8-481f-b230-dfdaa4ad8b0e"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="cc044986-5ea5-4c03-a53e-3e4dd87d1b0d"
+			name="ConnectToServer"
+			ref="b292c181-56e2-4512-851c-b8ba8fa5411c"
+			type="Recording">
+			</testmodule>
 			<testcase
 			datarangeactive="True"
 			datasource="ServerList"
@@ -821,13 +829,6 @@ rxversion="8.2">
 			id="dc7ec189-dde7-4ead-acbf-94ed5db92f38"
 			name="VerifySelectTopForMinMaxValues"
 			ref="327db533-7c43-4209-bb45-9cb499093d5a"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="de686421-e3e5-4483-988e-34fb8277e6fd"
-			name="OpenConfigureQueryMonitor"
-			ref="a3e16002-ad31-41c7-be31-fdb013b90bf3"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -1217,18 +1218,6 @@ rxversion="8.2">
 						id="9d1fe745-9fa4-48e3-9bf0-4a686aa91a00"
 						name="ExecuteQuery">
 						</testmodule>
-						<testmodule
-						id="b7f2f1a7-9632-47b3-9bb9-dccaa51e707e"
-						name="LaunchApplication">
-						</testmodule>
-						<testmodule
-						id="478d8bf9-4565-4d01-800d-ae390332016b"
-						name="SelectServer">
-						</testmodule>
-						<testmodule
-						id="de686421-e3e5-4483-988e-34fb8277e6fd"
-						name="OpenConfigureQueryMonitor">
-						</testmodule>
 						<teardown
 						id="1d7a8fc3-24a0-41e6-b436-d8b87a6c2195"
 						name="teardown1">
@@ -1277,12 +1266,32 @@ rxversion="8.2">
 						id="95e6410d-d122-4941-ae67-e1901db51677"
 						name="SelectQueryWaitForServers2017AndAbove">
 						</testmodule>
+						<testmodule
+						id="7289adf5-7a32-493c-8aeb-5eed52cb860c"
+						name="LaunchSSMS">
+						</testmodule>
+						<testmodule
+						id="cc044986-5ea5-4c03-a53e-3e4dd87d1b0d"
+						name="ConnectToServer">
+						</testmodule>
+						<testmodule
+						id="61a904d8-2d59-4391-bfe3-5b9c5f617683"
+						name="ClickSQLdmRepositoryInLeftPanel">
+						</testmodule>
+						<testmodule
+						id="7e6a2866-b4f3-4b84-b76a-cf05cc29bd16"
+						name="NewQueryContextMenu">
+						</testmodule>
 						<teardown
 						id="9cc3515b-03de-4ab5-8124-1f824acb5328"
 						name="teardown">
 							<testmodule
 							id="481d15ea-26ac-43b3-b025-d7f05fc256cb"
 							name="CloseSQLDMApplication">
+							</testmodule>
+							<testmodule
+							id="68a5df3d-3dea-4965-8ffe-e3e35131bbb2"
+							name="CloseSSMSApplication">
 							</testmodule>
 						</teardown>
 					</testcase>
@@ -1459,10 +1468,10 @@ rxversion="8.2">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="48e0b70c-c090-45a6-a27c-dcbb5895f1c7">
+			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
 			</testcontainer>
 			<testcontainer
-			id="82b404ba-e93a-4aee-bc5a-594531d73f3d">
+			id="917ad86a-61aa-4dbf-aba7-1ca9429d3bdc">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
