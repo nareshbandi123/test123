@@ -285,7 +285,7 @@ rxversion="8.2">
 			reportcompress="False"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms"
+			reportwriteinterval="0ms"
 			showinvisiblechars="True">
 			</testsuite>
 			<testcase
