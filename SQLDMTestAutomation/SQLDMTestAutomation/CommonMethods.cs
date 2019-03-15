@@ -20,6 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using System.Diagnostics;
 using Ranorex.Core.Repository;
+using System.Data.SqlClient;
 
 namespace SQLDMTestAutomation
 {
@@ -165,7 +166,7 @@ namespace SQLDMTestAutomation
         
         
         [UserCodeMethod]
-        public static string ExecuteQueryTest()
+        public static void ExecuteQueryTest()
         {
         	string connetionString = null;
             SqlConnection connection;
@@ -191,6 +192,7 @@ namespace SQLDMTestAutomation
             catch (Exception ex)
             {
                 //MessageBox.Show("Can not open connection ! ");
+                
             }
         }
 
