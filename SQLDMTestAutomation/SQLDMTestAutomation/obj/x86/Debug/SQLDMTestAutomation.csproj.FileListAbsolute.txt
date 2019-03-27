@@ -28,3 +28,13 @@ C:\Users\administrator.SIMPSONS\AnkammaRao\repos\test123\SQLDMTestAutomation\SQL
 C:\Users\administrator.SIMPSONS\AnkammaRao\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.csprojResolveAssemblyReference.cache
 C:\Users\administrator.SIMPSONS\AnkammaRao\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.exe
 C:\Users\administrator.SIMPSONS\AnkammaRao\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.pdb
+D:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\bin\Debug\ServerList.csv
+D:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\bin\Debug\SQLDMTestAutomation.rxtmg
+D:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\bin\Debug\SQLDMTestAutomation.rxtst
+D:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\bin\Debug\SQLDMTestAutomation.exe.config
+D:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\bin\Debug\SQLDMTestAutomation.exe
+D:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\bin\Debug\SQLDMTestAutomation.pdb
+D:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\bin\Debug\Ranorex.Core.Resolver.dll
+D:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.csprojResolveAssemblyReference.cache
+D:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.exe
+D:\repos\test123\SQLDMTestAutomation\SQLDMTestAutomation\obj\x86\Debug\SQLDMTestAutomation.pdb
